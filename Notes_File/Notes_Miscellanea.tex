@@ -1,0 +1,580 @@
+\documentclass[10pt,letterpaper]{scrartcl}
+\usepackage[latin1]{inputenc}
+\usepackage[left=.5in,right=.5in,top=.75in,bottom=.75in]{geometry} 
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{textcomp} 
+\usepackage{multicol} 
+\usepackage{changepage}
+\usepackage[normalem]{ulem}
+\usepackage{color}
+
+\usepackage{hyperref}
+
+\linespread{1.3}
+
+\newcommand{\boph}[1]{\emph{\textbf{#1}}} % bold and emph
+\newcommand{\defItem}{\itemsep1pt \parsep0pt \parskip0pt}
+\newcommand{\tbul}{\textbullet}
+\newcommand{\tend}{\>\textendash}
+\newcommand{\tasc}{\>\>\textasteriskcentered}
+\newcommand{\tpec}{\>\>\>\textperiodcentered}
+\newcommand{\tabDef}{\hspace{2em}\=\hspace{2em}\=\hspace{2em}\=\hspace{2em}\=\kill}
+
+\title{Notes: Miscellanea}
+\author{Michael Van Wickle}
+\date{Spring 2016}
+
+\begin{document}
+
+\maketitle\newpage\tableofcontents\newpage 
+
+\section{AC Power}
+\begin{tabbing}\tabDef 
+\tbul\ Real/Active Power, $P$ (Watts, W) \\
+	\tend\ power delivered to a purely resistive load\\
+\tbul\ Reactive Power, $Q$ (reactive volt-amperes, var) \\
+	\tend\ exists in an AC circuit when voltage and current are not in phase \\
+    \tend\ indicative of a capacitance and/or inductance in the circuit \\
+    \tend\ $\displaystyle Q = V_{rms}I_{rms}sin(\phi)$\\
+\tbul\ Complex Power, $S$ (volt-ampere, VA) \\
+	\tend\ $\displaystyle S = P + jQ$\\
+\tbul\ Apparent Power, $|S|$ (volt-ampere, VA)\\
+	\tend\ the magnitude of the complex power\\
+\tbul\ Phase of voltage relative to current, $\phi$\\
+	\tend\ if $\phi$ is in Quadrant I: current lagging voltage\\
+    \tend\ if $\phi$ is in Quadrant IV: current leading voltage\\
+\tbul\ The unit for all kinds of power is the Watt, W\\
+	\tend\ this is generally reserved to refer to active power \\
+\tbul\ On the imaginary plane: \\
+	\tend\ Active power is on the real axis\\
+    \tend\ Reactive power is on the imaginary axis, as it does no work \\
+    \tend\ Complex power is the vector sum of the active and reactive power\\
+    \tend\ Apparent power is the magnitude of complex power\\
+    \tend\ The angle formed by the active and complex power vectors is $\phi$ \\
+\tbul\ Capacitive Loads\\
+	\tend\ "source" reactive power \\
+    \tend\ cause current to lead voltage\\
+\tbul\ Inductive Loads \\
+	\tend\ "sink" reactive power\\
+    \tend\ cause current to lag behind voltage \\
+\tbul\ Power Factor, $PF$\\
+	\tend\ the ratio of real power to apparent power \\
+    \tend\ $\displaystyle PF = cos\phi = \frac{P}{|S|}$
+\end{tabbing}
+\subsection{Three Phase Power}
+\begin{tabbing}\tabDef 
+\tbul\ Three-Phase Power \\
+    \tend\ three conductors carry AC power of the same frequency and voltage amplitude \\
+        \tasc\ each is phase shifted one third of a period (120 degrees)
+\end{tabbing}
+
+\newpage 
+\section{Algorithms}
+\begin{tabbing}\tabDef
+\tbul\ In 2000, IEEE published a list of the 10 most important, influential algorithms of the $20^{th}$ century \\
+\tbul\ They are, in no particular order: \\
+	\tend\ Metropolis Algorithm for Monte Carlo \\
+    \tend\ Simplex Method for Linear Programming \\
+    \tend\ Krylov Subspace Iteration Methods\\
+    \tend\ The Decompositional Approach to Matrix Computations \\
+    \tend\ The Fortran Optimizing Compiler\\
+    \tend\ QR Algorithm for Computing Eigenvalues\\
+    \tend\ Quicksort Algorithm for Sorting \\
+    \tend\ Fast Fourier Transform \\
+    \tend\ Integer Relation Detection\\
+    \tend\ Fast Multipole Method
+\end{tabbing}
+\subsection{MD5}
+A cryptographic hashing function, defined in \texttt{RFC 1321}, it produces a 128-bit hash value, or digest. This it typically expressed as a 32 digit hexadecimal number. Commonly used to verify data integrity.
+\subsubsection{Definitions}
+\begin{tabbing}\tabDef
+\tbul\ Word: 32-bits \\
+\tbul\ Byte: 8-bits \\
+\tbul\ Big Endian: Most significant byte at lowest address, least significant byte at highest address \\
+\tbul\ Little Endian: Most significant byte at highest address, least significant byte at lowest address
+\end{tabbing}
+\subsubsection{Algorithm}
+\begin{tabbing}\tabDef 
+\tbul\ Input message is an arbitrary length sequence of bits \\
+\tbul\ This is broken up into 512-bit blocks, i.e., 16 32-bit words\\
+\tbul\ The input is padded to make it divisible by 32 \\
+	\>\ 1. A single 1 is appended \\
+	\>\ 2. Zeroes are added until the length is 64 bits less than a multiple of 512 \\
+	\>\ 3. The remaining 64 bits are the binary representation of the original length of the input \\
+\tbul\ The main algorithm operates on a 128-bit state, divided into 4 32-bit words: $A,B,C,D$ \\
+\tbul\ The words are initialized to constants \\
+	\tend\ Values are: Little Endian, Hex \\
+	\tend\ \texttt{$\displaystyle A:67 \ 45 \ 23 \ 01$} \\
+    \tend\ \texttt{$\displaystyle B:EF \ CD \ AB \ 89$} \\
+    \tend\ \texttt{$\displaystyle C:98 \ BA \ DC \ FE$} \\
+    \tend\ \texttt{$\displaystyle D:10 \ 32 \ 54 \ 76$} \\
+\tbul\ They are then operated on by each 512 bit block by four different functions \\
+	\tend\ \texttt{$\displaystyle F(B,C,D)=(B\cdot C) + (B'\cdot D)$} \\
+    \tend\ \texttt{$\displaystyle G(B,C,D)=(B\cdot D) + (C\cdot D')$} \\
+    \tend\ \texttt{$\displaystyle H(B,C,D)=B\oplus C\oplus D$} \\
+    \tend\ \texttt{$\displaystyle I(B,C,D)=C\oplus (B + D')$} \\
+\tbul\ For the actual algorithm, a table, \texttt{T} is constructed, consisting of 64 elements \\
+	\tend\ for \texttt{i} from \texttt{1} to \texttt{64}: \\
+    \>\>\ \texttt{T[i]=}\texttt{int($2^{32}\cdot$abs(sin($i+1$))}\\
+    \tasc\ where \texttt{i} is in radians and \texttt{int()} takes the integer portion of a number \\
+\tbul\ Each \textit{chunk}(512-bits) of the input is broken into 16 32-bit words: \texttt{$M[j], 0 \leq j < 16$}
+\end{tabbing}
+
+\subsection{Advanced Encryption Standard (AES), Rijndael}
+A Federal Information Processing Standard (FIPS) approved cryptographic algorithm, used to transmit secure, government data. A symmetric block cipher that can encrypt (encipher) and decrypt (decipher) information. Processes data blocks of 128-bits.
+\begin{tabbing}\tabDef 
+
+\end{tabbing}
+
+\subsection{RSA}
+A public-key encryption system, used for secure data transmission. 
+\begin{tabbing}\tabDef
+\tbul\ Four steps to the algorithm:\\
+\>\ 1. Key Generation\\
+\>\ 2. Key Distribution\\
+\>\ 3. Encryption \\
+\>\ 4. Decryption
+\end{tabbing}
+\subsubsection{Key Generation}
+\begin{tabbing}\tabDef 
+1. Choose two distinct primes, $p$ and $q$ \\
+	\tend\ $p$ and $q$ should be chosen at random and should be similar in magnitude, but differ in length by a few digits \\
+2. Compute: $\displaystyle n=p\cdot q$ \\
+	\tend\ $n$ is used as the \textit{modulus} for both the public and private keys \\
+	\tend\ its length, in bits, is the key length\\
+3. Compute $\displaystyle \phi (n) = \phi (p)\phi (q) = (p-1)(q-1)=n -(p+q-1)$ \\
+	\tend\ $\displaystyle \phi (n)$ is Euler's Totient Function \\
+		\tasc\ counts the number of positive integers coprime with $n$\\
+	\tend\ this value is kept private \\
+4. Choose an integer $e$, such that: $1 < e < \phi (n)$ and $gcd(e, \phi (n))=1$\\
+	\tend\ i.e., $e$ and $\phi (n)$ are coprime \\
+    \tend\ $e$ is released as the \textit{public key exponent} \\
+5. Determine $d$ such that: $\displaystyle d \equiv e^{-1} \ (mod \ \phi (n))$\\
+	\tend\ $d$ is the modular multiplicative inverse of $e \ (modulo \ \phi (n)$\\
+    \tend\ i.e., solve for $d$, given $d\cdot e \equiv 1 \ (mod \ \phi (n))$\\
+    \tend\ $d$ is kept as the private key exponent \\
+\tbul\ The \textit{public key} consists of the modulus $n$, and the public (or encryption) exponent $e$ \\
+\tbul\ The \textit{private key} consists of the modulus $n$, and the private (or decryption) exponent $d$ \\
+\tbul\ $d$, $p$, $q$, and $\phi (n)$ must all be kept secret \\
+	\tend\ $p$, $q$, and $\phi (n)$ can be used to calculate $d$
+\end{tabbing}
+\subsubsection{Key Distribution}
+The public key, $(n, e)$ is then transmitted to parties wishing to send encrypted messages. The private key, $d$, is kept secret and never revealed.
+\subsubsection{Encryption}
+\begin{tabbing}\tabDef 
+\tbul\ A message, $M$, is to be sent. \\
+\tbul\ $M$ is turned into an integer, $m$, such that: $0 \leq m < n$ and $gcd(m, n) = 1$ \\
+	\tend\ $m$ is computed using a padding scheme \\
+    	\tasc\ the padding scheme is a mutually agreed upon, reversible protocol\\
+        \tasc\ e.g., Optimal Asymmetric Encryption Padding (RFC 2437)\\
+\tbul\ The cyphertext, $c$ is computed, using the public key, $e$ \\
+	\tend\ $\displaystyle c \equiv m^e \ (mod \ n)$ \\
+\tbul\ $c$ is then transmitted
+\end{tabbing}
+\subsubsection{Decryption}
+\begin{tabbing}\tabDef 
+\tbul\ $m$ can be recovered from $c$ using the private key $d$ \\
+	\tend\ $\displaystyle c^d\equiv (m^e)^d\equiv m \ mod \ n$ \\
+\tbul\ with $m$, $M$ can be recovered by reversing the padding scheme
+\end{tabbing}
+\subsubsection{Diffie-Hellman Key Exchange}
+\begin{tabbing}\tabDef 
+\tbul\ A secure way of sending encryption keys across parties
+\end{tabbing}
+
+\subsection{Huffman Coding}
+A technique for lossless data compression. Generates a series of prefix codes which are sent in lieu of the actual characters. 
+\subsubsection{Compression}
+\begin{tabbing}\tabDef 
+\tbul\ In this method, a binary tree of nodes is created \\
+\tbul\ There are two different types of nodes, \textit{leaf nodes} and \textit{internal nodes} \\
+\tbul\ Leaf Nodes contain: \\
+	\tend\ the symbol itself \\
+    \tend\ the weight (frequency of appearance) of the symbol \\
+    \tend\ optionally, a link to a parent node \\
+\tbul\ Internal Nodes contain: \\
+	\tend\ symbol weight \\
+        \tasc\ generally the sum of the weights of its children \\
+    \tend\ links to two child nodes \\
+    	\tasc\ commonly, bit 0 represents the left child and bit 1 represents the right child \\
+    \tend\ optionally, a link to a parent node \\
+\tbul\ The process starts with the leaf nodes representing all of the symbols and their probabilities \\
+\tbul\ A new, internal, node is added, whose children are the two nodes with the smallest probability \\
+\tbul\ This new node's probability is equal to the sum of its children's probability \\ 
+\tbul\ The two nodes whose parent was just added are no longer considered, with their parent now being considered \\
+\tbul\ This process is repeated until an entire tree is formed
+\end{tabbing}
+There are two general methods to constructing the tree, using a priority queue and using two queues. The priority queue method runs in logarithmic time, $O(nlog(n))$, while the method using two queues can run in linear time, $O(n)$. However, the two queue method also requires a sort prior to commencing, which is generally $O(nlog(n))$. The two methods end up being similarly complex in a time sense. In addition, the $n$ is normally fairly small, rendering time complexity of little importance. 
+\subsubsection{Using a Priority Queue}
+\begin{tabbing}\tabDef
+\tbul\ In the priority queue, the lowest probability is given the highest priority \\
+\tbul\ runs in logarithmic time, $O(nlog(n))$ \\
+1. Create a leaf node for each symbol and add it to the queue \\
+2. While there is more than one node in the queue \\
+    \>\ 1. Remove the two nodes of highest priority (lowest probability) from the queue \\
+    \>\ 2. Create a new internal node with these two nodes as children and probability equal two their sum \\
+    \>\ 3. Add the new node to the queue \\
+3. The remaining node is the root node, tree is complete
+\end{tabbing}	
+\subsubsection{Using Two Queues}
+\begin{tabbing}\tabDef
+\tbul\ If the symbols are sorted via probability, this runs in linear time \\
+1. Start with as many leaves as there are symbols \\
+2. Add all nodes into the first queue, with the least likely (lowest probability) node at the front of the queue \\
+3. While there is more than one node in the queues \\
+    \>\ 1. Remove the two nodes with the lowest weights from the queues \\
+    \>\ 2. Create an internal node with the two nodes as children and weight being equal to their sum \\
+     \>\ 3. Add the new node to the back of the second queue \\
+4. The remaining node is the root node, tree complete \\
+\tbul\ Break ties by choosing the node in the first queue \\
+\end{tabbing}
+\subsubsection{Decompression}
+Transmit a series of prefix codes. Assuming the receiver has knowledge of the structure of the tree, which can be sent beforehand or with the codes, it traverses the tree and finds the character at each leaf. 
+
+\subsection{LZ77}
+A technique for lossless data compression. A dictionary coder, it maintains a sliding window during compression. Generates output similar to run-length encoding.
+\begin{tabbing}\tabDef 
+
+\end{tabbing}
+\subsection{DEFLATE}
+A technique for lossless data compression, defined in \texttt{RFC 1951}. It uses a combination of Huffman coding and LZ77. 
+
+\subsection{Discrete Cosine Transform (DCT)}
+
+
+\subsection{Metropolis Algorithm for Monte Carlo}
+Also known as the Metropolis-Hastings algorithm, it is a Markov chain Monte Carlo (MCMC) method for generating a sequence of random samples from a probability distribution in which direct sampling is difficult. Used to approximate a distribuion. 
+
+\subsection{Simplex Method for Linear Programming}
+A linear programming problem is generally defined as the problem of maximizing or minimizing a linear function, subject to linear constraints.
+
+
+\subsection{Krylov Subspace Iteration Methods}
+
+
+\subsection{The Decompositional Approach to Matrix Computations}
+
+
+\subsection{The Fortran Optimizing Compiler}
+The first optimizing compiler to be programmed. It has influenced most, if not all, modern compilers.
+
+
+\subsection{QR Algorithm for Computing Eigenvalues}
+An algorithm used to find the eigenvalues and eigenvectors of a matrix.
+\subsubsection{QR Decomposition}
+A matrix decomposition of a matrix $A$ into $A=QR$, where $Q$ is an orthogonal matrix and $R$ is an upper triangular matrix.
+\begin{tabbing}\tabDef 
+\tbul\ For a square matrix \\
+    \tend\ a real matrix, $A$ may be decomposed as $A=QR$\\
+    \tend\ if $A$ is invertible, the it has a unique factorization if the diagonal elements of $R$ need to be positive \\
+    \tend\ if $A$ is complex, then there is a decomposition $A=QR$, where $Q$ is a unitary matrix ($Q^*Q=I$) \\
+    \tend\ if $A$ has $n$ linearly independent columns:\\
+        \tasc\ the first $n$ columns of $Q$ form an orthonormal basis for the column space of $A$ \\
+            \tpec\ generally: the first $k$ columns of $Q$ form an orthonormal basis for the span of the first $k$ columns of $A$ \\ \>\>\>\ for any $1\leq k\leq n$ \\
+            \tpec\ the fact that any column $k$ of $A$ only depends on the first $k$ columns of $Q$ is responsible for the \\ \>\>\>\ triangular form of $R$ \\
+\tbul\ For a rectangular matrix \\
+    \tend\ for a complex matrix, $A$, of dimensions, $m\times n$, and $m\geq n$, $A$ can be factored as the product of an $m\times m$ \\ \>\ unitary matrix $Q$ and an $m\times n$ upper rectangular matrix $R$ \\
+    \tend\ as the bottom $(m-n)$ rows of an $m\times n$ upper rectangular matrix consists of zeroes, $R$ or both \\ \>\ $R$ and $Q$ be partitioned as: \\ 
+    \>\>\>\ $A = QR = \begin{bmatrix} R_1 \\ 0 \end{bmatrix} = \begin{bmatrix} Q_1, Q_2 \end{bmatrix} \begin{bmatrix} R_1 \\ 0 \end{bmatrix} = Q_1 R_1$  \\
+    \>\>\ where $R_1$ is an $nxn$ upper triangular matrix, 0 is an $(m-n)\times n$ zero matrix, $Q_1$ is $m\times n$, \\ \>\>\ $Q_2$ is $m\times (m-n)$, and $Q_1$ and $Q_2$ both have orthogonal columns \\
+\end{tabbing}
+
+\subsection{Quicksort Algorithm for Sorting}
+Generally the most efficient method of sorting, with an average complexity of $O(nlog(n))$. A comparison sort, it is generally not stable, and can be performed in place. 
+
+\subsection{Fast Fourier Transform (FFT)}
+A method for computing the Discrete Fourier Transform (DFT) of a sequence, or its inverse. 
+
+\subsection{Integer Relation Detection}
+An integer relation between a set of real numbers, $x_1, x_2, \ldots , x_n$ is the set of integers, $a_1, a_2, \ldots , a_n$, not all zero, such that: $a_1x_1 + a_2x_2 + \ldots + a_nx_n = 0$. Integer relation detection algorithms find these relations, or find that, given a upper bound of magnitude, no integer relation exists.
+
+\subsection{Fast Multipole Method}
+A method developed to speed up the calculation of long-ranged forces in the n-body problem. 
+
+\newpage\section{Matrix Decompositions}
+\subsection{Cholesky}
+\subsection{LU}
+\subsubsection{LU with Full Pivoting}
+\subsection{Block LU}
+\subsection{QR}
+\subsection{Spectral}
+\subsection{Schur}
+\subsection{Singular Value}
+
+
+\newpage\section{Elementary Number Theory}
+\begin{tabbing}\tabDef
+\tbul\ the integer $n$ divides the integer $a$ if and only if there exists an integer $d$ such that $a=nd$ \\
+    \tend\ thus, $a$ is divisible by $n$, $n$ is a divisor or factor of $a$, and $a$ is a multiple of $n$ \\
+    \tend\ the notation $n|a$ means that $n$ divides $a$, and that $n|a-b$ means that $n$ divides $(a-b)$ \\
+\tbul\ if $mn|a$, then $m|a$ and $n|a$ for any integers $m$ and $n$ \\
+\tbul\ a prime number is an integer greater than one, which only has positive integer divisors of one and itself \\
+    \tend\ a non-prime number greate than one is called a composite number \\
+\tbul\ The Fundamental Theorem of Arithmetic: every integer $n>1$ can be represented in exactly one way as \\ a product of primes except for the order of the factors \\
+    \tend\ i.e., $n$ can be uniquely written in the form: $n=p_1^{k_1}\cdot p_2^{k_2}\cdot\ldots\cdot p_r^{k_r}$ for primes $p_1 < p_2 < \cdot < p_r$ and \\ \>\ positive integers $k_1,\ldots ,k_r$ \\
+\tbul\ two numbers $a$ and $b$ which have no common factors other than one are said to be coprime or relatively prime \\
+\tbul\ the greatest common divisor of two integers $a$ and $b$ is the largest integer that divides both numbers \\
+\tbul\ $a$ and $b$ are coprime if and only if $gcd(a,b)=1$\\
+\tbul\ \textit{mod} as a binary operation: $a = b\ mod \ n $, defines an operation by which $a$ is equal to the remainder of dividing \\ $b$ by $n$, $0\leq a < n$ \\
+\tbul\ \textit{mod} as a congruence relation: $a \equiv b\ (mod\ n)$ means that $a$ and $b$ have the same remainder when dividing by $n$ \\
+    \tend\ or, $a$ is congruent to $b$ modulo $n$ \\
+\tbul\ every integer is congruent modulo $n$ to exactly one of the integers in the set of least positive residues: $\{0,1,2,\ldots , n-1\}$ \\
+\tbul\ properties of congruence: for a fixed positive integer $n$ and any integers $a$, $b$, $c$, $d$ \\
+    \tend\ reflexive: $a\equiv a\ (mod\ n)$ \\
+    \tend\ symmetric: if $a\equiv b\ (mod\ n)$ then $b\equiv a\ (mod\ n)$ \\
+    \tend\ transitive: if $a\equiv b\ (mod\ n)$ and $b\equiv c\ (mod\ n)$ then $a\equiv c\ (mod\ n)$\\
+    \tend\ addition and multiplication rules: if $a\equiv b\ (mod\ n)$ and $c\equiv d\ (mod\ n)$ then $a\pm c\equiv b\pm d\ (mod\ n)$ \\
+    \tend\ cancellation rule: if $ac\equiv bc\ (mod\ n)$ and $c\neq 0$ then $a\equiv b\ (mod\ \frac{n}{gcd(c,n)})$, if $gcd(c,n)=1$ then $a\equiv b\ (mod\ n)$\\
+    \tend\ associative and distributive: $(a+b)+c\equiv a+(b+c)\ (mod\ n)$, $(ab)c\equiv a(bc)\ (mod\ n)$, and $a(b+c)\equiv ab+bc\ (mod\ n)$\\
+    \tend\ if $a\equiv b\ (mod\ n)$ then $a^r\equiv b^r\ (mod\ n)$, for any integer $r\geq 1$\\
+    \tend\ $a\equiv 0\ (mod\ n)$ if and only if $n|a$\\
+\tbul\ if $m$ and $n$ are coprime and $a\equiv b\ (mod\ m)$ and $a\equiv b\ (mod\ n)$, then $a\equiv b\ (mod\ mn)$ \\
+\tbul\ the Euler Totient Function of a positive integer $n$, denoted $\phi (n)$, is the number of positive integer not exceeding \\ $n$ which are relatively prime to $n$ \\
+\tbul\ for any prime $p$, $\phi (p)=p-1$, since all numbers less than $p$ are coprime with it \\
+\tbul\ if $m$ and $n$ are coprime, then $\phi (m)\phi (n)=\phi (mn)$ \\
+\tbul\ Fermat's Little Theorem: If $p$ is a prime and $a$ is any integer, then $a^p\equiv a\ (mod\ p)$ \\
+    \tend\ if $gcd(a, p)=1$ then $a^{p-1}\equiv 1\ (mod\ p)$ \\
+\tbul\ Euler-Fermat Theorem: if $n$ is a positive integer and $a$ is any integer with $gcd(a,n)=1$, then $a^{\phi (n)}\equiv 1\ (mod\ n)$ \\
+\tbul\ the Carmichael function of a positive integer $n$, denoted $\lambda (n)$, if defined as the smallest positive integer $m$ such \\ that $a^m\equiv 1\ (mod\ n)$ for all integers relatively prime to $n$ \\
+    \tend\ it can be shown that $\lambda (n)$ divides $\phi (n)$ \\
+\tbul\ the least common multiple of the non-zero integers $a$ and $b$, denoted $lcm(a,b)$, is the smallest positive integer that \\ is a multiple of both $a$ and $b$ \\
+\tbul\ if $n$ is the product of two distinct primes $p$ and $q$, $n=pq$, then $\lambda (pq)=lcm(p-1, q-1)$ \\
+\tbul\ the modular multiplicative inverse or modular inverse of an integer $a$ modulo $n$ is an integer $x$ such that $ax\equiv 1\ (mod\ n)$ \\
+    \tend\ write $x = a^{-1}\ mod\ n$ or $x=(\frac{1}{a})\ mod\ n$ \\
+    \tend\ a modular inverse exists if and only if $gcd(a, n)=1$ 
+\end{tabbing}
+
+\newpage\section{Linear Programming: An Intro}
+In general, a linear programmming problem is one that involves the maximization or minimization of a linear function subject to linear constraints. The constraints may be equalities or inequalities. 
+\subsection{Standard Problems}
+There are two kinds of standard problems, the standard maximum problem and the standard minimum problem. All linear programming problems can be converted into standard form. 
+\subsubsection*{The Standard Maximum Problem}\begin{tabbing}
+Given, an $m$-vector, $\mathbf{b}=(b_1\ldots b_m)^T$,\= and $n$-vector, $\mathbf{c}=(c_1\ldots c_n)^T$, and an $m\times n$ matrix, \\
+\>\ $\displaystyle\mathbf{A} = \begin{pmatrix}
+                                   a_{11} & a_{12} & \ldots & a_{1n} \\ 
+                                   a_{21} & a_{22} & \ldots & a_{2n} \\
+                                   \vdots & \vdots & \ddots & \vdots \\
+                                   a_{m1} & a_{m2} & \ldots & a_{mn} 
+                              \end{pmatrix}$ \\
+of real numbers \\ 
+The standard maximum problem is: \= find an $n$-vector, $\mathbf{x}=(x_1,\ldots , x_n)^T$, to maximise: \\
+\>\ $\mathbf{c}^T\mathbf{x}=c_1x_1+\ldots +c_nx_n$ \\
+subject to the constraints: \\ 
+\>\ $a_{11}x_1 + a_{12}x_2 + \ldots + a_{1n}x_n \leq b_1$ \\
+\>\ $a_{21}x_1 + a_{22}x_2 + \ldots + a_{2n}x_n \leq b_2$ \\
+\>\ \vdots\ \hspace{12em} \vdots\ \hspace{2em} \=(or $\mathbf{Ax}\leq \mathbf{b}$) \\
+\>\ $a_{m1}x_1 + a_{m2}x_2 + \ldots + a_{mn}x_n \leq b_m$ \\
+
+and \\
+\>\ $x_1 \geq 0$, $x_2 \geq 0$, $\ldots$, $x_m \geq 0$ \> (or $\mathbf{x} \geq \mathbf{0}$)\end{tabbing}
+\subsubsection*{The Standard Minimum Problem}\begin{tabbing}
+Find an $m$-vector, $\mathbf{y}=(y_1,\ldots , y_m)$, to minimize \= \\
+\>\ $\mathbf{y}^T\mathbf{b}=y_1b_1 + \ldots + y_mb_m$ \\
+subject to the constraints: \\
+\>\ $y_1a_{11} + y_2a_{21} + \ldots + y_ma_{m1} \geq c_1$ \\
+\>\ $y_1a_{21} + y_2a_{22} + \ldots + y_ma_{m2} \geq c_2$ \\
+\>\ \vdots\ \hspace{12em} \vdots\ \hspace{2em} \=(or $\mathbf{y}^T\mathbf{A}\geq \mathbf{c}^T$)\\
+\>\ $y_1a_{1n} + y_2a_{2n} + \ldots + y_ma_{mn} \geq c_n$ \\
+and \\
+\>\ $y_1 \geq 0$, $y_2 \geq 0$, $\ldots$, $y_m\geq 0$ \> (or $\mathbf{y} \geq 0$)\end{tabbing}
+\subsubsection*{Converting to Standard Form}\begin{tabbing}\tabDef
+\tbul\ All linear programming problems can be converted to standard form \\
+\tbul\ a minimum problem can be converted to a maximum by multiplying the objective function by $-1$\\
+    \tend\ constraints of the form: $\displaystyle\sum_{j=1}^{n}a_{ij}x_j\geq b_i$ can be changed into the form: $\displaystyle\sum_{j=1}^{n}(-a_{ij}x_j\geq -b_i$ \\
+    \tend\ from this conversion, two problems arise: \\
+    \>\>\ 1. Some constraints may be equalities: an equality constraint $\displaystyle\sum_{j=1}^{n}a_{ij}x_j=b_i$ may be removed, by solving this \\ \>\>\ constraint for some $x_j$ for which $a_{ij}\neq 0$ and substituting this solution into the other constraints and into the \\ \>\>\ objetive function wherever $x_j$ appears, this removes one constraint and one variable from the problem \\
+    \>\>\ 2. Some variable may not be restricted to be non-negative: an unrestricted variable, $x_j$ may be replaced by \\ \>\>\ the difference of two non-negative variables, $x_j=u_j-v_j$, where $u_j\geq 0$ and $v_j\geq 0$, this adds one variable and \\ \>\>\ two non-negative constraints to the problem \end{tabbing}
+\subsection{Duality}
+To every linear program, there is a dual linear program for which it is deeply connected. \\
+\subsubsection*{Standard Program Duality}
+Standard program: $\mathbf{c}$ and $\mathbf{x}$ are $n$-vectors, $\mathbf{b}$ and $\mathbf{y}$ are $m$-vectors, and $\mathbf{A}$ is an $m\times n$ matrix. Assume $m\geq 1$ and $n\geq 1$ \\
+\begin{tabbing}
+\boph{Definition}: \= The dual \= of the standard maximum problem, \\
+\>\>\ maximize $\mathbf{c}^T\mathbf{x}$ \\
+\>\>\ subject to the constraints $\mathbf{Ax}\leq\mathbf{b}$ and $\mathbf{x}\geq 0$ \\
+\>\ is defined to be the standard minimum problem \\
+\>\>\ minimize $\mathbf{y}^T\mathbf{b}$ \\
+\>\>\ subject to the constraints $\mathbf{y}^T\mathbf{A}\geq\mathbf{c}^T$ and $\mathbf{y}\geq 0$\end{tabbing}
+If the standard minimum problem that is the dual of the standard maximum problem is transformed into a standard maximum probmem (by multiplying $\mathbf{A}$, $\mathbf{b}$, and $\mathbf{c}$ by $-1$), its dual, by definition, is a standard minimum problem which, when transformed into a standard maximum problem, by the same process, is the original standard maximum problem. Thus, the dual of the standard minimum problem is the standard maximum problem. \\
+From this it can also be shown that: \\
+\begin{tabbing}
+\boph{Theorem 1}: if $\mathbf{x}$ is feasible for the standard maximum problem \= and if $\mathbf{y}$ is feasible for its dual, then: \\
+\>\ $\mathbf{c}^T\mathbf{t}\leq\mathbf{y}^T\mathbf{b}$ \\
+\boph{Proof}: \\
+\>\ $\mathbf{c}^T\mathbf{x}\leq\mathbf{y}^\mathbf{Ax}\leq\mathbf{t}^T\mathbf{b}$ \\
+The first inequality comes from $\mathbf{x}\geq \mathbf{0}$ and $\mathbf{c}^T\leq\mathbf{y}^T\mathbf{A}$ \\
+The second inequality comes from $\mathbf{y}\geq\mathbf{0}$ and $\mathbf{Ax}\leq\mathbf{b}$ \\ \\
+\boph{Corollary 1}: if a standard problem and its dual are both feasible, then both are bounded feasible \\
+\boph{Proof}: if $\mathbf{y}$ is feasible for the minimum problem, then Theorem 1 shows that $\mathbf{t}^T\mathbf{b}$ is an upper bound for the values of \\ $\mathbf{c}^T\mathbf{x}$ for $\mathbf{x}$ feasible for the maximum problem. Similarly for the converse \\ \\
+\boph{Corollary 2}: if there exists feasible $\mathbf{x^{*}}$ and $\mathbf{y^{*}}$ for a standard maximum problem and its dual such that $\mathbf{c}^T\mathbf{x^{*}}=\mathbf{y^{*}}^T\mathbf{b}$, \\ then both are optimal for their respective problems \\
+\boph{Proof}: if $\mathbf{x}$ is any feasible vector for the standard maximum problem, then $\mathbf{c}^T\mathbf{x}\leq\mathbf{y^{*}}^T\mathbf{b}=\mathbf{c}^T\mathbf{x^{*}}$, which shows that $\mathbf{x^{*}}$ \\ is optimal, a symmetric argument works for $\mathbf{y^{*}}$\\ \\
+From the theorem and its corollaries, a fundamental theorem is derived.\end{tabbing}
+\boph{The Duality Theorem}: if a standard linear programming problem is bounded feasible, then so is its dual, their values are equal, and there exists optimal vectors for both problems \\
+There are three possibilities for a linear program. It may be feasible bounded (f.b.), feasible unbounded (f.u.), or infeasible (i). For a program and its dual, there are nine possibilites, three of which are precluded by corollary 1. If a problem and its dual are both feasible, then both must be bounded feasible. Two other possibilites are removed by the Duality Theorem. If a program is feasible bounded, its dual cannot be infeasible. \\
+There are four possibilites for a standard maximum problem and its dual \\
+\tbul\ both feasible bounded \\
+\tbul\ standard maximum problem infeasible, its dual feasible unbounded \\
+\tbul\ standard maximum problem feasible unbounded, its dual infeasible \\
+\tbul\ both infeasible \\
+\begin{tabbing}
+From the Duality Theorem, a corollary is found: \\
+\boph{The Equilibrium Theorem}: let $\mathbf{x^{*}}$ and $\mathbf{y^{*}}$ be\=\ feasible vectors for a standard maximum problem and its dual, \\ respectively, then $\mathbf{x^{*}}$ and $\mathbf{y^{*}}$ are optimal if, and only if: \\
+\>\ $y^{*}_i = 0$ for all $i$ for which $\displaystyle\sum_{j=1}^{n}a_{ij}x^{*}_j < b_i$ \\
+and \\
+\>\ $x^{*}_j = 0$ for all $j$ for which $\displaystyle\sum_{i=1}^{m}y^{*}_ia_{ij} > c_j$  \\
+\boph{Proof}: the first equation in the theorem implies that $y^{*}=0$ unless there is equality in $\displaystyle\sum_j a_{ij}x^{*}_j\leq b_i$ \\
+therefore: \\
+\>\ $\displaystyle\sum_{i=1}^{m}y^{*}_{i}b_i = \sum_{i=1}^{m}y^{*}_i\sum_{j=1}^{n}a_{ij}x^{*}_j = \sum_{i=1}^{m}\sum_{j=1}^{n}y^{*}_ia_{ij}x^{*}_j$ \\
+similarly, the following equation implies: \\
+\>\ $\displaystyle\sum_{i=1}^m\sum_{j=1}^ny^*_ia_{ij}x^*_j=\sum_{j=1}^nc_Jx^*_j$ \\
+\end{tabbing}
+
+\newpage\section{Glossary}\begin{tabbing}\tabDef 
+\tbul\ \textbf{basis} \\
+    \tend\ a set of vectors in a vector space, $V$, is called a basis if the vectors are linearly independent and every vector \\ \>\ in $V$ is a linear combination of this set \\
+\tbul\ \textbf{big endian} \\
+    \tend\ the most significant byte is stored at an address, and subsquent bytes are stored in lower addresses\\
+\tbul\ \textbf{bit} \\
+    \tend\ a binary digit, a 1 or a 0 \\
+\tbul\ \textbf{block cipher} \\
+    \tend\ a determistic algorithm which operates on a fixed-length group of bits, called blocks, with an unvarying \\ \>\ transformation specified by a symmetric key \\
+\tbul\ \textbf{bounded} \\
+    \tend\ for a standard maximum or minimum problem, not unbounded \\
+\tbul\ \textbf{byte} \\
+    \tend\ a unit of digital information; typically (read: always) 8 bits \\
+    \tend\ historically the number of bits used to encode a single character \\
+\tbul\ \textbf{column space} \\
+    \tend\ the set of all possible linear combinations of a matrix's column vectors \\
+\tbul\ \textbf{conjugate transpose} \\
+    \tend\ the conjugate transpose of $mxn$ matrix $A$ is the matrix, $A^*$ obtained from $A$ by taking the transpose \\ \>\ and the taking the complex conjugate of each entry \\
+\tbul\ \textbf{constraint set} \\
+    \tend\ the set of feasible vectors \\
+\tbul\ \textbf{coprime} \\
+    \tend\ two integers, $a$ and $b$, whose only common factor is one \\
+    \tend\ can also be stated as: their greatest common divisor is one, $gcd(a,b)=1$ \\
+    \tend\ also called relatively prime, or written as $(a,b)=1$, or $a\perp b$ \\
+\tbul\ \textbf{deterministic algorithm} \\
+    \tend\ an algorithm which, given the same inputs, will always return the same output\\
+\tbul\ \textbf{dictionary coder} \\
+\tbul\ \textbf{digest} \\
+    \tend\ the output of a hash function, also called a hash \\
+\tbul\ \textbf{discrete Fourier transform} \\
+    \tend\ an algorithm which takes a finite sequence of evenly spaced samples of a function and converts them \\ \>\ into the list of coefficients of a finite combination of complex sinusoids, ordered by their frequencies \\
+    \tend\ the Fourier analysis of finite-domain (or periodic) discrete-time functions \\
+\tbul\ \textbf{eigenvalue} \\
+    \tend\ a scalar value, $\lambda$, such that: $T\mathbf{v}=\lambda\mathbf{v}$ is non-zero and holds for some linear transformation $T$ on \\ \>\ a vector space $V$ for some non-zero vector $\mathbf{v} \in V$\\
+\tbul\ \textbf{eigenvector} \\
+    \tend\ given a linear transformation, $T$, on a vector space, $V$, and that $T\mathbf{v}=\lambda\mathbf{v}$ is true and non-zero for \\ \>\ some scalar $\lambda$(eigenvalue), $\mathbf{v} \in V$ is the eigenvector associated with $\lambda$ \\
+\tbul\ \textbf{Euler's Totient function} \\
+    \tend\ $\phi (n)$, a function which counts the positive integers less than or equal to $n$ that are coprime with $n$\\
+\tbul\ \textbf{feasible} \\
+    \tend\ a vector $\mathbf{x}$, for the standard maximum problem, or $\mathbf{y}$ for the standard minimum problem, is said to be \\ \>\ feasible if it satisfies the constraints \\
+    \tend\ a linear programming problem is said to be feasible if the constraint set is not empty \\
+\tbul\ \textbf{Fourier analysis} \\
+    \tend\ the study of the way functions may be represented or approximated by sums of trigonometric functions \\
+\tbul\ \textbf{Fourier transform} \\
+    \tend\ an algorithm which decomposes a function of time into the frequencies that compose it \\
+    \tend\ the result is a complex valued function of frequency \\
+        \tasc\ the absolute value (magnitude) represents the amount of that frequency in the original function \\
+        \tasc\ the complex argument is the phase shift of the basic sinusoid in that frequency \\
+\tbul\ \textbf{hash} \\
+    \tend\ generally, a numerical sum representing some data \\
+\tbul\ \textbf{hash function} \\
+    \tend\ a function that maps arbitrarily sized data to data of a fixed size, a hash \\
+\tbul\ \textbf{hexadecimal} \\
+    \tend\ the base-16 number system \\
+    \tend\ digits are: \texttt{0 1 2 3 4 5 6 7 8 9 A B C D E F} \\
+\tbul\ \textbf{identity matrix} \\
+    \tend\ the simplest non-trivial diagonal matrix, $I$ such that: $I(X)=X$ \\
+\tbul\ \textbf{infeasible} \\
+    \tend\ a linear programming problem is said to be infeasible if the constraint set it empty \\
+\tbul\ \textbf{inner product space} \\
+    \tend\ a vector space with an additional structure: the inner product which associates each pair of vectors \\ \>\ to a scalar, known as the inner product of the vectors \\
+\tbul\ \textbf{integer relation} \\
+\tbul\ \textbf{Krylov subspace} \\
+\tbul\ \textbf{linear programming} \\ 
+\tbul\ \textbf{linear time} \\
+    \tend\ a time complexity, the time to run an algorithm is directly proportional to the length of the input \\
+    \tend\ represented in big-O notation as: $O(n)$ \\
+\tbul\ \textbf{little endian} \\
+    \tend\ the most significant byte is stored at an address, and subsequent bytes are stored in higher addresses\\
+\tbul\ \textbf{logarithmic time} \\
+    \tend\ a time complexity, the time to run an algorithm is proportional to the length of the input times the log \\ \>\ of the length of the input \\
+    \tend\ represented in big-O notation as: $O(nlog(n))$ \\
+\tbul\ \textbf{lossless compression} \\ 
+    \tend\ data compression in which the original data can be exactly reconstructed from the compressed data \\
+\tbul\ \textbf{lossy compression} \\ 
+    \tend\ data compression that uses inexact approximations to represent the original data \\
+\tbul\ \textbf{main diagonal} \\
+    \tend\ for a matrix, $A$, composed of elements $a_{i,j}$, the main diagonal is the collection of entries such that: $i=j$ \\
+\tbul\ \textbf{matrix decomposition} \\
+    \tend\ the factorization of a matrix into the product of matrices \\
+\tbul\ \textbf{matrix multiplication} \\
+    \tend\ given $\mathbf{A}$, a $n\times ,$ matrix and $\mathbf{B}$, a $m\times p$, their product, $\mathbf{AB}$, is an $n\times p$ matrix\\
+    \tend\ each entry, of $\mathbf{AB}$ is defined as $\displaystyle (\mathbf{AB})_{ij} = \sum_{k=1}^{m}\mathbf{A}_{ik}\mathbf{B}_{kj}$ \\
+    \tend\ $\mathbf{AB}_{ij}=$ the $ith$ row of $\mathbf{A}$ dotted with the $jth$ column of $\mathbf{B}$ \\
+\tbul\ \textbf{Markov chain} \\
+\tbul\ \textbf{Monte Carlo methods} \\
+\tbul\ \textbf{multipole} \\
+\tbul\ \textbf{n-body problem} \\
+\tbul\ \textbf{objective function} \\
+    \tend\ in linear programming, the function to be maximized or minmized \\
+\tbul\ \textbf{octet} \\ 
+    \tend\ a sequence of eight bits, i.e., a byte \\
+\tbul\ \textbf{orthogonal matrix} \\
+    \tend\ a matrix, $A$, is orthogonal if: $A^TA=I$ \\
+        \tasc\ $A^T$ is the transpose of $A$ \\
+        \tasc\ $I$ is the identity matrix \\
+    \tend\ an orthogonal matrix is always invertible and $A^{-1} = A^T$ \\
+\tbul\ \textbf{orthonormal basis} \\
+    \tend\ a basis for a finite dimensional vector space, $V$, whose vectors are orthonormal, i.e., they are all orthogonal \\ \>\ and unit vectors \\
+\tbul\ \textbf{prefix code} \\
+\tbul\ \textbf{priority queue} \\
+    \tend\ a data structure which orders its elements by priority \\
+    \tend\ elements with the highest priority are at the front of the queue \\
+\tbul\ \textbf{public-key encryption} \\
+    \tend\ cryptographic algorithms which use different keys for encryption and decryption \\
+    \tend\ one key is kept private, the other may be published freely \\
+\tbul\ \textbf{queue} \\
+    \tend\ a data structure that follow a first-in first-out (FIFO) principle \\
+\tbul\ \textbf{run-length encoding} \\
+\tbul\ \textbf{simplex} \\
+\tbul\ \textbf{sliding window} \\
+\tbul\ \textbf{span} \\
+    \tend\ the span of a set of vectors in a vector space is the intersection of all subspaces containing the set \\
+\tbul\ \textbf{symmetric-key encryption} \\
+    \tend\ cryptographic algorithms which use the same key for encryption and decryption \\
+\tbul\ \textbf{time complexity} \\
+\tbul\ \textbf{transpose} \\
+    \tend\ the transpose of matrix, $A$ is the matrix $A^T$, it can be created several ways \\
+        \tasc\ reflecting $A$ over its main diagonal \\
+        \tasc\ writing the rows of $A$ as the columns of $A^T$ \\
+        \tasc\ writing the columsn of $A$ as the rows of $A^T$ \\
+        \tasc\ more fomally, the $ith$ row, $jth$ column element of $A^T$ is the $jth$ row, $ith$ column element of $A$ \\
+            \tpec\ $[A^T]_{i,j} = [A]_{j,i}$ \\
+        \tasc\ if $A$ is an $m\ x\ n$ matrix, $A^T$ is an $nxm$ matrix \\
+\tbul\ \textbf{unbounded} \\
+    \tend\ for maximum problems: \\
+        \tasc\ the problem is said to be unbounded if the objective function can assume arbitrarily large positive values \\ \>\>\ at feasible vectors \\
+    \tend\ for minimum problems: \\
+        \tasc\ the problem is said to be unbounded if the objective function can assume arbitrarily large negative values \\ \>\>\ at feasible vectors \\
+\tbul\ \textbf{unitary matrix} \\
+    \tend\ a matrix, $A$, whose conjugate transpose $A^*$ is also its inverse, i.e., $A^*A=I$, where $I$ is the identity matrix \\
+\tbul\ \textbf{upper triangular matrix} \\
+    \tend\ a matrix in which all the entries below the main diagonal are zero \\
+\tbul\ \textbf{value} \\
+    \tend\ for maximum problems: \\ 
+        \tasc\ the maximum value of the objective function as the variables range over the constraint set \\
+    \tend\ for minimum problems: \\
+        \tasc\ the minimum value of the objective function as the variables range over the constraint set \\
+\tbul\ \textbf{word} \\
+    \tend\ a unit of data for a particular processor \\
+
+\end{tabbing}
+
+\end{document}

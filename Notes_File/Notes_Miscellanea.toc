@@ -1,0 +1,46 @@
+\contentsline {section}{\numberline {1}AC Power}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Three Phase Power}{4}{subsection.1.1}
+\contentsline {section}{\numberline {2}Algorithms}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}MD5}{5}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Definitions}{5}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Algorithm}{5}{subsubsection.2.1.2}
+\contentsline {subsection}{\numberline {2.2}Advanced Encryption Standard (AES), Rijndael}{6}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}RSA}{6}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Key Generation}{6}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Key Distribution}{7}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Encryption}{7}{subsubsection.2.3.3}
+\contentsline {subsubsection}{\numberline {2.3.4}Decryption}{7}{subsubsection.2.3.4}
+\contentsline {subsubsection}{\numberline {2.3.5}Diffie-Hellman Key Exchange}{7}{subsubsection.2.3.5}
+\contentsline {subsection}{\numberline {2.4}Huffman Coding}{7}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Compression}{7}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Using a Priority Queue}{8}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Using Two Queues}{8}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Decompression}{8}{subsubsection.2.4.4}
+\contentsline {subsection}{\numberline {2.5}LZ77}{8}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}DEFLATE}{8}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Discrete Cosine Transform (DCT)}{9}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Metropolis Algorithm for Monte Carlo}{9}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Simplex Method for Linear Programming}{9}{subsection.2.9}
+\contentsline {subsection}{\numberline {2.10}Krylov Subspace Iteration Methods}{9}{subsection.2.10}
+\contentsline {subsection}{\numberline {2.11}The Decompositional Approach to Matrix Computations}{9}{subsection.2.11}
+\contentsline {subsection}{\numberline {2.12}The Fortran Optimizing Compiler}{9}{subsection.2.12}
+\contentsline {subsection}{\numberline {2.13}QR Algorithm for Computing Eigenvalues}{9}{subsection.2.13}
+\contentsline {subsubsection}{\numberline {2.13.1}QR Decomposition}{9}{subsubsection.2.13.1}
+\contentsline {subsection}{\numberline {2.14}Quicksort Algorithm for Sorting}{10}{subsection.2.14}
+\contentsline {subsection}{\numberline {2.15}Fast Fourier Transform (FFT)}{10}{subsection.2.15}
+\contentsline {subsection}{\numberline {2.16}Integer Relation Detection}{10}{subsection.2.16}
+\contentsline {subsection}{\numberline {2.17}Fast Multipole Method}{10}{subsection.2.17}
+\contentsline {section}{\numberline {3}Matrix Decompositions}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Cholesky}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}LU}{11}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}LU with Full Pivoting}{11}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.3}Block LU}{11}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}QR}{11}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Spectral}{11}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Schur}{11}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Singular Value}{11}{subsection.3.7}
+\contentsline {section}{\numberline {4}Elementary Number Theory}{12}{section.4}
+\contentsline {section}{\numberline {5}Linear Programming: An Intro}{14}{section.5}
+\contentsline {subsection}{\numberline {5.1}Standard Problems}{14}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Duality}{15}{subsection.5.2}
+\contentsline {section}{\numberline {6}Glossary}{17}{section.6}
