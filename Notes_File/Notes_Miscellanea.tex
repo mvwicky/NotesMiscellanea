@@ -89,6 +89,18 @@
     \tend\ Integer Relation Detection\\
     \tend\ Fast Multipole Method
 \end{tabbing}
+\subsection{Graham Scan}
+The Graham Scan takes a finite set of points as an input and finds a convex hull from the set. It has a time complexity of $O(nlog(n))$. 
+\begin{tabbing}\tabDef
+Given a set containing $n$ points \\
+1. find the point with the lowest y-coordinate, call this point $P$ \\
+    \tend\ if more than one point share this y-coordinate, choose the point with the lowest x-coordinate \\
+2. order the set in increasing order of the angle they and $P$ make with the x-axis \\
+3. consider each point in the sorted sequence \\
+    \tend\ for each point it is determined whether traveling from the two points immediately preceding this point is a left or right turn \\
+        \tasc\ if it is a right turn, the second-to-last point is not part of the convex hull, it lies inside the hull \\
+\end{tabbing}
+
 \subsection{MD5}
 A cryptographic hashing function, defined in \texttt{RFC 1321}, it produces a 128-bit hash value, or digest. This it typically expressed as a 32 digit hexadecimal number. Commonly used to verify data integrity.
 \subsubsection{Definitions}
