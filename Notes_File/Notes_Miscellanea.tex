@@ -99,18 +99,20 @@ Given a set containing $n$ points \\
 3. consider each point in the sorted sequence \\
     \tend\ for each point it is determined whether traveling from the two points immediately preceding this point is a left or right turn \\
         \tasc\ if it is a right turn, the second-to-last point is not part of the convex hull, it lies inside the hull \\
+        \tasc\ the same determination is made for the set of the latest point and the two points preceding the point found inside the hull\\
+        \tasc\ this is repeated until a left turn is found, after which the algorithm moves on to the next set of points in the array, skipping points found to be in the hull \\
 \end{tabbing}
 
 \subsection{MD5}
 A cryptographic hashing function, defined in \texttt{RFC 1321}, it produces a 128-bit hash value, or digest. This it typically expressed as a 32 digit hexadecimal number. Commonly used to verify data integrity.
-\subsubsection{Definitions}
+\subsubsection*{Definitions}
 \begin{tabbing}\tabDef
 \tbul\ Word: 32-bits \\
 \tbul\ Byte: 8-bits \\
 \tbul\ Big Endian: Most significant byte at lowest address, least significant byte at highest address \\
 \tbul\ Little Endian: Most significant byte at highest address, least significant byte at lowest address
 \end{tabbing}
-\subsubsection{Algorithm}
+\subsubsection*{Algorithm}
 \begin{tabbing}\tabDef 
 \tbul\ Input message is an arbitrary length sequence of bits \\
 \tbul\ This is broken up into 512-bit blocks, i.e., 16 32-bit words\\
@@ -137,12 +139,6 @@ A cryptographic hashing function, defined in \texttt{RFC 1321}, it produces a 12
 \tbul\ Each \textit{chunk}(512-bits) of the input is broken into 16 32-bit words: \texttt{$M[j], 0 \leq j < 16$}
 \end{tabbing}
 
-\subsection{Advanced Encryption Standard (AES), Rijndael}
-A Federal Information Processing Standard (FIPS) approved cryptographic algorithm, used to transmit secure, government data. A symmetric block cipher that can encrypt (encipher) and decrypt (decipher) information. Processes data blocks of 128-bits.
-\begin{tabbing}\tabDef 
-
-\end{tabbing}
-
 \subsection{RSA}
 A public-key encryption system, used for secure data transmission. 
 \begin{tabbing}\tabDef
@@ -150,10 +146,8 @@ A public-key encryption system, used for secure data transmission.
 \>\ 1. Key Generation\\
 \>\ 2. Key Distribution\\
 \>\ 3. Encryption \\
-\>\ 4. Decryption
-\end{tabbing}
-\subsubsection{Key Generation}
-\begin{tabbing}\tabDef 
+\>\ 4. Decryption\end{tabbing}
+\subsubsection{Key Generation}\begin{tabbing}\tabDef 
 1. Choose two distinct primes, $p$ and $q$ \\
 	\tend\ $p$ and $q$ should be chosen at random and should be similar in magnitude, but differ in length by a few digits \\
 2. Compute: $\displaystyle n=p\cdot q$ \\
@@ -173,12 +167,10 @@ A public-key encryption system, used for secure data transmission.
 \tbul\ The \textit{public key} consists of the modulus $n$, and the public (or encryption) exponent $e$ \\
 \tbul\ The \textit{private key} consists of the modulus $n$, and the private (or decryption) exponent $d$ \\
 \tbul\ $d$, $p$, $q$, and $\phi (n)$ must all be kept secret \\
-	\tend\ $p$, $q$, and $\phi (n)$ can be used to calculate $d$
-\end{tabbing}
+	\tend\ $p$, $q$, and $\phi (n)$ can be used to calculate $d$\end{tabbing}
 \subsubsection{Key Distribution}
 The public key, $(n, e)$ is then transmitted to parties wishing to send encrypted messages. The private key, $d$, is kept secret and never revealed.
-\subsubsection{Encryption}
-\begin{tabbing}\tabDef 
+\subsubsection{Encryption}\begin{tabbing}\tabDef 
 \tbul\ A message, $M$, is to be sent. \\
 \tbul\ $M$ is turned into an integer, $m$, such that: $0 \leq m < n$ and $gcd(m, n) = 1$ \\
 	\tend\ $m$ is computed using a padding scheme \\
@@ -186,17 +178,102 @@ The public key, $(n, e)$ is then transmitted to parties wishing to send encrypte
         \tasc\ e.g., Optimal Asymmetric Encryption Padding (RFC 2437)\\
 \tbul\ The cyphertext, $c$ is computed, using the public key, $e$ \\
 	\tend\ $\displaystyle c \equiv m^e \ (mod \ n)$ \\
-\tbul\ $c$ is then transmitted
-\end{tabbing}
-\subsubsection{Decryption}
-\begin{tabbing}\tabDef 
+\tbul\ $c$ is then transmitted\end{tabbing}
+\subsubsection{Decryption}\begin{tabbing}\tabDef 
 \tbul\ $m$ can be recovered from $c$ using the private key $d$ \\
 	\tend\ $\displaystyle c^d\equiv (m^e)^d\equiv m \ mod \ n$ \\
-\tbul\ with $m$, $M$ can be recovered by reversing the padding scheme
-\end{tabbing}
+\tbul\ with $m$, $M$ can be recovered by reversing the padding scheme\end{tabbing}
 \subsubsection{Diffie-Hellman Key Exchange}
 \begin{tabbing}\tabDef 
 \tbul\ A secure way of sending encryption keys across parties
+\end{tabbing}
+
+\subsection{Advanced Encryption Standard (AES), Rijndael}
+A Federal Information Processing Standard (FIPS) approved cryptographic algorithm, used to transmit secure, government data. A symmetric block cipher that can encrypt (encipher) and decrypt (decipher) information. Processes data blocks of 128-bits.
+\subsubsection*{Parameters, Symbols, and Functions}\begin{tabbing}\tabDef 
+\tbul\ \texttt{AddRoundKey()}\\
+    \tend\ a transformation in the cipher and inverse cipher in which a Round Key is added to the state using an XOR operation \\
+\tbul\ \texttt{InvMixColumns()} \\
+    \tend\ the inverse of the \texttt{MixColumns()} transformation \\
+\tbul\ \texttt{InvShiftRows()} \\
+    \tend\ the inverse of the \texttt{ShiftRows()} transformation \\
+\tbul\ \texttt{InvSubBytes()} \\
+    \tend\ the inverse of the \texttt{SubBytes()} transformation \\
+\tbul\ \texttt{K} \\
+    \tend\ the cipher key \\
+\tbul\ \texttt{MixColumns()} \\
+    \tend\ a transformation in the cipher that takes all of the columns of the state and mixes their date (independently) to\\ \>\ produce new columns \\
+\tbul\ \texttt{Nb} \\
+    \tend\ number of columns (32-bit words) in the state, \texttt{Nb} is 4 for this standard \\
+\tbul\ \texttt{Nk} \\
+    \tend\ number of 32-bit words comprising the cipher key, for this standard, \texttt{Nk} is 4, 6, or 8 \\
+\tbul\ \texttt{Nr} \\
+    \tend\ number of rounds, a function of \texttt{Nb} and \texttt{Nk}, which is fixed, for this standard, \texttt{Nr} is 10, 12, or 14 \\
+\tbul\ \texttt{Rcon[]} \\
+    \tend\ the round constant word array \\
+\tbul\ \texttt{RotWord()} \\
+    \tend\ function used in Key Expansion that takes a four byte word and performs a cyclic permutation \\
+\tbul\ \texttt{ShiftRows()} \\
+    \tend\ transformation in the cipher which processes the state by cyclically shifting the last tree rows of the state by\\ \>\ different offsets \\
+\tbul\ \texttt{SubBytes()} \\
+    \tend\ transformation in the cipher which processes the state using a non-linear substitution table (S-box) that operates\\ \>\ on each of the state bytes independently \\
+\tbul\ \texttt{SubWord()} \\
+    \tend\ function used in Key Expansion which takes a four byte input word and applies an S-box to each of the four bytes\\ \>\ to produce an output word \\
+\tbul\ \texttt{XOR} \\
+    \tend\ the exclusive-OR operation \\ 
+\tbul\ \texttt{$\oplus$} \\
+    \tend\ the exclusive-OR operation \\
+\tbul\ \texttt{$\otimes$} \\
+    \tend\ multiplication of two polynomials (each with degree \textless 4) modulo $x^4 + 1$ \\
+\tbul\ \texttt{$\bullet$} \\
+    \tend\ finite-field multiplication\end{tabbing}
+\subsubsection*{Notation and Convention}\begin{tabbing}\tabDef
+\tbul\ Input and Output \\
+    \tend\ the input and output of the algorithm are sequences of 128-bits, also referred to as blocks with the number of bits\\ \>\ they contain referred to as their length \\
+\tbul\ Cipher Key \\
+    \tend\ the cipher key for the algorithm is a sequence of 128, 192, or 256 bits\\
+\tbul\ other input, output, or cipher key lengths are not used in this standard \\ 
+\tbul\ the bits within these sequences are numbered starting at zero and ending at one less than the sequence length \\
+\tbul\ the number $i$ attached to a bit is called its index\end{tabbing}
+\subsubsection*{Bytes}\begin{tabbing}\tabDef 
+\tbul\ the basic unit of processing in the algorithm \\
+\tbul\ the input, output, and cipher key bit sequences are proccesed as arrays of bytes that are formed by dividing the sequences\\ \>\ into groups of eight bits \\
+\tbul\ for an input, output, or cipher key, $a$, the bytes will be referred to as $a_n$ or $a[n]$, where $n$ will be:  \\
+    \tasc\ for a key length of 128 bits: $0\leq n < 16$ \\
+    \tasc\ for a key length of 192 bits: $0\leq n < 24$ \\
+    \tasc\ for a key length of 256 bits: $0\leq n < 32$ \\
+    \tasc\ in a block (128-bits): $0\leq n < 16$ \\
+\tbul\ in the AES algorithm, byte values will be represented as the concatenation of its individual bit values: \\ i.e., $\{b_7, b_6, b_5, b_4, b_3, b_2, b_1, b_0\}$\\
+    \tend\ these bytes are interpreted as finite field elements using a polynomial representation: \\ 
+    \>\>\ i.e., $\displaystyle b_7a^7+b_6a^6+b_5a^5+b_4a^4+b_3a^3+b_2a^2+b_1a^1+b_0 = \sum_{i=0}^7 b_ix^i$ \\
+    \tend\ for example, $\{01100011\}$ identifies the finite-field element: $x^6 + x^5+x+1$\end{tabbing}
+\subsubsection*{Arrays of Bytes}\begin{tabbing}\tabDef
+\tbul\ arrays of bytes are represented in the following form: \\
+    \tend\ $a_0a_1a_2\ldots a_{15}$ \\
+\tbul\ the bytes and bit ordering within bytes are derived from the 128-bit input sequence \\
+    \tend\ $input_0\ input_1\ input_2\ \ldots\ input_{126}\ input_{127}$ \\
+\tbul\ like so, \\
+    \tend\ $a_0 = \{input_0,\ input_1,\ \ldots\ , input_7\}$ \\
+    \tend\ $a_1 = \{input_8,\ input_9,\ \ldots\ , input_{15}\}$ \\
+    \>\>\ $\vdots$ \\
+    \tend\ \tend\ $a_{15} = \{input_{120},\ input_{121},\ \ldots\ , input_{127}\}$ \\
+\tbul\ this can be generalized for longer sequences as: \\
+    \tend\ $a_n = \{input_{8n},\ input_{8n+1}, \ \ldots\ , input_{8n+7}\}$\end{tabbing}
+\subsubsection*{The State}\begin{tabbing}\tabDef
+\tbul\ internally, the algorithm's operations are performed on a two dimensional array of bytes called the State \\
+\tbul\ this consists of four rows of bytes, each containing $Nb$ bytes \\
+    \tend\ $Nb$ being the block length divided by 32 \\
+\tbul\ in the State array, $s$, each individual byte has two indicies \\
+    \tend\ its row number, $r$, in the range $0\leq r < 4$ \\
+    \tend\ its column number, $c$, in the range $0\leq c < Nb$\\
+\tbul\ at the start of the cipher and inverse cipher, the input, an array of bytes ($in_0,\ in_1,\ \ldots\ ,\ in_{15}$) is copied into the State array \\
+    \tend\ this copy takes place by converting the index of the input into a pair, $r,c$ \\
+        \tasc\ this conversion takes the form: $s[r,c]=in[r+4c]$, where $0\leq r < 4$ and $0\leq c < Nb$\\
+    \tend\ at the end of the cipher and inverse cipher, the State is copied into the output array, $out$ \\
+        \tasc\ this conversion takes the form: $out[r+4c]=s[r,c]$, where $0\leq r < 4$ and $0\leq c < Nb$ \\
+\tbul\ the four bytes in the State form 32-bit words, with the row number, $r$, providing an index for the four bytes within\\ each word \\
+\tbul\ the State can therefore be seen as a one-dimensional array of 32-bit words (columns), $w_0\ldots w_3$, where each column number, $c$\\ provides an index into the array \\
+
 \end{tabbing}
 
 \subsection{Huffman Coding}
@@ -319,8 +396,68 @@ A method developed to speed up the calculation of long-ranged forces in the n-bo
 \subsection{Singular Value}
 
 
-\newpage\section{Elementary Number Theory}
-\begin{tabbing}\tabDef
+\newpage\section{Math Notes}
+\subsection{Binary to Hexadecimal}
+\begin{table}[!ht]
+    \parbox{.5\linewidth}{
+        \begin{tabular}{|c|c|}
+            \hline 
+            Bit Pattern & Character \\ \hline\hline 
+            \texttt{0000} & \texttt{0} \\ \hline 
+            \texttt{0001} & \texttt{1} \\ \hline 
+            \texttt{0010} & \texttt{2} \\ \hline 
+            \texttt{0011} & \texttt{3} \\ \hline 
+        \end{tabular}
+    }
+    \hfill\parbox{.5\linewidth}{
+        \begin{tabular}{| c | c |}
+            \hline 
+            Bit Pattern & Character \\ \hline\hline 
+            \texttt{0100} & \texttt{4} \\ \hline 
+            \texttt{0101} & \texttt{5} \\ \hline 
+            \texttt{0110} & \texttt{6} \\ \hline 
+            \texttt{0111} & \texttt{7} \\ \hline 
+        \end{tabular}
+    }
+    \hfill\parbox{.5\linewidth}{
+        \begin{tabular}{| c | c |}
+            \hline
+            Bit Pattern & Character \\ \hline\hline 
+            \texttt{1000} & \texttt{8} \\ \hline 
+            \texttt{1001} & \texttt{9} \\ \hline 
+            \texttt{1010} & \texttt{a} \\ \hline 
+            \texttt{1011} & \texttt{b} \\ \hline 
+        \end{tabular}
+    }
+    \hfill\parbox{.5\linewidth}{
+        \begin{tabular}{| c | c |}
+            \hline
+            Bit Pattern & Character \\ \hline\hline 
+            \texttt{1100} & \texttt{c} \\ \hline 
+            \texttt{1101} & \texttt{d} \\ \hline 
+            \texttt{1110} & \texttt{e} \\ \hline 
+            \texttt{1111} & \texttt{f} \\ \hline 
+        \end{tabular}
+    }
+\end{table}
+B
+\subsection{Finite Field Mathematics}
+This deals with the finite field used in AES. Addition and multiplication can be used in this field, but the operations differ from the ones normally used. 
+\subsubsection*{Addition}\begin{tabbing}\tabDef
+\tbul\ the addition of two elements is interpreted by performing the XOR operation on the coefficients for corresponding powers \\ of the polynomial representation of the elements \\
+\tbul\ subtraction of elements is identical to the addition of elements \\
+\tbul\ another way of interpreting addition is the modulo 2 addition of the corresponding bits in the byte \\
+    \tend\ for two bytes, $\{a_7a_6a_5a_4a_3a_2a_1a_0\}$ and $\{b_7b_6b_5b_4b_3b_2b_1b_0\}$, the sum is $\{c_7c_6c_5c_4c_3c_2c_1c_0\}$, where $c_i = a_i \oplus b_i$ \\
+    \tend\ the following are equivalent: \\
+        \tasc\ $(x^6+x^4+x^2+x+1)+(x^7+x+1)=x^7+x^7+x^4+x^2$\\
+        \tasc\ $\{01010111\}\oplus \{10000011\}=\{11010100\}$ \\
+        \tasc\ $\{57\}\oplus \{83\}=\{d4\}$\end{tabbing}
+\subsubsection*{Multiplication}\begin{tabbing}\tabDef
+\tbul\ multiplication, denoted by $\bullet$ corresponds with the multiplication of polynomials modulo an irreducible polynomial of degree 8. \\
+    \tend\ a polynomial is irreducible if its only divisors are one and itself \\
+\tbul\ in the AES algorithm, the irreducible polynomial is: $m(x)=x^8+x^4+x^3+x+1$, or $\{01\}\{1b\}$ \\
+
+\subsection{Elementary Number Theory}\begin{tabbing}\tabDef
 \tbul\ the integer $n$ divides the integer $a$ if and only if there exists an integer $d$ such that $a=nd$ \\
     \tend\ thus, $a$ is divisible by $n$, $n$ is a divisor or factor of $a$, and $a$ is a multiple of $n$ \\
     \tend\ the notation $n|a$ means that $n$ divides $a$, and that $n|a-b$ means that $n$ divides $(a-b)$ \\
@@ -358,8 +495,7 @@ A method developed to speed up the calculation of long-ranged forces in the n-bo
 \tbul\ if $n$ is the product of two distinct primes $p$ and $q$, $n=pq$, then $\lambda (pq)=lcm(p-1, q-1)$ \\
 \tbul\ the modular multiplicative inverse or modular inverse of an integer $a$ modulo $n$ is an integer $x$ such that $ax\equiv 1\ (mod\ n)$ \\
     \tend\ write $x = a^{-1}\ mod\ n$ or $x=(\frac{1}{a})\ mod\ n$ \\
-    \tend\ a modular inverse exists if and only if $gcd(a, n)=1$ 
-\end{tabbing}
+    \tend\ a modular inverse exists if and only if $gcd(a, n)=1$ \end{tabbing}
 
 \newpage\section{Linear Programming: An Intro}
 In general, a linear programmming problem is one that involves the maximization or minimization of a linear function subject to linear constraints. The constraints may be equalities or inequalities. 
@@ -447,12 +583,16 @@ similarly, the following equation implies: \\
 \end{tabbing}
 
 \newpage\section{Glossary}\begin{tabbing}\tabDef 
+\tbul\ \textbf{Affine Transformation} \\
+    \tend\ a transformation consisting of multplication by a matrix followed by addition of a vector \\
 \tbul\ \textbf{basis} \\
     \tend\ a set of vectors in a vector space, $V$, is called a basis if the vectors are linearly independent and every vector \\ \>\ in $V$ is a linear combination of this set \\
 \tbul\ \textbf{big endian} \\
     \tend\ the most significant byte is stored at an address, and subsquent bytes are stored in lower addresses\\
 \tbul\ \textbf{bit} \\
     \tend\ a binary digit, a 1 or a 0 \\
+\tbul\ \textbf{block} \\
+    \tend\ in AES, a sequence of binary bits that comprise the input, output, State, and Round Key, the length of a \\ \>\ sequence is the number of bits it contains, also interpreted as arrays of bits \\
 \tbul\ \textbf{block cipher} \\
     \tend\ a determistic algorithm which operates on a fixed-length group of bits, called blocks, with an unvarying \\ \>\ transformation specified by a symmetric key \\
 \tbul\ \textbf{bounded} \\
@@ -460,6 +600,13 @@ similarly, the following equation implies: \\
 \tbul\ \textbf{byte} \\
     \tend\ a unit of digital information; typically (read: always) 8 bits \\
     \tend\ historically the number of bits used to encode a single character \\
+\tbul\ \textbf{cipher} \\
+    \tend\ series of transformations that converts plain text to cipher text using the cipher key \\
+\tbul\ \textbf{cipher key} \\ 
+    \tend\ secret, cryptographic key that is used by the Key Expansion routine (AES) to generate a series of Round Keys \\
+    \tasc\ can be pictured as a rectangular array of bytes having four rows and having a number of columns corresponding to\\ \>\ the number of words (32-bit) in the key \\
+\tbul \textbf{ciphertext} \\
+    \tend\ data output from the cipher, or input to the inverse cipher \\
 \tbul\ \textbf{column space} \\
     \tend\ the set of all possible linear combinations of a matrix's column vectors \\
 \tbul\ \textbf{conjugate transpose} \\
@@ -508,6 +655,10 @@ similarly, the following equation implies: \\
 \tbul\ \textbf{inner product space} \\
     \tend\ a vector space with an additional structure: the inner product which associates each pair of vectors \\ \>\ to a scalar, known as the inner product of the vectors \\
 \tbul\ \textbf{integer relation} \\
+\tbul\ \textbf{inverse cipher} \\
+    \tend\ a series of transformations converting ciphertext to plaintext using the cipher key \\
+\tbul\ \textbf{key expansion} \\
+    \tend\ in AES, a routine used to generate a series of Round Keys from the cipher key \\
 \tbul\ \textbf{Krylov subspace} \\
 \tbul\ \textbf{linear programming} \\ 
 \tbul\ \textbf{linear time} \\
@@ -554,11 +705,17 @@ similarly, the following equation implies: \\
     \tend\ one key is kept private, the other may be published freely \\
 \tbul\ \textbf{queue} \\
     \tend\ a data structure that follow a first-in first-out (FIFO) principle \\
+\tbul\ \textbf{Round key} \\
+    \tend\ in AES, keys derived from the cipher key using the key expansion routine, applied to the State in the cipher and \\ \>\ inverse cipher \\
 \tbul\ \textbf{run-length encoding} \\
+\tbul\ \textbf{S-box} \\
+    \tend\ a non-linear substitution table used in several byte substitution transformations and the Key Expansion to perform \\ \>\ to perform a one-for-one substitution of a byte value \\
 \tbul\ \textbf{simplex} \\
 \tbul\ \textbf{sliding window} \\
 \tbul\ \textbf{span} \\
     \tend\ the span of a set of vectors in a vector space is the intersection of all subspaces containing the set \\
+\tbul\ \textbf{state} \\
+    \tend\ an intermediate result of encryption or hashing algorithms \\
 \tbul\ \textbf{symmetric-key encryption} \\
     \tend\ cryptographic algorithms which use the same key for encryption and decryption \\
 \tbul\ \textbf{time complexity} \\

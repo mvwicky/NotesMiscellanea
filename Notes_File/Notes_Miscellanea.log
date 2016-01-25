@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  22 JAN 2016 10:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2016.1.20)  25 JAN 2016 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -586,42 +586,61 @@ lanea.toc [2])
 \openout4 = `Notes_Miscellanea.toc'.
 
 
-[3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 393--394
+[3] [4] [5] [6] [7]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 227.
+
+ (c:/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 227.
+
+[8] [9] [10] [11] [12] [13]
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 411--442
+[]$[]$  $[]$
+ []
+
+
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 411--442
+[]$  $[]$ 
+ []
+
+[14] [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--396
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--405
+Underfull \hbox (badness 10000) in paragraph at lines 547--549
 
  []
 
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 417--424
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 561--568
 
  []
 
-[16] [17] [18] [19]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 580.
- [20]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 580.
+[18] [19] [20] [21] [22]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 745.
+ [23]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 745.
  (./Notes_Miscellanea.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 580.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 580.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 745.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 745.
 Package rerunfilecheck Info: File `Notes_Miscellanea.out' has not changed.
-(rerunfilecheck)             Checksum: 8B232A908C171B493729A6485A6E9B55;3174.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 580.
+(rerunfilecheck)             Checksum: 5A2A9D19B1A7036C3C70EF30799D5BC3;3301.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 745.
  ) 
 Here is how much of TeX's memory you used:
- 8590 strings out of 493054
- 129871 string characters out of 6138321
- 280934 words of memory out of 5000000
- 11955 multiletter control sequences out of 15000+600000
+ 8624 strings out of 493054
+ 130335 string characters out of 6138321
+ 281934 words of memory out of 5000000
+ 11973 multiletter control sequences out of 15000+600000
  10606 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,10n,46p,523b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -641,10 +660,10 @@ ublic/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy7.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mti10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 ><c:/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Notes_Miscellanea.pdf (20 pages, 242098 bytes).
+Output written on Notes_Miscellanea.pdf (23 pages, 259092 bytes).
 PDF statistics:
- 415 PDF objects out of 1000 (max. 8388607)
- 372 compressed objects within 4 object streams
- 72 named destinations out of 1000 (max. 500000)
- 369 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 450 PDF objects out of 1000 (max. 8388607)
+ 403 compressed objects within 5 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,11 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1453477462 "Notes_Miscellanea.tex" "Notes_Miscellanea.pdf" "Notes_Miscellanea" 1453477463
-  "./Notes_Miscellanea.out" 1453477463 3174 8b232a908c171b493729a6485a6e9b55 ""
-  "./Notes_Miscellanea.tex" 1453477461 39286 71a72e6dae49afe52561a41188792890 ""
-  "Notes_Miscellanea.aux" 1453477463 5407 8c696ae6819680f8130d3b8c0a078808 ""
-  "Notes_Miscellanea.out" 1453477463 3174 8b232a908c171b493729a6485a6e9b55 ""
-  "Notes_Miscellanea.tex" 1453477461 39286 71a72e6dae49afe52561a41188792890 ""
-  "Notes_Miscellanea.toc" 1453477463 3917 5caeeff0e191a1eea2b01a1c619b866a ""
+["pdflatex"] 1453737852 "Notes_Miscellanea.tex" "Notes_Miscellanea.pdf" "Notes_Miscellanea" 1453737853
+  "./Notes_Miscellanea.out" 1453737853 3301 5a2a9d19b1a7036c3c70ef30799d5bc3 ""
+  "./Notes_Miscellanea.tex" 1453737851 50987 59db0a024f5bca29b0af88564eca2ae9 ""
+  "Notes_Miscellanea.aux" 1453737853 5619 32fa51f19f0dbea7304ce55cc639d56e ""
+  "Notes_Miscellanea.out" 1453737853 3301 5a2a9d19b1a7036c3c70ef30799d5bc3 ""
+  "Notes_Miscellanea.tex" 1453737851 50987 59db0a024f5bca29b0af88564eca2ae9 ""
+  "Notes_Miscellanea.toc" 1453737853 4093 ba55396cbba48c20541ad3be79428f90 ""
   "c:/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1453317476 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1453318043 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "c:/texlive/2015/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1453317789 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -65,6 +65,7 @@
   "c:/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty" 1453317030 2637 846ebe982d3549c7ede7ce135456f54a ""
   "c:/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty" 1453318468 5619 3f48adceb9004b3fefe24c2d2df7d98e ""
   "c:/texlive/2015/texmf-dist/tex/latex/base/latin1.def" 1453318468 6565 dc1d30b7ecd4efb7b7db2e13c3637c3f ""
+  "c:/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd" 1453318468 2257 34d599369bc8c4ea1835d39957e0a35f ""
   "c:/texlive/2015/texmf-dist/tex/latex/base/textcomp.sty" 1453318468 16155 258f35a63ef332879c6629fd0fc875da ""
   "c:/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd" 1453318468 2217 88eb40cf4b1efa71ba8daf8030a0113f ""
   "c:/texlive/2015/texmf-dist/tex/latex/base/ts1enc.def" 1453318468 7767 7f8f29a2f77fdabc077bc233a27c01d3 ""
@@ -97,8 +98,8 @@
   "c:/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1453320653 3850854 007f6e82bf33faaf377ef78a77c27489 ""
   "c:/texlive/2015/texmf.cnf" 1453320566 497 7277663fd190ea5a4fe922b182dc7be2 ""
   (generated)
-  "Notes_Miscellanea.out"
   "Notes_Miscellanea.toc"
-  "Notes_Miscellanea.aux"
-  "Notes_Miscellanea.log"
   "Notes_Miscellanea.pdf"
+  "Notes_Miscellanea.log"
+  "Notes_Miscellanea.aux"
+  "Notes_Miscellanea.out"

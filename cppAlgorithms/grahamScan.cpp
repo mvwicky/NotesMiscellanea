@@ -33,15 +33,14 @@ int main(){
 
 
 
-	int m = 1; // # of points in the hull
+	size_t m = 1; // # of points in the hull
 	for (size_t i = 2; i < points.size()-1; i++){
 		while (ccw(points[m-1], points[m], points[i]) <= 0){
 			if (m < 3){
-				
+
 			}
 			else if (m > 1){
-				if (m - 1 != 0)
-					m--;	
+				m--;	
 			}
 			else if (i == points.size() - 1)
 				break;
