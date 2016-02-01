@@ -666,6 +666,50 @@ similarly, the following equation implies: \\
 \subsubsection*{Polynomials}\begin{tabbing}\tabDef 
 
 \end{tabbing}
+\subsection{Mixed-Models}\begin{tabbing}\tabDef
+\tbul\ a mixed model is a statistical model that contains both fixed and random effects \\
+\tbul\ a Generalized Linear Mixed Model has the form: \\
+\>\>\>\>\ $\mathbf{y} = \mathbf{X}\boldsymbol{\beta} + \mathbf{Z}\boldsymbol{\mu} + \boldsymbol{\epsilon}$ \\
+where \\
+\>\>\>\>\ $\mathbf{y}$ is a $N\times 1$ column vector, the outcome variable \\
+\>\>\>\>\ $\mathbf{X}$ is a $N\times p$ matrix of the $p$ predictor variables \\
+\>\>\>\>\ $\boldsymbol{\beta}$ is a $p\times 1$ column vector of the fixed-effect regression coefficients \\
+\>\>\>\>\ $\mathbf{Z}$ is the $N\times q$ design matrix for $q$ random effects (the random complement to the fixed $\mathbf{X}$) \\
+\>\>\>\>\ $\boldsymbol{\mu}$ is a $q\times 1$ vector of the random effects (the random complement to the fixed $\mathbf{\beta}$)\\
+\>\>\>\>\ $\boldsymbol{\epsilon}$ is an $N\times 1$ column vector of the residuals \\
+\tbul\ example: doctors ($q = 407$) see $n_j$ patients \\
+    \tend\ the grouping variable is the doctor \\
+    \tend\ not every doctor sees the same number of patients\\
+        \tasc\ ranges from 2 to 40, with an average of 21\\
+    \tend\ the total number of patients is the average seen by each doctor: \\
+\>\>\>\>\ $\displaystyle N = \sum_j^q n_j = 8525$\\
+\tbul\ the outcome, $\mathbf{y}$ is a continuous variable, mobility scores \\
+\tbul\ there are 6 fixed-effect predictors: \\
+\>\ 1. Age, in years\\
+\>\ 2. Married (0 = no, 1 = yes) \\
+\>\ 3. Sex (0 = female, 1 = male) \\
+\>\ 4. Red Blood Cell(RBC) count\\
+\>\ 5. White Blood Cell(WBC) count \\
+\>\ 6. a fixed intercept and random intercept for each doctor \\
+\tbul\ only the random intercept will be considered in this example \\
+\tbul\ all other effects will be fixed \\
+\tbul\ putting this into the model: $q = 407$, $p = 6$, $N = 8525$\\
+$\mathbf{y} = \begin{bmatrix} mobility \\ 2 \\ 2 \\ \ldots \\ 3 \end{bmatrix}$ 
+$\mathbf{X} = \begin{bmatrix} Intercept & Age    & Married & Sex    & WBC    & RBC    \\ 
+                                        1         & 64.97  & 0       & 1      & 6087   & 4.87   \\
+                                        1         & 53.92  & 0       & 0      & 6700   & 4.68   \\ 
+                                        \ldots    & \ldots & \ldots  & \ldots & \ldots & \ldots \\ 
+                                        1         & 56.07  & 0       & 1      & 6430   & 4.73   \end{bmatrix}$
+$\boldsymbol{\beta} = \begin{bmatrix} 4.782 \\ 0.025 \\ 0.011 \\ 0.012 \\ 0 \\ -0.009 \end{bmatrix}$ \\
+\tbul\ $\mathbf{Z}$ is quite large, so it will not be shown here, since only random intercepts are being modeled, it is a\\ special matrix that only codes which doctor a patient belongs to \\
+    \tend\ in this case, it is all 0s and 1s \\
+    \tend\ each column represents one doctor and each row represents one patient \\
+    \tend\ if the patient belongs to the doctor in that column, the cell will have a 1, 0 otherwise \\
+\tbul\ if estimated, $\boldsymbol{\mu}$ would be a column vector, similar to $\boldsymbol{\beta}$ \\
+\tbul\ however, is almost always assumed that: \\
+\>\>\>\>\ $\boldsymbol{\mu} \sim \mathcal{N}(\mathbf{0}, \mathbf{G})$ \\ 
+read, $\boldsymbol{\mu}$ is distributed as normal with mean zero and variance $\mathbf{G}$ \\
+\end{tabbing}
 
 \newpage\section{Probability}
 
