@@ -15,7 +15,7 @@
 
 \usepackage{hyperref}
 
-\linespread{1.3}
+\linespread{1.5}
 
 \newcommand{\boph}[1]{\emph{\textbf{#1}}} % bold and emph
 \newcommand{\defItem}{\itemsep1pt \parsep0pt \parskip0pt}
@@ -712,6 +712,47 @@ read, $\boldsymbol{\mu}$ is distributed as normal with mean zero and variance $\
 \end{tabbing}
 
 \newpage\section{Probability}
+
+\newpage\section{Batted Ball Visualizer}\begin{tabbing}\tabDef
+\tbul\ the base batted ball attributes: \\
+    \tend\ \texttt{v\_tot}: $v_o$ is the exit velocity of the ball \\
+    \tend\ \texttt{theta}: $\theta$ is the angle from horizontal of the flight path \\
+        \tasc\ up is positive, down is negative \\
+    \tend\ \texttt{phi}: $\phi$ is the azimuthal angle of the flight path \\
+        \tasc\ i.e., the angle between the x-axis and the ball's x-y component vector \\
+        \tasc\ 0 degrees (or radians) is the 1st base line, 90 degrees or $\frac{\pi}{2}$ radians is the 3rd base line\\
+    \tend\ \texttt{g}: is the gravitational constant, defaulting to -9.80665 meters per second squared \\
+    \tend\ \texttt{freq}: the sampling frequency, defaulting to 60 hertz\end{tabbing}
+\subsection{Velocity of a Projectile with Air Resistance}\begin{tabbing}\tabDef
+\tbul\ the force on a projectile due to air resistance can be modeled as: $F_D = -kv^2$ \\
+    \tend\ $v$ is velocity \\
+    \tend\ $k$ is the drag coefficient: $k = \frac{1}{2}\rho A C_D$\\
+    \tend\ $\rho$ is the density of air \\
+    \tend\ $A$ is the frontal area of the projectile \\
+        \tasc\ for a baseball: $A = \pi r^2$ \\
+    \tend\ $C_D$ is the coefficient of drag \\
+        \tasc\ for a baseball: $C_D = 0.3$\end{tabbing}
+\subsubsection*{Horizontal Motion}\begin{tabbing}\tabDef
+\tbul\ starting from angle with horizon: $\theta$, at time: $t$, with mass: $m$\\
+    \>\>\ $\displaystyle a_x = -\frac{kv^2_x}{m} = \frac{dv_x}{dt}$ \\
+    \>\>\ $\displaystyle -\int\frac{k}{m}dt = \int v^{-2}_xdv_x\Rightarrow\ -\frac{kt}{m}=\frac{-1}{v_x}+C$\\ 
+    \>\>\ $\displaystyle v_x(0) = v_{x0}\rightarrow\ C = \frac{1}{v_{x0}}\Rightarrow\ \frac{kt}{m} = \frac{1}{v_x} - \frac{1}{v_{x0}}$\\
+    \>\>\ $\displaystyle v_x(t) = \frac{1}{\frac{1}{v_{x0}} + \frac{kt}{m}} = (v^{-1}_{x0} + \frac{kt}{m})^{-1}$ \\
+\tbul\ finding the horizontal distance: $s_x(t)$\\
+    \>\>\ $\displaystyle \int v_xdt = \int (\frac{1}{\frac{1}{v_{x0}} + \frac{kt}{m}})dt$ \\
+    \>\>\ $\displaystyle s_x(t) = \frac{m}{k}\ln(ktv_{x0}+m)+C$ \\
+    \>\>\ $\displaystyle s_x(0) = 0\Rightarrow\ C = -\frac{m}{k}\ln(m)$ \\
+    \>\>\ $\displaystyle s_x(t) = \frac{m}{k}(\ln(\frac{ktv_{x0} + m}{m}))$\end{tabbing}
+\subsubsection*{Vertical Motion}\begin{tabbing}\tabDef
+\tbul\ for vertical motion, there are two solutions, one for upwards motion and one for downwards motion \\
+\tbul\ for upward motion: \\
+    \>\>\ $\displaystyle a_z = -\frac{kv^2_z}{m} - g = \frac{dv_z}{dt}\Rightarrow\ v_z(t) = \sqrt{\frac{mg}{k}}\tan(C - \sqrt{\frac{gk}{m}}t)$ \\
+    \>\>\ $\displaystyle v_z(0) = v_{z0}\Rightarrow\ C = \arctan(\sqrt{\frac{k}{mg}}v_{z0})\Rightarrow\ v_z(t) = \sqrt{\frac{mg}{k}}\tan(\arctan(\sqrt{\frac{k}{mg}}v_{z0})-\sqrt{\frac{gk}{m}}t)$\\
+    \tend\ vertical height: $s_z(t)$ \\
+    \>\>\ $\displaystyle \int ds_z = \int (\sqrt{\frac{mg}{k}}\tan(\arctan(\sqrt{\frac{k}{mg}}v_{z0})-\sqrt{\frac{gk}{m}}t))dt$\\
+\end{tabbing}
+\subsubsection*{Calculating Density}
+
 
 \newpage\section{Glossary}\begin{tabbing}\tabDef 
 \tbul\ \textbf{Affine Transformation} \\
