@@ -750,6 +750,25 @@ read, $\boldsymbol{\mu}$ is distributed as normal with mean zero and variance $\
     \>\>\ $\displaystyle v_z(0) = v_{z0}\Rightarrow\ C = \arctan(\sqrt{\frac{k}{mg}}v_{z0})\Rightarrow\ v_z(t) = \sqrt{\frac{mg}{k}}\tan(\arctan(\sqrt{\frac{k}{mg}}v_{z0})-\sqrt{\frac{gk}{m}}t)$\\
     \tend\ vertical height: $s_z(t)$ \\
     \>\>\ $\displaystyle \int ds_z = \int (\sqrt{\frac{mg}{k}}\tan(\arctan(\sqrt{\frac{k}{mg}}v_{z0})-\sqrt{\frac{gk}{m}}t))dt$\\
+    \>\>\ $\displaystyle s_z(t) = \frac{m}{k}\ln(\cos(\sqrt{\frac{mg}{k}}t-\arctan(\sqrt{\frac{k}{mg}}v_{z0})))+C$ \\
+    \>\>\ $\displaystyle s_z(0) = 0\Rightarrow\ c = - \frac{m}{k}\ln(\cos(\arctan(\sqrt{\frac{k}{mg}}v_{z0})))$ \\
+    \>\>\ $\displaystyle s_z(t) = \frac{m}{k}\ln(\cos(\sqrt{\frac{gk}{m}}t-\arctan(\sqrt{\frac{k}{mg}}v_{z0})))-\frac{m}{k}\ln(\cos(\arctan(\sqrt{\frac{k}{mg}}v_{z0})))$ \\
+    \tend\ $h$: maximum height, $t_a$: time to reach $h$ \\
+    \>\>\ $\displaystyle t_a = \sqrt{\frac{m}{gk}}\arctan(\sqrt{\frac{k}{mg}}v_{z0})$ \\
+    \>\>\ $\displaystyle h = -\frac{m}{k}\ln(\cos(\arctan(\sqrt{\frac{k}{mg}}v_{z0})))$ \\
+\tbul for downward motion: $t$ is the decending time \\
+    \>\>\ $\displaystyle a_z = \frac{kv^2_z}{m}-g = \frac{dv_z}{dt}\Rightarrow\ v_z(t) = -\sqrt{\frac{mg}{k}}\tanh(C+\sqrt{\frac{gk}{m}}t)$ \\
+    \>\>\ $\displaystyle v_z(0) = 0\Rightarrow C = 0\Rightarrow v_z(t)=-\sqrt{\frac{mg}{k}}\tanh(\sqrt{\frac{gk}{m}}t)$ \\
+    \tend\ vertical height after $t_a$ \\
+    \>\>\ $\displaystyle s_z(t) = -\frac{m}{k}\ln(\cosh(\sqrt{\frac{gk}{m}}t))+ C$ \\
+    \>\>\ $\displaystyle s_z(t) = h\Rightarrow\ C = h\Rightarrow\ s_z(t) = h-\frac{m}{k}\ln(\cosh(\sqrt{\frac{gk}{m}}t))$ \\
+    \tend\ $t_d$: time required to hit the ground \\
+    \>\>\ $\displaystyle t_d = \sqrt{\frac{m}{gk}}arccosh(e^{\frac{hk}{m}}) = \sqrt{\frac{m}{gk}}arccosh(\sqrt{1 + \frac{kv^2_{z0}}{gn}})$ \\
+\tbul\ $v(t)$: time at any instant, $T$: total flight time, $R$: range, $v_{hit}$: velocity when hitting the ground \\
+    \>\>\ $\displaystyle v(t) = \sqrt{v^2_x(t) + v^2_z(t)}$ \\
+    \>\>\ $\displaystyle T = t_a + t_d$ \\
+    \>\>\ $\displaystyle R = \frac{m}{k}(\ln(\frac{kTv_{x0}+m}{m}))$ \\
+    \>\>\ $\displaystyle v_{hit} = \sqrt{(v^{-1}_{x0} + \frac{kT}{m})^{-2} + \frac{mg}{k}(\tanh(arcosh(e^{\frac{hk}{m}})))^2}$ \\
 \end{tabbing}
 \subsubsection*{Calculating Density}
 

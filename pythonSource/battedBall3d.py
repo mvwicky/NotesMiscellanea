@@ -57,7 +57,7 @@ def rho(h, T=None):
 # 		v_x -> horizontal velocity
 #			v_x0 -> initial velocity in the x direction: v_tot*cos(phi)*sin(90-theta)
 #			v_x(t) = 1 / ((1 / v_x0) + (kt/m)) = (v_x0^-1 + (kt/m))^-2
-#			v_x and v_y will be equal, but with different exit vectors 
+#			v_x and v_y will be equal, but with different exit angles
 #				v_y0 -> initial velo in y: v_tot*sin(phi)*cos(90-theta)
 #		s_x, s_y -> horizontal distance traveld
 #		vertical velocity and distance
@@ -80,7 +80,7 @@ class battedBall(object):
 		self.freq = freq # samples per second
 		self.theta_p = deg_to_rad(90) - self.theta
 		self.v_vec = [self.v_tot * np.cos(self.phi) * np.sin(self.theta_p), # x = r * cos(phi) * sin(90 - theta)
-					  self.v_tot * np.sin(self.phi) * np.cos(self.theta_p), # y = r * sin(phi) * cos(90 - theta)
+					  self.v_tot * np.sin(self.phi) * np.sin(self.theta_p), # y = r * sin(phi) * cos(90 - theta)
 					  self.v_tot * np.cos(self.theta_p)]                    # z = r * cos(90 - theta)
 		self.t_tot = (-2 * self.v_vec[2]) / self.g
 		self.z_max = (self.v_vec[2]**2) / (-2 *g)
@@ -95,6 +95,8 @@ class battedBall(object):
 		print("|V| =", self.v_tot)
 		print("theta, phi =", self.theta, self.phi)
 		print("(vx, vy, vz) =", self.v_vec[0], self.v_vec[1], self.v_vec[2])
+		print("Total Time", self.t_tot)
+		print("Max Height:", self.z_max)
 		print("Number of Samples:", self.n_samps)
 
 

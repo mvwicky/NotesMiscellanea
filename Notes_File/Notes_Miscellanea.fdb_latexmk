@@ -1,11 +1,11 @@
 # Fdb version 3
-["pdflatex"] 1454446054 "Notes_Miscellanea.tex" "Notes_Miscellanea.pdf" "Notes_Miscellanea" 1454446055
-  "./Notes_Miscellanea.out" 1454446055 3724 41a5ec860f282616483dc4b783cc3dbd ""
-  "./Notes_Miscellanea.tex" 1454446053 65946 e069f90846e56a0ce94ee78608d86bb7 ""
-  "Notes_Miscellanea.aux" 1454446055 6297 5ff148e43e81284712b8d73256f6b06d ""
-  "Notes_Miscellanea.out" 1454446055 3724 41a5ec860f282616483dc4b783cc3dbd ""
-  "Notes_Miscellanea.tex" 1454446053 65946 e069f90846e56a0ce94ee78608d86bb7 ""
-  "Notes_Miscellanea.toc" 1454446055 4645 63bef2bd2fe4f3ea920cc131bef255f0 ""
+["pdflatex"] 1454503655 "Notes_Miscellanea.tex" "Notes_Miscellanea.pdf" "Notes_Miscellanea" 1454503656
+  "./Notes_Miscellanea.out" 1454503656 3724 41a5ec860f282616483dc4b783cc3dbd ""
+  "./Notes_Miscellanea.tex" 1454503655 67808 9cffbc19df56bd2ca6ac8fde43715fc5 ""
+  "Notes_Miscellanea.aux" 1454503656 6297 5ff148e43e81284712b8d73256f6b06d ""
+  "Notes_Miscellanea.out" 1454503656 3724 41a5ec860f282616483dc4b783cc3dbd ""
+  "Notes_Miscellanea.tex" 1454503655 67808 9cffbc19df56bd2ca6ac8fde43715fc5 ""
+  "Notes_Miscellanea.toc" 1454503656 4645 63bef2bd2fe4f3ea920cc131bef255f0 ""
   "c:/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1453317476 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1453318043 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "c:/texlive/2015/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1453317789 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -105,8 +105,8 @@
   "c:/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1453320653 3850854 007f6e82bf33faaf377ef78a77c27489 ""
   "c:/texlive/2015/texmf.cnf" 1453320566 497 7277663fd190ea5a4fe922b182dc7be2 ""
   (generated)
-  "Notes_Miscellanea.pdf"
+  "Notes_Miscellanea.out"
   "Notes_Miscellanea.toc"
   "Notes_Miscellanea.aux"
   "Notes_Miscellanea.log"
-  "Notes_Miscellanea.out"
+  "Notes_Miscellanea.pdf"
