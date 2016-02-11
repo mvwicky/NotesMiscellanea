@@ -3,7 +3,7 @@
   - displacement map?
 - Rail 
   - metal texture
-  - ansiotropic material
+  - anisotropic material
 - Background
   - landscape?
   - skybox?
