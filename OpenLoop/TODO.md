@@ -1,0 +1,18 @@
+- Track Shell (Tube)
+  - texture
+  - displacement map?
+- Rail 
+  - metal texture
+  - ansiotropic material
+- Background
+  - landscape?
+  - skybox?
+  - buildings?
+- Animation
+  - have tubes going in all directions, then fade (or snap) into OpenLoop logo
+- Pod
+  - make model 
+  - texture/materials
+- Find a more repeatable way to follow path 
+  - just key framing?
+  - clamp to? 
