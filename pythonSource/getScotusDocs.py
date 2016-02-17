@@ -1,5 +1,7 @@
 from bs4 import BeautifulSoup
 from urllib import request 
+import multiprocessing as mp 
+import queue
 import os
 import sys
 
@@ -22,10 +24,15 @@ def fmtName(name, num, maxLen=80, ext='.mp3'):
 
 	return name
 
+def getFile(arg):
+	try:
+		request.urlretrieve(arg[0], arg[1])
+	except:
+		print("Problem Getting File {}".format(arg))
+
 def main():
-	#years = [i for i in range(2010, 2016)]
-	years = [i for i in range(2010, 2011)]
-	username = 'michael.vanwickle'
+	years = [i for i in range(2010, 2016)]
+	username = 'Michael'
 	execdir = 'c:\\Users\\' + username + '\\Documents\\SCOTUS\\'
 	audiobase = 'http://www.supremecourt.gov/oral_arguments/argument_audio/'
 	slipbase = 'http://supremecourt.gov/opinions/slipopinion/'
@@ -61,15 +68,19 @@ def main():
 		caseNum = [i[pre:] for i in aLinks] # get case numbers
 
 
+		ufTup = []
 		for num, name in zip(caseNum, aNames):
 			url = 'http://www.supremecourt.gov/media/audio/mp3files/' + num + '.mp3'
 			filename = d + fmtName(name, num, maxLen=80, ext='.mp3')
+			ufTup.append((url, filename))
 			#try: 
 			#	request.urlretrieve(url, filename)
 			#except:
 			#	print("Problem Getting File")
 
 
+		with mp.Pool() as pool:
+			pool.map(getFile, ufTup)
 
 		# get slip opinions
 		print("Slip Opinions")
@@ -90,16 +101,18 @@ def main():
 			if len(str(t.string)) > 2 and len(str(t.string)) <= 12 and '/' not in str(t.string) and 'v.' not in str(t.string) and 'style' in t.attrs:
 				caseNum.append(str(t.string))
 
+		ufTup = []		
 		for num, name, link in zip(caseNum, aNames, aLinks):
 			url = 'http://supremecourt.gov' + link
 			filename = d + fmtName(name, num, maxLen=80, ext='.pdf')
-			print(num, name)
-			try: 
-				request.urlretrieve(url, filename)
-			except:
-				print("Problem Getting File")
+			ufTup.append((url, filename))
+			#try: 
+			#	request.urlretrieve(url, filename)
+			#except:
+			#	print("Problem Getting File")
 
-		
+		with mp.Pool() as pool:
+			pool.map(getFile, ufTup)		
 
 
 if __name__ == '__main__':
