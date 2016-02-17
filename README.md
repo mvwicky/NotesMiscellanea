@@ -4,15 +4,18 @@ A repo of notes that I make occasionally, including a tex file that attempts to 
 ## Contents:
 ### Folders:
 - AES_Rijndael: contains source for a `c` implementation of the AES algorithm
+- BlendFiles
 - Coop Reflections: contains markdown for coop reflection notes 
 - coreutils-8.25: contains source for the GNU `coreutils` programs, e.g., `cp`, `ls`, `rm`, etc.
 - cppSource: contains `C++` source files 
 - DOOM: contains the source code for DOOM 
+- GravWaves: contains documents related to analyzing LIGO data
 - md5: contains source, in `c` and pseudo-code, for the md5 hashing algorithm
 - metropolisHastingsMATLAB: contains matlab code for the Metropolis Algorithm for Monte Carlo 
 - MVW_Portfolio: contains source for a tentative portfolio website design along with a design tool 
 - ncc-2.8: contains source for the ncc project
 - Notes_File: contains the LaTeX for the notes that I make on various subjects 
+- OpenCL: contains OpenCL example source
 - OpenLoop: contains files (blend, solidworks, pictures) pertaining to OpenLoop 
 - PubH 8452 - Longitudinal Data Analysis: contains lecture slides for a data analysis class 
 - putty-src: contains the source code for PuTTY 
@@ -21,6 +24,7 @@ A repo of notes that I make occasionally, including a tex file that attempts to 
 
 ### PDFs
 - AES_Specification: contains the spec for the Advanced Encryption Standard (Rijndael)
+- Ballistic_Trajectories_Approximately_Linear_Drag
 - Beej_Guide: Beej's Guide to Network Programming 
 - Decompositional_Approach_to_Matrix_Computations 
 - deepmind-mastering-go: paper on the algorithm that beat a human in go 

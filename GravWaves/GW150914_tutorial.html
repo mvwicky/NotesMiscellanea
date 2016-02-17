@@ -1,0 +1,1947 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+MathJax.Hub.Config({
+  config: ["MMLorHTML.js"],
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+    processEscapes: false
+  },
+  TeX: {
+    extensions: ["AMSmath.js", "AMSsymbols.js"],
+    TagSide: "right",
+    TagIndent: ".8em",
+    MultLineWidth: "85%",
+    equationNumbers: {
+      autoNumber: "AMS",
+    },
+    unicode: {
+      fonts: "STIXGeneral,'Arial Unicode MS'"
+    }
+  },
+  showProcessingMessages: false
+});
+</script>
+<title>GW150914_tutorial</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-coding-utf-8" class="anchor" href="#coding-utf-8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>coding: utf-8</h1>
+
+<h1>
+<a id="user-content--signal-processing-with-gw150914-open-data" class="anchor" href="#-signal-processing-with-gw150914-open-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a># SIGNAL PROCESSING WITH GW150914 OPEN DATA</h1>
+
+<h1>
+<a id="user-content-welcome-this-ipython-notebook-or-associated-python-script-gw150914_tutorialpy--will-go-through-some-typical-signal-processing-tasks-on-strain-time-series-data-associated-with-the-ligo-gw150914-data-release-from-the-ligo-open-science-center-losc" class="anchor" href="#welcome-this-ipython-notebook-or-associated-python-script-gw150914_tutorialpy--will-go-through-some-typical-signal-processing-tasks-on-strain-time-series-data-associated-with-the-ligo-gw150914-data-release-from-the-ligo-open-science-center-losc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome! This ipython notebook (or associated python script GW150914_tutorial.py ) will go through some typical signal processing tasks on strain time-series data associated with the LIGO GW150914 data release from the LIGO Open Science Center (LOSC):</h1>
+
+<h1>
+<a id="user-content--httpsloscligoorgeventsgw150914" class="anchor" href="#-httpsloscligoorgeventsgw150914" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://losc.ligo.org/events/GW150914/">https://losc.ligo.org/events/GW150914/</a>
+</h1>
+
+<h1>
+<a id="user-content--view-the-tutorial-as-a-web-page---httpsloscligoorgseventsgw150914gw150914_tutorialhtml" class="anchor" href="#-view-the-tutorial-as-a-web-page---httpsloscligoorgseventsgw150914gw150914_tutorialhtml" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* View the tutorial as a web page - <a href="https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.html/">https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.html/</a>
+</h1>
+
+<h1>
+<a id="user-content--download-the-tutorial-as-a-python-script---httpsloscligoorgseventsgw150914gw150914_tutorialpy" class="anchor" href="#-download-the-tutorial-as-a-python-script---httpsloscligoorgseventsgw150914gw150914_tutorialpy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* Download the tutorial as a python script - <a href="https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.py/">https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.py/</a>
+</h1>
+
+<h1>
+<a id="user-content--download-the-tutorial-as-ipython-notebook---httpsloscligoorgseventsgw150914gw150914_tutorialipynb" class="anchor" href="#-download-the-tutorial-as-ipython-notebook---httpsloscligoorgseventsgw150914gw150914_tutorialipynb" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* Download the tutorial as iPython Notebook - <a href="https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.ipynb/">https://losc.ligo.org/s/events/GW150914/GW150914_tutorial.ipynb/</a>
+</h1>
+
+<h1>
+<a id="user-content-to-begin-download-the-ipython-notebook-readligopy-and-the-data-files-listed-below-into-a-directory--folder-then-run-it-or-you-can-run-the-python-script-gw150914_tutorialpy-you-will-need-the-python-packages-numpy-scipy-matplotlib-h5py" class="anchor" href="#to-begin-download-the-ipython-notebook-readligopy-and-the-data-files-listed-below-into-a-directory--folder-then-run-it-or-you-can-run-the-python-script-gw150914_tutorialpy-you-will-need-the-python-packages-numpy-scipy-matplotlib-h5py" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To begin, download the ipython notebook, readligo.py, and the data files listed below, into a directory / folder, then run it. Or you can run the python script GW150914_tutorial.py. You will need the python packages: numpy, scipy, matplotlib, h5py.</h1>
+
+<h1>
+<a id="user-content-on-windows-or-if-you-prefer-you-can-use-a-python-development-environment-such-as-anaconda-httpswwwcontinuumiowhy-anaconda-or-enthought-canopy-httpswwwenthoughtcomproductscanopy" class="anchor" href="#on-windows-or-if-you-prefer-you-can-use-a-python-development-environment-such-as-anaconda-httpswwwcontinuumiowhy-anaconda-or-enthought-canopy-httpswwwenthoughtcomproductscanopy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>On Windows, or if you prefer, you can use a python development environment such as Anaconda (<a href="https://www.continuum.io/why-anaconda">https://www.continuum.io/why-anaconda</a>) or Enthought Canopy (<a href="https://www.enthought.com/products/canopy/">https://www.enthought.com/products/canopy/</a>).</h1>
+
+<h1>
+<a id="user-content-questions-comments-suggestions-corrections-etc-email-loscligocaltechedu" class="anchor" href="#questions-comments-suggestions-corrections-etc-email-loscligocaltechedu" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Questions, comments, suggestions, corrections, etc: email <a href="mailto:losc@ligo.caltech.edu">losc@ligo.caltech.edu</a>
+</h1>
+
+<h1>
+<a id="user-content-v20160208b" class="anchor" href="#v20160208b" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>v20160208b</h1>
+
+<h1>
+<a id="user-content--intro-to-signal-processing" class="anchor" href="#-intro-to-signal-processing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>## Intro to signal processing</h1>
+
+<h1>
+<a id="user-content-this-tutorial-assumes-that-you-know-python-well-enough" class="anchor" href="#this-tutorial-assumes-that-you-know-python-well-enough" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>This tutorial assumes that you know python well enough.</h1>
+
+<h1>
+<a id="user-content-if-you-know-how-to-use-ipython-notebook-use-the-gw150914_tutorialipynb-file-else-you-can-use-the-gw150914_tutorialpy-script" class="anchor" href="#if-you-know-how-to-use-ipython-notebook-use-the-gw150914_tutorialipynb-file-else-you-can-use-the-gw150914_tutorialpy-script" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>If you know how to use "ipython notebook", use the GW150914_tutorial.ipynb file. Else, you can use the GW150914_tutorial.py script.</h1>
+
+<h1>
+<a id="user-content-this-tutorial-assumes-that-you-know-a-bit-about-signal-processing-of-digital-time-series-data-or-want-to-learn-this-includes-power-spectral-densities-spectrograms-digital-filtering-whitening-audio-manipulation-this-is-a-vast-and-complex-set-of-topics-but-we-will-cover-many-of-the-basics-in-this-tutorial" class="anchor" href="#this-tutorial-assumes-that-you-know-a-bit-about-signal-processing-of-digital-time-series-data-or-want-to-learn-this-includes-power-spectral-densities-spectrograms-digital-filtering-whitening-audio-manipulation-this-is-a-vast-and-complex-set-of-topics-but-we-will-cover-many-of-the-basics-in-this-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>This tutorial assumes that you know a bit about signal processing of digital time series data (or want to learn!). This includes power spectral densities, spectrograms, digital filtering, whitening, audio manipulation. This is a vast and complex set of topics, but we will cover many of the basics in this tutorial.</h1>
+
+<h1>
+<a id="user-content-if-you-are-a-beginner-here-are-some-resources-from-the-web" class="anchor" href="#if-you-are-a-beginner-here-are-some-resources-from-the-web" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>If you are a beginner, here are some resources from the web:</h1>
+
+<h1>
+<a id="user-content--http101sciencecomdsphtm" class="anchor" href="#-http101sciencecomdsphtm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="http://101science.com/dsp.htm">http://101science.com/dsp.htm</a>
+</h1>
+
+<h1>
+<a id="user-content--httpsgeorgemdallaswordpresscom20140514wavelets-4-dummies-signal-processing-fourier-transforms-and-heisenberg" class="anchor" href="#-httpsgeorgemdallaswordpresscom20140514wavelets-4-dummies-signal-processing-fourier-transforms-and-heisenberg" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://georgemdallas.wordpress.com/2014/05/14/wavelets-4-dummies-signal-processing-fourier-transforms-and-heisenberg/">https://georgemdallas.wordpress.com/2014/05/14/wavelets-4-dummies-signal-processing-fourier-transforms-and-heisenberg/</a>
+</h1>
+
+<h1>
+<a id="user-content--httpsenwikipediaorgwikisignal_processing" class="anchor" href="#-httpsenwikipediaorgwikisignal_processing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://en.wikipedia.org/wiki/Signal_processing">https://en.wikipedia.org/wiki/Signal_processing</a>
+</h1>
+
+<h1>
+<a id="user-content--httpsenwikipediaorgwikispectral_density" class="anchor" href="#-httpsenwikipediaorgwikispectral_density" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://en.wikipedia.org/wiki/Spectral_density">https://en.wikipedia.org/wiki/Spectral_density</a>
+</h1>
+
+<h1>
+<a id="user-content--httpsenwikipediaorgwikispectrogram" class="anchor" href="#-httpsenwikipediaorgwikispectrogram" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://en.wikipedia.org/wiki/Spectrogram">https://en.wikipedia.org/wiki/Spectrogram</a>
+</h1>
+
+<h1>
+<a id="user-content--httpgreenteapresscomthinkdsp" class="anchor" href="#-httpgreenteapresscomthinkdsp" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="http://greenteapress.com/thinkdsp/">http://greenteapress.com/thinkdsp/</a>
+</h1>
+
+<h1>
+<a id="user-content--httpsenwikipediaorgwikidigital_filter" class="anchor" href="#-httpsenwikipediaorgwikidigital_filter" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://en.wikipedia.org/wiki/Digital_filter">https://en.wikipedia.org/wiki/Digital_filter</a>
+</h1>
+
+<h1>
+<a id="user-content-and-well-lots-more---google-it" class="anchor" href="#and-well-lots-more---google-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>And, well, lots more - google it!</h1>
+
+<h1>
+<a id="user-content--download-the-data" class="anchor" href="#-download-the-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>## Download the data</h1>
+
+<h1>
+<a id="user-content--download-the-data-files-from-losc" class="anchor" href="#-download-the-data-files-from-losc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* Download the data files from LOSC:</h1>
+
+<h1>
+<a id="user-content--we-will-use-the-hdf5-files-both-h1-and-l1-with-durations-of-32-and-4096-seconds-around-gw150914-sampled-at-16384-and-4096-hz-" class="anchor" href="#-we-will-use-the-hdf5-files-both-h1-and-l1-with-durations-of-32-and-4096-seconds-around-gw150914-sampled-at-16384-and-4096-hz-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* We will use the hdf5 files, both H1 and L1, with durations of 32 and 4096 seconds around GW150914, sampled at 16384 and 4096 Hz :</h1>
+
+<h1>
+<a id="user-content--httpsloscligoorgseventsgw150914h-h1_losc_4_v1-1126259446-32hdf5" class="anchor" href="#-httpsloscligoorgseventsgw150914h-h1_losc_4_v1-1126259446-32hdf5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://losc.ligo.org/s/events/GW150914/H-H1_LOSC_4_V1-1126259446-32.hdf5">https://losc.ligo.org/s/events/GW150914/H-H1_LOSC_4_V1-1126259446-32.hdf5</a>
+</h1>
+
+<h1>
+<a id="user-content--httpsloscligoorgseventsgw150914l-l1_losc_4_v1-1126259446-32hdf5" class="anchor" href="#-httpsloscligoorgseventsgw150914l-l1_losc_4_v1-1126259446-32hdf5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://losc.ligo.org/s/events/GW150914/L-L1_LOSC_4_V1-1126259446-32.hdf5">https://losc.ligo.org/s/events/GW150914/L-L1_LOSC_4_V1-1126259446-32.hdf5</a>
+</h1>
+
+<h1>
+<a id="user-content--httpsloscligoorgseventsgw150914h-h1_losc_16_v1-1126259446-32hdf5" class="anchor" href="#-httpsloscligoorgseventsgw150914h-h1_losc_16_v1-1126259446-32hdf5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://losc.ligo.org/s/events/GW150914/H-H1_LOSC_16_V1-1126259446-32.hdf5">https://losc.ligo.org/s/events/GW150914/H-H1_LOSC_16_V1-1126259446-32.hdf5</a>
+</h1>
+
+<h1>
+<a id="user-content--httpsloscligoorgseventsgw150914l-l1_losc_16_v1-1126259446-32hdf5" class="anchor" href="#-httpsloscligoorgseventsgw150914l-l1_losc_16_v1-1126259446-32hdf5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://losc.ligo.org/s/events/GW150914/L-L1_LOSC_16_V1-1126259446-32.hdf5">https://losc.ligo.org/s/events/GW150914/L-L1_LOSC_16_V1-1126259446-32.hdf5</a>
+</h1>
+
+<h1>
+<a id="user-content--httpsloscligoorgseventsgw150914gw150914_4_nr_waveformtxt" class="anchor" href="#-httpsloscligoorgseventsgw150914gw150914_4_nr_waveformtxt" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://losc.ligo.org/s/events/GW150914/GW150914_4_NR_waveform.txt">https://losc.ligo.org/s/events/GW150914/GW150914_4_NR_waveform.txt</a>
+</h1>
+
+<h1>
+<a id="user-content--download-the-python-functions-to-read-the-data-httpsloscligoorgssample_codereadligopy" class="anchor" href="#-download-the-python-functions-to-read-the-data-httpsloscligoorgssample_codereadligopy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* Download the python functions to read the data: <a href="https://losc.ligo.org/s/sample_code/readligo.py">https://losc.ligo.org/s/sample_code/readligo.py</a>
+</h1>
+
+<h1>
+<a id="user-content--from-a-unixmac-osx-command-line-you-can-use-wget-for-example" class="anchor" href="#-from-a-unixmac-osx-command-line-you-can-use-wget-for-example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* From a unix/mac-osx command line, you can use wget; for example,</h1>
+
+<h1>
+<a id="user-content--wget-httpsloscligoorgseventsgw150914h-h1_losc_4_v1-1126257414-4096hdf5" class="anchor" href="#-wget-httpsloscligoorgseventsgw150914h-h1_losc_4_v1-1126257414-4096hdf5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* wget <a href="https://losc.ligo.org/s/events/GW150914/H-H1_LOSC_4_V1-1126257414-4096.hdf5">https://losc.ligo.org/s/events/GW150914/H-H1_LOSC_4_V1-1126257414-4096.hdf5</a>
+</h1>
+
+<h1>
+<a id="user-content--put-these-files-in-your-current-directory--folder-dont-mix-any-other-losc-data-files-in-this-directory-or-readligopy-may-get-confused" class="anchor" href="#-put-these-files-in-your-current-directory--folder-dont-mix-any-other-losc-data-files-in-this-directory-or-readligopy-may-get-confused" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* Put these files in your current directory / folder. Don't mix any other LOSC data files in this directory, or readligo.py may get confused.</h1>
+
+<h1>
+<a id="user-content-here" class="anchor" href="#here" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Here,</h1>
+
+<h1>
+<a id="user-content--h-h1-means-that-the-data-come-from-the-ligo-hanford-observatory-site-and-the-ligo-h1-datector" class="anchor" href="#-h-h1-means-that-the-data-come-from-the-ligo-hanford-observatory-site-and-the-ligo-h1-datector" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* "H-H1" means that the data come from the LIGO Hanford Observatory site and the LIGO "H1" datector;</h1>
+
+<h1>
+<a id="user-content--the-4-means-the-strain-time-series-data-are-down-sampled-from-16384-hz-to-4096-hz" class="anchor" href="#-the-4-means-the-strain-time-series-data-are-down-sampled-from-16384-hz-to-4096-hz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* the "<em>4</em>" means the strain time-series data are (down-)sampled from 16384 Hz to 4096 Hz;</h1>
+
+<h1>
+<a id="user-content--the-v1-means-version-1-of-this-data-release" class="anchor" href="#-the-v1-means-version-1-of-this-data-release" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* the "V1" means version 1 of this data release;</h1>
+
+<h1>
+<a id="user-content--1126257414-4096-means-the-data-starts-at-gps-time-1126257414-mon-sep-14-091637-gmt-2015-duration-4096-seconds" class="anchor" href="#-1126257414-4096-means-the-data-starts-at-gps-time-1126257414-mon-sep-14-091637-gmt-2015-duration-4096-seconds" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* "1126257414-4096" means the data starts at GPS time 1126257414 (Mon Sep 14 09:16:37 GMT 2015), duration 4096 seconds;</h1>
+
+<h1>
+<a id="user-content--note-gps-time-is-number-of-seconds-since-jan-6-1980-gmt-see-httpwwwocnpseduoc2902wgpstimsyshtml-or-httpsloscligoorggps" class="anchor" href="#-note-gps-time-is-number-of-seconds-since-jan-6-1980-gmt-see-httpwwwocnpseduoc2902wgpstimsyshtml-or-httpsloscligoorggps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* NOTE: GPS time is number of seconds since Jan 6, 1980 GMT. See <a href="http://www.oc.nps.edu/oc2902w/gps/timsys.html">http://www.oc.nps.edu/oc2902w/gps/timsys.html</a> or <a href="https://losc.ligo.org/gps/">https://losc.ligo.org/gps/</a>
+</h1>
+
+<h1>
+<a id="user-content--the-filetype-hdf5-means-the-data-are-in-hdf5-format" class="anchor" href="#-the-filetype-hdf5-means-the-data-are-in-hdf5-format" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* the filetype "hdf5" means the data are in hdf5 format:</h1>
+
+<h1>
+<a id="user-content-httpswwwhdfgrouporghdf5" class="anchor" href="#httpswwwhdfgrouporghdf5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="https://www.hdfgroup.org/HDF5/">https://www.hdfgroup.org/HDF5/</a>
+</h1>
+
+<h1>
+<a id="user-content-note-that-the-the-4096-second-long-files-at-16384-hz-sampling-rate-are-fairly-big-files-125-mb" class="anchor" href="#note-that-the-the-4096-second-long-files-at-16384-hz-sampling-rate-are-fairly-big-files-125-mb" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Note that the the 4096 second long files at 16384 Hz sampling rate are fairly big files (125 MB).</h1>
+
+<h1>
+<a id="user-content-you-wont-need-them-for-this-tutorial" class="anchor" href="#you-wont-need-them-for-this-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>You won't need them for this tutorial:</h1>
+
+<h1>
+<a id="user-content--httpsloscligoorgseventsgw150914h-h1_losc_4_v1-1126257414-4096hdf5" class="anchor" href="#-httpsloscligoorgseventsgw150914h-h1_losc_4_v1-1126257414-4096hdf5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://losc.ligo.org/s/events/GW150914/H-H1_LOSC_4_V1-1126257414-4096.hdf5">https://losc.ligo.org/s/events/GW150914/H-H1_LOSC_4_V1-1126257414-4096.hdf5</a>
+</h1>
+
+<h1>
+<a id="user-content--httpsloscligoorgseventsgw150914l-l1_losc_4_v1-1126257414-4096hdf5" class="anchor" href="#-httpsloscligoorgseventsgw150914l-l1_losc_4_v1-1126257414-4096hdf5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://losc.ligo.org/s/events/GW150914/L-L1_LOSC_4_V1-1126257414-4096.hdf5">https://losc.ligo.org/s/events/GW150914/L-L1_LOSC_4_V1-1126257414-4096.hdf5</a>
+</h1>
+
+<h1>
+<a id="user-content--httpsloscligoorgseventsgw150914h-h1_losc_16_v1-1126257414-4096hdf5" class="anchor" href="#-httpsloscligoorgseventsgw150914h-h1_losc_16_v1-1126257414-4096hdf5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://losc.ligo.org/s/events/GW150914/H-H1_LOSC_16_V1-1126257414-4096.hdf5">https://losc.ligo.org/s/events/GW150914/H-H1_LOSC_16_V1-1126257414-4096.hdf5</a>
+</h1>
+
+<h1>
+<a id="user-content--httpsloscligoorgseventsgw150914l-l1_losc_16_v1-1126257414-4096hdf5" class="anchor" href="#-httpsloscligoorgseventsgw150914l-l1_losc_16_v1-1126257414-4096hdf5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://losc.ligo.org/s/events/GW150914/L-L1_LOSC_16_V1-1126257414-4096.hdf5">https://losc.ligo.org/s/events/GW150914/L-L1_LOSC_16_V1-1126257414-4096.hdf5</a>
+</h1>
+
+<h1>
+<a id="user-content-in2" class="anchor" href="#in2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[2]:</h1>
+
+<h1>
+<a id="user-content-standard-python-numerical-analysis-imports" class="anchor" href="#standard-python-numerical-analysis-imports" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Standard python numerical analysis imports:</h1>
+
+<p>import numpy as np
+from scipy import signal
+from scipy.interpolate import interp1d
+from scipy.signal import butter, filtfilt, iirdesign, zpk2tf, freqz</p>
+
+<h1>
+<a id="user-content-the-ipython-magic-below-must-be-commented-out-in-the-py-file-since-it-doesnt-work" class="anchor" href="#the-ipython-magic-below-must-be-commented-out-in-the-py-file-since-it-doesnt-work" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>the ipython magic below must be commented out in the .py file, since it doesn't work.</h1>
+
+<h1>
+<a id="user-content-get_ipythonmagicumatplotlib-inline" class="anchor" href="#get_ipythonmagicumatplotlib-inline" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>get_ipython().magic(u'matplotlib inline')</h1>
+
+<h1>
+<a id="user-content-get_ipythonmagicuconfig-inlinebackendfigure_format--retina" class="anchor" href="#get_ipythonmagicuconfig-inlinebackendfigure_format--retina" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>get_ipython().magic(u"config InlineBackend.figure_format = 'retina'")</h1>
+
+<p>import matplotlib.pyplot as plt
+import matplotlib.mlab as mlab
+import h5py</p>
+
+<h1>
+<a id="user-content-ligo-specific-readligopy" class="anchor" href="#ligo-specific-readligopy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LIGO-specific readligo.py</h1>
+
+<p>import readligo as rl</p>
+
+<h1>
+<a id="user-content-note-that-in-general-ligo-strain-time-series-data-has-gaps-filled-with-nans-when-the-detectors-are-not-taking-valid-science-quality-data-analyzing-these-data-requires-the-user-to-loop-over-segments-of-valid-data-stretches-in-httpsloscligoorgsegments-we-provide-example-code-to-do-this" class="anchor" href="#note-that-in-general-ligo-strain-time-series-data-has-gaps-filled-with-nans-when-the-detectors-are-not-taking-valid-science-quality-data-analyzing-these-data-requires-the-user-to-loop-over-segments-of-valid-data-stretches-in-httpsloscligoorgsegments-we-provide-example-code-to-do-this" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>NOTE</strong> that in general, LIGO strain time series data has gaps (filled with NaNs) when the detectors are not taking valid ("science quality") data. Analyzing these data requires the user to loop over "segments" of valid data stretches. In <a href="https://losc.ligo.org/segments/">https://losc.ligo.org/segments/</a> we provide example code to do this.</h1>
+
+<h1>
+<a id="user-content-however-the-4096-seconds-of-released-data-around-gw150914-is-one-unbroken-segment-with-no-gaps-so-for-now-we-will-read-it-all-in-and-treat-it-as-one-valid-data-segment-ignoring-the-extra-complexity-mentioned-above" class="anchor" href="#however-the-4096-seconds-of-released-data-around-gw150914-is-one-unbroken-segment-with-no-gaps-so-for-now-we-will-read-it-all-in-and-treat-it-as-one-valid-data-segment-ignoring-the-extra-complexity-mentioned-above" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>However</strong>, the 4096 seconds of released data around GW150914 is one unbroken segment, with no gaps. So for now, we will read it all in and treat it as one valid data segment, ignoring the extra complexity mentioned above.</h1>
+
+<h1>
+<a id="user-content-this-wont-work-for-other-losc-data-releases-see-httpsloscligoorgsegments-for-a-more-general-way-to-find-valid-data-segments-in-losc-data" class="anchor" href="#this-wont-work-for-other-losc-data-releases-see-httpsloscligoorgsegments-for-a-more-general-way-to-find-valid-data-segments-in-losc-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>This won't work</strong> for other LOSC data releases! See <a href="https://losc.ligo.org/segments/">https://losc.ligo.org/segments/</a> for a more general way to find valid data segments in LOSC data.</h1>
+
+<h1>
+<a id="user-content-in3" class="anchor" href="#in3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[3]:</h1>
+
+<h1>
+<a id="user-content-----------------------------------------------------------------" class="anchor" href="#----------------------------------------------------------------" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>----------------------------------------------------------------</h1>
+
+<h1>
+<a id="user-content-load-ligo-data-from-a-single-file" class="anchor" href="#load-ligo-data-from-a-single-file" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Load LIGO data from a single file</h1>
+
+<h1>
+<a id="user-content------------------------------------------------------------------1" class="anchor" href="#-----------------------------------------------------------------1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>----------------------------------------------------------------</h1>
+
+<h1>
+<a id="user-content-first-from-h1" class="anchor" href="#first-from-h1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>First from H1</h1>
+
+<p>fn_H1 = 'H-H1_LOSC_4_V1-1126259446-32.hdf5'
+strain_H1, time_H1, chan_dict_H1 = rl.loaddata(fn_H1, 'H1')</p>
+
+<h1>
+<a id="user-content-and-then-from-l1" class="anchor" href="#and-then-from-l1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>and then from L1</h1>
+
+<p>fn_L1 = 'L-L1_LOSC_4_V1-1126259446-32.hdf5'
+strain_L1, time_L1, chan_dict_L1 = rl.loaddata(fn_L1, 'L1')</p>
+
+<h1>
+<a id="user-content-sampling-rate" class="anchor" href="#sampling-rate" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>sampling rate:</h1>
+
+<p>fs = 4096</p>
+
+<h1>
+<a id="user-content-both-h1-and-l1-will-have-the-same-time-vector-so" class="anchor" href="#both-h1-and-l1-will-have-the-same-time-vector-so" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>both H1 and L1 will have the same time vector, so:</h1>
+
+<p>time = time_H1</p>
+
+<h1>
+<a id="user-content-the-time-sample-interval-uniformly-sampled" class="anchor" href="#the-time-sample-interval-uniformly-sampled" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>the time sample interval (uniformly sampled!)</h1>
+
+<p>dt = time[1] - time[0]</p>
+
+<h1>
+<a id="user-content--adding-a-numerical-relativity-template" class="anchor" href="#-adding-a-numerical-relativity-template" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>## Adding a numerical relativity template</h1>
+
+<h1>
+<a id="user-content-now-lets-also-read-in-a-theoretical-numerical-relativity-template" class="anchor" href="#now-lets-also-read-in-a-theoretical-numerical-relativity-template" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Now let's also read in a theoretical (numerical relativity) template,</h1>
+
+<h1>
+<a id="user-content-generated-with-parameters-favored-by-the-output-from-the-gw150914-parameter-estimation-see-the-gw150914-detection-paper-httpsdccligoorgp150914public-" class="anchor" href="#generated-with-parameters-favored-by-the-output-from-the-gw150914-parameter-estimation-see-the-gw150914-detection-paper-httpsdccligoorgp150914public-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>generated with parameters favored by the output from the GW150914 parameter estimation (see the GW150914 detection paper, <a href="https://dcc.ligo.org/P150914/public">https://dcc.ligo.org/P150914/public</a> ).</h1>
+
+<h1>
+<a id="user-content-this-nr-template-corresponds-to-the-signal-expected-from-a-pair-of-black-holes-with-masses-of-around-36-and-29-solar-masses-merging-into-a-single-black-hole-of-62-solar-masses-at-a-distance-of-around-410-mpc" class="anchor" href="#this-nr-template-corresponds-to-the-signal-expected-from-a-pair-of-black-holes-with-masses-of-around-36-and-29-solar-masses-merging-into-a-single-black-hole-of-62-solar-masses-at-a-distance-of-around-410-mpc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>This NR template corresponds to the signal expected from a pair of black holes with masses of around 36 and 29 solar masses, merging into a single black hole of 62 solar masses, at a distance of around 410 Mpc.</h1>
+
+<h1>
+<a id="user-content-you-can-fetch-the-template-time-series-from-the-following-url-and-put-it-in-your-working-directory--folder" class="anchor" href="#you-can-fetch-the-template-time-series-from-the-following-url-and-put-it-in-your-working-directory--folder" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>You can fetch the template time series from the following URL, and put it in your working directory / folder:</h1>
+
+<h1>
+<a id="user-content--httpsloscligoorgseventsgw150914gw150914_4_nr_waveformtxt-1" class="anchor" href="#-httpsloscligoorgseventsgw150914gw150914_4_nr_waveformtxt-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://losc.ligo.org/s/events/GW150914/GW150914_4_NR_waveform.txt">https://losc.ligo.org/s/events/GW150914/GW150914_4_NR_waveform.txt</a>
+</h1>
+
+<h1>
+<a id="user-content-in4" class="anchor" href="#in4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[4]:</h1>
+
+<h1>
+<a id="user-content-read-in-the-nr-template" class="anchor" href="#read-in-the-nr-template" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>read in the NR template</h1>
+
+<p>NRtime, NR_H1 = np.genfromtxt('GW150914_4_NR_waveform.txt').transpose()</p>
+
+<h1>
+<a id="user-content--first-look-at-the-data-from-h1-and-l1" class="anchor" href="#-first-look-at-the-data-from-h1-and-l1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>## First look at the data from H1 and L1</h1>
+
+<h1>
+<a id="user-content-in5" class="anchor" href="#in5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[5]:</h1>
+
+<h1>
+<a id="user-content-first-lets-look-at-the-data-and-print-out-some-stuff" class="anchor" href="#first-lets-look-at-the-data-and-print-out-some-stuff" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>First, let's look at the data and print out some stuff:</h1>
+
+<h1>
+<a id="user-content-this-doesnt-seem-to-work-for-scientific-notation" class="anchor" href="#this-doesnt-seem-to-work-for-scientific-notation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>this doesn't seem to work for scientific notation:</h1>
+
+<h1>
+<a id="user-content-npset_printoptionsprecision4" class="anchor" href="#npset_printoptionsprecision4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>np.set_printoptions(precision=4)</h1>
+
+<p>print '  time_H1: len, min, mean, max = ',    len(time_H1), time_H1.min(), time_H1.mean(), time_H1.max()
+print 'strain_H1: len, min, mean, max = ',    len(strain_H1), strain_H1.min(),strain_H1.mean(),strain_H1.max()
+print 'strain_L1: len, min, mean, max = ',    len(strain_L1), strain_L1.min(),strain_L1.mean(),strain_L1.max()</p>
+
+<h1>
+<a id="user-content-whats-in-chan_dict-see-httpsloscligoorgarchivedatasetgw150914" class="anchor" href="#whats-in-chan_dict-see-httpsloscligoorgarchivedatasetgw150914" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>What's in chan_dict? See <a href="https://losc.ligo.org/archive/dataset/GW150914/">https://losc.ligo.org/archive/dataset/GW150914/</a>
+</h1>
+
+<p>bits = chan_dict_H1['DATA']
+print 'H1     DATA: len, min, mean, max = ', len(bits), bits.min(),bits.mean(),bits.max()
+bits = chan_dict_H1['CBC_CAT1']
+print 'H1 CBC_CAT1: len, min, mean, max = ', len(bits), bits.min(),bits.mean(),bits.max()
+bits = chan_dict_H1['CBC_CAT2']
+print 'H1 CBC_CAT2: len, min, mean, max = ', len(bits), bits.min(),bits.mean(),bits.max()
+bits = chan_dict_L1['DATA']
+print 'L1     DATA: len, min, mean, max = ', len(bits), bits.min(),bits.mean(),bits.max()
+bits = chan_dict_L1['CBC_CAT1']
+print 'L1 CBC_CAT1: len, min, mean, max = ', len(bits), bits.min(),bits.mean(),bits.max()
+bits = chan_dict_L1['CBC_CAT2']
+print 'L1 CBC_CAT2: len, min, mean, max = ', len(bits), bits.min(),bits.mean(),bits.max()
+print 'In both H1 and L1, all 32 seconds of data are present (DATA=1), '
+print "and all pass data quality (CBC_CAT1=1 and CBC_CAT2=1)."</p>
+
+<h1>
+<a id="user-content-in6" class="anchor" href="#in6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[6]:</h1>
+
+<h1>
+<a id="user-content-plot---5-seconds-around-the-event" class="anchor" href="#plot---5-seconds-around-the-event" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>plot +- 5 seconds around the event:</h1>
+
+<p>tevent = 1126259462.422         # Mon Sep 14 09:50:45 GMT 2015 
+deltat = 5.                     # seconds around the event</p>
+
+<h1>
+<a id="user-content-index-into-the-strain-time-series-for-this-time-interval" class="anchor" href="#index-into-the-strain-time-series-for-this-time-interval" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>index into the strain time series for this time interval:</h1>
+
+<p>indxt = np.where((time_H1 &gt;= tevent-deltat) &amp; (time_H1 &lt; tevent+deltat))</p>
+
+<p>plt.figure()
+plt.plot(time_H1[indxt]-tevent,strain_H1[indxt],'r',label='H1 strain')
+plt.plot(time_L1[indxt]-tevent,strain_L1[indxt],'g',label='L1 strain')
+plt.xlabel('time (s) since '+str(tevent))
+plt.ylabel('strain')
+plt.legend(loc='lower right')
+plt.title('Advanced LIGO strain data near GW150914')
+plt.savefig('GW150914_strain.png')</p>
+
+<h1>
+<a id="user-content-the-data-are-dominated-by-low-frequency-noise-there-is-no-way-to-see-a-signal-here-without-some-signal-processing" class="anchor" href="#the-data-are-dominated-by-low-frequency-noise-there-is-no-way-to-see-a-signal-here-without-some-signal-processing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The data are dominated by <strong>low frequency noise</strong>; there is no way to see a signal here, without some signal processing.</h1>
+
+<h1>
+<a id="user-content-there-are-very-low-frequency-oscillations-that-are-putting-the-mean-of-the-l1-strain-at--20e-18-at-the-time-around-this-event-so-it-appears-offset-from-the-h1-strain-these-low-frequency-oscillations-are-essentially-ignored-in-ligo-data-analysis-see-bandpassing-below" class="anchor" href="#there-are-very-low-frequency-oscillations-that-are-putting-the-mean-of-the-l1-strain-at--20e-18-at-the-time-around-this-event-so-it-appears-offset-from-the-h1-strain-these-low-frequency-oscillations-are-essentially-ignored-in-ligo-data-analysis-see-bandpassing-below" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>There are very low frequency oscillations that are putting the mean of the L1 strain at -2.0e-18 at the time around this event, so it appears offset from the H1 strain. These low frequency oscillations are essentially ignored in LIGO data analysis (see bandpassing, below).</h1>
+
+<h1>
+<a id="user-content-we-will-be-whitening-the-data-below" class="anchor" href="#we-will-be-whitening-the-data-below" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>We will be "whitening" the data, below.</h1>
+
+<h1>
+<a id="user-content--data-in-the-fourier-domain---asds" class="anchor" href="#-data-in-the-fourier-domain---asds" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>## Data in the Fourier domain - ASDs</h1>
+
+<h1>
+<a id="user-content-plotting-these-data-in-the-fourier-domain-gives-us-an-idea-of-the-frequency-content-of-the-data-a-way-to-visualize-the-frequency-content-of-the-data-is-to-plot-the-amplitude-spectral-density-asd" class="anchor" href="#plotting-these-data-in-the-fourier-domain-gives-us-an-idea-of-the-frequency-content-of-the-data-a-way-to-visualize-the-frequency-content-of-the-data-is-to-plot-the-amplitude-spectral-density-asd" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plotting these data in the Fourier domain gives us an idea of the frequency content of the data. A way to visualize the frequency content of the data is to plot the amplitude spectral density, ASD.</h1>
+
+<h1>
+<a id="user-content-the-asds-are-the-square-root-of-the-power-spectral-densities-psds-which-are-averages-of-the-square-of-the-fast-fourier-transforms-ffts-of-the-data" class="anchor" href="#the-asds-are-the-square-root-of-the-power-spectral-densities-psds-which-are-averages-of-the-square-of-the-fast-fourier-transforms-ffts-of-the-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The ASDs are the square root of the power spectral densities (PSDs), which are averages of the square of the fast fourier transforms (FFTs) of the data.</h1>
+
+<h1>
+<a id="user-content-they-are-an-estimate-of-the-strain-equivalent-noise-of-the-detectors-versus-frequency" class="anchor" href="#they-are-an-estimate-of-the-strain-equivalent-noise-of-the-detectors-versus-frequency" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>They are an estimate of the "strain-equivalent noise" of the detectors versus frequency,</h1>
+
+<h1>
+<a id="user-content-which-limit-the-ability-of-the-detectors-to-identify-gw-signals" class="anchor" href="#which-limit-the-ability-of-the-detectors-to-identify-gw-signals" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>which limit the ability of the detectors to identify GW signals.</h1>
+
+<h1>
+<a id="user-content-they-are-in-units-of-strainrthz" class="anchor" href="#they-are-in-units-of-strainrthz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>They are in units of strain/rt(Hz).</h1>
+
+<h1>
+<a id="user-content-so-if-you-want-to-know-the-root-mean-square-rms-strain-noise-in-a-frequency-band" class="anchor" href="#so-if-you-want-to-know-the-root-mean-square-rms-strain-noise-in-a-frequency-band" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>So, if you want to know the root-mean-square (rms) strain noise in a frequency band,</h1>
+
+<h1>
+<a id="user-content-integrate-sum-the-squares-of-the-asd-over-that-band-then-take-the-square-root" class="anchor" href="#integrate-sum-the-squares-of-the-asd-over-that-band-then-take-the-square-root" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>integrate (sum) the squares of the ASD over that band, then take the square-root.</h1>
+
+<h1>
+<a id="user-content-theres-a-signal-in-these-data" class="anchor" href="#theres-a-signal-in-these-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>There's a signal in these data!</h1>
+
+<h1>
+<a id="user-content-for-the-moment-lets-ignore-that-and-assume-its-all-noise" class="anchor" href="#for-the-moment-lets-ignore-that-and-assume-its-all-noise" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>For the moment, let's ignore that, and assume it's all noise.</h1>
+
+<h1>
+<a id="user-content-in7" class="anchor" href="#in7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[7]:</h1>
+
+<h1>
+<a id="user-content-number-of-sample-for-the-fast-fourier-transform" class="anchor" href="#number-of-sample-for-the-fast-fourier-transform" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>number of sample for the fast fourier transform:</h1>
+
+<p>NFFT = 1*fs
+fmin = 10
+fmax = 2000
+Pxx_H1, freqs = mlab.psd(strain_H1, Fs = fs, NFFT = NFFT)
+Pxx_L1, freqs = mlab.psd(strain_L1, Fs = fs, NFFT = NFFT)</p>
+
+<h1>
+<a id="user-content-we-will-use-interpolations-of-the-asds-computed-above-for-whitening" class="anchor" href="#we-will-use-interpolations-of-the-asds-computed-above-for-whitening" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>We will use interpolations of the ASDs computed above for whitening:</h1>
+
+<p>psd_H1 = interp1d(freqs, Pxx_H1)
+psd_L1 = interp1d(freqs, Pxx_L1)</p>
+
+<h1>
+<a id="user-content-plot-the-asds" class="anchor" href="#plot-the-asds" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>plot the ASDs:</h1>
+
+<p>plt.figure()
+plt.loglog(freqs, np.sqrt(Pxx_H1),'r',label='H1 strain')
+plt.loglog(freqs, np.sqrt(Pxx_L1),'g',label='L1 strain')
+plt.axis([fmin, fmax, 1e-24, 1e-19])
+plt.grid('on')
+plt.ylabel('ASD (strain/rtHz)')
+plt.xlabel('Freq (Hz)')
+plt.legend(loc='upper center')
+plt.title('Advanced LIGO strain data near GW150914')
+plt.savefig('GW150914_ASDs.png')</p>
+
+<h1>
+<a id="user-content-note-that-we-only-plot-the-data-between-fmin--10-hz-and-fmax--2000-hz" class="anchor" href="#note-that-we-only-plot-the-data-between-fmin--10-hz-and-fmax--2000-hz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NOTE that we only plot the data between fmin = 10 Hz and fmax = 2000 Hz.</h1>
+
+<h1>
+<a id="user-content-below-fmin-the-data-are-not-properly-calibrated-thats-ok-because-the-noise-is-so-high-below-fmin-that-ligo-cannot-sense-gravitational-wave-strain-from-astrophysical-sources-in-that-band" class="anchor" href="#below-fmin-the-data-are-not-properly-calibrated-thats-ok-because-the-noise-is-so-high-below-fmin-that-ligo-cannot-sense-gravitational-wave-strain-from-astrophysical-sources-in-that-band" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Below fmin, the data <strong>are not properly calibrated</strong>. That's OK, because the noise is so high below fmin that LIGO cannot sense gravitational wave strain from astrophysical sources in that band.</h1>
+
+<h1>
+<a id="user-content-the-sample-rate-is-fs--4096-hz-212-hz-so-the-data-cannot-capture-frequency-content-above-the-nyquist-frequency--fs2--2048-hz-thats-ok-because-gw150914-only-has-detectable-frequency-content-in-the-range-20-hz---300-hz" class="anchor" href="#the-sample-rate-is-fs--4096-hz-212-hz-so-the-data-cannot-capture-frequency-content-above-the-nyquist-frequency--fs2--2048-hz-thats-ok-because-gw150914-only-has-detectable-frequency-content-in-the-range-20-hz---300-hz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The sample rate is fs = 4096 Hz (2^12 Hz), so the data cannot capture frequency content above the Nyquist frequency = fs/2 = 2048 Hz. That's OK, because GW150914 only has detectable frequency content in the range 20 Hz - 300 Hz.</h1>
+
+<h1>
+<a id="user-content-you-can-see-strong-spectral-lines-in-the-data-they-are-all-of-instrumental-origin-some-are-engineered-into-the-detectors-mirror-suspension-resonances-at-500-hz-and-harmonics-calibration-lines-control-dither-lines-etc-and-some-60-hz-and-harmonics-are-unwanted-well-return-to-these-later" class="anchor" href="#you-can-see-strong-spectral-lines-in-the-data-they-are-all-of-instrumental-origin-some-are-engineered-into-the-detectors-mirror-suspension-resonances-at-500-hz-and-harmonics-calibration-lines-control-dither-lines-etc-and-some-60-hz-and-harmonics-are-unwanted-well-return-to-these-later" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>You can see strong spectral lines in the data; they are all of instrumental origin. Some are engineered into the detectors (mirror suspension resonances at ~500 Hz and harmonics, calibration lines, control dither lines, etc) and some (60 Hz and harmonics) are unwanted. We'll return to these, later.</h1>
+
+<h1>
+<a id="user-content-you-cant-see-the-signal-in-this-plot-since-it-is-relatively-weak-and-less-than-a-second-long-while-this-plot-averages-over-32-seconds-of-data-so-this-plot-is-entirely-dominated-by-instrumental-noise" class="anchor" href="#you-cant-see-the-signal-in-this-plot-since-it-is-relatively-weak-and-less-than-a-second-long-while-this-plot-averages-over-32-seconds-of-data-so-this-plot-is-entirely-dominated-by-instrumental-noise" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>You can't see the signal in this plot, since it is relatively weak and less than a second long, while this plot averages over 32 seconds of data. So this plot is entirely dominated by instrumental noise.</h1>
+
+<h1>
+<a id="user-content-later-on-in-this-tutorial-well-look-at-the-data-sampled-at-the-full-16384-hz-214-hz" class="anchor" href="#later-on-in-this-tutorial-well-look-at-the-data-sampled-at-the-full-16384-hz-214-hz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Later on in this tutorial, we'll look at the data sampled at the full 16384 Hz (2^14 Hz).</h1>
+
+<h1>
+<a id="user-content--whitening" class="anchor" href="#-whitening" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>## Whitening</h1>
+
+<h1>
+<a id="user-content-from-the-asd-above-we-can-see-that-the-data-are-very-strongly-colored---noise-fluctuations-are-much-larger-at-low-and-high-frequencies-and-near-spectral-lines-reaching-a-roughly-flat-white-minimum-in-the-band-around-80-to-300-hz" class="anchor" href="#from-the-asd-above-we-can-see-that-the-data-are-very-strongly-colored---noise-fluctuations-are-much-larger-at-low-and-high-frequencies-and-near-spectral-lines-reaching-a-roughly-flat-white-minimum-in-the-band-around-80-to-300-hz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>From the ASD above, we can see that the data are very strongly "colored" - noise fluctuations are much larger at low and high frequencies and near spectral lines, reaching a roughly flat ("white") minimum in the band around 80 to 300 Hz.</h1>
+
+<h1>
+<a id="user-content-we-can-whiten-the-data-dividing-it-by-the-noise-amplitude-spectrum-in-the-fourier-domain-suppressing-the-extra-noise-at-low-frequencies-and-at-the-spectral-lines-to-better-see-the-weak-signals-in-the-most-sensitive-band" class="anchor" href="#we-can-whiten-the-data-dividing-it-by-the-noise-amplitude-spectrum-in-the-fourier-domain-suppressing-the-extra-noise-at-low-frequencies-and-at-the-spectral-lines-to-better-see-the-weak-signals-in-the-most-sensitive-band" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>We can "whiten" the data (dividing it by the noise amplitude spectrum, in the fourier domain), suppressing the extra noise at low frequencies and at the spectral lines, to better see the weak signals in the most sensitive band.</h1>
+
+<h1>
+<a id="user-content-whitening-is-always-one-of-the-first-steps-in-astrophysical-data-analysis-searches-parameter-estimation" class="anchor" href="#whitening-is-always-one-of-the-first-steps-in-astrophysical-data-analysis-searches-parameter-estimation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Whitening is always one of the first steps in astrophysical data analysis (searches, parameter estimation).</h1>
+
+<h1>
+<a id="user-content-whitening-requires-no-prior-knowledge-of-spectral-lines-etc-only-the-data-are-needed" class="anchor" href="#whitening-requires-no-prior-knowledge-of-spectral-lines-etc-only-the-data-are-needed" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Whitening requires no prior knowledge of spectral lines, etc; only the data are needed.</h1>
+
+<h1>
+<a id="user-content-the-resulting-time-series-is-no-longer-in-units-of-strain-now-in-units-of-sigmas-away-from-the-mean" class="anchor" href="#the-resulting-time-series-is-no-longer-in-units-of-strain-now-in-units-of-sigmas-away-from-the-mean" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The resulting time series is no longer in units of strain; now in units of "sigmas" away from the mean.</h1>
+
+<h1>
+<a id="user-content-in8" class="anchor" href="#in8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[8]:</h1>
+
+<h1>
+<a id="user-content-function-to-writen-data" class="anchor" href="#function-to-writen-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>function to writen data</h1>
+
+<p>def whiten(strain, interp_psd, dt):
+    Nt = len(strain)
+    freqs = np.fft.rfftfreq(Nt, dt)</p>
+
+<pre><code># whitening: transform to freq domain, divide by asd, then transform back, 
+# taking care to get normalization right.
+hf = np.fft.rfft(strain)
+white_hf = hf / (np.sqrt(interp_psd(freqs) /dt/2.))
+white_ht = np.fft.irfft(white_hf, n=Nt)
+return white_ht
+</code></pre>
+
+<h1>
+<a id="user-content-now-whiten-the-data-from-h1-and-l1-and-also-the-nr-template" class="anchor" href="#now-whiten-the-data-from-h1-and-l1-and-also-the-nr-template" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>now whiten the data from H1 and L1, and also the NR template:</h1>
+
+<p>strain_H1_whiten = whiten(strain_H1,psd_H1,dt)
+strain_L1_whiten = whiten(strain_L1,psd_L1,dt)
+NR_H1_whiten = whiten(NR_H1,psd_H1,dt)</p>
+
+<h1>
+<a id="user-content-now-plot-the-whitened-strain-data-along-with-the-best-fit-numerical-relativity-nr-template" class="anchor" href="#now-plot-the-whitened-strain-data-along-with-the-best-fit-numerical-relativity-nr-template" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Now plot the whitened strain data, along with the best-fit numerical relativity (NR) template.</h1>
+
+<h1>
+<a id="user-content-to-get-rid-of-remaining-high-frequency-noise-we-will-also-bandpass-the-data-see-bandpassing-below" class="anchor" href="#to-get-rid-of-remaining-high-frequency-noise-we-will-also-bandpass-the-data-see-bandpassing-below" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To get rid of remaining high frequency noise, we will also bandpass the data (see bandpassing, below).</h1>
+
+<h1>
+<a id="user-content-in9" class="anchor" href="#in9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[9]:</h1>
+
+<h1>
+<a id="user-content-we-need-to-suppress-the-high-frequencies-with-some-bandpassing" class="anchor" href="#we-need-to-suppress-the-high-frequencies-with-some-bandpassing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>We need to suppress the high frequencies with some bandpassing:</h1>
+
+<p>bb, ab = butter(4, [20.<em>2./fs, 300.</em>2./fs], btype='band')
+strain_H1_whitenbp = filtfilt(bb, ab, strain_H1_whiten)
+strain_L1_whitenbp = filtfilt(bb, ab, strain_L1_whiten)
+NR_H1_whitenbp = filtfilt(bb, ab, NR_H1_whiten)</p>
+
+<h1>
+<a id="user-content-plot-the-data-after-whitening" class="anchor" href="#plot-the-data-after-whitening" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>plot the data after whitening:</h1>
+
+<h1>
+<a id="user-content-first-shift-l1-by-7-ms-and-invert-see-the-gw150914-detection-paper-for-why" class="anchor" href="#first-shift-l1-by-7-ms-and-invert-see-the-gw150914-detection-paper-for-why" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>first, shift L1 by 7 ms, and invert. See the GW150914 detection paper for why!</h1>
+
+<p>strain_L1_shift = -np.roll(strain_L1_whitenbp,int(0.007*fs))</p>
+
+<p>plt.figure()
+plt.plot(time-tevent,strain_H1_whitenbp,'r',label='H1 strain')
+plt.plot(time-tevent,strain_L1_shift,'g',label='L1 strain')
+plt.plot(NRtime+0.002,NR_H1_whitenbp,'k',label='matched NR waveform')
+plt.xlim([-0.1,0.05])
+plt.ylim([-4,4])
+plt.xlabel('time (s) since '+str(tevent))
+plt.ylabel('whitented strain')
+plt.legend(loc='lower left')
+plt.title('Advanced LIGO WHITENED strain data near GW150914')
+plt.savefig('GW150914_strain_whitened.png')</p>
+
+<h1>
+<a id="user-content-the-signal-is-now-clearly-visible-in-the-whitened-and-bandpassed-data-the-dc-offset-between-h1-and-l1-data-visible-in-the-first-plot-is-no-longer-visible-here-the-bandpassing-cuts-off-frequency-components-below-around-20-hz-and-above-300-hz" class="anchor" href="#the-signal-is-now-clearly-visible-in-the-whitened-and-bandpassed-data-the-dc-offset-between-h1-and-l1-data-visible-in-the-first-plot-is-no-longer-visible-here-the-bandpassing-cuts-off-frequency-components-below-around-20-hz-and-above-300-hz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The signal is now clearly visible in the whitened and bandpassed data. The "DC" offset between H1 and L1 data visible in the first plot is no longer visible here; the bandpassing cuts off frequency components below around 20 Hz and above 300 Hz.</h1>
+
+<h1>
+<a id="user-content-the-signal-is-visible-as-an-oscillation-sweeping-from-low-to-high-frequency-from--010-seconds-to-0-then-damping-down-into-the-random-noise" class="anchor" href="#the-signal-is-visible-as-an-oscillation-sweeping-from-low-to-high-frequency-from--010-seconds-to-0-then-damping-down-into-the-random-noise" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The signal is visible as an oscillation sweeping from low to high frequency from -0.10 seconds to 0, then damping down into the random noise.</h1>
+
+<h1>
+<a id="user-content-the-signal-looks-roughly-the-same-in-both-detectors-we-had-to-shift-the-l1-data-by-7-ms-to-get-it-to-line-up-with-the-data-from-h1-because-the-source-is-roughly-in-the-direction-of-the-line-connecting-h1-to-l1-and-the-wave-travels-at-the-speed-of-light-so-it-hits-l1-7-ms-earlier-also-the-orientation-of-l1-with-respect-to-h1-means-that-we-have-to-flip-the-sign-of-the-signal-in-l1-for-it-to-match-the-signal-in-h1" class="anchor" href="#the-signal-looks-roughly-the-same-in-both-detectors-we-had-to-shift-the-l1-data-by-7-ms-to-get-it-to-line-up-with-the-data-from-h1-because-the-source-is-roughly-in-the-direction-of-the-line-connecting-h1-to-l1-and-the-wave-travels-at-the-speed-of-light-so-it-hits-l1-7-ms-earlier-also-the-orientation-of-l1-with-respect-to-h1-means-that-we-have-to-flip-the-sign-of-the-signal-in-l1-for-it-to-match-the-signal-in-h1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The signal looks roughly the same in both detectors. We had to shift the L1 data by 7 ms to get it to line up with the data from H1, because the source is roughly in the direction of the line connecting H1 to L1, and the wave travels at the speed of light, so it hits L1 7 ms earlier. Also, the orientation of L1 with respect to H1 means that we have to flip the sign of the signal in L1 for it to match the signal in H1.</h1>
+
+<h1>
+<a id="user-content-its-exactly-the-kind-of-signal-we-expect-from-the-inspiral-merger-and-ringdown-of-two-massive-black-holes-as-evidenced-by-the-good-match-with-the-numerical-relativity-nr-waveform-in-black" class="anchor" href="#its-exactly-the-kind-of-signal-we-expect-from-the-inspiral-merger-and-ringdown-of-two-massive-black-holes-as-evidenced-by-the-good-match-with-the-numerical-relativity-nr-waveform-in-black" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>It's exactly the kind of signal we expect from the inspiral, merger and ringdown of two massive black holes, as evidenced by the good match with the numerical relativity (NR) waveform, in black.</h1>
+
+<h1>
+<a id="user-content-ligo-uses-a-rather-elaborate-software-suite-to-match-the-data-against-a-family-of-such-signal-waveforms-templates-to-find-the-best-match-this-procedure-helps-ligo-to-optimally-separate-signals-from-instrumental-noise-and-to-infer-the-parameters-of-the-source-masses-spins-sky-location-orbit-orientation-etc-from-the-best-match-templates" class="anchor" href="#ligo-uses-a-rather-elaborate-software-suite-to-match-the-data-against-a-family-of-such-signal-waveforms-templates-to-find-the-best-match-this-procedure-helps-ligo-to-optimally-separate-signals-from-instrumental-noise-and-to-infer-the-parameters-of-the-source-masses-spins-sky-location-orbit-orientation-etc-from-the-best-match-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LIGO uses a rather elaborate software suite to match the data against a family of such signal waveforms ("templates"), to find the best match. This procedure helps LIGO to "optimally" separate signals from instrumental noise, and to infer the parameters of the source (masses, spins, sky location, orbit orientation, etc) from the best match templates.</h1>
+
+<h1>
+<a id="user-content--spectrograms" class="anchor" href="#-spectrograms" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>## Spectrograms</h1>
+
+<h1>
+<a id="user-content-now-lets-plot-a-short-time-frequency-spectrogram-around-gw150914" class="anchor" href="#now-lets-plot-a-short-time-frequency-spectrogram-around-gw150914" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Now let's plot a short time-frequency spectrogram around GW150914:</h1>
+
+<h1>
+<a id="user-content-in10" class="anchor" href="#in10" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[10]:</h1>
+
+<p>tevent = 1126259462.422         # Mon Sep 14 09:50:45 GMT 2015 
+deltat = 10.                    # seconds around the event</p>
+
+<h1>
+<a id="user-content-index-into-the-strain-time-series-for-this-time-interval-1" class="anchor" href="#index-into-the-strain-time-series-for-this-time-interval-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>index into the strain time series for this time interval:</h1>
+
+<p>indxt = np.where((time_H1 &gt;= tevent-deltat) &amp; (time_H1 &lt; tevent+deltat))</p>
+
+<h1>
+<a id="user-content-pick-a-shorter-ftt-time-interval-like-18-of-a-second" class="anchor" href="#pick-a-shorter-ftt-time-interval-like-18-of-a-second" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>pick a shorter FTT time interval, like 1/8 of a second:</h1>
+
+<p>NFFT = fs/8</p>
+
+<h1>
+<a id="user-content-and-with-a-lot-of-overlap-to-resolve-short-time-features" class="anchor" href="#and-with-a-lot-of-overlap-to-resolve-short-time-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>and with a lot of overlap, to resolve short-time features:</h1>
+
+<p>NOVL = NFFT*15/16</p>
+
+<h1>
+<a id="user-content-and-choose-a-window-that-minimizes-spectral-leakage" class="anchor" href="#and-choose-a-window-that-minimizes-spectral-leakage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>and choose a window that minimizes "spectral leakage"</h1>
+
+<h1>
+<a id="user-content-httpsenwikipediaorgwikispectral_leakage" class="anchor" href="#httpsenwikipediaorgwikispectral_leakage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(<a href="https://en.wikipedia.org/wiki/Spectral_leakage">https://en.wikipedia.org/wiki/Spectral_leakage</a>)</h1>
+
+<p>window = np.blackman(NFFT)</p>
+
+<h1>
+<a id="user-content-the-right-colormap-is-all-important-see" class="anchor" href="#the-right-colormap-is-all-important-see" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>the right colormap is all-important! See:</h1>
+
+<h1>
+<a id="user-content-httpmatplotliborgexamplescolorcolormaps_referencehtml" class="anchor" href="#httpmatplotliborgexamplescolorcolormaps_referencehtml" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><a href="http://matplotlib.org/examples/color/colormaps_reference.html">http://matplotlib.org/examples/color/colormaps_reference.html</a>
+</h1>
+
+<h1>
+<a id="user-content-viridis-seems-to-be-the-best-for-our-purposes-but-its-new-if-you-dont-have-it-you-can-settle-for-ocean" class="anchor" href="#viridis-seems-to-be-the-best-for-our-purposes-but-its-new-if-you-dont-have-it-you-can-settle-for-ocean" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>viridis seems to be the best for our purposes, but it's new; if you don't have it, you can settle for ocean.</h1>
+
+<p>spec_cmap='viridis'</p>
+
+<h1>
+<a id="user-content-spec_cmapocean" class="anchor" href="#spec_cmapocean" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>spec_cmap='ocean'</h1>
+
+<h1>
+<a id="user-content-plot-the-h1-spectrogram" class="anchor" href="#plot-the-h1-spectrogram" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plot the H1 spectrogram:</h1>
+
+<p>plt.figure()
+spec_H1, freqs, bins, im = plt.specgram(strain_H1[indxt], NFFT=NFFT, Fs=fs, window=window, 
+                                        noverlap=NOVL, cmap=spec_cmap, xextent=[-deltat,deltat])
+plt.xlabel('time (s) since '+str(tevent))
+plt.ylabel('Frequency (Hz)')
+plt.colorbar()
+plt.axis([-deltat, deltat, 0, 2000])
+plt.title('aLIGO H1 strain data near GW150914')
+plt.savefig('GW150914_H1_spectrogram.png')</p>
+
+<h1>
+<a id="user-content-plot-the-l1-spectrogram" class="anchor" href="#plot-the-l1-spectrogram" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plot the L1 spectrogram:</h1>
+
+<p>plt.figure()
+spec_H1, freqs, bins, im = plt.specgram(strain_L1[indxt], NFFT=NFFT, Fs=fs, window=window, 
+                                        noverlap=NOVL, cmap=spec_cmap, xextent=[-deltat,deltat])
+plt.xlabel('time (s) since '+str(tevent))
+plt.ylabel('Frequency (Hz)')
+plt.colorbar()
+plt.axis([-deltat, deltat, 0, 2000])
+plt.title('aLIGO L1 strain data near GW150914')
+plt.savefig('GW150914_L1_spectrogram.png')</p>
+
+<h1>
+<a id="user-content-in-the-above-spectrograms-you-can-see-lots-of-excess-power-below-20-hz-as-well-as-strong-spectral-lines-at-500-1000-1500-hz-also-evident-in-the-asds-above-the-lines-at-multiples-of-500-hz-are-the-harmonics-of-the-violin-modes-of-the-fibers-holding-up-the-mirrors-of-the-ligo-interferometers" class="anchor" href="#in-the-above-spectrograms-you-can-see-lots-of-excess-power-below-20-hz-as-well-as-strong-spectral-lines-at-500-1000-1500-hz-also-evident-in-the-asds-above-the-lines-at-multiples-of-500-hz-are-the-harmonics-of-the-violin-modes-of-the-fibers-holding-up-the-mirrors-of-the-ligo-interferometers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In the above spectrograms, you can see lots of excess power below ~20 Hz, as well as strong spectral lines at 500, 1000, 1500 Hz (also evident in the ASDs above). The lines at multiples of 500 Hz are the harmonics of the "violin modes" of the fibers holding up the mirrors of the LIGO interferometers.</h1>
+
+<h1>
+<a id="user-content-the-signal-is-just-bately-visible-here-at-time0-and-below-500-hz-we-need-to-zoom-in-around-the-event-time-and-to-the-frequency-range-from-20-400-hz-and-use-the-whitened-data-generated-above" class="anchor" href="#the-signal-is-just-bately-visible-here-at-time0-and-below-500-hz-we-need-to-zoom-in-around-the-event-time-and-to-the-frequency-range-from-20-400-hz-and-use-the-whitened-data-generated-above" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The signal is just bately visible here, at time=0 and below 500 Hz. We need to zoom in around the event time, and to the frequency range from [20, 400] Hz, and use the whitened data generated above.</h1>
+
+<h1>
+<a id="user-content-in11" class="anchor" href="#in11" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[11]:</h1>
+
+<h1>
+<a id="user-content-plot-the-whitened-data-zooming-in-on-the-signal-region" class="anchor" href="#plot-the-whitened-data-zooming-in-on-the-signal-region" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>plot the whitened data, zooming in on the signal region:</h1>
+
+<p>tevent = 1126259462.422          # Mon Sep 14 09:50:45 GMT 2015 
+deltat = 10.                      # seconds around the event</p>
+
+<h1>
+<a id="user-content-index-into-the-strain-time-series-for-this-time-interval-2" class="anchor" href="#index-into-the-strain-time-series-for-this-time-interval-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>index into the strain time series for this time interval:</h1>
+
+<p>indxt = np.where((time_H1 &gt;= tevent-deltat) &amp; (time_H1 &lt; tevent+deltat))</p>
+
+<h1>
+<a id="user-content-pick-a-shorter-ftt-time-interval-like-116-of-a-second" class="anchor" href="#pick-a-shorter-ftt-time-interval-like-116-of-a-second" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>pick a shorter FTT time interval, like 1/16 of a second:</h1>
+
+<p>NFFT = fs/16</p>
+
+<h1>
+<a id="user-content-and-with-a-lot-of-overlap-to-resolve-short-time-features-1" class="anchor" href="#and-with-a-lot-of-overlap-to-resolve-short-time-features-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>and with a lot of overlap, to resolve short-time features:</h1>
+
+<p>NOVL = NFFT*15/16</p>
+
+<h1>
+<a id="user-content-and-choose-a-window-that-minimizes-spectral-leakage-1" class="anchor" href="#and-choose-a-window-that-minimizes-spectral-leakage-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>and choose a window that minimizes "spectral leakage"</h1>
+
+<h1>
+<a id="user-content-httpsenwikipediaorgwikispectral_leakage-1" class="anchor" href="#httpsenwikipediaorgwikispectral_leakage-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(<a href="https://en.wikipedia.org/wiki/Spectral_leakage">https://en.wikipedia.org/wiki/Spectral_leakage</a>)</h1>
+
+<p>window = np.blackman(NFFT)</p>
+
+<h1>
+<a id="user-content-plot-the-h1-whitened-spectrogram-around-the-signal" class="anchor" href="#plot-the-h1-whitened-spectrogram-around-the-signal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plot the H1 whitened spectrogram around the signal</h1>
+
+<p>plt.figure()
+spec_H1, freqs, bins, im = plt.specgram(strain_H1_whiten[indxt], NFFT=NFFT, Fs=fs, window=window, 
+                                        noverlap=NOVL, cmap=spec_cmap, xextent=[-deltat,deltat])
+plt.xlabel('time (s) since '+str(tevent))
+plt.ylabel('Frequency (Hz)')
+plt.colorbar()
+plt.axis([-0.5, 0.5, 0, 500])
+plt.title('aLIGO H1 strain data near GW150914')
+plt.savefig('GW150914_H1_spectrogram_whitened.png')</p>
+
+<h1>
+<a id="user-content-plot-the-l1-whitened-spectrogram-around-the-signal" class="anchor" href="#plot-the-l1-whitened-spectrogram-around-the-signal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Plot the L1 whitened spectrogram around the signal</h1>
+
+<p>plt.figure()
+spec_H1, freqs, bins, im = plt.specgram(strain_L1_whiten[indxt], NFFT=NFFT, Fs=fs, window=window, 
+                                        noverlap=NOVL, cmap=spec_cmap, xextent=[-deltat,deltat])
+plt.xlabel('time (s) since '+str(tevent))
+plt.ylabel('Frequency (Hz)')
+plt.colorbar()
+plt.axis([-0.5, 0.5, 0, 500])
+plt.title('aLIGO L1 strain data near GW150914')
+plt.savefig('GW150914_L1_spectrogram_whitened.png')</p>
+
+<h1>
+<a id="user-content-see-the-smudge-between--02-and-0-seconds-thats-our-signal" class="anchor" href="#see-the-smudge-between--02-and-0-seconds-thats-our-signal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>See the smudge between -0.2 and 0 seconds? That's our signal!</h1>
+
+<h1>
+<a id="user-content-you-can-see-it-chirping-from-lower-to-higher-frequency-over-a-small-fraction-of-a-second" class="anchor" href="#you-can-see-it-chirping-from-lower-to-higher-frequency-over-a-small-fraction-of-a-second" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>You can see it 'chirping' from lower to higher frequency over a small fraction of a second.</h1>
+
+<h1>
+<a id="user-content--time-domain-filtering---bandpassingnotching" class="anchor" href="#-time-domain-filtering---bandpassingnotching" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>## Time-domain filtering - Bandpassing+notching</h1>
+
+<h1>
+<a id="user-content-now-lets-filter-the-signal-in-the-time-domain-using-bandpassing-to-reveal-the-signal-in-the-frequency-band-40--300-hz-and-notching-of-spectral-lines-to-remove-those-noise-sources-from-the-data" class="anchor" href="#now-lets-filter-the-signal-in-the-time-domain-using-bandpassing-to-reveal-the-signal-in-the-frequency-band-40--300-hz-and-notching-of-spectral-lines-to-remove-those-noise-sources-from-the-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Now let's filter the signal in the time domain, using bandpassing to reveal the signal in the frequency band [40 , 300 Hz], and notching of spectral lines to remove those noise sources from the data.</h1>
+
+<h1>
+<a id="user-content-in12" class="anchor" href="#in12" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[12]:</h1>
+
+<h1>
+<a id="user-content-generate-linear-time-domain-filter-coefficients-common-to-both-h1-and-l1" class="anchor" href="#generate-linear-time-domain-filter-coefficients-common-to-both-h1-and-l1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>generate linear time-domain filter coefficients, common to both H1 and L1.</h1>
+
+<h1>
+<a id="user-content-first-define-some-functions" class="anchor" href="#first-define-some-functions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>First, define some functions:</h1>
+
+<h1>
+<a id="user-content-this-function-will-generate-digital-filter-coefficients-for-bandstops-notches" class="anchor" href="#this-function-will-generate-digital-filter-coefficients-for-bandstops-notches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>This function will generate digital filter coefficients for bandstops (notches).</h1>
+
+<h1>
+<a id="user-content-understanding-it-requires-some-signal-processing-expertise-which-we-wont-get-into-here" class="anchor" href="#understanding-it-requires-some-signal-processing-expertise-which-we-wont-get-into-here" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Understanding it requires some signal processing expertise, which we won't get into here.</h1>
+
+<p>def iir_bandstops(fstops, fs, order=4):
+    """ellip notch filter
+    fstops is a list of entries of the form [frequency (Hz), df, df2]<br>
+    where df is the pass width and df2 is the stop width (narrower<br>
+    than the pass width). Use caution if passing more than one freq at a time,<br>
+    because the filter response might behave in ways you don't expect.
+    """
+    nyq = 0.5 * fs</p>
+
+<pre><code># Zeros zd, poles pd, and gain kd for the digital filter
+zd = np.array([])
+pd = np.array([])
+kd = 1
+
+# Notches
+for fstopData in fstops:
+    fstop = fstopData[0]
+    df = fstopData[1]
+    df2 = fstopData[2]
+    low = (fstop - df) / nyq
+    high = (fstop + df) / nyq
+    low2 = (fstop - df2) / nyq
+    high2 = (fstop + df2) / nyq
+    z, p, k = iirdesign([low,high], [low2,high2], gpass=1, gstop=6,
+                        ftype='ellip', output='zpk')
+    zd = np.append(zd,z)
+    pd = np.append(pd,p)
+
+# Set gain to one at 100 Hz...better not notch there                                        
+bPrelim,aPrelim = zpk2tf(zd, pd, 1)
+outFreq, outg0 = freqz(bPrelim, aPrelim, 100/nyq)
+
+# Return the numerator and denominator of the digital filter                                
+b,a = zpk2tf(zd,pd,k)
+return b, a
+</code></pre>
+
+<p>def get_filter_coefs(fs):</p>
+
+<pre><code># assemble the filter b,a coefficients:
+coefs = []
+
+# bandpass filter parameters
+lowcut=43
+highcut=260
+order = 4
+
+# bandpass filter coefficients 
+nyq = 0.5*fs
+low = lowcut / nyq
+high = highcut / nyq
+bb, ab = butter(order, [low, high], btype='band')
+coefs.append((bb,ab))
+
+# Frequencies of notches at known instrumental spectral line frequencies.
+# You can see these lines in the ASD above, so it is straightforward to make this list.
+notchesAbsolute = np.array(
+    [14.0,34.70, 35.30, 35.90, 36.70, 37.30, 40.95, 60.00, 
+     120.00, 179.99, 304.99, 331.49, 510.02, 1009.99])
+
+# notch filter coefficients:
+for notchf in notchesAbsolute:                      
+    bn, an = iir_bandstops(np.array([[notchf,1,0.1]]), fs, order=4)
+    coefs.append((bn,an))
+
+# Manually do a wider notch filter around 510 Hz etc.          
+bn, an = iir_bandstops(np.array([[510,200,20]]), fs, order=4)
+coefs.append((bn, an))
+
+# also notch out the forest of lines around 331.5 Hz
+bn, an = iir_bandstops(np.array([[331.5,10,1]]), fs, order=4)
+coefs.append((bn, an))
+
+return coefs
+</code></pre>
+
+<h1>
+<a id="user-content-and-then-define-the-filter-function" class="anchor" href="#and-then-define-the-filter-function" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>and then define the filter function:</h1>
+
+<p>def filter_data(data_in,coefs):
+    data = data_in.copy()
+    for coef in coefs:
+        b,a = coef
+        # filtfilt applies a linear filter twice, once forward and once backwards.
+        # The combined filter has linear phase.
+        data = filtfilt(b, a, data)
+    return data</p>
+
+<h1>
+<a id="user-content-to-visualize-the-effect-of-this-filter-lets-generate-white-gaussian-noise-and-filter-it" class="anchor" href="#to-visualize-the-effect-of-this-filter-lets-generate-white-gaussian-noise-and-filter-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>To visualize the effect of this filter, let's generate "white" gaussian noise, and filter it.</h1>
+
+<h1>
+<a id="user-content-in13" class="anchor" href="#in13" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[13]:</h1>
+
+<h1>
+<a id="user-content-get-filter-coefficients" class="anchor" href="#get-filter-coefficients" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>get filter coefficients</h1>
+
+<p>coefs = get_filter_coefs(fs)</p>
+
+<h1>
+<a id="user-content-generate-random-gaussian-data" class="anchor" href="#generate-random-gaussian-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>generate random gaussian "data"</h1>
+
+<p>data = np.random.randn(128*fs)</p>
+
+<h1>
+<a id="user-content-filter-it" class="anchor" href="#filter-it" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>filter it:</h1>
+
+<p>resp = filter_data(data,coefs)</p>
+
+<h1>
+<a id="user-content-compute-the-amplitude-spectral-density-asd-of-the-original-data-and-the-filtered-data" class="anchor" href="#compute-the-amplitude-spectral-density-asd-of-the-original-data-and-the-filtered-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>compute the amplitude spectral density (ASD) of the original data, and the filtered data:</h1>
+
+<p>NFFT = fs/2
+Pxx_data, freqs = mlab.psd(data, Fs = fs, NFFT = NFFT)
+Pxx_resp, freqs = mlab.psd(resp, Fs = fs, NFFT = NFFT)</p>
+
+<h1>
+<a id="user-content-the-asd-is-the-square-root-and-lets-normalize-it-to-1" class="anchor" href="#the-asd-is-the-square-root-and-lets-normalize-it-to-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The asd is the square root; and let's normalize it to 1:</h1>
+
+<p>norm = np.sqrt(Pxx_data).mean()
+asd_data = np.sqrt(Pxx_data)/norm
+asd_resp = np.sqrt(Pxx_resp)/norm</p>
+
+<h1>
+<a id="user-content-get-the-predicted-filter-frequency-response-using-signalfreqz" class="anchor" href="#get-the-predicted-filter-frequency-response-using-signalfreqz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>get the predicted filter frequency response using signal.freqz:</h1>
+
+<p>Nc = 2000
+filt_resp = np.ones(Nc)
+for coef in coefs:
+    b,a = coef
+    w,r = signal.freqz(b,a,worN=Nc)
+    filt_resp = filt_resp*np.abs(r)
+freqf = (fs * 0.5 / np.pi) * w</p>
+
+<h1>
+<a id="user-content-we-double-pass-the-filtering-using-filtfilt-so-we-square-the-filter-response" class="anchor" href="#we-double-pass-the-filtering-using-filtfilt-so-we-square-the-filter-response" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>We "double pass" the filtering using filtfilt, so we square the filter response</h1>
+
+<p>filt_resp = filt_resp**2</p>
+
+<h1>
+<a id="user-content-plot-the-asds-1" class="anchor" href="#plot-the-asds-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>plot the ASDs</h1>
+
+<p>plt.figure()
+plt.plot(freqs,  asd_data,'b',label='white noise')
+plt.plot(freqs,  asd_resp,'m',label='filtered white noise')
+plt.plot(freqf, filt_resp,'k--',label='filter response')
+plt.xlim([0,600])
+plt.grid('on')
+plt.ylabel('ASD (strain/rtHz)')
+plt.xlabel('Freq (Hz)')
+plt.legend(loc='center right')
+plt.savefig('GW150914_filter.png')</p>
+
+<h1>
+<a id="user-content-from-the-above-you-can-see-that-the-gaussian-noise-blue-is-white---it-is-flat-in-frequency-all-the-way-up-to-nyquist-frequency-of-2048-hz-but-welve-cut-it-off-at-600-hz-to-see-the-effect-of-filtering-you-can-see-in-the-filtered-data-magenta-the-effects-of-the-bandpassing-and-the-notches" class="anchor" href="#from-the-above-you-can-see-that-the-gaussian-noise-blue-is-white---it-is-flat-in-frequency-all-the-way-up-to-nyquist-frequency-of-2048-hz-but-welve-cut-it-off-at-600-hz-to-see-the-effect-of-filtering-you-can-see-in-the-filtered-data-magenta-the-effects-of-the-bandpassing-and-the-notches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>From the above, you can see that the gaussian noise (blue) is "white" - it is flat in frequency (all the way up to Nyquist frequency of 2048 Hz, but we'lve cut it off at 600 Hz to see the effect of filtering). You can see in the filtered data (magenta) the effects of the bandpassing and the notches.</h1>
+
+<h1>
+<a id="user-content-now-lets-filter-the-data-and-plot-the-results" class="anchor" href="#now-lets-filter-the-data-and-plot-the-results" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Now let's filter the data, and plot the results:</h1>
+
+<h1>
+<a id="user-content-in14" class="anchor" href="#in14" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[14]:</h1>
+
+<h1>
+<a id="user-content-filter-the-data" class="anchor" href="#filter-the-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>filter the data:</h1>
+
+<p>strain_H1_filt = filter_data(strain_H1, coefs)
+strain_L1_filt = filter_data(strain_L1, coefs)</p>
+
+<h1>
+<a id="user-content-filter-nr-template-as-we-do-with-the-data" class="anchor" href="#filter-nr-template-as-we-do-with-the-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>filter NR template as we do with the data:</h1>
+
+<p>NR_H1_filt = filter_data(NR_H1, coefs)</p>
+
+<h1>
+<a id="user-content-plot-the-data-prior-to-filtering" class="anchor" href="#plot-the-data-prior-to-filtering" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>plot the data prior to filtering:</h1>
+
+<p>plt.figure()
+plt.plot(time-tevent,strain_H1,'r',label='H1 strain')
+plt.plot(time-tevent,strain_L1,'g',label='L1 strain')
+plt.xlim([-0.2,0.1])
+plt.xlabel('time (s) since '+str(tevent))
+plt.ylabel('strain')
+plt.legend(loc='lower right')
+plt.title('aLIGO strain data near GW150914')
+plt.savefig('GW150914_H1_strain_unfiltered.png')</p>
+
+<h1>
+<a id="user-content-plot-the-data-after-filtering" class="anchor" href="#plot-the-data-after-filtering" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>plot the data after filtering:</h1>
+
+<h1>
+<a id="user-content-first-shift-l1-by-7-ms-and-invert-see-the-gw150914-detection-paper-for-why-1" class="anchor" href="#first-shift-l1-by-7-ms-and-invert-see-the-gw150914-detection-paper-for-why-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>first, shift L1 by 7 ms, and invert. See the GW150914 detection paper for why!</h1>
+
+<p>strain_L1_fils = -np.roll(strain_L1_filt,int(0.007*fs))</p>
+
+<h1>
+<a id="user-content-we-also-have-to-shift-the-nr-template-by-2-ms-to-get-it-to-line-up-properly-with-the-data" class="anchor" href="#we-also-have-to-shift-the-nr-template-by-2-ms-to-get-it-to-line-up-properly-with-the-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>We also have to shift the NR template by 2 ms to get it to line up properly with the data</h1>
+
+<p>plt.figure()
+plt.plot(time-tevent,strain_H1_filt,'r',label='H1 strain')
+plt.plot(time-tevent,strain_L1_fils,'g',label='L1 strain')
+plt.plot(NRtime+0.002,NR_H1_filt,'k',label='matched NR waveform')
+plt.xlim([-0.2,0.1])
+plt.ylim([-1.5e-21,1.5e-21])
+plt.xlabel('time (s) since '+str(tevent))
+plt.ylabel('strain')
+plt.legend(loc='lower left')
+plt.title('aLIGO FILTERED strain data near GW150914')
+plt.savefig('GW150914_H1_strain_filtered.png')</p>
+
+<h1>
+<a id="user-content-the-filtered-data-peak-at-around-1e-21-1000-times-smaller-than-the-scale-in-the-first-plot-the-dc-offset-between-h1-and-l1-data-visible-in-the-first-plot-is-no-longer-visible-here-the-bandpassing-cuts-off-frequency-components-below-around-40-hz" class="anchor" href="#the-filtered-data-peak-at-around-1e-21-1000-times-smaller-than-the-scale-in-the-first-plot-the-dc-offset-between-h1-and-l1-data-visible-in-the-first-plot-is-no-longer-visible-here-the-bandpassing-cuts-off-frequency-components-below-around-40-hz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The filtered data peak at around 1.e-21, 1000 times smaller than the scale in the first plot. The "DC" offset between H1 and L1 data visible in the first plot is no longer visible here; the bandpassing cuts off frequency components below around 40 Hz.</h1>
+
+<h1>
+<a id="user-content-now-as-with-whitening-the-signal-is-visible-as-an-oscillation-sweeping-from-low-to-high-frequency-from--010-seconds-to-0-then-damping-down-into-the-random-noise-again-it-looks-roughly-the-same-in-both-detectors-after-shifting-and-flipping-the-l1-data-with-respect-to-h1-its-exactly-the-kind-of-signal-we-expect-from-the-inspiral-merger-and-ringdown-of-two-massive-black-holes" class="anchor" href="#now-as-with-whitening-the-signal-is-visible-as-an-oscillation-sweeping-from-low-to-high-frequency-from--010-seconds-to-0-then-damping-down-into-the-random-noise-again-it-looks-roughly-the-same-in-both-detectors-after-shifting-and-flipping-the-l1-data-with-respect-to-h1-its-exactly-the-kind-of-signal-we-expect-from-the-inspiral-merger-and-ringdown-of-two-massive-black-holes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Now, as with whitening, the signal is visible as an oscillation sweeping from low to high frequency from -0.10 seconds to 0, then damping down into the random noise. Again, it looks roughly the same in both detectors, after shifting and flipping the L1 data with respect to H1. It's exactly the kind of signal we expect from the inspiral, merger and ringdown of two massive black holes.</h1>
+
+<h1>
+<a id="user-content-and-as-with-whitening-the-nr-waveform-looks-by-eye-to-be-a-good-match-to-the-data-in-both-detectors-the-signal-is-consistent-with-the-waveform-predicted-from-general-relativity" class="anchor" href="#and-as-with-whitening-the-nr-waveform-looks-by-eye-to-be-a-good-match-to-the-data-in-both-detectors-the-signal-is-consistent-with-the-waveform-predicted-from-general-relativity" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>And as with whitening, the NR waveform looks, by eye, to be a good match to the data in both detectors; the signal is consistent with the waveform predicted from General Relativity.</h1>
+
+<h1>
+<a id="user-content--make-sound-files" class="anchor" href="#-make-sound-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>## Make sound files</h1>
+
+<h1>
+<a id="user-content-make-wav-sound-files-from-the-filtered-downsampled-data--2s-around-the-event" class="anchor" href="#make-wav-sound-files-from-the-filtered-downsampled-data--2s-around-the-event" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Make wav (sound) files from the filtered, downsampled data, +-2s around the event.</h1>
+
+<h1>
+<a id="user-content-in15" class="anchor" href="#in15" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[15]:</h1>
+
+<h1>
+<a id="user-content-make-wav-sound-files-from-the-whitened-data--2s-around-the-event" class="anchor" href="#make-wav-sound-files-from-the-whitened-data--2s-around-the-event" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>make wav (sound) files from the whitened data, +-2s around the event.</h1>
+
+<p>from scipy.io import wavfile</p>
+
+<h1>
+<a id="user-content-function-to-keep-the-data-within-integer-limits-and-write-to-wavfile" class="anchor" href="#function-to-keep-the-data-within-integer-limits-and-write-to-wavfile" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>function to keep the data within integer limits, and write to wavfile:</h1>
+
+<p>def write_wavfile(filename,fs,data):
+    d = np.int16(data/np.max(np.abs(data)) * 32767 * 0.9)
+    wavfile.write(filename,int(fs), d)</p>
+
+<p>tevent = 1126259462.422         # Mon Sep 14 09:50:45 GMT 2015 
+deltat = 2.                     # seconds around the event</p>
+
+<h1>
+<a id="user-content-index-into-the-strain-time-series-for-this-time-interval-3" class="anchor" href="#index-into-the-strain-time-series-for-this-time-interval-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>index into the strain time series for this time interval:</h1>
+
+<p>indxt = np.where((time &gt;= tevent-deltat) &amp; (time &lt; tevent+deltat))</p>
+
+<h1>
+<a id="user-content-write-the-files" class="anchor" href="#write-the-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>write the files:</h1>
+
+<p>write_wavfile("GW150914_H1_whitenbp.wav",int(fs), strain_H1_whitenbp[indxt])
+write_wavfile("GW150914_L1_whitenbp.wav",int(fs), strain_L1_whitenbp[indxt])
+write_wavfile("GW150914_NR_whitenbp.wav",int(fs), NR_H1_whitenbp)</p>
+
+<h1>
+<a id="user-content-with-good-headphones-youll-hear-a-faint-thump-in-the-middle" class="anchor" href="#with-good-headphones-youll-hear-a-faint-thump-in-the-middle" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>With good headphones, you'll hear a faint thump in the middle.</h1>
+
+<h1>
+<a id="user-content-we-can-enhance-this-by-increasing-the-frequency" class="anchor" href="#we-can-enhance-this-by-increasing-the-frequency" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>We can enhance this by increasing the frequency;</h1>
+
+<h1>
+<a id="user-content-this-is-the-audio-equivalent-of-the-enhanced-visuals-that-nasa-employs-on-telescope-images-with-false-color" class="anchor" href="#this-is-the-audio-equivalent-of-the-enhanced-visuals-that-nasa-employs-on-telescope-images-with-false-color" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>this is the "audio" equivalent of the enhanced visuals that NASA employs on telescope images with "false color".</h1>
+
+<h1>
+<a id="user-content-the-code-below-will-shift-the-data-up-by-400-hz-by-taking-an-fft-shiftingrolling-the-frequency-series-then-inverse-fft-ing-the-resulting-sound-file-will-be-noticibly-more-high-pitched-and-the-signal-will-be-easier-to-hear" class="anchor" href="#the-code-below-will-shift-the-data-up-by-400-hz-by-taking-an-fft-shiftingrolling-the-frequency-series-then-inverse-fft-ing-the-resulting-sound-file-will-be-noticibly-more-high-pitched-and-the-signal-will-be-easier-to-hear" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The code below will shift the data up by 400 Hz (by taking an FFT, shifting/rolling the frequency series, then inverse fft-ing). The resulting sound file will be noticibly more high-pitched, and the signal will be easier to hear.</h1>
+
+<h1>
+<a id="user-content-in16" class="anchor" href="#in16" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[16]:</h1>
+
+<h1>
+<a id="user-content-function-that-shifts-frequency-of-a-band-passed-signal" class="anchor" href="#function-that-shifts-frequency-of-a-band-passed-signal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>function that shifts frequency of a band-passed signal</h1>
+
+<p>def reqshift(data,fshift=100,sample_rate=4096):
+    """Frequency shift the signal by constant
+    """
+    x = np.fft.rfft(data)
+    T = len(data)/float(sample_rate)
+    df = 1.0/T
+    nbins = int(fshift/df)
+    # print T,df,nbins,x.real.shape
+    y = np.roll(x.real,nbins) + 1j*np.roll(x.imag,nbins)
+    z = np.fft.irfft(y)
+    return z</p>
+
+<h1>
+<a id="user-content-parameters-for-frequency-shift" class="anchor" href="#parameters-for-frequency-shift" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>parameters for frequency shift</h1>
+
+<p>fs = 4096
+fshift = 400.
+speedup = 1.
+fss = int(float(fs)*float(speedup))</p>
+
+<h1>
+<a id="user-content-shift-frequency-of-the-data" class="anchor" href="#shift-frequency-of-the-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>shift frequency of the data</h1>
+
+<p>strain_H1_shifted = reqshift(strain_H1_whitenbp,fshift=fshift,sample_rate=fs)
+strain_L1_shifted = reqshift(strain_L1_whitenbp,fshift=fshift,sample_rate=fs)
+NR_H1_shifted = reqshift(NR_H1_whitenbp,fshift=fshift,sample_rate=fs)</p>
+
+<h1>
+<a id="user-content-write-the-files-1" class="anchor" href="#write-the-files-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>write the files:</h1>
+
+<p>write_wavfile("GW150914_H1_shifted.wav",int(fs), strain_H1_shifted[indxt])
+write_wavfile("GW150914_L1_shifted.wav",int(fs), strain_L1_shifted[indxt])
+write_wavfile("GW150914_NR_shifted.wav",int(fs), NR_H1_shifted)</p>
+
+<h1>
+<a id="user-content--downsampling-from-16384-hz-to-4096-hz" class="anchor" href="#-downsampling-from-16384-hz-to-4096-hz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>## Downsampling from 16384 Hz to 4096 Hz</h1>
+
+<h1>
+<a id="user-content-so-far-we-have-been-working-with-data-sampled-at-fs4096-hz-this-is-entirely-sufficient-for-signals-with-no-frequency-content-above-f_nyquist--fs2--2048-hz-such-as-gw150914" class="anchor" href="#so-far-we-have-been-working-with-data-sampled-at-fs4096-hz-this-is-entirely-sufficient-for-signals-with-no-frequency-content-above-f_nyquist--fs2--2048-hz-such-as-gw150914" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>So far, we have been working with data sampled at fs=4096 Hz. This is entirely sufficient for signals with no frequency content above f_Nyquist = fs/2 = 2048 Hz, such as GW150914.</h1>
+
+<h1>
+<a id="user-content-we-downsample-to-4096-hz-to-save-on-download-time-disk-space-and-memory-requirements-if-however-you-are-interested-in-signals-with-frequency-content-above-2048-hz-you-need-the-data-sampled-at-the-full-rate-of-16384-hz" class="anchor" href="#we-downsample-to-4096-hz-to-save-on-download-time-disk-space-and-memory-requirements-if-however-you-are-interested-in-signals-with-frequency-content-above-2048-hz-you-need-the-data-sampled-at-the-full-rate-of-16384-hz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>We downsample to 4096 Hz to save on download time, disk space, and memory requirements. If, however, you are interested in signals with frequency content above 2048 Hz, you need the data sampled at the full rate of 16384 Hz.</h1>
+
+<h1>
+<a id="user-content-here-we-demonstrate-how-to-do-that-downsampling-and-how-it-might-limit-you-is-you-are-interested-in-frequency-content-near-2048-hz-and-above" class="anchor" href="#here-we-demonstrate-how-to-do-that-downsampling-and-how-it-might-limit-you-is-you-are-interested-in-frequency-content-near-2048-hz-and-above" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Here we demonstrate how to do that downsampling, and how it might limit you is you are interested in frequency content near 2048 Hz and above.</h1>
+
+<h1>
+<a id="user-content-first-download-a-losc-data-file-containing-32-seconds-of-data-at-the-full-16384-hz-rate-and-another-downsampled-at-4096-hs-and-put-them-in-your-working-directory--folder" class="anchor" href="#first-download-a-losc-data-file-containing-32-seconds-of-data-at-the-full-16384-hz-rate-and-another-downsampled-at-4096-hs-and-put-them-in-your-working-directory--folder" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>First, download a LOSC data file containing 32 seconds of data at the full 16384 Hz rate, and another downsampled at 4096 Hs, and put them in your working directory / folder:</h1>
+
+<h1>
+<a id="user-content--httpsloscligoorgseventsgw150914h-h1_losc_16_v1-1126259446-32hdf5-1" class="anchor" href="#-httpsloscligoorgseventsgw150914h-h1_losc_16_v1-1126259446-32hdf5-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://losc.ligo.org/s/events/GW150914/H-H1_LOSC_16_V1-1126259446-32.hdf5">https://losc.ligo.org/s/events/GW150914/H-H1_LOSC_16_V1-1126259446-32.hdf5</a>
+</h1>
+
+<h1>
+<a id="user-content--httpsloscligoorgseventsgw150914h-h1_losc_4_v1-1126259446-32hdf5-1" class="anchor" href="#-httpsloscligoorgseventsgw150914h-h1_losc_4_v1-1126259446-32hdf5-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>* <a href="https://losc.ligo.org/s/events/GW150914/H-H1_LOSC_4_V1-1126259446-32.hdf5">https://losc.ligo.org/s/events/GW150914/H-H1_LOSC_4_V1-1126259446-32.hdf5</a>
+</h1>
+
+<h1>
+<a id="user-content-in17" class="anchor" href="#in17" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[17]:</h1>
+
+<h1>
+<a id="user-content-read-in-the-data-at-16384-hz-and-at-4096-hz" class="anchor" href="#read-in-the-data-at-16384-hz-and-at-4096-hz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>read in the data at 16384 Hz and at 4096 Hz:</h1>
+
+<p>fn_16 = 'H-H1_LOSC_16_V1-1126259446-32.hdf5'
+strain_16, time_16, chan_dict = rl.loaddata(fn_16, 'H1')
+fn_4 = 'H-H1_LOSC_4_V1-1126259446-32.hdf5'
+strain_4, time_4, chan_dict = rl.loaddata(fn_4, 'H1')</p>
+
+<h1>
+<a id="user-content-make-psds-of-each" class="anchor" href="#make-psds-of-each" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Make PSDs of each:</h1>
+
+<p>fs = 16384
+NFFT = 1*fs
+Pxx_16, freqs_16 = mlab.psd(strain_16, Fs = fs, NFFT = NFFT)</p>
+
+<p>fs = 4096
+NFFT = 1*fs
+Pxx_4, freqs_4 = mlab.psd(strain_4, Fs = fs, NFFT = NFFT)</p>
+
+<p>fmin = 10
+fmax = 8192</p>
+
+<p>plt.figure()
+plt.loglog(freqs_16, np.sqrt(Pxx_16),'b',label='strain at 16384')
+plt.loglog(freqs_4,  np.sqrt(Pxx_4), 'm',label='strain at  4096')
+plt.axis([fmin, fmax, 1e-24, 1e-19])
+plt.grid('on')
+plt.ylabel('ASD (strain/rtHz)')
+plt.xlabel('Freq (Hz)')
+plt.legend(loc='upper center')
+plt.title('Advanced LIGO strain data near GW150914')
+plt.savefig('GW150914_H1_ASD_16384.png')</p>
+
+<h1>
+<a id="user-content-good-agreement-between-16384-hz-data-and-4096-hz-data" class="anchor" href="#good-agreement-between-16384-hz-data-and-4096-hz-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Good agreement between 16384 Hz data and 4096 Hz data,</h1>
+
+<h1>
+<a id="user-content-up-to-around-f_nyquist--2048-hz-lets-zoom-in-for-a-closer-look" class="anchor" href="#up-to-around-f_nyquist--2048-hz-lets-zoom-in-for-a-closer-look" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>up to around f_Nyquist = 2048 Hz. Let's zoom in for a closer look:</h1>
+
+<h1>
+<a id="user-content-in18" class="anchor" href="#in18" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[18]:</h1>
+
+<h1>
+<a id="user-content-zoom-in-on-the-1000-2000-hz-region" class="anchor" href="#zoom-in-on-the-1000-2000-hz-region" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Zoom in on the 1000-2000 Hz region:</h1>
+
+<p>fmin = 1500
+fmax = 2100</p>
+
+<p>plt.figure()
+plt.plot(freqs_16, np.sqrt(Pxx_16),'b',label='strain at 16384')
+plt.plot(freqs_4,  np.sqrt(Pxx_4), 'm',label='strain at  4096')
+plt.axis([fmin, fmax, 1e-23, 5e-23])
+plt.grid('on')
+plt.ylabel('ASD (strain/rtHz)')
+plt.xlabel('Freq (Hz)')
+plt.legend(loc='upper center')
+plt.title('Advanced LIGO strain data near GW150914')
+plt.savefig('GW150914_H1_ASD_16384_zoom.png')</p>
+
+<h1>
+<a id="user-content-the-downsampled-data-deviate-significantly-from-the-original-above-1700-hz-this-is-an-undesirable-but-inevitable-result-of-downsampling-decimating-the-plus-side-is-that-for-frequencies-less-than-80-of-nyquist-the-data-are-faithfully-reproduced" class="anchor" href="#the-downsampled-data-deviate-significantly-from-the-original-above-1700-hz-this-is-an-undesirable-but-inevitable-result-of-downsampling-decimating-the-plus-side-is-that-for-frequencies-less-than-80-of-nyquist-the-data-are-faithfully-reproduced" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The downsampled data deviate significantly from the original above ~1700 Hz. This is an undesirable, but inevitable result of downsampling (decimating). The plus side is that for frequencies less than 80% of Nyquist, the data are faithfully reproduced.</h1>
+
+<h1>
+<a id="user-content-if-frequency-content-above-that-point-is-important-to-you-you-need-to-use-the-16384-hz-data" class="anchor" href="#if-frequency-content-above-that-point-is-important-to-you-you-need-to-use-the-16384-hz-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>If frequency content above that point is important to you, you need to use the 16384 Hz data.</h1>
+
+<h1>
+<a id="user-content-else-you-can-save-download-time-disk-space-and-memory-by-using-the-4096-hz-data" class="anchor" href="#else-you-can-save-download-time-disk-space-and-memory-by-using-the-4096-hz-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Else, you can save download time, disk space and memory by using the 4096 Hz data.</h1>
+
+<h1>
+<a id="user-content-in19" class="anchor" href="#in19" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[19]:</h1>
+
+<h1>
+<a id="user-content-now-downsample-the-16384-hz-data-and-compare-with-the-4096-hz-data" class="anchor" href="#now-downsample-the-16384-hz-data-and-compare-with-the-4096-hz-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Now downsample the 16384 Hz data and compare with the 4096 Hz data</h1>
+
+<p>factor = 4
+numtaps = 61
+strain_4new = signal.decimate(strain_16, factor, numtaps-1,ftype='fir')</p>
+
+<p>fs = 4096
+NFFT = 1*fs
+Pxx_4new, freqs_4 = mlab.psd(strain_4new, Fs = fs, NFFT = NFFT)</p>
+
+<p>fmin = 1500
+fmax = 2100</p>
+
+<p>plt.figure()
+plt.plot(freqs_4, np.sqrt(Pxx_4new),'b',label='strain at 4096 from decimate')
+plt.plot(freqs_4,  np.sqrt(Pxx_4), 'm--',label='strain at 4096 from file')
+plt.axis([fmin, fmax, 1e-23, 5e-23])
+plt.grid('on')
+plt.ylabel('ASD (strain/rtHz)')
+plt.xlabel('Freq (Hz)')
+plt.legend(loc='upper left')
+plt.title('Advanced LIGO strain data near GW150914')
+plt.savefig('GW150914_H1_ASD_4096_zoom.png')</p>
+
+<h1>
+<a id="user-content-the-two-traces-are-on-top-of-each-other-as-expected-thats-how-we-made-the-downsampled-data-in-the-first-place" class="anchor" href="#the-two-traces-are-on-top-of-each-other-as-expected-thats-how-we-made-the-downsampled-data-in-the-first-place" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The two traces are on top of each other, as expected. That's how we made the downsampled data in the first place.</h1>
+
+<h1>
+<a id="user-content-from-the-above-we-learn-exactly-how-losc-downsamples-the-strain-time-series-from-16384-hz-to-4096-hz" class="anchor" href="#from-the-above-we-learn-exactly-how-losc-downsamples-the-strain-time-series-from-16384-hz-to-4096-hz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>From the above, we learn exactly how LOSC downsamples the strain time series from 16384 Hz to 4096 Hz</h1>
+
+<h1>
+<a id="user-content-ie-using-scipydecimate-and-that-if-you-are-interested-in-frequency-content-above--1700-hz" class="anchor" href="#ie-using-scipydecimate-and-that-if-you-are-interested-in-frequency-content-above--1700-hz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>(ie, using scipy.decimate), and that if you are interested in frequency content above ~ 1700 Hz,</h1>
+
+<h1>
+<a id="user-content-use-the-16384-hz-sample-rate-data-instead" class="anchor" href="#use-the-16384-hz-sample-rate-data-instead" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>use the 16384 Hz sample rate data instead.</h1>
+
+<h1>
+<a id="user-content--data-segments" class="anchor" href="#-data-segments" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>## Data segments</h1>
+
+<h1>
+<a id="user-content-as-mentioned-above-ligo-strain-time-series-data-has-gaps-filled-with-nans-when-the-detectors-are-not-taking-valid-science-quality-data-analyzing-these-data-requires-the-user-to-loop-over-segments-of-valid-data-stretches" class="anchor" href="#as-mentioned-above-ligo-strain-time-series-data-has-gaps-filled-with-nans-when-the-detectors-are-not-taking-valid-science-quality-data-analyzing-these-data-requires-the-user-to-loop-over-segments-of-valid-data-stretches" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>As mentioned above, LIGO strain time series data has gaps (filled with NaNs) when the detectors are not taking valid ("science quality") data. Analyzing these data requires the user to loop over "segments" of valid data stretches.</h1>
+
+<h1>
+<a id="user-content-for-this-gw150914-data-release-the-data-have-no-gaps-lets-verify-this-using-the-l1-data-file-containing-32-seconds-of-data-sampled-at-4096-hz" class="anchor" href="#for-this-gw150914-data-release-the-data-have-no-gaps-lets-verify-this-using-the-l1-data-file-containing-32-seconds-of-data-sampled-at-4096-hz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>For this GW150914 data release, the data have no gaps. Let's verify this, using the L1 data file containing 32 seconds of data sampled at 4096 Hz.</h1>
+
+<h1>
+<a id="user-content-you-are-welcome-to-repeat-this-with-h1-data-with-files-containing-4096-seconds-of-data-and-with-data-sampled-at-16384-hz-all-of-the-relevant-files-are-listed-near-the-top-of-this-tutorial" class="anchor" href="#you-are-welcome-to-repeat-this-with-h1-data-with-files-containing-4096-seconds-of-data-and-with-data-sampled-at-16384-hz-all-of-the-relevant-files-are-listed-near-the-top-of-this-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>You are welcome to repeat this with H1 data, with files containing 4096 seconds of data, and with data sampled at 16384 Hz. All of the relevant files are listed near the top of this tutorial.</h1>
+
+<h1>
+<a id="user-content-in20" class="anchor" href="#in20" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>In[20]:</h1>
+
+<h1>
+<a id="user-content-read-in-the-data-at-4096-hz" class="anchor" href="#read-in-the-data-at-4096-hz" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>read in the data at 4096 Hz:</h1>
+
+<p>fn = 'L-L1_LOSC_4_V1-1126259446-32.hdf5'
+strain, time, chan_dict = rl.loaddata(fn, 'H1')</p>
+
+<p>print "Contents of all the key, value pairs in chan_dict"
+for keys,values in chan_dict.items():
+    print(keys)
+    print(values)</p>
+
+<p>print "We see that all keys have 32 seconds of '1', meaning the data pass all data quality flags"
+print "and have no HW injections, except there are CW injections in L1."
+print " "
+print 'Total number of non-NaNs in these data = ',np.sum(~np.isnan(strain))
+print 'GPS start, GPS stop and length of  all data in this file = ',time[0], time[-1],len(strain)</p>
+
+<h1>
+<a id="user-content-select-the-level-of-data-quality-default-is-data-but-cbc_cat3-is-a-conservative-choice" class="anchor" href="#select-the-level-of-data-quality-default-is-data-but-cbc_cat3-is-a-conservative-choice" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>select the level of data quality; default is "DATA" but "CBC_CAT3" is a conservative choice:</h1>
+
+<p>DQflag = 'CBC_CAT3'</p>
+
+<h1>
+<a id="user-content-readligopy-method-for-computing-segments-start-and-stop-times-with-continuous-valid-data" class="anchor" href="#readligopy-method-for-computing-segments-start-and-stop-times-with-continuous-valid-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>readligo.py method for computing segments (start and stop times with continuous valid data):</h1>
+
+<p>segment_list = rl.dq_channel_to_seglist(chan_dict[DQflag])
+print 'Number of segments with DQflag',DQflag,' = ',len(segment_list)</p>
+
+<h1>
+<a id="user-content-loop-over-seconds-and-print-out-start-stop-and-length" class="anchor" href="#loop-over-seconds-and-print-out-start-stop-and-length" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>loop over seconds and print out start, stop and length:</h1>
+
+<p>iseg = 0
+for segment in segment_list:
+    time_seg = time[segment]
+    seg_strain = strain[segment]
+    print 'GPS start, GPS stop and length of segment',iseg,         'in this file = ',time_seg[0], time_seg[-1], len(seg_strain)
+    iseg = iseg+1
+    # here is where you would insert code to analyze the data in this segment.</p>
+
+<h1>
+<a id="user-content-now-look-at-segments-with-no-cbc-hardware-injections" class="anchor" href="#now-look-at-segments-with-no-cbc-hardware-injections" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>now look at segments with no CBC hardware injections:</h1>
+
+<p>DQflag = 'NO_CBC_HW_INJ'
+segment_list = rl.dq_channel_to_seglist(chan_dict['NO_CBC_HW_INJ'])
+print 'Number of segments with DQflag',DQflag,' = ',len(segment_list)
+iseg = 0
+for segment in segment_list:
+    time_seg = time[segment]
+    seg_strain = strain[segment]
+    print 'GPS start, GPS stop and length of segment',iseg,         'in this file = ',time_seg[0], time_seg[-1], len(seg_strain)
+    iseg = iseg+1</p>
+</article></body></html>
