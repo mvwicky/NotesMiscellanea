@@ -1,0 +1,80 @@
+Thu Feb 18 14:48:10 2016 Log Cleared
+Thu Feb 18 14:48:12 2016 Console Cleared
+Thu Feb 18 14:48:12 2016 Stopping Download
+Thu Feb 18 14:48:13 2016 Save directory not found, nothing to clean
+Thu Feb 18 14:48:13 2016 Stopping Download
+Thu Feb 18 14:48:14 2016 Console Cleared
+Thu Feb 18 14:48:14 2016 Stopping Download
+Thu Feb 18 14:48:15 2016 Save directory not found, nothing to clean
+Thu Feb 18 14:49:53 2016 Closing
+Thu Feb 18 14:50:29 2016 No save directory
+Thu Feb 18 14:50:29 2016 Save directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\
+Thu Feb 18 14:50:29 2016 Opening
+Thu Feb 18 14:50:31 2016 Closing
+Thu Feb 18 14:50:53 2016 Opening
+Thu Feb 18 14:50:56 2016 Closing
+Thu Feb 18 15:01:58 2016 Opening
+Thu Feb 18 15:02:00 2016 Console Cleared
+Thu Feb 18 15:02:01 2016 Stopping Download
+Thu Feb 18 15:02:02 2016 Stopping Download
+Thu Feb 18 15:02:04 2016 Stopping Download
+Thu Feb 18 15:02:07 2016 Closing
+Thu Feb 18 15:02:22 2016 Opening
+Thu Feb 18 15:02:29 2016 Closing
+Thu Feb 18 15:03:08 2016 Opening
+Thu Feb 18 15:03:13 2016 Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\
+Thu Feb 18 15:03:17 2016 Nothing to clean
+Thu Feb 18 15:03:19 2016 Closing
+Thu Feb 18 15:05:08 2016 Opening
+Thu Feb 18 15:05:10 2016 Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\New folder
+Thu Feb 18 15:05:10 2016 Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\New folder (2)
+Thu Feb 18 15:05:10 2016 Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\New folder (3)
+Thu Feb 18 15:05:10 2016 Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\New folder (4)
+Thu Feb 18 15:05:13 2016 Closing
+Thu Feb 18 15:07:19 2016 Opening
+Thu Feb 18 15:08:24 2016 Closing
+Thu Feb 18 15:08:48 2016 Opening
+Thu Feb 18 15:08:49 2016 Nothing to clean
+Thu Feb 18 15:08:50 2016 Nothing to clean
+Thu Feb 18 15:08:51 2016 Nothing to clean
+Thu Feb 18 15:08:52 2016 Closing
+Thu Feb 18 15:09:49 2016 Opening
+Thu Feb 18 15:09:56 2016 Console Cleared
+Thu Feb 18 15:10:15 2016 Closing
+Thu Feb 18 15:18:21 2016 Opening
+Thu Feb 18 15:18:24 2016 No directory for: 2013
+Thu Feb 18 15:18:24 2016 Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\
+Thu Feb 18 15:18:24 2016 Getting slip opinions
+Thu Feb 18 15:18:24 2016 No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\Slip Opinions\
+Thu Feb 18 15:18:24 2016 Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\Slip Opinions\
+Thu Feb 18 15:18:32 2016 Stopping Download
+Thu Feb 18 15:18:33 2016 Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013
+Thu Feb 18 15:18:35 2016 Nothing to clean
+Thu Feb 18 15:18:38 2016 Closing
+Thu Feb 18 15:19:19 2016 Opening
+Thu Feb 18 15:19:21 2016 No directory for: 2014
+Thu Feb 18 15:19:21 2016 Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\
+Thu Feb 18 15:19:21 2016 Getting slip opinions
+Thu Feb 18 15:19:21 2016 No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
+Thu Feb 18 15:19:21 2016 Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
+Thu Feb 18 15:19:26 2016 Closing
+Thu Feb 18 15:20:06 2016 Opening
+Thu Feb 18 15:20:08 2016 Getting slip opinions
+Thu Feb 18 15:20:09 2016 http://supremecourt.gov/opinions/14pdf/14-7955_aplc.pdf
+Thu Feb 18 15:20:20 2016 http://supremecourt.gov/opinions/14pdf/13-1314_3ea4.pdf
+Thu Feb 18 15:20:25 2016 http://supremecourt.gov/opinions/14pdf/14-46_bqmc.pdf
+Thu Feb 18 15:20:29 2016 http://supremecourt.gov/opinions/14pdf/14-556_3204.pdf
+Thu Feb 18 15:20:35 2016 http://supremecourt.gov/opinions/14pdf/13-7120_p86b.pdf
+Thu Feb 18 15:20:35 2016 Stopping Download
+Thu Feb 18 15:20:36 2016 Problem cleaning C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\
+Thu Feb 18 15:20:39 2016 Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014
+Thu Feb 18 15:20:40 2016 Nothing to clean
+Thu Feb 18 15:20:40 2016 Nothing to clean
+Thu Feb 18 15:20:40 2016 Nothing to clean
+Thu Feb 18 15:20:44 2016 Closing
+Thu Feb 18 15:24:58 2016 Opening
+Thu Feb 18 15:25:01 2016 Closing
+Thu Feb 18 15:26:02 2016 Opening
+Thu Feb 18 15:26:05 2016 Closing
+Thu Feb 18 15:27:09 2016 Opening
+Thu Feb 18 15:27:24 2016 Closing

@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup, element
 from urllib import request
 import requests
 import multiprocessing as mp 
-import os, sys, random, math
+import os, sys, random, math, shutil
 
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
@@ -36,23 +36,41 @@ def usage(scriptName):
 class Window(QWidget):
 	def __init__(self, parent=None):
 		QWidget.__init__(self, parent)
+
+		self.audio = dict(base = 'http://www.supremecourt.gov/oral_arguments/argument_audio/',
+			 	 media = 'http://www.supremecourt.gov/media/audio/mp3files/')
+		self.slipBase = 'http://supremecourt.gov/opinions/slipopinion/'
+
 		self.initUI()
 	def initUI(self):
-		
 		self.setWindowTitle('Scotus Scraper')
-		#self.setWindowIcon(QIcon('web.png'))
+		self.setWindowIcon(QIcon('Seal.png'))
 
 		grid = QGridLayout()
-		grid.setSpacing(1)
-		
-
+		grid.setSpacing(10)
+		pos = 0
 		savedir = os.getcwd() + '\\SCOTUS\\'
 		if os.path.exists(savedir):
 			yDir = os.listdir(savedir)
 			print(yDir)
 			for year in yDir:
-				yearButton = QPushButton(year)
-				grid.addWidget(yearButton, yDir.index(year), 0, 1, 1)
+				yearButton = QPushButton(year, self)
+				
+
+				grid.addWidget(yearButton, pos, 1, 1, 1)
+				pos += 1
+
+		cleanButton = QPushButton('Clean', self)
+		cleanButton.connect(cleanButton, SIGNAL('clicked()'), self.clean)
+
+		pos += 1
+		grid.addWidget(cleanButton, pos, 1, 1, 1)
+
+		self.con = [QLabel(str(i), self) for i in range(5)]
+		for c in self.con:
+			pos += 1
+			grid.addWidget(c, pos, 1, 1, 1)
+			c.setText('')
 
 		self.setLayout(grid)
 		self.resize(500, 750)
@@ -63,6 +81,33 @@ class Window(QWidget):
 		cp = QDesktopWidget().availableGeometry().center()
 		qr.moveCenter(cp)
 		self.move(qr.topLeft())
+	def clean(self):
+		savedir = os.getcwd() + '\\SCOTUS\\'
+		if os.path.exists(savedir):
+			shutil.rmtree('SCOTUS', ignore_errors=True)
+			if os.path.exists(savedir):
+				self.sendMessage('Problem removing save directory')
+			else:
+				self.sendMessage('Save directory removed')
+				#self.updateConsole('Save directory removed')
+		else:
+			self.sendMessage('Save directory not found, nothing to clean')
+	def sendMessage(self, msg):
+		self.updateConsole(msg)
+		sys.stdout.write(msg + '\n')
+		sys.stdout.flush()
+	def updateConsole(self, msg):
+		for i in range(len(self.con) - 1):
+			self.con[i].setText(self.con[i + 1].text())
+		self.con[-1].setText(msg)
+	def getArgumentAudio(self, year):
+		pass
+	def getSlipOpinions(self, year):
+		pass
+	def getAll(self, year):
+		pass
+
+
 
 def main():
 	scriptName = sys.argv[0] # get name
@@ -94,7 +139,7 @@ def main():
 	for year in years: 
 		year = str(year)
 
-		print("Making Directories")
+		print("Making Directories for {}".format(year))
 		yearDir = savedir + year + '\\'
 		if not os.path.exists(yearDir):
 			try:
@@ -102,6 +147,9 @@ def main():
 			except:
 				print("Problem Making: {}".format(yearDir))
 				sys.exit(-1)
+		else:
+			print("Year Already Fetched")
+			continue
 		audioDir = yearDir + 'Argument Audio\\'
 		if not os.path.exists(audioDir):
 			try:
