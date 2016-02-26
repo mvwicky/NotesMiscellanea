@@ -224,7 +224,7 @@ class window(QMainWindow):
 			else:
 				self.sendMessage('Directory created: {}'.format(yearDir))
 		if 'Audio' in res:
-			self.getArgumentAudio(year)
+			self.getArguemntAudio(year)
 		elif 'Slip' in res:
 			self.getSlipOpinions(year)
 		elif 'Both' in res:
