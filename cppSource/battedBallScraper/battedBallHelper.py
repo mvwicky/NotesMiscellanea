@@ -28,34 +28,29 @@ class logger(object):
 			callName = callName[2:]
 
 		if name is None: # use just script name
-			logName = '{}_{}.log'.format(callName, today)
+			self.logName = '{}_{}.log'.format(callName, today)
 		else: # use script name and type
-			logName = '{}_{}_{}.log'.format(callName, today, name) 
+			self.logName = '{}_{}_{}.log'.format(callName, today, name) 
 
-		if ovrw: # automatically overwrite
-			self.log = open(logName, 'w')
-		else:
-			if logName in os.listdir():
-				self.log = open(logName, 'a')
-			else: # create new file
-				self.log = open(logName, 'w')
+		if ovrw or self.logName not in os.listdir(): # automatically overwrite
+			log = open(self.logName, 'w')
+			log.close()
 	def __call__(self, msg, ex=False, exitCode=-1):
 		msg = str(msg)
 		sys.stdout.write('{}\r\n'.format(msg)):
 		sys.stdout.flush()
 		now = datetime.datetime.now().strftime("%X")
-		self.log.write('{} -> {}\r\n'.format(now, msg))
-		self.log.flush()
+		with open(self.logName, 'a') as log:
+			log.write('{} -> {}\r\n'.format(now, msg))
+			log.flush()
 		if ex:
 			exitMessage = 'Exiting with code: {}'.format(exitCode)
 			sys.stdout.write('{}\r\n'.format(exitMessage)):
 			sys.stdout.flush()
-			self.log.write('{} -> {}\r\n'.format(now, exitMessage))
-			self.log.flush()
-			self.log.close()
+			with open(self.logName, 'a') as log:
+				log.write('{} -> {}\r\n'.format(now, exitMessage))
+				log.flush()
 			sys.exit(exitCode)
-	def close(self):
-		self.log.close()
 
 class downloader(object):
 	def __init__(self, year):
@@ -71,7 +66,7 @@ class imgGetter(object):
 		elif sys.platform == 'win32':
 			sep = '\\'
 		else:
-			self.logMessage('Unsupported Platform', True, -1)
+			self.log('Unsupported Platform', True, -1)
 
 		if len(sys.argv) < 4:
 			self.log('Need more arguments', True, -1)
