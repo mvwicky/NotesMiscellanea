@@ -36,7 +36,7 @@ def q_pochhammer(a, q, k):
 	if k > 0:
 		for i in range(k):
 			ret *= 1 - a * q**i
-	elif k = 0:
+	elif k == 0:
 		ret = 1 
 	elif k < 0:
 		for i in range(1, np.math.absolute(k)+1):

@@ -12,17 +12,22 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 class logger(object):
+	'''class that logs output to a log file and stdout'''
 	def __init__(self, name=None, ovrw=False):
+		'''Constructor
+		   name: an optional name for the log file 
+		   ovrw: whether or not to overwrite and existing file
+		'''
 		year = datetime.datetime.today().year 
 		month = datetime.datetime.today().month 
 		day = datetime.datetime.today().day
 		today = '{}-{}-{}'.format(year, month, day)
 
 		callName = sys.argv[0]
-		if '.pyw' in callName[-4:-1]:
+		if '.pyw' in callName[-5:-1]:
 			callName = callname[:-4]
-		elif '.py' in callName[-3:-1]:
-			callName = callName[-3]
+		elif '.py' in callName[-4:-1]:
+			callName = callName[:-3]
 
 		if './' in callName[0:2]:
 			callName = callName[2:]
@@ -32,12 +37,17 @@ class logger(object):
 		else: # use script name and type
 			self.logName = '{}_{}_{}.log'.format(callName, today, name) 
 
-		if ovrw or self.logName not in os.listdir(): # automatically overwrite
+		if ovrw:
 			log = open(self.logName, 'w')
 			log.close()
 	def __call__(self, msg, ex=False, exitCode=-1):
+		'''writes msg to log file and stdout 
+		   msg: message to log 
+		   ex: whether or not to exit 
+		   exitCode: the exit code to emit, unused if not exiting 
+		'''
 		msg = str(msg)
-		sys.stdout.write('{}\r\n'.format(msg)):
+		sys.stdout.write('{}\r\n'.format(msg))
 		sys.stdout.flush()
 		now = datetime.datetime.now().strftime("%X")
 		with open(self.logName, 'a') as log:
@@ -45,7 +55,7 @@ class logger(object):
 			log.flush()
 		if ex:
 			exitMessage = 'Exiting with code: {}'.format(exitCode)
-			sys.stdout.write('{}\r\n'.format(exitMessage)):
+			sys.stdout.write('{}\r\n'.format(exitMessage))
 			sys.stdout.flush()
 			with open(self.logName, 'a') as log:
 				log.write('{} -> {}\r\n'.format(now, exitMessage))
@@ -53,7 +63,7 @@ class logger(object):
 			sys.exit(exitCode)
 
 class downloader(object):
-	def __init__(self, year):
+	def __init__(self, name, id, year):
 		self.log = logger('downloader_{}'.format(year), True)
 
 
@@ -99,7 +109,7 @@ class imgGetter(object):
 				elif getNext == 'i':
 					self.id = arg
 					getNext = None
-				elif getNext == '-y'
+				elif getNext == '-y':
 					self.years.append(arg)
 				continue
 
@@ -182,17 +192,21 @@ class imgGetter(object):
 			return 'Texas Rangers'
 		elif 'kca' in code:
 			return 'Kansas City Royals'
-		elif ''
+		#elif ''
 
 def main():
-	img = imgGetter()
-	img.getData()
-	try:
-		img.log('Test')
-	except IOError:
-		pass
-	else:
-		img.log.close()
+	#img = imgGetter()
+	#img.getData()
+	#try:
+	#	img.log('Test')
+	#except IOError:
+	#	pass
+	#else:
+	#	img.log.close()
+
+	log = logger(ovrw=True)
+	log('LogLogTestTest')
+	log('Test Log Test')
 
 if __name__ == '__main__':
 	main()

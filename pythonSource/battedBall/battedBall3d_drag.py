@@ -61,7 +61,7 @@ class battedBall(object):
 		self.g = g # gravitational acceleration
 		self.freq = freq # samples per second
 
-		theta_p = np.deg2rad(90) - self.theta # complement of theta 
+		theta_p = (np.pi / 2) - self.theta # complement of theta 
 		self.v_i = [self.v_tot * np.cos(self.phi) * np.sin(theta_p), # x = r * cos(phi) * sin(90 - theta)
 					self.v_tot * np.sin(self.phi) * np.sin(theta_p), # y = r * sin(phi) * cos(90 - theta)
 					self.v_tot * np.cos(theta_p)]                    # z = r * cos(90 - theta)
@@ -104,12 +104,12 @@ class battedBall(object):
 
 
 	def printAttr(self):
-		print("|V| =", self.v_tot)
-		print("theta, phi =", self.theta, self.phi)
-		print("(vx, vy, vz) =", self.v_i)
-		print(np.sqrt(self.v_i[0]**2 + self.v_i[1]**2 + self.v_i[2]**2))
+		print("|V| = {}".format(self.v_tot))
+		print("theta = {}".format(self.theta))
+		print("phi = {}".format(self.phi))
+		print("(vx, vy, vz) = {}".format(self.v_i))
 		print("Number of Samples:", self.n_samps)
-		print("Ascent Time: {} Descent Time: {}".format(self.t_a, self.t_d))
+		print("Ascent Time: {}\nDescent Time: {}".format(self.t_a, self.t_d))
 		print("Total Time:", self.t_tot)
 		print("Max Height:", self.z_max)
 
@@ -121,10 +121,9 @@ class battedBall(object):
 		elif d == 'z':
 			if t < self.t_a: # ascending
 				c = -(self.mass / self.k) * np.log(np.cos(np.arctan(np.sqrt(self.k / (self.mass * self.g)) * self.v_i[2])))
-				return (self.mass / self.k) * np.log(np.cos(np.sqrt((self.g * self.k) * self.mass) * t - np.arctan(np.sqrt(self.k / (self.mass * self.g)) * self.v_i[2]))) + c
+				return (self.mass / self.k) * np.log(np.cos(np.sqrt((self.g * self.k) / self.mass) * t - np.arctan(np.sqrt(self.k / (self.mass * self.g)) * self.v_i[2]))) + c
 			elif t > self.t_a: # descending
-				t -= self.t_a
-				return self.z_max - (self.mass / self.k) * np.log(np.cosh(np.sqrt((self.g * self.k) / self.mass) * t))
+				return self.z_max - (self.mass / self.k) * np.log(np.cosh(np.sqrt((self.g * self.k) / self.mass) * (t-self.t_a)))
 			elif t == self.t_a:
 				return self.z_max
 			elif t > self.t_tot:
@@ -136,9 +135,9 @@ class battedBall(object):
 
 
 
-v = mph_to_mps(110)
-theta = np.deg2rad(20)
-phi = np.deg2rad(30)
+v = mph_to_mps(85)
+theta = np.deg2rad(88)
+phi = np.deg2rad(45)
 
 bb1 = battedBall(v, theta, phi, 0)
 bb1.printAttr()
@@ -148,6 +147,13 @@ ax = fig.gca(projection='3d')
 
 ax.plot(bb1.x_vec, bb1.y_vec, bb1.z_vec)
 
-ax.autoscale()
+ax.set_xlim3d(0,100)
+ax.set_ylim3d(0,100)
+ax.set_zlim3d(0,50)
+
+ax.set_xlabel('X Axis')
+ax.set_ylabel('Y Axis')
+ax.set_zlabel('Z Axis')
+
 
 plt.show()
