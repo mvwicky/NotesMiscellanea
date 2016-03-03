@@ -1,0 +1,22 @@
+<div class="latest_queries">
+	{% if latest_player_list %}
+		<h3>Last Five Queryed Players</h3>
+		{% for player in latest_player_list %}
+			<div><a href="{% url 'getPlayer:detail' player.id %}">{{player.player_text}}</a></div><br />
+		{% endfor %}
+	{% else %}
+		<h4>No Recent Queries</h4>
+	{% endif %}
+</div>
+
+<br />
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+<div class="submit_request">
+	<h4>Get Player Data</h4>
+	<form action="{% url 'getPlayer:index' %}" method="post">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<input type="submit" value="Submit">
+	</form>
+</div>

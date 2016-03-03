@@ -25,17 +25,32 @@ class downloader(object):
 
 		self.log = logger(logName, ovrw=True)
 
-		if self.folderName not in os.listdir():
+		if folderName not in os.listdir():
 			try:
 				os.path.makedirs(self.folderName)
 			except:
-				self.log('Problem creating {}'.format(self.folderName), True, -1)
+				self.log('Problem creating {}'.format(folderName), True, -1)
 			else:
-				self.log('Folder created {}'.format(self.folderName))
+				self.log('Folder created {}'.format(folderName))
 
 		self.saveDir = os.path.join(os.getcwd(), self.folderName)
 
 		self.urlBase = 'http://gd2.mlb.com/components/game/mlb/year_{}/'.format(year)
+
+		yearSoup = BeautifulSoup(request.urlopen(self.urlBase), 'lxml')
+		months = []
+		for a in yearSoup.find_all('a'):
+			if 'month_' in a.get('href'):
+				link = '{}/{}'.format(self.urlBase, a.get('href'))
+				months.append(link)
+
+		print(months)
+
+
+		#gids = []
+		#for a in yearSoup.find_all('a'):
+		#	if 'gid_' in a.get('href'):
+		#		a.append(a.get('href'))
 
 
 def main():
