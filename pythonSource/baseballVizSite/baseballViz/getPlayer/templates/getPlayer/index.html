@@ -1,6 +1,10 @@
-<div class="latest_queries">
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'getPlayer/style.css' %}" />
+<div class="header"></div>
+
+<div id="content" class="latest_queries">
 	{% if latest_player_list %}
-		<h3>Last Five Queryed Players</h3>
+		<h4>Last Five Queryed Players</h4>
 		{% for player in latest_player_list %}
 			<div><a href="{% url 'getPlayer:detail' player.id %}">{{player.player_text}}</a></div><br />
 		{% endfor %}
@@ -9,11 +13,9 @@
 	{% endif %}
 </div>
 
-<br />
-
-{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-<div class="submit_request">
+<div id="content" class="submit_request">
 	<h4>Get Player Data</h4>
+	{% if error_message %}<p id="err">{{ error_message }}</strong>{% endif %}
 	<form action="{% url 'getPlayer:index' %}" method="post">
 		{% csrf_token %}
 		{{ form.as_p }}

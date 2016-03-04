@@ -14,19 +14,29 @@ from .forms import PlayerForm
 def index(request):
 	if request.method == 'POST':
 		form = PlayerForm(request.POST)
+		print(form)
+		print(form.data)
 		if form.is_valid():
 			print(form.cleaned_data)
 			name = form.cleaned_data['player_name']
 			year = form.cleaned_data['year']
-			print(name)
-			print(year)
-			player = Player(player_text=name, player_id_num=year, last_queried=timezone.now())
-			player.save()
+			batted_ball = form.cleaned_data['batted_ball']
+			zone_map = form.cleaned_data['zone_map']
+			if not batted_ball and not zone_map:
+				error_message = "You Must Select An Option"
+			else:
+				print(name)
+				print(year)
+				player = Player(player_text=name, player_id_num=year, last_queried=timezone.now())
+				player.save()
+				error_message = None
 		else:
-			pass
-			
-	error_message = None
-	latest_player_list = Player.objects.order_by('-last_queried')[:5]
+			print(form.errors)
+			print(form.cleaned_data)
+			error_message = "Invalid Inputs"
+	else:
+		error_message = None
+	latest_player_list = Player.objects.order_by('-last_queried')[:10]
 	form = PlayerForm()
 	context = {'latest_player_list': latest_player_list, 
 				   'form': form,
@@ -34,14 +44,6 @@ def index(request):
 
 	return render(request, 'getPlayer/index.html', context)
 
-# def get_options(request):
-# 	if request.method == 'POST':
-# 		form = PlayerForm(request.POST)
-# 		if form.is_valid():
-# 			name = form.cleaned_data['player_name']
-# 			batted_ball = form.cleaned_data['batted_ball']
-# 			zone_map = form.cleaned_data['zone_map']
-# 			year = form.cleaned_data['year']
 
 # 			# Check if player name exists in gameday files
 # 			# Get id number from gameday files

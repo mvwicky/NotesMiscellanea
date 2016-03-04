@@ -1,0 +1,38 @@
+body {
+	background-color: #FFFFF5;
+	height: 2000px;
+	width: 1000px;
+}
+
+div.header {
+	position: absolute;
+	background-color: #D9F5FF;
+	display: block;
+	border-radius: 15px;
+	top: -50px;
+	left: 0px;
+	right: 0px;
+	height: 100px;
+}
+
+#content {
+	position: absolute;
+	top: 100px;
+}
+
+div.latest_queries{
+	position: absolute;
+	width: 500px;
+	left: 250px;
+
+}
+
+div.submit_request {
+	position: absolute;
+	width: 500px;
+	right: 250px;
+}
+
+#err {
+	color: #BF6060;
+}
