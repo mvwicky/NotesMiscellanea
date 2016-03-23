@@ -1,0 +1,306 @@
+Wed Mar 23 13:48:38 2016 -> Opening
+Wed Mar 23 13:48:40 2016 -> No directory for: 2013
+Wed Mar 23 13:48:40 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\
+Wed Mar 23 13:48:40 2016 -> Getting slip opinions
+Wed Mar 23 13:48:40 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\Slip Opinions\
+Wed Mar 23 13:48:40 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\Slip Opinions\
+Wed Mar 23 13:48:41 2016 -> Downloading: http://supremecourt.gov/opinions/13pdf/13-9085_q4kp.pdf
+Wed Mar 23 13:48:50 2016 -> Closing
+Wed Mar 23 13:49:43 2016 -> Opening
+Wed Mar 23 13:49:45 2016 -> No directory for: 2014
+Wed Mar 23 13:49:45 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\
+Wed Mar 23 13:49:45 2016 -> Getting slip opinions
+Wed Mar 23 13:49:45 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
+Wed Mar 23 13:49:45 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
+Wed Mar 23 13:49:46 2016 -> http://supremecourt.gov/opinions/14pdf/14-7955_aplc.pdf
+Wed Mar 23 13:49:52 2016 -> Closing
+Wed Mar 23 13:49:57 2016 -> Opening
+Wed Mar 23 13:50:01 2016 -> Closing
+Wed Mar 23 13:50:10 2016 -> Opening
+Wed Mar 23 13:50:11 2016 -> No directory for: 2015
+Wed Mar 23 13:50:11 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\
+Wed Mar 23 13:50:11 2016 -> Getting slip opinions
+Wed Mar 23 13:50:11 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\Slip Opinions\
+Wed Mar 23 13:50:11 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\Slip Opinions\
+Wed Mar 23 13:50:12 2016 -> http://supremecourt.gov/opinions/15pdf/14-520_d18f.pdf
+Wed Mar 23 13:50:13 2016 -> http://supremecourt.gov/opinions/15pdf/14-1406_6536.pdf
+Wed Mar 23 13:50:14 2016 -> http://supremecourt.gov/opinions/15pdf/14-1146_0pm1.pdf
+Wed Mar 23 13:50:18 2016 -> http://supremecourt.gov/opinions/15pdf/14-1209_kifl.pdf
+Wed Mar 23 13:50:20 2016 -> http://supremecourt.gov/opinions/15pdf/137orig_ap6b.pdf
+Wed Mar 23 13:50:20 2016 -> Closing
+Wed Mar 23 13:52:40 2016 -> Opening
+Wed Mar 23 13:52:43 2016 -> Closing
+Wed Mar 23 13:52:59 2016 -> No save directory
+Wed Mar 23 13:52:59 2016 -> Save directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\
+Wed Mar 23 13:52:59 2016 -> Opening
+Wed Mar 23 13:53:02 2016 -> No directory for: 2014
+Wed Mar 23 13:53:02 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\
+Wed Mar 23 13:53:02 2016 -> Getting slip opinions
+Wed Mar 23 13:53:02 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
+Wed Mar 23 13:53:02 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
+Wed Mar 23 13:53:03 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-7955_aplc.pdf
+Wed Mar 23 13:53:03 2016 -> Total Length: 817645
+Wed Mar 23 13:53:09 2016 -> Closing
+Wed Mar 23 13:55:32 2016 -> No save directory
+Wed Mar 23 13:55:32 2016 -> Save directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\
+Wed Mar 23 13:55:32 2016 -> Opening
+Wed Mar 23 13:55:34 2016 -> No directory for: 2014
+Wed Mar 23 13:55:34 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\
+Wed Mar 23 13:55:34 2016 -> Getting slip opinions
+Wed Mar 23 13:55:34 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
+Wed Mar 23 13:55:34 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
+Wed Mar 23 13:55:35 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-7955_aplc.pdf
+Wed Mar 23 13:55:36 2016 -> Total Length: 817.645K
+Wed Mar 23 13:55:46 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1314_3ea4.pdf
+Wed Mar 23 13:55:46 2016 -> Total Length: 414.369K
+Wed Mar 23 13:55:52 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-46_bqmc.pdf
+Wed Mar 23 13:55:52 2016 -> Total Length: 260.293K
+Wed Mar 23 13:55:56 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-556_3204.pdf
+Wed Mar 23 13:55:56 2016 -> Total Length: 439.062K
+Wed Mar 23 13:56:00 2016 -> Stopping Download
+Wed Mar 23 13:56:02 2016 -> Cancelling downloading
+Wed Mar 23 13:56:02 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-7120_p86b.pdf
+Wed Mar 23 13:56:02 2016 -> Total Length: 278.528K
+Wed Mar 23 13:56:06 2016 -> Cancelling downloading
+Wed Mar 23 13:56:06 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1371_8m58.pdf
+Wed Mar 23 13:56:06 2016 -> Total Length: 347.615K
+Wed Mar 23 13:56:07 2016 -> Stopping Download
+Wed Mar 23 13:56:07 2016 -> Stopping Download
+Wed Mar 23 13:56:07 2016 -> Stopping Download
+Wed Mar 23 13:56:07 2016 -> Stopping Download
+Wed Mar 23 13:56:10 2016 -> Cancelling downloading
+Wed Mar 23 13:56:11 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-114_qol1.pdf
+Wed Mar 23 13:56:11 2016 -> Total Length: 216.876K
+Wed Mar 23 13:56:12 2016 -> Closing
+Wed Mar 23 13:56:43 2016 -> No save directory
+Wed Mar 23 13:56:43 2016 -> Save directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\
+Wed Mar 23 13:56:43 2016 -> Opening
+Wed Mar 23 13:56:45 2016 -> No directory for: 2012
+Wed Mar 23 13:56:45 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\
+Wed Mar 23 13:56:45 2016 -> Getting slip opinions
+Wed Mar 23 13:56:45 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Slip Opinions\
+Wed Mar 23 13:56:45 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Slip Opinions\
+Wed Mar 23 13:56:46 2016 -> Downloading: http://supremecourt.gov/opinions/12pdf/12-307_6j37.pdf
+Wed Mar 23 13:56:46 2016 -> Total Length: 384.763K
+Wed Mar 23 13:56:51 2016 -> Downloading: http://supremecourt.gov/opinions/12pdf/12-357_bq7c.pdf
+Wed Mar 23 13:56:51 2016 -> Total Length: 137.785K
+Wed Mar 23 13:56:52 2016 -> Stopping Download
+Wed Mar 23 13:56:53 2016 -> Cancelling downloading
+Wed Mar 23 13:57:01 2016 -> Closing
+Wed Mar 23 14:11:39 2016 -> No save directory
+Wed Mar 23 14:11:39 2016 -> Save directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\
+Wed Mar 23 14:11:39 2016 -> Opening
+Wed Mar 23 14:11:41 2016 -> No directory for: 2010
+Wed Mar 23 14:11:41 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2010\
+Wed Mar 23 14:11:41 2016 -> Getting slip opinions
+Wed Mar 23 14:11:41 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2010\Slip Opinions\
+Wed Mar 23 14:11:41 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2010\Slip Opinions\
+Wed Mar 23 14:11:41 2016 -> Downloading: http://supremecourt.gov/opinions/10pdf/11-5001.pdf
+Wed Mar 23 14:11:42 2016 -> Total Length: 109.979K
+Wed Mar 23 14:11:43 2016 -> Downloading: http://supremecourt.gov/opinions/10pdf/09-940.pdf
+Wed Mar 23 14:11:43 2016 -> Total Length: 100.038K
+Wed Mar 23 14:11:45 2016 -> Downloading: http://supremecourt.gov/opinions/10pdf/10-76.pdf
+Wed Mar 23 14:11:45 2016 -> Total Length: 163.554K
+Wed Mar 23 14:11:46 2016 -> Closing
+Wed Mar 23 14:13:50 2016 -> Opening
+Wed Mar 23 14:13:53 2016 -> No directory for: 2014
+Wed Mar 23 14:13:53 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\
+Wed Mar 23 14:13:53 2016 -> Getting argument transcripts for 2014
+Wed Mar 23 14:13:53 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Argument Transcripts\
+Wed Mar 23 14:13:53 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Argument Transcripts\
+Wed Mar 23 14:14:09 2016 -> Closing
+Wed Mar 23 14:14:55 2016 -> Opening
+Wed Mar 23 14:14:57 2016 -> Getting argument transcripts for 2014
+Wed Mar 23 14:14:58 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/04-1360b.pdf
+Wed Mar 23 14:14:58 2016 -> Total Length: 259.855K
+Wed Mar 23 14:15:01 2016 -> Closing
+Wed Mar 23 14:15:31 2016 -> Opening
+Wed Mar 23 14:15:33 2016 -> No directory for: 2013
+Wed Mar 23 14:15:33 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\
+Wed Mar 23 14:15:33 2016 -> Getting slip opinions
+Wed Mar 23 14:15:33 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\Slip Opinions\
+Wed Mar 23 14:15:33 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\Slip Opinions\
+Wed Mar 23 14:15:38 2016 -> Closing
+Wed Mar 23 14:16:24 2016 -> Opening
+Wed Mar 23 14:16:26 2016 -> No directory for: 2012
+Wed Mar 23 14:16:26 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\
+Wed Mar 23 14:16:26 2016 -> Getting slip opinions
+Wed Mar 23 14:16:26 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Slip Opinions\
+Wed Mar 23 14:16:26 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Slip Opinions\
+Wed Mar 23 14:16:27 2016 -> Downloading: http://supremecourt.gov/opinions/12pdf/12-307_6j37.pdf
+Wed Mar 23 14:16:28 2016 -> Total Length: 384.763K
+Wed Mar 23 14:16:33 2016 -> Downloading: http://supremecourt.gov/opinions/12pdf/12-357_bq7c.pdf
+Wed Mar 23 14:16:33 2016 -> Total Length: 137.785K
+Wed Mar 23 14:16:35 2016 -> Downloading: http://supremecourt.gov/opinions/12pdf/12-144_8ok0.pdf
+Wed Mar 23 14:16:35 2016 -> Total Length: 173.339K
+Wed Mar 23 14:16:35 2016 -> Closing
+Wed Mar 23 14:17:56 2016 -> Opening
+Wed Mar 23 14:17:58 2016 -> No directory for: 2015
+Wed Mar 23 14:17:58 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\
+Wed Mar 23 14:17:58 2016 -> Getting argument transcripts for 2015
+Wed Mar 23 14:17:58 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\Argument Transcripts\
+Wed Mar 23 14:17:58 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\Argument Transcripts\
+Wed Mar 23 14:17:58 2016 -> Starting download of 53 files
+Wed Mar 23 14:17:59 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/14-1504_5he6.pdf
+Wed Mar 23 14:17:59 2016 -> Total Length: 1397.802K
+Wed Mar 23 14:18:01 2016 -> Closing
+Wed Mar 23 14:18:32 2016 -> Opening
+Wed Mar 23 14:18:37 2016 -> Closing
+Wed Mar 23 14:19:52 2016 -> Opening
+Wed Mar 23 14:19:54 2016 -> Getting slip opinions
+Wed Mar 23 14:19:54 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
+Wed Mar 23 14:19:54 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
+Wed Mar 23 14:19:55 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-7955_aplc.pdf
+Wed Mar 23 14:19:55 2016 -> Total Length: 817.645K
+Wed Mar 23 14:20:06 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1314_3ea4.pdf
+Wed Mar 23 14:20:06 2016 -> Total Length: 414.369K
+Wed Mar 23 14:20:12 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-46_bqmc.pdf
+Wed Mar 23 14:20:12 2016 -> Total Length: 260.293K
+Wed Mar 23 14:20:16 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-556_3204.pdf
+Wed Mar 23 14:20:16 2016 -> Total Length: 439.062K
+Wed Mar 23 14:20:22 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-7120_p86b.pdf
+Wed Mar 23 14:20:22 2016 -> Total Length: 278.528K
+Wed Mar 23 14:20:26 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1371_8m58.pdf
+Wed Mar 23 14:20:26 2016 -> Total Length: 347.615K
+Wed Mar 23 14:20:30 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-114_qol1.pdf
+Wed Mar 23 14:20:30 2016 -> Total Length: 216.876K
+Wed Mar 23 14:20:33 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-720_jiel.pdf
+Wed Mar 23 14:20:34 2016 -> Total Length: 159.828K
+Wed Mar 23 14:20:36 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1175_k537.pdf
+Wed Mar 23 14:20:36 2016 -> Total Length: 210.587K
+Wed Mar 23 14:20:39 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-6368_7lhn.pdf
+Wed Mar 23 14:20:39 2016 -> Total Length: 129.812K
+Wed Mar 23 14:20:41 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-275_feah.pdf
+Wed Mar 23 14:20:41 2016 -> Total Length: 212.841K
+Wed Mar 23 14:20:44 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1433_bpm1.pdf
+Wed Mar 23 14:20:44 2016 -> Total Length: 286.269K
+Wed Mar 23 14:20:48 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1428_1a7d.pdf
+Wed Mar 23 14:20:49 2016 -> Total Length: 273.658K
+Wed Mar 23 14:20:52 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1352_ed9l.pdf
+Wed Mar 23 14:20:52 2016 -> Total Length: 126.187K
+Wed Mar 23 14:20:54 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-144_758b.pdf
+Wed Mar 23 14:20:54 2016 -> Total Length: 2820.407K
+Wed Mar 23 14:21:31 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-378_k537.pdf
+Wed Mar 23 14:21:31 2016 -> Total Length: 108.061K
+Wed Mar 23 14:21:33 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-502_9olb.pdf
+Wed Mar 23 14:21:33 2016 -> Total Length: 193.465K
+Wed Mar 23 14:21:36 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-185_i4dk.pdf
+Wed Mar 23 14:21:36 2016 -> Total Length: 105.993K
+Wed Mar 23 14:21:38 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-103_bpdg.pdf
+Wed Mar 23 14:21:38 2016 -> Total Length: 144.081K
+Wed Mar 23 14:21:40 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1402_e29g.pdf
+Wed Mar 23 14:21:40 2016 -> Total Length: 195.748K
+Wed Mar 23 14:21:43 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-628_3dq3.pdf
+Wed Mar 23 14:21:43 2016 -> Total Length: 430.399K
+Wed Mar 23 14:21:49 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-939_cpdh.pdf
+Wed Mar 23 14:21:49 2016 -> Total Length: 70.344K
+Wed Mar 23 14:21:50 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1034_3dq4.pdf
+Wed Mar 23 14:21:50 2016 -> Total Length: 153.16K
+Wed Mar 23 14:21:53 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1421_p8k0.pdf
+Wed Mar 23 14:21:53 2016 -> Total Length: 84.782K
+Wed Mar 23 14:21:55 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-86_p86b.pdf
+Wed Mar 23 14:21:55 2016 -> Total Length: 146.966K
+Wed Mar 23 14:21:57 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-983_7l48.pdf
+Wed Mar 23 14:21:57 2016 -> Total Length: 212.222K
+Wed Mar 23 14:22:01 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-935_i4dj.pdf
+Wed Mar 23 14:22:01 2016 -> Total Length: 303.707K
+Wed Mar 23 14:22:05 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/12-1497_2d8f.pdf
+Wed Mar 23 14:22:05 2016 -> Total Length: 107.242K
+Wed Mar 23 14:22:07 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-896_l53m.pdf
+Wed Mar 23 14:22:07 2016 -> Total Length: 127.301K
+Wed Mar 23 14:22:09 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1487_l6gn.pdf
+Wed Mar 23 14:22:09 2016 -> Total Length: 95.284K
+Wed Mar 23 14:22:11 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1412_0pl1.pdf
+Wed Mar 23 14:22:11 2016 -> Total Length: 149.523K
+Wed Mar 23 14:22:13 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-485_o7jp.pdf
+Wed Mar 23 14:22:13 2016 -> Total Length: 292.533K
+Wed Mar 23 14:22:17 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1333_g31h.pdf
+Wed Mar 23 14:22:17 2016 -> Total Length: 156.249K
+Wed Mar 23 14:22:19 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-550_97be.pdf
+Wed Mar 23 14:22:20 2016 -> Total Length: 82.637K
+Wed Mar 23 14:22:21 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-400_f2ah.pdf
+Wed Mar 23 14:22:21 2016 -> Total Length: 105.555K
+Wed Mar 23 14:22:23 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-116_9o6b.pdf
+Wed Mar 23 14:22:23 2016 -> Total Length: 99.238K
+Wed Mar 23 14:22:24 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1019_c1o2.pdf
+Wed Mar 23 14:22:24 2016 -> Total Length: 112.854K
+Wed Mar 23 14:22:26 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1499_d18e.pdf
+Wed Mar 23 14:22:26 2016 -> Total Length: 240.354K
+Wed Mar 23 14:22:30 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1074_9olb.pdf
+Wed Mar 23 14:22:30 2016 -> Total Length: 224.302K
+Wed Mar 23 14:22:33 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-271_j4ek.pdf
+Wed Mar 23 14:22:33 2016 -> Total Length: 156.841K
+Wed Mar 23 14:22:35 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-9972_p8k0.pdf
+Wed Mar 23 14:22:35 2016 -> Total Length: 160.043K
+Wed Mar 23 14:22:38 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-15_d1oe.pdf
+Wed Mar 23 14:22:38 2016 -> Total Length: 215.222K
+Wed Mar 23 14:22:41 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-618_4357.pdf
+Wed Mar 23 14:22:41 2016 -> Total Length: 75.556K
+Wed Mar 23 14:22:42 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-593_o7jq.pdf
+Wed Mar 23 14:22:43 2016 -> Total Length: 61.917K
+Wed Mar 23 14:22:44 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-895_o7jq.pdf
+Wed Mar 23 14:22:44 2016 -> Total Length: 569.337K
+Wed Mar 23 14:22:52 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/12-1226_k5fl.pdf
+Wed Mar 23 14:22:52 2016 -> Total Length: 235.269K
+Wed Mar 23 14:22:55 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-435_8o6b.pdf
+Wed Mar 23 14:22:55 2016 -> Total Length: 189.723K
+Wed Mar 23 14:22:58 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-352_3204.pdf
+Wed Mar 23 14:22:58 2016 -> Total Length: 214.668K
+Wed Mar 23 14:23:01 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/126orig_4256.pdf
+Wed Mar 23 14:23:02 2016 -> Total Length: 69.804K
+Wed Mar 23 14:23:04 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1041_0861.pdf
+Wed Mar 23 14:23:04 2016 -> Total Length: 230.074K
+Wed Mar 23 14:23:07 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1080_f29g.pdf
+Wed Mar 23 14:23:07 2016 -> Total Length: 239.119K
+Wed Mar 23 14:23:11 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-553_1b82.pdf
+Wed Mar 23 14:23:11 2016 -> Total Length: 136.679K
+Wed Mar 23 14:23:13 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1032_8759.pdf
+Wed Mar 23 14:23:13 2016 -> Total Length: 140.61K
+Wed Mar 23 14:23:15 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-7451_m64o.pdf
+Wed Mar 23 14:23:15 2016 -> Total Length: 226.847K
+Wed Mar 23 14:23:19 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-534_19m2.pdf
+Wed Mar 23 14:23:19 2016 -> Total Length: 185.453K
+Wed Mar 23 14:23:21 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/126orig_olq2.pdf
+Wed Mar 23 14:23:22 2016 -> Total Length: 229.48K
+Wed Mar 23 14:23:25 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1010_7k47.pdf
+Wed Mar 23 14:23:25 2016 -> Total Length: 127.612K
+Wed Mar 23 14:23:27 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1211_1bn2.pdf
+Wed Mar 23 14:23:27 2016 -> Total Length: 94.461K
+Wed Mar 23 14:23:28 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1174_5468.pdf
+Wed Mar 23 14:23:29 2016 -> Total Length: 101.402K
+Wed Mar 23 14:23:30 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-894_e2qg.pdf
+Wed Mar 23 14:23:30 2016 -> Total Length: 132.07K
+Wed Mar 23 14:23:32 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-6873_21p3.pdf
+Wed Mar 23 14:23:32 2016 -> Total Length: 89.297K
+Wed Mar 23 14:23:34 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-6827_5h26.pdf
+Wed Mar 23 14:23:34 2016 -> Total Length: 139.755K
+Wed Mar 23 14:23:36 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-854_o7jp.pdf
+Wed Mar 23 14:23:36 2016 -> Total Length: 228.304K
+Wed Mar 23 14:23:39 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-975_8n6a.pdf
+Wed Mar 23 14:23:39 2016 -> Total Length: 155.634K
+Wed Mar 23 14:23:41 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-7211_8o6a.pdf
+Wed Mar 23 14:23:42 2016 -> Total Length: 136.619K
+Wed Mar 23 14:23:44 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-9026_11o2.pdf
+Wed Mar 23 14:23:44 2016 -> Total Length: 74.154K
+Wed Mar 23 14:23:45 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-684_ba7d.pdf
+Wed Mar 23 14:23:45 2016 -> Total Length: 108.498K
+Wed Mar 23 14:23:47 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/no5orig_d18e.pdf
+Wed Mar 23 14:23:47 2016 -> Total Length: 630.606K
+Wed Mar 23 14:23:55 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-719_8mjp.pdf
+Wed Mar 23 14:23:55 2016 -> Total Length: 158.784K
+Wed Mar 23 14:23:58 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-604_ec8f.pdf
+Wed Mar 23 14:23:58 2016 -> Total Length: 160.638K
+Wed Mar 23 14:24:00 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-517_7l48.pdf
+Wed Mar 23 14:24:01 2016 -> Total Length: 125.496K
+Wed Mar 23 14:24:02 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-433_5h26.pdf
+Wed Mar 23 14:24:02 2016 -> Total Length: 108.126K
+Wed Mar 23 14:24:04 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-95_3204.pdf
+Wed Mar 23 14:24:04 2016 -> Total Length: 66.883K
+Wed Mar 23 14:24:05 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-212_c07d.pdf
+Wed Mar 23 14:24:05 2016 -> Total Length: 72.645K
+Wed Mar 23 14:24:07 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1318_3f14.pdf
+Wed Mar 23 14:24:07 2016 -> Total Length: 58.954K
+Wed Mar 23 14:24:08 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-946_adbc.pdf
+Wed Mar 23 14:24:08 2016 -> Total Length: 75.888K
+Wed Mar 23 14:24:09 2016 -> Download of 2 files completed
+Wed Mar 23 14:28:48 2016 -> Closing
