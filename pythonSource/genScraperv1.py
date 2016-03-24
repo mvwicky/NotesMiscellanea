@@ -29,6 +29,11 @@ class genScraper(QMainWindow):
         grid = QGridLayout()
         
 
+        self.domainName, self.directory = self.confirmURL()
+
+        
+
+
         self.show()
     def confirmURL(self):
         if 'http:' not in self.url:
@@ -51,6 +56,7 @@ class genScraper(QMainWindow):
         lSlash = self.url.rfind('/')
         if lSlash == len(self.url) - 1:
             pass
+        return 'domainName', 'directory'
 def main():
     app = QApplication(sys.argv)
     scraper = genScraper()
