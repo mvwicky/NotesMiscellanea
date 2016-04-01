@@ -8,7 +8,10 @@ A repo of notes that I make occasionally, including a tex file that attempts to 
 - Coop Reflections: contains markdown for coop reflection notes 
 - coreutils-8.25: contains source for the GNU `coreutils` programs, e.g., `cp`, `ls`, `rm`, etc.
 - cppSource: contains `C++` source files 
-- DOOM: contains the source code for DOOM 
+- devd: a server daemon for development
+- DOOM: contains the source code for the original Doom
+- DOOM-3: contains the source code for Doom 3 
+- DOOM-3-BFG: contains the source code for Doom 3 BFG edition
 - GravWaves: contains documents related to analyzing LIGO data
 - GuidesAndSpecs: contains reference manuals and various standard specifications
   - AES_Specification

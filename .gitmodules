@@ -1,0 +1,18 @@
+[submodule "myhtml"]
+	path = myhtml
+	url = https://github.com/lexborisov/myhtml.git
+[submodule "pugixml"]
+	path = pugixml
+	url = https://github.com/zeux/pugixml.git
+[submodule "DOOM"]
+	path = DOOM
+	url = https://github.com/id-Software/DOOM.git
+[submodule "DOOM-3-BFG"]
+	path = DOOM-3-BFG
+	url = https://github.com/id-Software/DOOM-3-BFG.git
+[submodule "DOOM-3"]
+	path = DOOM-3
+	url = https://github.com/id-Software/DOOM-3.git
+[submodule "devd"]
+	path = devd
+	url = https://github.com/cortesi/devd.git

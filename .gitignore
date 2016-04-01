@@ -1,0 +1,8 @@
+# Compiled Source #
+*.o
+*.exe
+*.pyc
+
+*/__pycache__
+
+README.html
