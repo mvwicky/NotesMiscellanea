@@ -1,8 +1,10 @@
-# Compiled Source #
 *.o
 *.exe
 *.pyc
 
-*/__pycache__
-
-README.html
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.syntex.gz
+*.toc

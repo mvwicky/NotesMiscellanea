@@ -1,42 +1,40 @@
 # NotesMiscellanea
-A repo of notes that I make occasionally, including a tex file that attempts to compile them all
+A repo of interesting (to me) documents
 
 ## Contents:
 ### Folders:
-- AES_Rijndael: contains source for a `c` implementation of the AES algorithm
-- BlendFiles: contains blender files
-- Coop Reflections: contains markdown for coop reflection notes 
-- coreutils-8.25: contains source for the GNU `coreutils` programs, e.g., `cp`, `ls`, `rm`, etc.
-- cppSource: contains `C++` source files 
-- devd: a server daemon for development
-- DOOM: contains the source code for the original Doom
-- DOOM-3: contains the source code for Doom 3 
-- DOOM-3-BFG: contains the source code for Doom 3 BFG edition
-- GravWaves: contains documents related to analyzing LIGO data
-- GuidesAndSpecs: contains reference manuals and various standard specifications
-  - AES_Specification
-  - BeejGuide
+- **BlendFiles**: contains blender files
+- **Coop Reflections**: contains markdown for coop reflection notes 
+- **cppSource**: contains `C++` source files
+- **cSource**: contains `C` source files
+- [**devd**](https://github.com/cortesi/devd): a local webserver for developers 
+- [**DOOM**](https://github.com/id-Software/DOOM): contains the source code for the original Doom
+- [**DOOM-3**](https://github.com/id-Software/DOOM-3): contains the source code for Doom 3 
+- [**DOOM-3-BFG**](https://github.com/id-Software/DOOM-3-BFG): contains the source code for Doom 3 BFG edition
+- **GravWaves**: contains documents related to analyzing LIGO data
+- **GuidesAndSpecs**: contains reference manuals and various standard specifications
+  - AES_Specification: the orginal specifcation for the Advanced Encryption Standard
+  - [BeejGuide](http://beej.us/guide/bgnet/): Beej's Guide to network programming
   - IEEE_754_2008: floating point standard
-  - MatplotlibDocs
+  - [MatplotlibDocs](http://matplotlib.org/)
   - MixedEffectsModelingWithR
-  - NumpyRef_1.10.1
+  - [NumpyRef_1.10.1](http://www.numpy.org/)
   - PDF_Reference
   - PKCS_RSA_Standard
-  - [rfc1321_md5](https://www.tools.ietf.org/html/rfc1321): the original document describing the md5 hashing algorithm 
-  - [rfc1951_DEFLATE](https://www.tools.ietf.org/html/rfc1951): the rfc describing the DEFLATE compression algorithm
-  - [rfc2437_OAEP](https://www.tools.ietf.org/html/rfc2437): rfc describing the OAEP padding scheme
+  - [rfc1321_md5](https://www.tools.ietf.org/html/rfc1321): RFC describing the md5 hashing algorithm 
+  - [rfc1951_DEFLATE](https://www.tools.ietf.org/html/rfc1951): RFC describing the DEFLATE compression algorithm
+  - [rfc2437_OAEP](https://www.tools.ietf.org/html/rfc2437): RFC describing the OAEP padding scheme
+  - [rfc2616_HTTP](https://www.tools.ietf.org/html/rfc2616): RFC describing the HTTP standard 
   - RSA_Patent
-  - WiresharkUserGuide
-- md5: contains source, in `c` and pseudo-code, for the md5 hashing algorithm
-- metropolisHastingsMATLAB: contains matlab code for the Metropolis Algorithm for Monte Carlo 
-- MVW_Portfolio: contains source for a tentative portfolio website design along with a design tool 
-- myhtml: an open source (Apache) pure C library for html parsing
-- ncc-2.8: contains source for the ncc project
-- Notes_File: contains the LaTeX for the notes that I make on various subjects 
-- OpenCL: contains OpenCL example source
-- OpenLoop: contains files (blend, solidworks, pictures) pertaining to OpenLoop 
-- Papers: various academic publications
-  - Ballistic_Trajectories_Approximately_Linear_Drag
+  - [WiresharkUserGuide](https://www.wireshark.org/)
+- **LongitudinalDataAnalysis**: contains lecture slides for a data analysis class 
+- **metropolisHastingsMATLAB**: contains matlab code for the Metropolis Algorithm for Monte Carlo 
+- **MVW_Portfolio**: contains source for a tentative portfolio website design along with a design tool 
+- [**myhtml**](https://github.com/lexborisov/myhtml): an open source (Apache) pure C library for html parsing
+- **NotesFile**: contains the LaTeX for the notes that I make on various subjects 
+- **OpenLoop**: contains files (blend, solidworks, pictures) pertaining to OpenLoop 
+- **Papers**: various academic publications
+  - BallisticTrajectoriesApproximatelyLinearDrag
   - DeepmindMasteringGo: paper on the algorithm that beat a human in go
   - Einstein_BrownianMotion: Einstein's paper on brownian motion  
   - Einstein_GeneralRelativity: Einstein's paper on general relativity
@@ -46,21 +44,19 @@ A repo of notes that I make occasionally, including a tex file that attempts to 
   - ExplainingGibbsSampler
   - FastMultipoleMethod: the original paper on FMM 
   - hpastar: paper on the HPA* algorithm for pathfinding
-  - IntrinsicValueOfABattedBallTechnicalDetails: paper from [this](http://www.hardballtimes.com/the-intrinsic-value-of-a-batted-ball/) article
+  - IntrinsicValueOfABattedBall_TechnicalDetails: paper from [this Hardball Times](http://www.hardballtimes.com/the-intrinsic-value-of-a-batted-ball/) article
   - InvSqrt: paper on the Fast Inverse Square Root
   - LeastSquaresHarmonicModel
   - LIGO_DetectionOf_GW150914: paper on the first detection of gravity waves
-  - Quake_III_Arena_Bot: paper detailing the creation of a bot for Quake III 
-  - Quantum_Asymmetry_Between_Time_and_Space
+  - QuakeIIIArena_Bot: paper detailing the creation of a bot for Quake III 
+  - QuantumAsymmetryBetweenTimeAndSpace
   - SchwarzschildKerrSolutionsOfEinsteinsFieldEquations
   - TimeVariantLeastSquaresHarmonicModeling
-  - Understanding_Metropolis-Hastings_Algorithm
-- PubH 8452 - Longitudinal Data Analysis: contains lecture slides for a data analysis class 
-- pugixml: an open source (MIT) library for parsing xml 
-- putty-src: contains the source code for PuTTY 
-- pythonSource: contains `python` source files 
-- Screenplays: contains screenplays
-- Texts: contains textbooks and textbook like material
+  - UnderstandingMetropolisHastingsAlgorithm
+- [**pugixml**](https://github.com/zeux/pugixml): an open source (MIT) library for parsing xml 
+- **pythonSource**: contains `python` source files 
+- **Screenplays**: contains screenplays
+- **Texts**: contains textbooks and textbook like material
   - BayesForBeginners: on Bayesian probability
   - BookOfProof: on proving theorems
   - DecompositionalApproachToMatrixComputations 
@@ -72,7 +68,6 @@ A repo of notes that I make occasionally, including a tex file that attempts to 
   - QRAlgorithm: a description of the QR algorithm for matrix decomposition
   - QRDecompGramSchmidt
   - UnderstandingBasicMusicTheory
-- wireshark-2.01-src: contains the source code for WireShark
 
 ### Files In Root
 - AmicusBrief_iPhone: an brief of amici curae in the case of the San Bernadino iPhone case
