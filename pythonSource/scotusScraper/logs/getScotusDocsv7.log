@@ -1,306 +1,566 @@
-Wed Mar 23 13:48:38 2016 -> Opening
-Wed Mar 23 13:48:40 2016 -> No directory for: 2013
-Wed Mar 23 13:48:40 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\
-Wed Mar 23 13:48:40 2016 -> Getting slip opinions
-Wed Mar 23 13:48:40 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\Slip Opinions\
-Wed Mar 23 13:48:40 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\Slip Opinions\
-Wed Mar 23 13:48:41 2016 -> Downloading: http://supremecourt.gov/opinions/13pdf/13-9085_q4kp.pdf
-Wed Mar 23 13:48:50 2016 -> Closing
-Wed Mar 23 13:49:43 2016 -> Opening
-Wed Mar 23 13:49:45 2016 -> No directory for: 2014
-Wed Mar 23 13:49:45 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\
-Wed Mar 23 13:49:45 2016 -> Getting slip opinions
-Wed Mar 23 13:49:45 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
-Wed Mar 23 13:49:45 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
-Wed Mar 23 13:49:46 2016 -> http://supremecourt.gov/opinions/14pdf/14-7955_aplc.pdf
-Wed Mar 23 13:49:52 2016 -> Closing
-Wed Mar 23 13:49:57 2016 -> Opening
-Wed Mar 23 13:50:01 2016 -> Closing
-Wed Mar 23 13:50:10 2016 -> Opening
-Wed Mar 23 13:50:11 2016 -> No directory for: 2015
-Wed Mar 23 13:50:11 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\
-Wed Mar 23 13:50:11 2016 -> Getting slip opinions
-Wed Mar 23 13:50:11 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\Slip Opinions\
-Wed Mar 23 13:50:11 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\Slip Opinions\
-Wed Mar 23 13:50:12 2016 -> http://supremecourt.gov/opinions/15pdf/14-520_d18f.pdf
-Wed Mar 23 13:50:13 2016 -> http://supremecourt.gov/opinions/15pdf/14-1406_6536.pdf
-Wed Mar 23 13:50:14 2016 -> http://supremecourt.gov/opinions/15pdf/14-1146_0pm1.pdf
-Wed Mar 23 13:50:18 2016 -> http://supremecourt.gov/opinions/15pdf/14-1209_kifl.pdf
-Wed Mar 23 13:50:20 2016 -> http://supremecourt.gov/opinions/15pdf/137orig_ap6b.pdf
-Wed Mar 23 13:50:20 2016 -> Closing
-Wed Mar 23 13:52:40 2016 -> Opening
-Wed Mar 23 13:52:43 2016 -> Closing
-Wed Mar 23 13:52:59 2016 -> No save directory
-Wed Mar 23 13:52:59 2016 -> Save directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\
-Wed Mar 23 13:52:59 2016 -> Opening
-Wed Mar 23 13:53:02 2016 -> No directory for: 2014
-Wed Mar 23 13:53:02 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\
-Wed Mar 23 13:53:02 2016 -> Getting slip opinions
-Wed Mar 23 13:53:02 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
-Wed Mar 23 13:53:02 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
-Wed Mar 23 13:53:03 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-7955_aplc.pdf
-Wed Mar 23 13:53:03 2016 -> Total Length: 817645
-Wed Mar 23 13:53:09 2016 -> Closing
-Wed Mar 23 13:55:32 2016 -> No save directory
-Wed Mar 23 13:55:32 2016 -> Save directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\
-Wed Mar 23 13:55:32 2016 -> Opening
-Wed Mar 23 13:55:34 2016 -> No directory for: 2014
-Wed Mar 23 13:55:34 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\
-Wed Mar 23 13:55:34 2016 -> Getting slip opinions
-Wed Mar 23 13:55:34 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
-Wed Mar 23 13:55:34 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
-Wed Mar 23 13:55:35 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-7955_aplc.pdf
-Wed Mar 23 13:55:36 2016 -> Total Length: 817.645K
-Wed Mar 23 13:55:46 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1314_3ea4.pdf
-Wed Mar 23 13:55:46 2016 -> Total Length: 414.369K
-Wed Mar 23 13:55:52 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-46_bqmc.pdf
-Wed Mar 23 13:55:52 2016 -> Total Length: 260.293K
-Wed Mar 23 13:55:56 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-556_3204.pdf
-Wed Mar 23 13:55:56 2016 -> Total Length: 439.062K
-Wed Mar 23 13:56:00 2016 -> Stopping Download
-Wed Mar 23 13:56:02 2016 -> Cancelling downloading
-Wed Mar 23 13:56:02 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-7120_p86b.pdf
-Wed Mar 23 13:56:02 2016 -> Total Length: 278.528K
-Wed Mar 23 13:56:06 2016 -> Cancelling downloading
-Wed Mar 23 13:56:06 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1371_8m58.pdf
-Wed Mar 23 13:56:06 2016 -> Total Length: 347.615K
-Wed Mar 23 13:56:07 2016 -> Stopping Download
-Wed Mar 23 13:56:07 2016 -> Stopping Download
-Wed Mar 23 13:56:07 2016 -> Stopping Download
-Wed Mar 23 13:56:07 2016 -> Stopping Download
-Wed Mar 23 13:56:10 2016 -> Cancelling downloading
-Wed Mar 23 13:56:11 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-114_qol1.pdf
-Wed Mar 23 13:56:11 2016 -> Total Length: 216.876K
-Wed Mar 23 13:56:12 2016 -> Closing
-Wed Mar 23 13:56:43 2016 -> No save directory
-Wed Mar 23 13:56:43 2016 -> Save directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\
-Wed Mar 23 13:56:43 2016 -> Opening
-Wed Mar 23 13:56:45 2016 -> No directory for: 2012
-Wed Mar 23 13:56:45 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\
-Wed Mar 23 13:56:45 2016 -> Getting slip opinions
-Wed Mar 23 13:56:45 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Slip Opinions\
-Wed Mar 23 13:56:45 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Slip Opinions\
-Wed Mar 23 13:56:46 2016 -> Downloading: http://supremecourt.gov/opinions/12pdf/12-307_6j37.pdf
-Wed Mar 23 13:56:46 2016 -> Total Length: 384.763K
-Wed Mar 23 13:56:51 2016 -> Downloading: http://supremecourt.gov/opinions/12pdf/12-357_bq7c.pdf
-Wed Mar 23 13:56:51 2016 -> Total Length: 137.785K
-Wed Mar 23 13:56:52 2016 -> Stopping Download
-Wed Mar 23 13:56:53 2016 -> Cancelling downloading
-Wed Mar 23 13:57:01 2016 -> Closing
-Wed Mar 23 14:11:39 2016 -> No save directory
-Wed Mar 23 14:11:39 2016 -> Save directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\
-Wed Mar 23 14:11:39 2016 -> Opening
-Wed Mar 23 14:11:41 2016 -> No directory for: 2010
-Wed Mar 23 14:11:41 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2010\
-Wed Mar 23 14:11:41 2016 -> Getting slip opinions
-Wed Mar 23 14:11:41 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2010\Slip Opinions\
-Wed Mar 23 14:11:41 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2010\Slip Opinions\
-Wed Mar 23 14:11:41 2016 -> Downloading: http://supremecourt.gov/opinions/10pdf/11-5001.pdf
-Wed Mar 23 14:11:42 2016 -> Total Length: 109.979K
-Wed Mar 23 14:11:43 2016 -> Downloading: http://supremecourt.gov/opinions/10pdf/09-940.pdf
-Wed Mar 23 14:11:43 2016 -> Total Length: 100.038K
-Wed Mar 23 14:11:45 2016 -> Downloading: http://supremecourt.gov/opinions/10pdf/10-76.pdf
-Wed Mar 23 14:11:45 2016 -> Total Length: 163.554K
-Wed Mar 23 14:11:46 2016 -> Closing
-Wed Mar 23 14:13:50 2016 -> Opening
-Wed Mar 23 14:13:53 2016 -> No directory for: 2014
-Wed Mar 23 14:13:53 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\
-Wed Mar 23 14:13:53 2016 -> Getting argument transcripts for 2014
-Wed Mar 23 14:13:53 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Argument Transcripts\
-Wed Mar 23 14:13:53 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Argument Transcripts\
-Wed Mar 23 14:14:09 2016 -> Closing
-Wed Mar 23 14:14:55 2016 -> Opening
-Wed Mar 23 14:14:57 2016 -> Getting argument transcripts for 2014
-Wed Mar 23 14:14:58 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/04-1360b.pdf
-Wed Mar 23 14:14:58 2016 -> Total Length: 259.855K
-Wed Mar 23 14:15:01 2016 -> Closing
-Wed Mar 23 14:15:31 2016 -> Opening
-Wed Mar 23 14:15:33 2016 -> No directory for: 2013
-Wed Mar 23 14:15:33 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\
-Wed Mar 23 14:15:33 2016 -> Getting slip opinions
-Wed Mar 23 14:15:33 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\Slip Opinions\
-Wed Mar 23 14:15:33 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013\Slip Opinions\
-Wed Mar 23 14:15:38 2016 -> Closing
-Wed Mar 23 14:16:24 2016 -> Opening
-Wed Mar 23 14:16:26 2016 -> No directory for: 2012
-Wed Mar 23 14:16:26 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\
-Wed Mar 23 14:16:26 2016 -> Getting slip opinions
-Wed Mar 23 14:16:26 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Slip Opinions\
-Wed Mar 23 14:16:26 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Slip Opinions\
-Wed Mar 23 14:16:27 2016 -> Downloading: http://supremecourt.gov/opinions/12pdf/12-307_6j37.pdf
-Wed Mar 23 14:16:28 2016 -> Total Length: 384.763K
-Wed Mar 23 14:16:33 2016 -> Downloading: http://supremecourt.gov/opinions/12pdf/12-357_bq7c.pdf
-Wed Mar 23 14:16:33 2016 -> Total Length: 137.785K
-Wed Mar 23 14:16:35 2016 -> Downloading: http://supremecourt.gov/opinions/12pdf/12-144_8ok0.pdf
-Wed Mar 23 14:16:35 2016 -> Total Length: 173.339K
-Wed Mar 23 14:16:35 2016 -> Closing
-Wed Mar 23 14:17:56 2016 -> Opening
-Wed Mar 23 14:17:58 2016 -> No directory for: 2015
-Wed Mar 23 14:17:58 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\
-Wed Mar 23 14:17:58 2016 -> Getting argument transcripts for 2015
-Wed Mar 23 14:17:58 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\Argument Transcripts\
-Wed Mar 23 14:17:58 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\Argument Transcripts\
-Wed Mar 23 14:17:58 2016 -> Starting download of 53 files
-Wed Mar 23 14:17:59 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/14-1504_5he6.pdf
-Wed Mar 23 14:17:59 2016 -> Total Length: 1397.802K
-Wed Mar 23 14:18:01 2016 -> Closing
-Wed Mar 23 14:18:32 2016 -> Opening
-Wed Mar 23 14:18:37 2016 -> Closing
-Wed Mar 23 14:19:52 2016 -> Opening
-Wed Mar 23 14:19:54 2016 -> Getting slip opinions
-Wed Mar 23 14:19:54 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
-Wed Mar 23 14:19:54 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Slip Opinions\
-Wed Mar 23 14:19:55 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-7955_aplc.pdf
-Wed Mar 23 14:19:55 2016 -> Total Length: 817.645K
-Wed Mar 23 14:20:06 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1314_3ea4.pdf
-Wed Mar 23 14:20:06 2016 -> Total Length: 414.369K
-Wed Mar 23 14:20:12 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-46_bqmc.pdf
-Wed Mar 23 14:20:12 2016 -> Total Length: 260.293K
-Wed Mar 23 14:20:16 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-556_3204.pdf
-Wed Mar 23 14:20:16 2016 -> Total Length: 439.062K
-Wed Mar 23 14:20:22 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-7120_p86b.pdf
-Wed Mar 23 14:20:22 2016 -> Total Length: 278.528K
-Wed Mar 23 14:20:26 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1371_8m58.pdf
-Wed Mar 23 14:20:26 2016 -> Total Length: 347.615K
-Wed Mar 23 14:20:30 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-114_qol1.pdf
-Wed Mar 23 14:20:30 2016 -> Total Length: 216.876K
-Wed Mar 23 14:20:33 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-720_jiel.pdf
-Wed Mar 23 14:20:34 2016 -> Total Length: 159.828K
-Wed Mar 23 14:20:36 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1175_k537.pdf
-Wed Mar 23 14:20:36 2016 -> Total Length: 210.587K
-Wed Mar 23 14:20:39 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-6368_7lhn.pdf
-Wed Mar 23 14:20:39 2016 -> Total Length: 129.812K
-Wed Mar 23 14:20:41 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-275_feah.pdf
-Wed Mar 23 14:20:41 2016 -> Total Length: 212.841K
-Wed Mar 23 14:20:44 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1433_bpm1.pdf
-Wed Mar 23 14:20:44 2016 -> Total Length: 286.269K
-Wed Mar 23 14:20:48 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1428_1a7d.pdf
-Wed Mar 23 14:20:49 2016 -> Total Length: 273.658K
-Wed Mar 23 14:20:52 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1352_ed9l.pdf
-Wed Mar 23 14:20:52 2016 -> Total Length: 126.187K
-Wed Mar 23 14:20:54 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-144_758b.pdf
-Wed Mar 23 14:20:54 2016 -> Total Length: 2820.407K
-Wed Mar 23 14:21:31 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-378_k537.pdf
-Wed Mar 23 14:21:31 2016 -> Total Length: 108.061K
-Wed Mar 23 14:21:33 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-502_9olb.pdf
-Wed Mar 23 14:21:33 2016 -> Total Length: 193.465K
-Wed Mar 23 14:21:36 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-185_i4dk.pdf
-Wed Mar 23 14:21:36 2016 -> Total Length: 105.993K
-Wed Mar 23 14:21:38 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-103_bpdg.pdf
-Wed Mar 23 14:21:38 2016 -> Total Length: 144.081K
-Wed Mar 23 14:21:40 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1402_e29g.pdf
-Wed Mar 23 14:21:40 2016 -> Total Length: 195.748K
-Wed Mar 23 14:21:43 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-628_3dq3.pdf
-Wed Mar 23 14:21:43 2016 -> Total Length: 430.399K
-Wed Mar 23 14:21:49 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-939_cpdh.pdf
-Wed Mar 23 14:21:49 2016 -> Total Length: 70.344K
-Wed Mar 23 14:21:50 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1034_3dq4.pdf
-Wed Mar 23 14:21:50 2016 -> Total Length: 153.16K
-Wed Mar 23 14:21:53 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1421_p8k0.pdf
-Wed Mar 23 14:21:53 2016 -> Total Length: 84.782K
-Wed Mar 23 14:21:55 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-86_p86b.pdf
-Wed Mar 23 14:21:55 2016 -> Total Length: 146.966K
-Wed Mar 23 14:21:57 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-983_7l48.pdf
-Wed Mar 23 14:21:57 2016 -> Total Length: 212.222K
-Wed Mar 23 14:22:01 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-935_i4dj.pdf
-Wed Mar 23 14:22:01 2016 -> Total Length: 303.707K
-Wed Mar 23 14:22:05 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/12-1497_2d8f.pdf
-Wed Mar 23 14:22:05 2016 -> Total Length: 107.242K
-Wed Mar 23 14:22:07 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-896_l53m.pdf
-Wed Mar 23 14:22:07 2016 -> Total Length: 127.301K
-Wed Mar 23 14:22:09 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1487_l6gn.pdf
-Wed Mar 23 14:22:09 2016 -> Total Length: 95.284K
-Wed Mar 23 14:22:11 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1412_0pl1.pdf
-Wed Mar 23 14:22:11 2016 -> Total Length: 149.523K
-Wed Mar 23 14:22:13 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-485_o7jp.pdf
-Wed Mar 23 14:22:13 2016 -> Total Length: 292.533K
-Wed Mar 23 14:22:17 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1333_g31h.pdf
-Wed Mar 23 14:22:17 2016 -> Total Length: 156.249K
-Wed Mar 23 14:22:19 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-550_97be.pdf
-Wed Mar 23 14:22:20 2016 -> Total Length: 82.637K
-Wed Mar 23 14:22:21 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-400_f2ah.pdf
-Wed Mar 23 14:22:21 2016 -> Total Length: 105.555K
-Wed Mar 23 14:22:23 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-116_9o6b.pdf
-Wed Mar 23 14:22:23 2016 -> Total Length: 99.238K
-Wed Mar 23 14:22:24 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1019_c1o2.pdf
-Wed Mar 23 14:22:24 2016 -> Total Length: 112.854K
-Wed Mar 23 14:22:26 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1499_d18e.pdf
-Wed Mar 23 14:22:26 2016 -> Total Length: 240.354K
-Wed Mar 23 14:22:30 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1074_9olb.pdf
-Wed Mar 23 14:22:30 2016 -> Total Length: 224.302K
-Wed Mar 23 14:22:33 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-271_j4ek.pdf
-Wed Mar 23 14:22:33 2016 -> Total Length: 156.841K
-Wed Mar 23 14:22:35 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-9972_p8k0.pdf
-Wed Mar 23 14:22:35 2016 -> Total Length: 160.043K
-Wed Mar 23 14:22:38 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-15_d1oe.pdf
-Wed Mar 23 14:22:38 2016 -> Total Length: 215.222K
-Wed Mar 23 14:22:41 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-618_4357.pdf
-Wed Mar 23 14:22:41 2016 -> Total Length: 75.556K
-Wed Mar 23 14:22:42 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-593_o7jq.pdf
-Wed Mar 23 14:22:43 2016 -> Total Length: 61.917K
-Wed Mar 23 14:22:44 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-895_o7jq.pdf
-Wed Mar 23 14:22:44 2016 -> Total Length: 569.337K
-Wed Mar 23 14:22:52 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/12-1226_k5fl.pdf
-Wed Mar 23 14:22:52 2016 -> Total Length: 235.269K
-Wed Mar 23 14:22:55 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-435_8o6b.pdf
-Wed Mar 23 14:22:55 2016 -> Total Length: 189.723K
-Wed Mar 23 14:22:58 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-352_3204.pdf
-Wed Mar 23 14:22:58 2016 -> Total Length: 214.668K
-Wed Mar 23 14:23:01 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/126orig_4256.pdf
-Wed Mar 23 14:23:02 2016 -> Total Length: 69.804K
-Wed Mar 23 14:23:04 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1041_0861.pdf
-Wed Mar 23 14:23:04 2016 -> Total Length: 230.074K
-Wed Mar 23 14:23:07 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1080_f29g.pdf
-Wed Mar 23 14:23:07 2016 -> Total Length: 239.119K
-Wed Mar 23 14:23:11 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-553_1b82.pdf
-Wed Mar 23 14:23:11 2016 -> Total Length: 136.679K
-Wed Mar 23 14:23:13 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1032_8759.pdf
-Wed Mar 23 14:23:13 2016 -> Total Length: 140.61K
-Wed Mar 23 14:23:15 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-7451_m64o.pdf
-Wed Mar 23 14:23:15 2016 -> Total Length: 226.847K
-Wed Mar 23 14:23:19 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-534_19m2.pdf
-Wed Mar 23 14:23:19 2016 -> Total Length: 185.453K
-Wed Mar 23 14:23:21 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/126orig_olq2.pdf
-Wed Mar 23 14:23:22 2016 -> Total Length: 229.48K
-Wed Mar 23 14:23:25 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1010_7k47.pdf
-Wed Mar 23 14:23:25 2016 -> Total Length: 127.612K
-Wed Mar 23 14:23:27 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1211_1bn2.pdf
-Wed Mar 23 14:23:27 2016 -> Total Length: 94.461K
-Wed Mar 23 14:23:28 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1174_5468.pdf
-Wed Mar 23 14:23:29 2016 -> Total Length: 101.402K
-Wed Mar 23 14:23:30 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-894_e2qg.pdf
-Wed Mar 23 14:23:30 2016 -> Total Length: 132.07K
-Wed Mar 23 14:23:32 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-6873_21p3.pdf
-Wed Mar 23 14:23:32 2016 -> Total Length: 89.297K
-Wed Mar 23 14:23:34 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-6827_5h26.pdf
-Wed Mar 23 14:23:34 2016 -> Total Length: 139.755K
-Wed Mar 23 14:23:36 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-854_o7jp.pdf
-Wed Mar 23 14:23:36 2016 -> Total Length: 228.304K
-Wed Mar 23 14:23:39 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-975_8n6a.pdf
-Wed Mar 23 14:23:39 2016 -> Total Length: 155.634K
-Wed Mar 23 14:23:41 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-7211_8o6a.pdf
-Wed Mar 23 14:23:42 2016 -> Total Length: 136.619K
-Wed Mar 23 14:23:44 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-9026_11o2.pdf
-Wed Mar 23 14:23:44 2016 -> Total Length: 74.154K
-Wed Mar 23 14:23:45 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-684_ba7d.pdf
-Wed Mar 23 14:23:45 2016 -> Total Length: 108.498K
-Wed Mar 23 14:23:47 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/no5orig_d18e.pdf
-Wed Mar 23 14:23:47 2016 -> Total Length: 630.606K
-Wed Mar 23 14:23:55 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-719_8mjp.pdf
-Wed Mar 23 14:23:55 2016 -> Total Length: 158.784K
-Wed Mar 23 14:23:58 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-604_ec8f.pdf
-Wed Mar 23 14:23:58 2016 -> Total Length: 160.638K
-Wed Mar 23 14:24:00 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-517_7l48.pdf
-Wed Mar 23 14:24:01 2016 -> Total Length: 125.496K
-Wed Mar 23 14:24:02 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-433_5h26.pdf
-Wed Mar 23 14:24:02 2016 -> Total Length: 108.126K
-Wed Mar 23 14:24:04 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-95_3204.pdf
-Wed Mar 23 14:24:04 2016 -> Total Length: 66.883K
-Wed Mar 23 14:24:05 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/14-212_c07d.pdf
-Wed Mar 23 14:24:05 2016 -> Total Length: 72.645K
-Wed Mar 23 14:24:07 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-1318_3f14.pdf
-Wed Mar 23 14:24:07 2016 -> Total Length: 58.954K
-Wed Mar 23 14:24:08 2016 -> Downloading: http://supremecourt.gov/opinions/14pdf/13-946_adbc.pdf
-Wed Mar 23 14:24:08 2016 -> Total Length: 75.888K
-Wed Mar 23 14:24:09 2016 -> Download of 2 files completed
-Wed Mar 23 14:28:48 2016 -> Closing
+Fri Mar 25 07:50:08 2016 -> Log Cleared
+Fri Mar 25 07:50:11 2016 -> Downloading: http://supremecourt.gov/media/audio/mp3files/09-958.mp3
+Fri Mar 25 07:50:11 2016 -> Total Length: 1.865K
+Fri Mar 25 07:50:11 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Audio\09-958-Douglas v. Independent Living Center of Southern Cal., Inc..mp3
+Fri Mar 25 07:50:11 2016 -> Downloading: http://supremecourt.gov/media/audio/mp3files/10-6549.mp3
+Fri Mar 25 07:50:11 2016 -> Total Length: 1.865K
+Fri Mar 25 07:50:11 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Audio\10-6549-Reynolds v. United States.mp3
+Fri Mar 25 07:50:12 2016 -> Downloading: http://supremecourt.gov/media/audio/mp3files/10-63.mp3
+Fri Mar 25 07:50:12 2016 -> Total Length: 1.865K
+Fri Mar 25 07:50:12 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Audio\10-63-Maples v. Thomas.mp3
+Fri Mar 25 07:50:12 2016 -> Downloading: http://supremecourt.gov/media/audio/mp3files/10-1001.mp3
+Fri Mar 25 07:50:12 2016 -> Total Length: 1.865K
+Fri Mar 25 07:50:12 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Audio\10-1001-Martinez v. Ryan.mp3
+Fri Mar 25 07:50:12 2016 -> Downloading: http://supremecourt.gov/media/audio/mp3files/10-680.mp3
+Fri Mar 25 07:50:12 2016 -> Total Length: 1.865K
+Fri Mar 25 07:50:12 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Audio\10-680-Howes v. Fields.mp3
+Fri Mar 25 07:50:13 2016 -> Downloading: http://supremecourt.gov/media/audio/mp3files/10-553.mp3
+Fri Mar 25 07:50:13 2016 -> Total Length: 1.865K
+Fri Mar 25 07:50:13 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Audio\10-553-Hosanna-Tabor Evangelical Lutheran Church and School v. EEOC.mp3
+Fri Mar 25 07:50:13 2016 -> Downloading: http://supremecourt.gov/media/audio/mp3files/10-545.mp3
+Fri Mar 25 07:50:13 2016 -> Total Length: 1.865K
+Fri Mar 25 07:50:13 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Audio\10-545-Golan v. Holder.mp3
+Fri Mar 25 07:50:14 2016 -> Downloading: http://supremecourt.gov/media/audio/mp3files/10-507.mp3
+Fri Mar 25 07:50:14 2016 -> Total Length: 1.865K
+Fri Mar 25 07:50:14 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Audio\10-507-Pacific Operators Offshore, LLP v. Valladolid.mp3
+Fri Mar 25 07:50:14 2016 -> Downloading: http://supremecourt.gov/media/audio/mp3files/10-948.mp3
+Fri Mar 25 07:50:14 2016 -> Total Length: 1.865K
+Fri Mar 25 07:50:14 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Audio\10-948-CompuCredit Corp. v. Greenwood.mp3
+Fri Mar 25 07:50:14 2016 -> Downloading: http://supremecourt.gov/media/audio/mp3files/10-637.mp3
+Fri Mar 25 07:50:14 2016 -> Total Length: 1.865K
+Fri Mar 25 07:50:14 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Audio\10-637-Greene v. Fisher.mp3
+Fri Mar 25 07:50:15 2016 -> Downloading: http://supremecourt.gov/media/audio/mp3files/10-945.mp3
+Fri Mar 25 07:50:15 2016 -> Total Length: 1.865K
+Fri Mar 25 07:50:15 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Audio\10-945-Florence v. Board of Chosen Freeholders of County of Burlington.mp3
+Fri Mar 25 07:50:15 2016 -> Downloading: http://supremecourt.gov/media/audio/mp3files/10-694.mp3
+Fri Mar 25 07:50:15 2016 -> Total Length: 1.865K
+Fri Mar 25 07:50:15 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Audio\10-694-Judulang v. Holder.mp3
+Fri Mar 25 07:50:15 2016 -> Download of 72 files completed
+Fri Mar 25 07:50:22 2016 -> Closing
+Fri Mar 25 07:51:16 2016 -> Opening
+Fri Mar 25 07:51:18 2016 -> Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011
+Fri Mar 25 07:51:18 2016 -> Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012
+Fri Mar 25 07:51:18 2016 -> Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2013
+Fri Mar 25 07:51:18 2016 -> Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014
+Fri Mar 25 07:51:18 2016 -> Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015
+Fri Mar 25 07:51:20 2016 -> Closing
+Fri Apr  1 12:11:23 2016 -> Opening
+Fri Apr  1 12:11:29 2016 -> No directory for: 2011
+Fri Apr  1 12:11:29 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\
+Fri Apr  1 12:11:29 2016 -> Getting slip opinions
+Fri Apr  1 12:11:29 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\
+Fri Apr  1 12:11:29 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\
+Fri Apr  1 12:11:48 2016 -> Starting download of 78 files
+Fri Apr  1 12:11:49 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-1184_ap6c.pdf
+Fri Apr  1 12:11:49 2016 -> Total Length: 76.719K
+Fri Apr  1 12:11:50 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-1184-Tennant v. Jefferson County.pdf
+Fri Apr  1 12:11:53 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-7081b2d.pdf
+Fri Apr  1 12:11:53 2016 -> Total Length: 38.636K
+Fri Apr  1 12:11:54 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-708-First American Financial Corp. v. Edwards.pdf
+Fri Apr  1 12:11:54 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-210d4e9.pdf
+Fri Apr  1 12:11:54 2016 -> Total Length: 297.657K
+Fri Apr  1 12:11:58 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-210-United States v. Alvarez.pdf
+Fri Apr  1 12:11:58 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-393c3a2.pdf
+Fri Apr  1 12:11:58 2016 -> Total Length: 797.443K
+Fri Apr  1 12:12:08 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-393-National Federation of Independent Business v. Sebelius.pdf
+Fri Apr  1 12:12:09 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-1179h9j3.pdf
+Fri Apr  1 12:12:09 2016 -> Total Length: 57.149K
+Fri Apr  1 12:12:09 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-1179-American Tradition Partnership, Inc. v. Bullock.pdf
+Fri Apr  1 12:12:10 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-9646.pdf
+Fri Apr  1 12:12:10 2016 -> Total Length: 385.192K
+Fri Apr  1 12:12:14 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-9646-Miller v. Alabama.pdf
+Fri Apr  1 12:12:15 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-182.pdf
+Fri Apr  1 12:12:15 2016 -> Total Length: 342.851K
+Fri Apr  1 12:12:19 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-182-Arizona v. United States.pdf
+Fri Apr  1 12:12:20 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-94a1b2.pdf
+Fri Apr  1 12:12:20 2016 -> Total Length: 236.208K
+Fri Apr  1 12:12:22 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-94-Southern Union Co. v. United States.pdf
+Fri Apr  1 12:12:23 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1121c4d6.pdf
+Fri Apr  1 12:12:23 2016 -> Total Length: 281.984K
+Fri Apr  1 12:12:26 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1121-Knox v. Service Employees.pdf
+Fri Apr  1 12:12:27 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-5683i7k8.pdf
+Fri Apr  1 12:12:27 2016 -> Total Length: 249.178K
+Fri Apr  1 12:12:30 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-5683-Dorsey v. United States.pdf
+Fri Apr  1 12:12:30 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1293f3e5.pdf
+Fri Apr  1 12:12:30 2016 -> Total Length: 140.604K
+Fri Apr  1 12:12:32 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1293-FCC v. Fox Television Stations, Inc..pdf
+Fri Apr  1 12:12:32 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-246.pdf
+Fri Apr  1 12:12:32 2016 -> Total Length: 204.772K
+Fri Apr  1 12:12:35 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-246-Match-E-Be-Nash-She-Wish Band of Pottawatomi Indians v. Patchak.pdf
+Fri Apr  1 12:12:35 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-551.pdf
+Fri Apr  1 12:12:35 2016 -> Total Length: 171.799K
+Fri Apr  1 12:12:37 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-551-Salazar v. Ramah Navajo Chapter.pdf
+Fri Apr  1 12:12:37 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-204.pdf
+Fri Apr  1 12:12:37 2016 -> Total Length: 234.086K
+Fri Apr  1 12:12:40 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-204-Christopher v. SmithKline Beecham Corp..pdf
+Fri Apr  1 12:12:41 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-8505.pdf
+Fri Apr  1 12:12:41 2016 -> Total Length: 573.509K
+Fri Apr  1 12:12:48 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-8505-Williams v. Illinois.pdf
+Fri Apr  1 12:12:48 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-845.pdf
+Fri Apr  1 12:12:48 2016 -> Total Length: 95.796K
+Fri Apr  1 12:12:49 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-845-Parker v. Matthews.pdf
+Fri Apr  1 12:12:50 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-45.pdf
+Fri Apr  1 12:12:50 2016 -> Total Length: 210.447K
+Fri Apr  1 12:12:52 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-45-Elgin v. Department of Treasury.pdf
+Fri Apr  1 12:12:53 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-161.pdf
+Fri Apr  1 12:12:53 2016 -> Total Length: 148.38K
+Fri Apr  1 12:12:54 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-161-Armour v. Indianapolis.pdf
+Fri Apr  1 12:12:55 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-262.pdf
+Fri Apr  1 12:12:55 2016 -> Total Length: 130.311K
+Fri Apr  1 12:12:56 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-262-Reichle v. Howards.pdf
+Fri Apr  1 12:12:57 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-1053.pdf
+Fri Apr  1 12:12:57 2016 -> Total Length: 72.508K
+Fri Apr  1 12:12:58 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-1053-Coleman v. Johnson.pdf
+Fri Apr  1 12:12:58 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-166.pdf
+Fri Apr  1 12:12:58 2016 -> Total Length: 99.967K
+Fri Apr  1 12:12:59 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-166-RadLAX Gateway Hotel, LLC v. Amalgamated Bank.pdf
+Fri Apr  1 12:13:00 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1042.pdf
+Fri Apr  1 12:13:00 2016 -> Total Length: 118.71K
+Fri Apr  1 12:13:01 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1042-Freeman v. Quicken Loans, Inc..pdf
+Fri Apr  1 12:13:02 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1320.pdf
+Fri Apr  1 12:13:02 2016 -> Total Length: 185.277K
+Fri Apr  1 12:13:04 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1320-Blueford v. Arkansas.pdf
+Fri Apr  1 12:13:05 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1542.pdf
+Fri Apr  1 12:13:05 2016 -> Total Length: 130.137K
+Fri Apr  1 12:13:06 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1542-Holder v. Martinez Gutierrez.pdf
+Fri Apr  1 12:13:07 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1472.pdf
+Fri Apr  1 12:13:07 2016 -> Total Length: 178.96K
+Fri Apr  1 12:13:09 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1472-Taniguchi v. Kan Pacific Saipan, Ltd..pdf
+Fri Apr  1 12:13:09 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-159.pdf
+Fri Apr  1 12:13:09 2016 -> Total Length: 141.278K
+Fri Apr  1 12:13:11 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-159-Astrue v. Capato.pdf
+Fri Apr  1 12:13:11 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-875.pdf
+Fri Apr  1 12:13:11 2016 -> Total Length: 227.375K
+Fri Apr  1 12:13:14 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-875-Hall v. United States.pdf
+Fri Apr  1 12:13:15 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-139.pdf
+Fri Apr  1 12:13:15 2016 -> Total Length: 187.537K
+Fri Apr  1 12:13:17 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-139-United States v. Home Concrete & Supply, LLC.pdf
+Fri Apr  1 12:13:17 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-9995.pdf
+Fri Apr  1 12:13:17 2016 -> Total Length: 116.022K
+Fri Apr  1 12:13:19 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-9995-Wood v. Milyard.pdf
+Fri Apr  1 12:13:19 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-88.pdf
+Fri Apr  1 12:13:19 2016 -> Total Length: 108.638K
+Fri Apr  1 12:13:20 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-88-Mohamad v. Palestinian Authority.pdf
+Fri Apr  1 12:13:21 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1219.pdf
+Fri Apr  1 12:13:21 2016 -> Total Length: 136.519K
+Fri Apr  1 12:13:22 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1219-Kappos v. Hyatt.pdf
+Fri Apr  1 12:13:23 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-844.pdf
+Fri Apr  1 12:13:23 2016 -> Total Length: 179.601K
+Fri Apr  1 12:13:25 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-844-Caraco Pharmaceutical Laboratories, Ltd. v. Novo Nordisk AS.pdf
+Fri Apr  1 12:13:25 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1018.pdf
+Fri Apr  1 12:13:25 2016 -> Total Length: 150.382K
+Fri Apr  1 12:13:27 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1018-Filarsky v. Delia.pdf
+Fri Apr  1 12:13:28 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-199.pdf
+Fri Apr  1 12:13:28 2016 -> Total Length: 39.313K
+Fri Apr  1 12:13:28 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-199-Vasquez v. United States.pdf
+Fri Apr  1 12:13:29 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-788.pdf
+Fri Apr  1 12:13:29 2016 -> Total Length: 143.719K
+Fri Apr  1 12:13:30 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-788-Rehberg v. Paulk.pdf
+Fri Apr  1 12:13:31 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-945.pdf
+Fri Apr  1 12:13:31 2016 -> Total Length: 248.555K
+Fri Apr  1 12:13:34 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-945-Florence v. Board of Chosen Freeholders of County of Burlington.pdf
+Fri Apr  1 12:13:34 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1024.pdf
+Fri Apr  1 12:13:35 2016 -> Total Length: 222.898K
+Fri Apr  1 12:13:37 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1024-FAA v. Cooper.pdf
+Fri Apr  1 12:13:37 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1211.pdf
+Fri Apr  1 12:13:38 2016 -> Total Length: 198.345K
+Fri Apr  1 12:13:40 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1211-Vartelas v. Holder.pdf
+Fri Apr  1 12:13:40 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-7387.pdf
+Fri Apr  1 12:13:40 2016 -> Total Length: 158.146K
+Fri Apr  1 12:13:42 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-7387-Setser v. United States.pdf
+Fri Apr  1 12:13:42 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1261.pdf
+Fri Apr  1 12:13:43 2016 -> Total Length: 97.961K
+Fri Apr  1 12:13:44 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1261-Credit Suisse Securities (USA) LLC v. Simmonds.pdf
+Fri Apr  1 12:13:44 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-699.pdf
+Fri Apr  1 12:13:44 2016 -> Total Length: 197.735K
+Fri Apr  1 12:13:47 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-699-Zivotofsky v. Clinton.pdf
+Fri Apr  1 12:13:47 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-209.pdf
+Fri Apr  1 12:13:47 2016 -> Total Length: 181.773K
+Fri Apr  1 12:13:49 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-209-Lafler v. Cooper.pdf
+Fri Apr  1 12:13:49 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-444.pdf
+Fri Apr  1 12:13:50 2016 -> Total Length: 140.251K
+Fri Apr  1 12:13:51 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-444-Missouri v. Frye.pdf
+Fri Apr  1 12:13:51 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1062.pdf
+Fri Apr  1 12:13:52 2016 -> Total Length: 127.246K
+Fri Apr  1 12:13:53 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1062-Sackett v. EPA.pdf
+Fri Apr  1 12:13:53 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1399.pdf
+Fri Apr  1 12:13:53 2016 -> Total Length: 182.988K
+Fri Apr  1 12:13:56 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1399-Roberts v. Sea-Land Services, Inc..pdf
+Fri Apr  1 12:13:56 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1150.pdf
+Fri Apr  1 12:13:56 2016 -> Total Length: 152.73K
+Fri Apr  1 12:13:58 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1150-Mayo Collaborative Services v. Prometheus Laboratories, Inc. .pdf
+Fri Apr  1 12:13:58 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1016.pdf
+Fri Apr  1 12:13:58 2016 -> Total Length: 201.621K
+Fri Apr  1 12:14:01 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1016-Coleman v. Court of Appeals of Md..pdf
+Fri Apr  1 12:14:01 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1001.pdf
+Fri Apr  1 12:14:01 2016 -> Total Length: 165.498K
+Fri Apr  1 12:14:03 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1001-Martinez v. Ryan.pdf
+Fri Apr  1 12:14:04 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1265.pdf
+Fri Apr  1 12:14:04 2016 -> Total Length: 136.323K
+Fri Apr  1 12:14:05 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1265-Martel v. Clair.pdf
+Fri Apr  1 12:14:06 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-879.pdf
+Fri Apr  1 12:14:06 2016 -> Total Length: 173.446K
+Fri Apr  1 12:14:08 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-879-Kurns v. Railroad Friction Products Corp..pdf
+Fri Apr  1 12:14:08 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/09-958.pdf
+Fri Apr  1 12:14:09 2016 -> Total Length: 148.519K
+Fri Apr  1 12:14:10 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\09-958-Douglas v. Independent Living Center of Southern Cal., Inc..pdf
+Fri Apr  1 12:14:11 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-218.pdf
+Fri Apr  1 12:14:11 2016 -> Total Length: 162.608K
+Fri Apr  1 12:14:13 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-218-PPL Montana, LLC v. Montana.pdf
+Fri Apr  1 12:14:13 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-704.pdf
+Fri Apr  1 12:14:13 2016 -> Total Length: 231.759K
+Fri Apr  1 12:14:16 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-704-Messerschmidt v. Millender.pdf
+Fri Apr  1 12:14:16 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-391.pdf
+Fri Apr  1 12:14:16 2016 -> Total Length: 66.988K
+Fri Apr  1 12:14:17 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-391-Marmet Health Care Center, Inc. v. Brown.pdf
+Fri Apr  1 12:14:18 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-38.pdf
+Fri Apr  1 12:14:18 2016 -> Total Length: 141.84K
+Fri Apr  1 12:14:19 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-38-Wetzel v. Lambert.pdf
+Fri Apr  1 12:14:20 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-680.pdf
+Fri Apr  1 12:14:20 2016 -> Total Length: 146.066K
+Fri Apr  1 12:14:21 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-680-Howes v. Fields.pdf
+Fri Apr  1 12:14:22 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-577.pdf
+Fri Apr  1 12:14:22 2016 -> Total Length: 176.495K
+Fri Apr  1 12:14:24 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-577-Kawashima v. Holder.pdf
+Fri Apr  1 12:14:25 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-208.pdf
+Fri Apr  1 12:14:25 2016 -> Total Length: 77.552K
+Fri Apr  1 12:14:25 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-208-Ryburn v. Huff.pdf
+Fri Apr  1 12:14:26 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-224.pdf
+Fri Apr  1 12:14:26 2016 -> Total Length: 128.454K
+Fri Apr  1 12:14:27 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-224-National Meat Assn. v. Harris.pdf
+Fri Apr  1 12:14:28 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-6549.pdf
+Fri Apr  1 12:14:28 2016 -> Total Length: 166.082K
+Fri Apr  1 12:14:30 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-6549-Reynolds v. United States.pdf
+Fri Apr  1 12:14:30 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1259.pdf
+Fri Apr  1 12:14:30 2016 -> Total Length: 213.14K
+Fri Apr  1 12:14:33 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1259-United States v. Jones.pdf
+Fri Apr  1 12:14:33 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-713.pdf
+Fri Apr  1 12:14:34 2016 -> Total Length: 94.755K
+Fri Apr  1 12:14:35 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-713-Perry v. Perez.pdf
+Fri Apr  1 12:14:35 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1195.pdf
+Fri Apr  1 12:14:35 2016 -> Total Length: 165.372K
+Fri Apr  1 12:14:37 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1195-Mims v. Arrow Financial Services, LLC.pdf
+Fri Apr  1 12:14:37 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-545.pdf
+Fri Apr  1 12:14:38 2016 -> Total Length: 317.652K
+Fri Apr  1 12:14:42 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-545-Golan v. Holder.pdf
+Fri Apr  1 12:14:42 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-63.pdf
+Fri Apr  1 12:14:42 2016 -> Total Length: 203.01K
+Fri Apr  1 12:14:45 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-63-Maples v. Thomas.pdf
+Fri Apr  1 12:14:45 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-8974.pdf
+Fri Apr  1 12:14:45 2016 -> Total Length: 256.101K
+Fri Apr  1 12:14:48 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-8974-Perry v. New Hampshire.pdf
+Fri Apr  1 12:14:49 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-507.pdf
+Fri Apr  1 12:14:49 2016 -> Total Length: 143.357K
+Fri Apr  1 12:14:50 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-507-Pacific Operators Offshore, LLP v. Valladolid.pdf
+Fri Apr  1 12:14:51 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-553.pdf
+Fri Apr  1 12:14:51 2016 -> Total Length: 197.267K
+Fri Apr  1 12:14:53 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-553-Hosanna-Tabor Evangelical Lutheran Church and School v. EEOC.pdf
+Fri Apr  1 12:14:54 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-895.pdf
+Fri Apr  1 12:14:54 2016 -> Total Length: 270.541K
+Fri Apr  1 12:14:57 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-895-Gonzalez v. Thaler.pdf
+Fri Apr  1 12:14:57 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1104.pdf
+Fri Apr  1 12:14:57 2016 -> Total Length: 155.819K
+Fri Apr  1 12:14:59 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1104-Minneci v. Pollard.pdf
+Fri Apr  1 12:15:00 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-948.pdf
+Fri Apr  1 12:15:00 2016 -> Total Length: 173.918K
+Fri Apr  1 12:15:02 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-948-CompuCredit Corp. v. Greenwood.pdf
+Fri Apr  1 12:15:02 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-8145.pdf
+Fri Apr  1 12:15:02 2016 -> Total Length: 147.986K
+Fri Apr  1 12:15:04 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-8145-Smith v. Cain.pdf
+Fri Apr  1 12:15:04 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/11-74.pdf
+Fri Apr  1 12:15:05 2016 -> Total Length: 77.771K
+Fri Apr  1 12:15:05 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\11-74-Hardy v. Cross.pdf
+Fri Apr  1 12:15:06 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-694.pdf
+Fri Apr  1 12:15:06 2016 -> Total Length: 173.339K
+Fri Apr  1 12:15:08 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-694-Judulang v. Holder.pdf
+Fri Apr  1 12:15:08 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-637.pdf
+Fri Apr  1 12:15:08 2016 -> Total Length: 88.491K
+Fri Apr  1 12:15:09 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-637-Greene v. Fisher.pdf
+Fri Apr  1 12:15:10 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1540.pdf
+Fri Apr  1 12:15:10 2016 -> Total Length: 84.658K
+Fri Apr  1 12:15:11 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1540-Bobby v. Dixon.pdf
+Fri Apr  1 12:15:11 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1521.pdf
+Fri Apr  1 12:15:11 2016 -> Total Length: 70.032K
+Fri Apr  1 12:15:12 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1521-KPMG LLP v. Cocchi.pdf
+Fri Apr  1 12:15:13 2016 -> Downloading: http://supremecourt.gov/opinions/11pdf/10-1115.pdf
+Fri Apr  1 12:15:13 2016 -> Total Length: 112.158K
+Fri Apr  1 12:15:14 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Slip Opinions\10-1115-Cavazos v. Smith.pdf
+Fri Apr  1 12:15:14 2016 -> Download of 78 files completed
+Fri Apr  1 12:16:13 2016 -> Getting argument transcripts for 2011
+Fri Apr  1 12:16:13 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\
+Fri Apr  1 12:16:13 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\
+Fri Apr  1 12:16:14 2016 -> Starting download of 72 files
+Fri Apr  1 12:16:14 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-204.pdf
+Fri Apr  1 12:16:14 2016 -> Total Length: 354.886K
+Fri Apr  1 12:16:18 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-204.pdf
+Fri Apr  1 12:16:19 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-5683.pdf
+Fri Apr  1 12:16:19 2016 -> Total Length: 325.698K
+Fri Apr  1 12:16:23 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-5683.pdf
+Fri Apr  1 12:16:23 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-551.pdf
+Fri Apr  1 12:16:23 2016 -> Total Length: 348.315K
+Fri Apr  1 12:16:28 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-551.pdf
+Fri Apr  1 12:16:28 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-166.pdf
+Fri Apr  1 12:16:28 2016 -> Total Length: 354.428K
+Fri Apr  1 12:16:32 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-166.pdf
+Fri Apr  1 12:16:33 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-246.pdf
+Fri Apr  1 12:16:33 2016 -> Total Length: 332.041K
+Fri Apr  1 12:16:37 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-246.pdf
+Fri Apr  1 12:16:37 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-182.pdf
+Fri Apr  1 12:16:38 2016 -> Total Length: 484.051K
+Fri Apr  1 12:16:43 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-182.pdf
+Fri Apr  1 12:16:44 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-159.pdf
+Fri Apr  1 12:16:44 2016 -> Total Length: 304.966K
+Fri Apr  1 12:16:48 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-159.pdf
+Fri Apr  1 12:16:48 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-94.pdf
+Fri Apr  1 12:16:48 2016 -> Total Length: 294.146K
+Fri Apr  1 12:16:52 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-94.pdf
+Fri Apr  1 12:16:52 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-9646.pdf
+Fri Apr  1 12:16:52 2016 -> Total Length: 376.482K
+Fri Apr  1 12:16:57 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-9646.pdf
+Fri Apr  1 12:16:57 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-9647.pdf
+Fri Apr  1 12:16:57 2016 -> Total Length: 353.349K
+Fri Apr  1 12:17:02 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-9647.pdf
+Fri Apr  1 12:17:02 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-199.pdf
+Fri Apr  1 12:17:02 2016 -> Total Length: 311.71K
+Fri Apr  1 12:17:06 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-199.pdf
+Fri Apr  1 12:17:06 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-262.pdf
+Fri Apr  1 12:17:06 2016 -> Total Length: 344.136K
+Fri Apr  1 12:17:11 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-262.pdf
+Fri Apr  1 12:17:11 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-398-Monday.pdf
+Fri Apr  1 12:17:11 2016 -> Total Length: 426.015K
+Fri Apr  1 12:17:16 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-398-Monday.pdf
+Fri Apr  1 12:17:17 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-398-Tuesday.pdf
+Fri Apr  1 12:17:17 2016 -> Total Length: 655.597K
+Fri Apr  1 12:17:25 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-398-Tuesday.pdf
+Fri Apr  1 12:17:26 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-393.pdf
+Fri Apr  1 12:17:26 2016 -> Total Length: 527.9K
+Fri Apr  1 12:17:32 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-393.pdf
+Fri Apr  1 12:17:32 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-400.pdf
+Fri Apr  1 12:17:32 2016 -> Total Length: 557.395K
+Fri Apr  1 12:17:39 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-400.pdf
+Fri Apr  1 12:17:40 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1042.pdf
+Fri Apr  1 12:17:40 2016 -> Total Length: 393.285K
+Fri Apr  1 12:17:45 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1042.pdf
+Fri Apr  1 12:17:45 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1472.pdf
+Fri Apr  1 12:17:45 2016 -> Total Length: 279.291K
+Fri Apr  1 12:17:48 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1472.pdf
+Fri Apr  1 12:17:49 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-210.pdf
+Fri Apr  1 12:17:49 2016 -> Total Length: 318.032K
+Fri Apr  1 12:17:53 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-210.pdf
+Fri Apr  1 12:17:53 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1320.pdf
+Fri Apr  1 12:17:53 2016 -> Total Length: 303.098K
+Fri Apr  1 12:17:57 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1320.pdf
+Fri Apr  1 12:17:57 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-45.pdf
+Fri Apr  1 12:17:57 2016 -> Total Length: 318.378K
+Fri Apr  1 12:18:01 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-45.pdf
+Fri Apr  1 12:18:01 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-9995.pdf
+Fri Apr  1 12:18:01 2016 -> Total Length: 308.842K
+Fri Apr  1 12:18:05 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-9995.pdf
+Fri Apr  1 12:18:05 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1491.pdf
+Fri Apr  1 12:18:06 2016 -> Total Length: 329.443K
+Fri Apr  1 12:18:10 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1491.pdf
+Fri Apr  1 12:18:10 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-88.pdf
+Fri Apr  1 12:18:10 2016 -> Total Length: 305.632K
+Fri Apr  1 12:18:14 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-88.pdf
+Fri Apr  1 12:18:14 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-161.pdf
+Fri Apr  1 12:18:14 2016 -> Total Length: 500.824K
+Fri Apr  1 12:18:20 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-161.pdf
+Fri Apr  1 12:18:21 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1062.pdf
+Fri Apr  1 12:18:21 2016 -> Total Length: 311.47K
+Fri Apr  1 12:18:25 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1062.pdf
+Fri Apr  1 12:18:25 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1219.pdf
+Fri Apr  1 12:18:25 2016 -> Total Length: 287.037K
+Fri Apr  1 12:18:28 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1219.pdf
+Fri Apr  1 12:18:29 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-713.pdf
+Fri Apr  1 12:18:29 2016 -> Total Length: 420.211K
+Fri Apr  1 12:18:34 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-713.pdf
+Fri Apr  1 12:18:34 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1121.pdf
+Fri Apr  1 12:18:34 2016 -> Total Length: 299.551K
+Fri Apr  1 12:18:38 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1121.pdf
+Fri Apr  1 12:18:38 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1293.pdf
+Fri Apr  1 12:18:38 2016 -> Total Length: 345.02K
+Fri Apr  1 12:18:43 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1293.pdf
+Fri Apr  1 12:18:43 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1016.pdf
+Fri Apr  1 12:18:43 2016 -> Total Length: 285.854K
+Fri Apr  1 12:18:46 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1016.pdf
+Fri Apr  1 12:18:47 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1399.pdf
+Fri Apr  1 12:18:47 2016 -> Total Length: 363.417K
+Fri Apr  1 12:18:51 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1399.pdf
+Fri Apr  1 12:18:52 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-139.pdf
+Fri Apr  1 12:18:52 2016 -> Total Length: 353.191K
+Fri Apr  1 12:18:56 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\11-139.pdf
+Fri Apr  1 12:18:56 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1018.pdf
+Fri Apr  1 12:18:56 2016 -> Total Length: 349.456K
+Fri Apr  1 12:19:01 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1018.pdf
+Fri Apr  1 12:19:01 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1542.pdf
+Fri Apr  1 12:19:01 2016 -> Total Length: 323.987K
+Fri Apr  1 12:19:05 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1542.pdf
+Fri Apr  1 12:19:06 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1211.pdf
+Fri Apr  1 12:19:06 2016 -> Total Length: 326.625K
+Fri Apr  1 12:19:10 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1211.pdf
+Fri Apr  1 12:19:10 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-708.pdf
+Fri Apr  1 12:19:10 2016 -> Total Length: 221.412K
+Fri Apr  1 12:19:13 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-708.pdf
+Fri Apr  1 12:19:13 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1195.pdf
+Fri Apr  1 12:19:13 2016 -> Total Length: 218.426K
+Fri Apr  1 12:19:16 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1195.pdf
+Fri Apr  1 12:19:16 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-875.pdf
+Fri Apr  1 12:19:16 2016 -> Total Length: 212.029K
+Fri Apr  1 12:19:19 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-875.pdf
+Fri Apr  1 12:19:19 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1261.pdf
+Fri Apr  1 12:19:19 2016 -> Total Length: 210.351K
+Fri Apr  1 12:19:22 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1261.pdf
+Fri Apr  1 12:19:22 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-7387.pdf
+Fri Apr  1 12:19:22 2016 -> Total Length: 217.509K
+Fri Apr  1 12:19:25 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-7387.pdf
+Fri Apr  1 12:19:25 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1024.pdf
+Fri Apr  1 12:19:26 2016 -> Total Length: 208.861K
+Fri Apr  1 12:19:28 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1024.pdf
+Fri Apr  1 12:19:29 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-844.pdf
+Fri Apr  1 12:19:29 2016 -> Total Length: 221.678K
+Fri Apr  1 12:19:31 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-844.pdf
+Fri Apr  1 12:19:32 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-704.pdf
+Fri Apr  1 12:19:32 2016 -> Total Length: 226.259K
+Fri Apr  1 12:19:34 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-704.pdf
+Fri Apr  1 12:19:35 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1265.pdf
+Fri Apr  1 12:19:35 2016 -> Total Length: 211.089K
+Fri Apr  1 12:19:38 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1265.pdf
+Fri Apr  1 12:19:38 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-8505.pdf
+Fri Apr  1 12:19:38 2016 -> Total Length: 203.557K
+Fri Apr  1 12:19:41 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-8505.pdf
+Fri Apr  1 12:19:41 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1150.pdf
+Fri Apr  1 12:19:41 2016 -> Total Length: 222.893K
+Fri Apr  1 12:19:44 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1150.pdf
+Fri Apr  1 12:19:44 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-218.pdf
+Fri Apr  1 12:19:44 2016 -> Total Length: 226.662K
+Fri Apr  1 12:19:47 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-218.pdf
+Fri Apr  1 12:19:48 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-209.pdf
+Fri Apr  1 12:19:48 2016 -> Total Length: 346.94K
+Fri Apr  1 12:19:52 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-209.pdf
+Fri Apr  1 12:19:52 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-444.pdf
+Fri Apr  1 12:19:52 2016 -> Total Length: 297.122K
+Fri Apr  1 12:19:56 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-444.pdf
+Fri Apr  1 12:19:56 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-788.pdf
+Fri Apr  1 12:19:56 2016 -> Total Length: 315.542K
+Fri Apr  1 12:20:00 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-788.pdf
+Fri Apr  1 12:20:00 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1104.pdf
+Fri Apr  1 12:20:01 2016 -> Total Length: 355.933K
+Fri Apr  1 12:20:05 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1104.pdf
+Fri Apr  1 12:20:09 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-8974.pdf
+Fri Apr  1 12:20:09 2016 -> Total Length: 325.765K
+Fri Apr  1 12:20:13 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-8974.pdf
+Fri Apr  1 12:20:13 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-895.pdf
+Fri Apr  1 12:20:13 2016 -> Total Length: 314.146K
+Fri Apr  1 12:20:17 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-895.pdf
+Fri Apr  1 12:20:17 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-699.pdf
+Fri Apr  1 12:20:17 2016 -> Total Length: 345.542K
+Fri Apr  1 12:20:22 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-699.pdf
+Fri Apr  1 12:20:22 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-577.pdf
+Fri Apr  1 12:20:22 2016 -> Total Length: 274.986K
+Fri Apr  1 12:20:25 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-577.pdf
+Fri Apr  1 12:20:26 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1259.pdf
+Fri Apr  1 12:20:26 2016 -> Total Length: 383.051K
+Fri Apr  1 12:20:31 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1259.pdf
+Fri Apr  1 12:20:31 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-8145.pdf
+Fri Apr  1 12:20:31 2016 -> Total Length: 389.963K
+Fri Apr  1 12:20:36 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-8145.pdf
+Fri Apr  1 12:20:36 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-224.pdf
+Fri Apr  1 12:20:36 2016 -> Total Length: 298.525K
+Fri Apr  1 12:20:40 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-224.pdf
+Fri Apr  1 12:20:41 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-879.pdf
+Fri Apr  1 12:20:41 2016 -> Total Length: 293.607K
+Fri Apr  1 12:20:44 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-879.pdf
+Fri Apr  1 12:20:45 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/09-958.pdf
+Fri Apr  1 12:20:45 2016 -> Total Length: 133.041K
+Fri Apr  1 12:20:46 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\09-958.pdf
+Fri Apr  1 12:20:47 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-6549.pdf
+Fri Apr  1 12:20:47 2016 -> Total Length: 321.085K
+Fri Apr  1 12:20:51 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-6549.pdf
+Fri Apr  1 12:20:51 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-63.pdf
+Fri Apr  1 12:20:51 2016 -> Total Length: 128.569K
+Fri Apr  1 12:20:53 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-63.pdf
+Fri Apr  1 12:20:53 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-1001.pdf
+Fri Apr  1 12:20:53 2016 -> Total Length: 351.002K
+Fri Apr  1 12:20:58 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-1001.pdf
+Fri Apr  1 12:20:58 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-680.pdf
+Fri Apr  1 12:20:58 2016 -> Total Length: 111.788K
+Fri Apr  1 12:20:59 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-680.pdf
+Fri Apr  1 12:21:00 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-553.pdf
+Fri Apr  1 12:21:00 2016 -> Total Length: 356.673K
+Fri Apr  1 12:21:04 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-553.pdf
+Fri Apr  1 12:21:05 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-545.pdf
+Fri Apr  1 12:21:05 2016 -> Total Length: 122.982K
+Fri Apr  1 12:21:06 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-545.pdf
+Fri Apr  1 12:21:06 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-507.pdf
+Fri Apr  1 12:21:07 2016 -> Total Length: 369.618K
+Fri Apr  1 12:21:11 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-507.pdf
+Fri Apr  1 12:21:11 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-948.pdf
+Fri Apr  1 12:21:11 2016 -> Total Length: 263.19K
+Fri Apr  1 12:21:15 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-948.pdf
+Fri Apr  1 12:21:15 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-637.pdf
+Fri Apr  1 12:21:15 2016 -> Total Length: 286.471K
+Fri Apr  1 12:21:19 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-637.pdf
+Fri Apr  1 12:21:19 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-945.pdf
+Fri Apr  1 12:21:19 2016 -> Total Length: 406.538K
+Fri Apr  1 12:21:24 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-945.pdf
+Fri Apr  1 12:21:24 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/10-694.pdf
+Fri Apr  1 12:21:24 2016 -> Total Length: 384.163K
+Fri Apr  1 12:21:29 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011\Argument Transcripts\10-694.pdf
+Fri Apr  1 12:21:29 2016 -> Download of 72 files completed
+Fri Apr  1 12:21:40 2016 -> Closing
+Fri Apr  1 12:39:24 2016 -> Opening
+Fri Apr  1 12:39:27 2016 -> No directory for: 2015
+Fri Apr  1 12:39:27 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\
+Fri Apr  1 12:39:27 2016 -> Getting argument transcripts for 2015
+Fri Apr  1 12:39:27 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\Argument Transcripts\
+Fri Apr  1 12:39:27 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015\Argument Transcripts\
+Fri Apr  1 12:39:27 2016 -> Starting download of 59 files
+Fri Apr  1 12:39:28 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/14-1504_5he6.pdf
+Fri Apr  1 12:39:28 2016 -> Total Length: 1397.802K
+Fri Apr  1 12:39:30 2016 -> Stopping Download
+Fri Apr  1 12:39:35 2016 -> Closing
+Fri Apr  1 12:42:04 2016 -> Opening
+Fri Apr  1 12:42:08 2016 -> No directory for: 2014
+Fri Apr  1 12:42:08 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\
+Fri Apr  1 12:42:08 2016 -> Getting argument transcripts for 2014
+Fri Apr  1 12:42:08 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Argument Transcripts\
+Fri Apr  1 12:42:08 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Argument Transcripts\
+Fri Apr  1 12:42:08 2016 -> Starting download of 69 files
+Fri Apr  1 12:42:09 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/13-7120_hd1a.pdf
+Fri Apr  1 12:42:09 2016 -> Total Length: 785.579K
+Fri Apr  1 12:42:18 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014\Argument Transcripts\13-7120_hd1a-Johnson v. United Statesdocket.pdf
+Fri Apr  1 12:42:19 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/14-378_36b1.pdf
+Fri Apr  1 12:42:19 2016 -> Total Length: 785.621K
+Fri Apr  1 12:42:21 2016 -> Closing
+Fri Apr  1 12:42:29 2016 -> Opening
+Fri Apr  1 12:42:32 2016 -> No directory for: 2012
+Fri Apr  1 12:42:32 2016 -> Directory created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\
+Fri Apr  1 12:42:32 2016 -> Getting argument transcripts for 2012
+Fri Apr  1 12:42:32 2016 -> No directory for: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Argument Transcripts\
+Fri Apr  1 12:42:32 2016 -> Created: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Argument Transcripts\
+Fri Apr  1 12:42:33 2016 -> Starting download of 75 files
+Fri Apr  1 12:42:33 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/12-398_h3dj.pdf
+Fri Apr  1 12:42:33 2016 -> Total Length: 402.22K
+Fri Apr  1 12:42:38 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Argument Transcripts\12-398_h3dj-Association for Molecular Pathology v. Myriad Genetics, Inc..pdf
+Fri Apr  1 12:42:39 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/12-167_n648.pdf
+Fri Apr  1 12:42:39 2016 -> Total Length: 260.667K
+Fri Apr  1 12:42:42 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Argument Transcripts\12-167_n648-United States v. Davila.pdf
+Fri Apr  1 12:42:42 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/12-399_53k8.pdf
+Fri Apr  1 12:42:42 2016 -> Total Length: 411.434K
+Fri Apr  1 12:42:47 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Argument Transcripts\12-399_53k8-Adoptive Couple v. Baby Girl.pdf
+Fri Apr  1 12:42:47 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/11-798_b97d.pdf
+Fri Apr  1 12:42:48 2016 -> Total Length: 324.288K
+Fri Apr  1 12:42:51 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Argument Transcripts\11-798_b97d-American Trucking Assns., Inc. v. Los Angeles.pdf
+Fri Apr  1 12:42:52 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/12-418_758b.pdf
+Fri Apr  1 12:42:52 2016 -> Total Length: 298.695K
+Fri Apr  1 12:42:55 2016 -> Saved to: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012\Argument Transcripts\12-418_758b-United States v. Kebodeaux.pdf
+Fri Apr  1 12:42:56 2016 -> Downloading: http://supremecourt.gov/oral_arguments/argument_transcripts/12-246_7647.pdf
+Fri Apr  1 12:42:56 2016 -> Total Length: 383.575K
+Fri Apr  1 12:42:57 2016 -> Stopping Download
+Fri Apr  1 12:42:59 2016 -> Closing
+Fri Apr  1 12:49:36 2016 -> Opening
+Fri Apr  1 12:49:37 2016 -> Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2011
+Fri Apr  1 12:49:37 2016 -> Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2012
+Fri Apr  1 12:49:37 2016 -> Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2014
+Fri Apr  1 12:49:37 2016 -> Deleted folder: C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\pythonSource\scotusScraper\SCOTUS\2015
+Fri Apr  1 12:49:46 2016 -> Closing

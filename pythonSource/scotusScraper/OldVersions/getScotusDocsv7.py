@@ -66,7 +66,7 @@ class downloader(QThread):
 		self.exiting = False 
 		self.start()
 	def run(self):
-		self.emit(SIGNAL('output(QString)'), QString('Starting download of {} files'.format(len(arg))))
+		self.emit(SIGNAL('output(QString)'), QString('Starting download of {} files'.format(len(self.arg))))
 		for arg in self.arg:
 			if self.exiting:
 				self.emit(SIGNAL('output(QString)'), 'Cancelling download')
@@ -81,7 +81,8 @@ class downloader(QThread):
 					self.emit(SIGNAL('output(QString)'), QString('Total Length: {}').format(fmtLen))
 					for data in res.iter_content():
 						f.write(data)
-		self.emit(SIGNAL('output(QString)'), QString('Download of {} files completed'.format(len(arg))))
+				self.emit(SIGNAL('output(QString)'), QString('Saved to: {}'.format(arg[1])))
+		self.emit(SIGNAL('output(QString)'), QString('Download of {} files completed'.format(len(self.arg))))
 
 class window(QMainWindow):
 	def __init__(self, parent=None):
@@ -310,7 +311,7 @@ class window(QMainWindow):
 		trans = { 'dir'       : '{}{}\\Argument Transcripts\\'.format(self.saveDir, year),
 				  'url'       : '{}oral_arguments/argument_transcript/{}'.format(self.baseURL, year),
 				  'soup'      : '',
-				  'links'     : [], 'dockets' : [], 'filenames' : [], 'pairs' : [] }
+				  'links'     : [], 'dockets' : [],'names': [], 'filenames' : [], 'pairs' : [] }
 		if not os.path.exists(trans['dir']):
 			self.sendMessage('No directory for: {}'.format(trans['dir']))
 			try:
@@ -330,10 +331,11 @@ class window(QMainWindow):
 					trans['dockets'].append(docket)
 					link = '{}{}'.format(self.transBase, link)
 					trans['links'].append(link)
-					fileName = '{}{}{}'.format(trans['dir'], self.removeNotAllowedChars(docket), '.pdf')
+					name = cell.find('span').string
+					trans['names'].append(name)
+					fileName = '{}{}{}'.format(trans['dir'], self.removeNotAllowedChars('{}-{}'.format(docket, name)), '.pdf')
 					trans['filenames'].append(fileName)
 					trans['pairs'].append((link, fileName))
-		self.sendMessage('Starting download of {} files'.format(len(trans['pairs'])))
 		self.downloader(trans['pairs'])
 
 
