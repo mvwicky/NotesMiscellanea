@@ -1,3 +1,11 @@
+<style>
+
+</style>
+
+<script>
+
+</script>
+
 # NotesMiscellanea
 A repo of interesting (to me) documents
 
@@ -70,7 +78,7 @@ A repo of interesting (to me) documents
   - UnderstandingBasicMusicTheory
 
 ### Files In Root
-- AmicusBrief_iPhone: an brief of amici curae in the case of the San Bernadino iPhone case
+- AmicusBrief_iPhone: a brief of amici curae in the case of the San Bernadino iPhone 
 - AmicusBrief_Twitter_v_Lynch
 - GreekAlphabet
 - PastPracticeRichardMittenthal

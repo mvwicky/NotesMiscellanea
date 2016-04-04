@@ -17,8 +17,6 @@ except NameError:
     print('QString Import Failed')
     QString = str
 
-#class logger(object):
-
 class DocDialog(QDialog):
     '''shows a dialog allowing the user to choose which documents to fetch'''
     def __init__(self, parent=None):
