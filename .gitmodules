@@ -16,3 +16,6 @@
 [submodule "devd"]
 	path = devd
 	url = https://github.com/cortesi/devd.git
+[submodule "styleguide"]
+	path = styleguide
+	url = https://github.com/google/styleguide.git

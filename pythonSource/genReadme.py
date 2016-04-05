@@ -6,7 +6,8 @@ import typing
 import datetime
 
 class HTMLGen(object):
-	pass
+	def __init__(self):
+		self.open_tags = []
 
 def write_gen_tag(filename, tag, text=None, _id=None, _class=None):
 	with open(filename, 'a') as f:
@@ -27,14 +28,18 @@ def main():
 		r.write('<!DOCTYPE html>\r\n<html>\r\n')
 		r.write('\t<head>\r\n') # start head tag
 		r.write('\t\t<title>Notes Miscellanea - Readme</title>\r\n')
-		r.write('\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"ReadmeRes/style.css\">\r\n')
-		r.write('\t\t<script type=\"text/javascript\" src="ReadmeRes/jquery.min.js\"></script>\r\n')
-		r.write('\t\t<script type=\"text/javascript\" src=\"ReadmeRes/readme_v2.js\"></script>\r\n')
+		r.write('\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"../ReadmeRes/style.css\">\r\n')
+		r.write('\t\t<script type=\"text/javascript\" src=\"../ReadmeRes/jquery.min.js\"></script>\r\n')
+		r.write('\t\t<script type=\"text/javascript\" src=\"../ReadmeRes/readme_v2.js\"></script>\r\n')
 		r.write('\t</head>\r\n') # end head tag
 		r.write('\t<body>\r\n') # start body tag
 
 		r.write('\t\t<div id=\"container\">\r\n')
 		r.write('\t\t\t<div id=\"maindiv\">\r\n')
+		r.write('<br /><br />\r\n')
+		r.write('\t\t\t\t<div class=\"subzero\" id=\"contents\">\r\n')
+
+		r.write('\t\t\t\t</div>\r\n')
 
 		r.write('\t\t\t</div>\r\n')
 		r.write('\t\t</div>\r\n')
