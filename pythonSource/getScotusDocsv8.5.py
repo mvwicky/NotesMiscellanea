@@ -74,6 +74,9 @@ class downloader(QThread):
             if self.exiting:
                 self.emit(SIGNAL('output(QString)'), 'Cancelling download')
                 return 0;
+            if os.path.isfile(arg[1]):
+                self.emit(SIGNAL('output(QString)'), QString('File {} already exists, skipping'.format(arg[1])))
+                continue
             with open(arg[1], 'wb') as f:
                 res = requests.get(arg[0], stream=True)
                 self.emit(SIGNAL('output(QString)'), QString('Downloading: {}'.format(arg[0])))

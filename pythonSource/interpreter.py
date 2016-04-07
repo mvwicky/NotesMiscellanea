@@ -72,55 +72,6 @@ class Lexer(object):
 			self.error()
 		return Token(EOF, None)
 
-class Interpreter(object):
-	def __init__(self, lexer):
-		self.lexer = lexer
-		self.current_token = self.lexer.get_next_token()
-
-	def error(self):
-		raise Exception('Invalid syntax')
-
-	def eat(self, token_type):
-		if self.current_token.type == token_type:
-			self.current_token = self.lexer.get_next_token()
-		else:
-			self.error()
-
-	def factor(self):
-		token = self.current_token
-		if token.type == INTEGER:
-			self.eat(INTEGER)
-			return token.value
-		elif token.type == LPAREN:
-			self.eat(LPAREN)
-			result = self.expr()
-			self.eat(RPAREN)
-			return result
-
-	def term(self):
-		result = self.factor()
-		while self.current_token.type in (MULT, DIV):
-			token = self.current_token 
-			if token.type == MULT:
-				self.eat(MULT)
-				result *= self.factor()
-			elif token.type == DIV:
-				self.eat(DIV)
-				result /= self.factor()
-		return result
-
-	def expr(self):
-		result = self.term()
-		while self.current_token.type in (PLUS, MINUS):
-			token = self.current_token
-			if token.type == PLUS:
-				self.eat(PLUS)
-				result += self.term()
-			elif token.type == MINUS:
-				self.eat(MINUS)
-				result -= self.term()
-		return result
-
 class AST(object):
 	pass
 
@@ -143,6 +94,78 @@ class Parser(object):
 	def error(self):
 		raise Exception('Invalid syntax')
 
+	def eat(self, token_type):
+		if self.current_token.type == token_type:
+			self.current_token = self.lexer.get_next_token()
+		else:
+			self.error()
+
+	def factor(self):
+		token = self.current_token
+		if token.type == INTEGER:
+			self.eat(INTEGER)
+			return Num(token)
+		elif token.type == LPAREN:
+			self.eat(LPAREN)
+			node = self.expr()
+			self.eat(RPAREN)
+			return node
+
+	def term(self):
+		node = self.factor()
+		while self.current_token.type in (MULT, DIV):
+			token = self.current_token
+			if token.type == MULT:
+				self.eat(MULT)
+			elif token.type == DIV:
+				self.eat(DIV)
+			node = BinOp(left=node, op=token, right=self.factor())
+		return node
+
+	def expr(self):
+		node = self.term()
+		while self.current_token.type in (PLUS, MINUS):
+			token = self.current_token
+			if token.type == PLUS:
+				self.eat(PLUS)
+			elif token.type == MINUS:
+				self.eat(MINUS)
+			node = BinOp(left=node, op=token, right=self.term())
+		return node
+
+	def parse(self):
+		return self.expr()
+
+class NodeVisitor(object):
+	def visit(self, node):
+		method_name = 'visit_{}'.format(type(node).__name__)
+		visitor = getattr(self, method_name, self.generic_visit)
+		return visitor(node)
+
+	def generic_visit(self, node):
+		raise Exception('No visit_{} method'.format(type(node).__name__))
+
+class Interpreter(NodeVisitor):
+	def __init__(self, parser):
+		self.parser = parser 
+
+	def visit_BinOP(self, node):
+		if node.op.type == PLUS:
+			return self.visit(node.left) + self.visit(node.right)
+		elif node.op.type == MINUS:
+			return self.visit(node.left) - self.visit(node.right)
+		elif node.op.type == MULT:
+			return self.visit(node.left) * self.visit(node.right)
+		elif node.op.type == DIV:
+			return self.visit(node.left) / self.visit(node.right)
+
+	def visit_Num(self, node):
+		return node.value
+
+	def interpret(self):
+		tree = self.parser.parse()
+		return self.visit(tree)
+
 def main():
 	while True:
 		try:
@@ -152,8 +175,9 @@ def main():
 		if not text: 
 			continue 
 		lexer = Lexer(text)
-		interpreter = Interpreter(lexer)
-		result = interpreter.expr()
+		parser = Parser(lexer)
+		interpreter = Interpreter(parser)
+		result = interpreter.interpret()
 		print(result)
 
 if __name__ == '__main__':
