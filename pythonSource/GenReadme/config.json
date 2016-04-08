@@ -1,0 +1,11 @@
+{
+	"file_name": "README_v3.html",
+	"title": "Notes Miscellanea - Readme",
+	"to_root": "../..",
+	"resource_names": ["style.css",
+					   "jquery.min.js",
+					   "readme_v2.js"],
+	"page_header": "Notes Miscellanea",
+	"page_description": "A repo of interesting (to me) documents",
+	"sub_headings": {"Contents": ["Folders", "Files in Root", "Submodules"]}
+}

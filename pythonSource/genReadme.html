@@ -755,45 +755,203 @@ import typing
 import datetime</p>
 
 <p>class HTMLGen(object):
-    pass</p>
+    def <strong>init</strong>(self, file_name, title):
+        self.open_tags = []
+        self.indent = ''
+        self.file_name = file_name
+        self.title = title</p>
 
-<p>def write_gen_tag(filename, tag, text=None, _id=None, _class=None):
-    with open(filename, 'a') as f:
-        f.write('&lt;{}'.format(tag))
-        if (_id is not None):
-            f.write(' id=\"{}\"'.format(id))
-        if (_class is not None):
-            f.write(' class=\"{}\"'.format(_class))
-        f.write('&gt;')
-        if (text is not None):
-            f.write(text)
-        f.write('&lt;/{}&gt;'.format(tag))</p>
+<pre><code>def increase_indent(self):
+    return ''
+    self.indent = '{}\t'.format(self.indent)
+    return self.indent
+
+def decrease_indent(self):
+    return ''
+    ret = self.indent
+    self.indent = self.indent[:-2]
+    return ret
+
+def gen_tag(self, tag, text=None, _id=None, _class=None, new_line=True, indent=False, close=False, as_string=False):
+    ret = []
+    if indent:
+        self.increase_indent()
+    ret.append('{}&lt;{}'.format(self.indent, tag))
+    if _id is not None:
+        ret.append(' id=\"{}\"'.format(_id))
+    if _class is not None:
+        ret.append(' class=\"{}\"'.format(_class))
+    ret.append('&gt;')
+    if text is not None:
+        ret.append(text)
+    if close:
+        ret.append('&lt;/{}&gt;'.format(tag))
+    if not close:
+        self.open_tags.append(tag)
+    if new_line:
+        ret.append('\r\n')
+    ret = ''.join(ret)  
+    if as_string:
+        return ret
+    with open(self.file_name, 'a') as html:
+        html.write(ret)
+
+def close_tag(self, tag, new_line=True):
+    with open(self.file_name, 'a') as html:
+        html.write('{}&lt;/{}&gt;'.format(self.decrease_indent(), tag))
+        if new_line:
+            html.write('\r\n')
+    self.open_tags.remove(tag)
+
+def close_all_tags(self):
+    with open(self.file_name, 'a') as html:
+        for tag in self.open_tags:
+            html.write('{}&lt;/{}&gt;\r\n'.format(self.decrease_indent(), tag))
+    self.open_tags = []
+
+def link(self, href, text, _id=None, _class=None, new_line=True, indent=False, as_string=False):
+    ret = []
+    if indent:
+        self.increase_indent()
+    ret.append('{}&lt;a'.format(self.indent))
+    if _id is not None:
+        ret.append(' id=\"{}\"'.format(_id))
+    if _class is not None:
+        ret.append(' class=\"{}\"'.format(_class))
+    ret.append('&gt;{}&lt;/a&gt;'.format(text))
+    if new_line:
+        ret.append('\r\n')
+    ret = ''.join(ret)  
+    if as_string:
+        return ret
+    with open(self.file_name, 'a') as html:
+        html.write(ret)
+
+def br(self, num=1):
+    with open(self.file_name, 'a') as html:
+        for i in range(num):
+            html.write('{}&lt;br /&gt;\r\n'.format(self.indent))
+
+def list_open(self, ordered=False, _id=None, _class=None, new_line=True, indent=False, as_string=False):
+    if ordered:
+        tag = 'ol'
+    else:
+        tag = 'ul'
+    ret = self.gen_tag(tag, None, _id, _class, new_line, indent, False, as_string)
+    if ret is not None and as_string:
+        return ret
+
+def list_close(self, ordered=False, new_line=True):
+    if ordered:
+        tag = 'ol'
+    else:
+        tag = 'ul'
+    self.close_tag(tag, new_line)
+
+def list_element(self, text=None, _id=None, _class=None, new_line=True, indent=False, as_string=False):
+    ret = self.gen_tag('li', text, _id, _class, new_line, indent, True, as_string)
+    if ret is not None and as_string:
+        return ret
+
+def header(self, level, text=None, _id=None, _class=None, new_line=True, indent=False, close=False, as_string=False):
+    tag = 'h{}'.format(level)
+    ret = self.gen_tag(tag, text, _id, _class, new_line, indent, close, as_string)
+    if ret is not None and as_string:
+        return ret
+
+def opening(self, file_paths=None):
+    with open(self.file_name, 'w') as html:
+        html.write('&lt;!DOCTYPE html&gt;\r\n')
+        html.write('{}&lt;head&gt;\r\n'.format(self.increase_indent()))
+        html.write('{}&lt;title&gt;{}&lt;/title&gt;\r\n'.format(self.increase_indent(), self.title))
+        if file_paths is not None:
+            for path in file_paths:
+                if path.find('.js') != -1:
+                    html.write('{}&lt;script type=\"text/javascript\" src=\"{}\"&gt;&lt;/script&gt;\r\n'.format(self.indent, path))
+                elif path.find('.css') != -1:
+                    html.write('{}&lt;link rel=\"stylesheet\" type=\"text/css\" href=\"{}\"&gt;\r\n'.format(self.indent, path))
+        html.write('{}&lt;/head&gt;\r\n'.format(self.decrease_indent()))
+        html.write('{}&lt;body&gt;\r\n'.format(self.increase_indent()))
+
+def close(self):
+    with open(self.file_name, 'a') as html:
+        html.write('{}&lt;/body&gt;\r\n'.format(self.decrease_indent()))
+        html.write('{}&lt;/html&gt;\r\n'.format(self.decrease_indent()))
+</code></pre>
+
+<p>def get_files():
+    files = []
+    for elem in os.listdir('..'):
+        dot = elem.find('.')
+        if dot != -1 and not elem.startswith('.'):
+            files.append(elem)
+    for i, file in enumerate(files):
+        dot = file.find('.')
+        if dot != -1:
+            ext = file[dot+1:]
+            files[i] = (file[:dot], ext)</p>
+
+<pre><code>return files
+</code></pre>
+
+<p>def get_folders():
+    folders = []
+    for elem in os.listdir('..'):
+        dot = elem.find('.')
+        if dot == -1:
+            folders.append(elem)
+    return folders</p>
+
+<p>def get_submodules():
+    folders = get_folders()
+    submodules = []
+    for folder in folders:
+        for elem in os.listdir('../{}'.folder):
+            print(elem)</p>
 
 <p>def main():
-    print(os.listdir('..'))
-    readme = 'README_v3.html'
-    with open(readme, 'w') as r:
-        r.write('&lt;!DOCTYPE html&gt;\r\n\r\n')
-        r.write('\t</p>\r\n') # start head tag
-        r.write('\t\tNotes Miscellanea - Readme\r\n')
-        r.write('\t\t\r\n')
-        r.write('\t\t\r\n')
-        r.write('\t\t\r\n')
-        r.write('\t\r\n') # end head tag
-        r.write('\t\r\n') # start body tag
+    root = get_files()
+    folders = get_folders()
+    print(folders)
+    print(root)
+    get_submodules()
+    readme_file = 'README_v3.html'
+    files = ['../ReadmeRes/style.css',
+             '../ReadmeRes/jquery.min.js',
+             '../ReadmeRes/readme_v2.js']</p>
 
-<pre><code>    r.write('\t\t&lt;div id=\"container\"&gt;\r\n')
-    r.write('\t\t\t&lt;div id=\"maindiv\"&gt;\r\n')
-    r.write('&lt;br /&gt;&lt;br /&gt;\r\n')
-    r.write('\t\t\t\t&lt;div class=\"subzero\" id=\"contents\"&gt;')
+<pre><code>readme = HTMLGen(file_name=readme_file, title='Notes Miscellanea - Readme')
+readme.opening(file_paths=files)
 
-    r.write('\t\t\t\t&lt;/div&gt;')
+readme.gen_tag('div', _id='container')
+readme.gen_tag('div', _id='maindiv')
+readme.header(1, text=readme.link(href='#notesmiscellanea', text='Notes Miscellanea',new_line=False, as_string=True), close=True)
+readme.gen_tag('span', text='A repo of interesting (to me) documents', close=True)
+readme.br(num=2)
 
-    r.write('\t\t\t&lt;/div&gt;\r\n')
-    r.write('\t\t&lt;/div&gt;\r\n')
+readme.gen_tag('div', _id='contents', _class='subzero')
+readme.header(2, text=readme.link(href='#contents', text='Contents', new_line=False, as_string=True), close=True)
 
-    r.write('\t&lt;/body&gt;\r\n')
-    r.write('&lt;/html&gt;')
+readme.gen_tag('div', _class='subone', _id='folders')
+
+readme.header(4, text=readme.link(href='#folders', text='Folders', new_line=False, as_string=True), close=True)
+readme.list_open()
+for folder in folders:
+    readme.list_element(text=readme.gen_tag(tag='span',text=folder, _class='toplist', close=True, new_line=False, as_string=True))
+readme.list_close()
+
+readme.close_tag('div')
+
+readme.close_tag('div')
+readme.gen_tag('div', _class='subone', _id='filesinroot')
+readme.header(4, text=readme.link(href='#filesinroot', text='Files in Root', new_line=False, as_string=True), close=True)
+readme.list_open()
+for file in root:
+    readme.list_element(text=readme.gen_tag(tag='span', text='{} ({})'.format(*file), _class='toplist', close=True , new_line=False, as_string=True))
+readme.list_close()
+
+readme.close_all_tags()
+readme.close()
 </code></pre>
 
 <p>if <strong>name</strong> == '<strong>main</strong>':

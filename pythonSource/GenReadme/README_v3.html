@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <head>
 <title>Notes Miscellanea - Readme</title>
-<link rel="stylesheet" type="text/css" href="../ReadmeRes/style.css">
-<script type="text/javascript" src="../ReadmeRes/jquery.min.js"></script>
-<script type="text/javascript" src="../ReadmeRes/readme_v2.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="readme_v2.js"></script>
 </head>
 <body>
 <div id="container">
@@ -15,7 +15,8 @@
 <div id="contents" class="subzero">
 <h2><a href="#contents" class="gen_link">Contents</a></h2>
 <div id="folders" class="subone">
-<h4><a href="#folders" class="top_link">Folders</a></h4>
+<h4><span class="arrow arrow_right"></span>
+<a href="#folders" class="top_link">Folders</a></h4>
 <ul class="toplist">
 <li><span id="BlendFiles" class="sub_link">BlendFiles</span></li>
 <ul id="BlendFiles" class="sublist">
@@ -48,10 +49,6 @@
 </ul>
 <li><span id="devd" class="sub_link">devd</span></li>
 <ul id="devd" class="sublist">
-<li><span>.appveyor.yml</span></li>
-<li><span>.git</span></li>
-<li><span>.gitignore</span></li>
-<li><span>.travis.yml</span></li>
 <li><span>certgen.go</span></li>
 <li><span>certgen_test.go</span></li>
 <li><span>CHANGELOG.md</span></li>
@@ -84,7 +81,6 @@
 </ul>
 <li><span id="DOOM" class="sub_link">DOOM</span></li>
 <ul id="DOOM" class="sublist">
-<li><span>.git</span></li>
 <li><span>ipx</span></li>
 <li><span>linuxdoom-1.10</span></li>
 <li><span>README.TXT</span></li>
@@ -93,8 +89,6 @@
 </ul>
 <li><span id="DOOM-3" class="sub_link">DOOM-3</span></li>
 <ul id="DOOM-3" class="sublist">
-<li><span>.git</span></li>
-<li><span>.gitignore</span></li>
 <li><span>base</span></li>
 <li><span>COPYING.txt</span></li>
 <li><span>FORK.txt</span></li>
@@ -103,7 +97,6 @@
 </ul>
 <li><span id="DOOM-3-BFG" class="sub_link">DOOM-3-BFG</span></li>
 <ul id="DOOM-3-BFG" class="sublist">
-<li><span>.git</span></li>
 <li><span>base</span></li>
 <li><span>COPYING.txt</span></li>
 <li><span>doomclassic</span></li>
@@ -186,9 +179,6 @@
 </ul>
 <li><span id="myhtml" class="sub_link">myhtml</span></li>
 <ul id="myhtml" class="sublist">
-<li><span>.git</span></li>
-<li><span>.gitignore</span></li>
-<li><span>.travis.yml</span></li>
 <li><span>devel</span></li>
 <li><span>docs</span></li>
 <li><span>examples</span></li>
@@ -255,9 +245,6 @@
 </ul>
 <li><span id="pugixml" class="sub_link">pugixml</span></li>
 <ul id="pugixml" class="sublist">
-<li><span>.git</span></li>
-<li><span>.gitignore</span></li>
-<li><span>.travis.yml</span></li>
 <li><span>appveyor.yml</span></li>
 <li><span>contrib</span></li>
 <li><span>docs</span></li>
@@ -273,6 +260,7 @@
 <li><span>2dGraphImpl</span></li>
 <li><span>baseballVizSite</span></li>
 <li><span>battedBall</span></li>
+<li><span>GenReadme</span></li>
 <li><span>genReadme.html</span></li>
 <li><span>genReadme.py</span></li>
 <li><span>genScraperv1.py</span></li>
@@ -319,7 +307,6 @@
 </ul>
 <li><span id="styleguide" class="sub_link">styleguide</span></li>
 <ul id="styleguide" class="sublist">
-<li><span>.git</span></li>
 <li><span>angularjs-google-style.html</span></li>
 <li><span>cppguide.html</span></li>
 <li><span>cppguide.xml</span></li>
@@ -370,28 +357,139 @@
 </ul>
 </div>
 <div id="filesinroot" class="subone">
-<h4><a href="#filesinroot" class="top_link">Files in Root</a></h4>
+<h4><span class="arrow arrow_right"></span>
+<a href="#filesinroot" class="top_link">Files in Root</a></h4>
 <ul class="toplist">
-<li><span>AmicusBrief_iPhone (pdf)</span></li>
-<li><span>AmicusBrief_Twitter_v_Lynch (pdf)</span></li>
-<li><span>GreekAlphabet (png)</span></li>
-<li><span>PastPracticeRichardMittenthal (pdf)</span></li>
-<li><span>README (html)</span></li>
-<li><span>README (md)</span></li>
-<li><span>README_v2 (html)</span></li>
-<li><span>Screenwriting101_FilmCritHulk (pdf)</span></li>
+<li><span id="AmicusBrief_iPhone.pdf" class="sub_link">AmicusBrief_iPhone.pdf</span></li>
+<li><span id="AmicusBrief_Twitter_v_Lynch.pdf" class="sub_link">AmicusBrief_Twitter_v_Lynch.pdf</span></li>
+<li><span id="GreekAlphabet.png" class="sub_link">GreekAlphabet.png</span></li>
+<li><span id="PastPracticeRichardMittenthal.pdf" class="sub_link">PastPracticeRichardMittenthal.pdf</span></li>
+<li><span id="README.html" class="sub_link">README.html</span></li>
+<li><span id="README.md" class="sub_link">README.md</span></li>
+<li><span id="README_v2.html" class="sub_link">README_v2.html</span></li>
+<li><span id="Screenwriting101_FilmCritHulk.pdf" class="sub_link">Screenwriting101_FilmCritHulk.pdf</span></li>
 </ul>
 </div>
 <div id="submodules" class="subone">
-<h4><a href="#submodues" class="top_link">Submodules</a></h4>
+<h4><span class="arrow arrow_right"></span>
+<a href="#submodules" class="top_link">Submodules</a></h4>
 <ul class="toplist">
-<li><span>devd</span></li>
-<li><span>DOOM</span></li>
-<li><span>DOOM-3</span></li>
-<li><span>DOOM-3-BFG</span></li>
-<li><span>myhtml</span></li>
-<li><span>pugixml</span></li>
-<li><span>styleguide</span></li>
+<li><span id="devd" class="sub_link">devd</span></li>
+<ul id="devd" class="sublist">
+<li><span>certgen.go</span></li>
+<li><span>certgen_test.go</span></li>
+<li><span>CHANGELOG.md</span></li>
+<li><span>cmd</span></li>
+<li><span>common_test.go</span></li>
+<li><span>CONTRIBUTORS</span></li>
+<li><span>docs</span></li>
+<li><span>fileserver</span></li>
+<li><span>httpctx</span></li>
+<li><span>inject</span></li>
+<li><span>LICENSE</span></li>
+<li><span>livereload</span></li>
+<li><span>logheader.go</span></li>
+<li><span>modd.conf</span></li>
+<li><span>README.md</span></li>
+<li><span>responselogger.go</span></li>
+<li><span>reverseproxy</span></li>
+<li><span>ricetemp</span></li>
+<li><span>route.go</span></li>
+<li><span>route_test.go</span></li>
+<li><span>server.go</span></li>
+<li><span>server_test.go</span></li>
+<li><span>slowdown</span></li>
+<li><span>templates</span></li>
+<li><span>testdata</span></li>
+<li><span>timer</span></li>
+<li><span>vendor</span></li>
+<li><span>watch.go</span></li>
+<li><span>watch_test.go</span></li>
+</ul>
+<li><span id="DOOM" class="sub_link">DOOM</span></li>
+<ul id="DOOM" class="sublist">
+<li><span>ipx</span></li>
+<li><span>linuxdoom-1.10</span></li>
+<li><span>README.TXT</span></li>
+<li><span>sersrc</span></li>
+<li><span>sndserv</span></li>
+</ul>
+<li><span id="DOOM-3" class="sub_link">DOOM-3</span></li>
+<ul id="DOOM-3" class="sublist">
+<li><span>base</span></li>
+<li><span>COPYING.txt</span></li>
+<li><span>FORK.txt</span></li>
+<li><span>neo</span></li>
+<li><span>README.txt</span></li>
+</ul>
+<li><span id="DOOM-3-BFG" class="sub_link">DOOM-3-BFG</span></li>
+<ul id="DOOM-3-BFG" class="sublist">
+<li><span>base</span></li>
+<li><span>COPYING.txt</span></li>
+<li><span>doomclassic</span></li>
+<li><span>neo</span></li>
+<li><span>README.txt</span></li>
+</ul>
+<li><span id="myhtml" class="sub_link">myhtml</span></li>
+<ul id="myhtml" class="sublist">
+<li><span>devel</span></li>
+<li><span>docs</span></li>
+<li><span>examples</span></li>
+<li><span>include</span></li>
+<li><span>Makefile</span></li>
+<li><span>projects</span></li>
+<li><span>README.md</span></li>
+<li><span>source</span></li>
+<li><span>test</span></li>
+<li><span>utils</span></li>
+</ul>
+<li><span id="pugixml" class="sub_link">pugixml</span></li>
+<ul id="pugixml" class="sublist">
+<li><span>appveyor.yml</span></li>
+<li><span>contrib</span></li>
+<li><span>docs</span></li>
+<li><span>Makefile</span></li>
+<li><span>README.md</span></li>
+<li><span>readme.txt</span></li>
+<li><span>scripts</span></li>
+<li><span>src</span></li>
+<li><span>tests</span></li>
+</ul>
+<li><span id="styleguide" class="sub_link">styleguide</span></li>
+<ul id="styleguide" class="sublist">
+<li><span>angularjs-google-style.html</span></li>
+<li><span>cppguide.html</span></li>
+<li><span>cppguide.xml</span></li>
+<li><span>cpplint</span></li>
+<li><span>docguide</span></li>
+<li><span>eclipse-cpp-google-style.xml</span></li>
+<li><span>eclipse-java-google-style.xml</span></li>
+<li><span>google-c-style.el</span></li>
+<li><span>google-r-style.html</span></li>
+<li><span>google_python_style.vim</span></li>
+<li><span>htmlcssguide.xml</span></li>
+<li><span>include</span></li>
+<li><span>intellij-java-google-style.xml</span></li>
+<li><span>javaguide.css</span></li>
+<li><span>javaguide.html</span></li>
+<li><span>javaguidelink.png</span></li>
+<li><span>javascriptguide.xml</span></li>
+<li><span>jsoncstyleguide.html</span></li>
+<li><span>jsoncstyleguide.xml</span></li>
+<li><span>jsoncstyleguide_example_01.png</span></li>
+<li><span>jsoncstyleguide_example_02.png</span></li>
+<li><span>lispguide.xml</span></li>
+<li><span>objcguide.xml</span></li>
+<li><span>pyguide.html</span></li>
+<li><span>README.md</span></li>
+<li><span>Rguide.xml</span></li>
+<li><span>shell.xml</span></li>
+<li><span>styleguide.css</span></li>
+<li><span>styleguide.xsl</span></li>
+<li><span>vimscriptfull.xml</span></li>
+<li><span>vimscriptguide.xml</span></li>
+<li><span>xmlstyle.html</span></li>
+</ul>
 </ul>
 </div>
 </div>

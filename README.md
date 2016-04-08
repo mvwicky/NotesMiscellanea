@@ -1,11 +1,3 @@
-<style>
-
-</style>
-
-<script>
-
-</script>
-
 # NotesMiscellanea
 A repo of interesting (to me) documents
 

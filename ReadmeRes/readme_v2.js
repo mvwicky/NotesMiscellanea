@@ -1,13 +1,26 @@
 $(document).ready(function() {
-	$(".subone ul").hide();
+	$(".toplist").hide();
+	$(".sublist").hide();
 
-	$(".subone a").on("click", function(){
-		console.log($(this).parent().siblings());
-		if ($(this).parent().siblings("ul").is(':hidden')){
-			$(this).parent().siblings("ul").show();
+	$(".top_link").on("click", function(){
+		if ($(this).parent().siblings(".toplist").is(':hidden')){
+			$(this).parent().siblings(".toplist").show();
 		}
 		else {
-			$(this).parent().siblings("ul").hide();
+			$(this).parent().siblings(".toplist").hide();
 		}
 	});
+	$(".sub_link").on("click", function(){
+		var q = '#' + $(this).attr('id');
+		if ($(this).parent().siblings(q).is(':hidden')){
+			$(this).parent().siblings(q).show();
+		}
+		else {
+			$(this).parent().siblings(q).hide();
+		}
+	})
 });
+
+function click_slide(elem){
+	
+}
