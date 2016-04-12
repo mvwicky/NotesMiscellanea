@@ -23,9 +23,9 @@ try:
 except NameError:
     QString = str
 
-class FG_Parse(object):
+class FG_Parser(object):
 	def __init__(self):
-		self.log = Logger('FG_Parse')
+		self.log = Logger('FG_Parser')
 		self.pitcher_ids = dict()
 		self.batter_ids = dict()
 		self.pitcher_csv = 'Pitcher_IDs.csv'
@@ -284,7 +284,7 @@ class FG_Parse(object):
 		plt.plot(dates, wOBAs, 'r.')
 		plt.title('{} per game wOBA'.format(p_tup[1]))
 		plt.grid()
-		plt.savefig('{}PerGamewOBA.png'.format(p_tup[1].replace(' ', '')), bbox_inches='tight')
+		plt.savefig('{}PerGame_wOBA.png'.format(p_tup[1].replace(' ', '')), bbox_inches='tight')
 
 	def cum_avg_wOBA(self, player):
 		p_tup = self.get_id_name_tup(player)
@@ -317,22 +317,19 @@ class FG_Parse(object):
 		plt.plot(dates, cma, 'r.')
 		plt.title('{} cumulative average wOBA'.format(p_tup[1]))
 		plt.grid()
-		plt.savefig('{}CumulativeAveragewOBA.png'.format(p_tup[1].replace(' ', '')), bbox_inches='tight')
+		plt.savefig('{}CumulativeAverage_wOBA.png'.format(p_tup[1].replace(' ', '')), bbox_inches='tight')
 
+	def cum_avg(self, player, stat):
+		p_tup = self.get_id_name_tup(player)
+		csv_name = self.get_game_logs(p_tup[0])
 
+	def per_game(self, player, stat):
+		p_tup = self.get_id_name_tup(player)
+		csv_name = self.get_game_logs(p_tup[0])
 
 
 def main():
-	parse = FG_Parse()
-	parse.get_ids_web(pit=True, bat=True, clean=False)
-	parse.get_ids_csv(True, True)
-
-	parse.get_game_logs('Yasiel Puig')
-	parse.get_play_logs('Yasiel Puig')
-	parse.wOBA_game('Albert Pujols')
-	parse.cum_avg_wOBA('Albert Pujols')
-
-	parse.get_game_logs('Clayton Kershaw')
-	parse.get_play_logs('Clayton Kershaw')
+	pass
+	
 if __name__=='__main__':
 	main()
