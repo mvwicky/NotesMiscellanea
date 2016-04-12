@@ -3,12 +3,18 @@ import sys
 import csv
 import shutil
 import urllib
+import datetime
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, SoupStrainer
 
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
+
+import matplotlib as mpl
+from mpl_toolkits.mplot3d import Axes3D
+import numpy as np
+import matplotlib.pyplot as plt
 
 from logger import Logger
 
@@ -18,134 +24,163 @@ except NameError:
     QString = str
 
 class FG_Parse(object):
-	def __init__(self, file_name):
-		self.file_name = file_name
+	def __init__(self):
 		self.log = Logger('FG_Parse')
 		self.pitcher_ids = dict()
 		self.batter_ids = dict()
 		self.pitcher_csv = 'Pitcher_IDs.csv'
 		self.batter_csv = 'Batter_IDs.csv'
 
-	def get_pitcher_ids_from_csv(self, file_name):
-		self.log('Populating pitcher ID#s from: {}'.format(file_name))
-		ids = dict()
-		with open(file_name, 'rt') as fg_file:
-			for row in fg_file:
-				fields = row.replace('"', '').split(',')
-				player = fields[0]
-				i = fields[-1].replace('\n', '')
-				if i.isnumeric():
-					ids[player] = int(i)
-		return ids
+	def get_id_name_tup(self, player):
+		if type(player) == str:
+			try:
+				p_id = self.batter_ids[player]
+			except KeyError:
+				p_id = self.pitcher_ids[player]
+			finally:
+				p_name = player
+		elif type(player) == int:
+			p_id = player
+			p_name = None
+			for p in self.batter_ids:
+				if self.batter_ids[p] == player:
+					p_name = p 
+					break
+			if p_name is None:
+				for p in self.pitcher_ids:
+					if self.pitcher_ids[p] == player:
+						p_name = p 
+						break
+		return (p_id, p_name)
 
-	def get_pitcher_ids(self, clean=False):
-		if self.pitcher_csv in os.listdir() and not clean:
-			self.log('Pitcher ID#s already found in: {}'.format(self.pitcher_csv))
-			self.pitcher_ids = self.get_pitcher_ids_from_csv(self.pitcher_csv)
+	def get_ids_csv(self, pit=True, bat=True):
+		if not pit and not bat:
+			self.log('Populating no ids')
+			return 
+		if pit and self.pitcher_csv not in os.listdir():
+			self.log('{} not found'.format(self.pitcher_csv), ex=True)
+		if bat and self.batter_csv not in os.listdir():
+			self.log('{} not found'.format(self.batter_csv), ex=True)
+		if not (bat and pit):
+			file_name = self.pitcher_csv if pit else self.batter_csv 
+			ids = dict()
+			self.log('Populating {} ID#s from: {}'.format('pitcher' if pit else 'batter', file_name))
+			with open(file_name, 'rt') as fg_file:
+				for row in fg_file:
+					fields = row.replace('"', '').split(',')
+					player = fields[0]
+					i = fields[-1].replace('\n', '')
+					if i.isnumeric():
+						ids[player] = int(i)
+			if pit:
+				self.pitcher_ids = ids 
+			if bat: 
+				self.batter_ids = ids
+			return ids
+		if pit and bat:
+			self.get_ids_csv(True, False)
+			self.get_ids_csv(False, True)
+
+	def get_ids_web(self, pit=True, bat=True, clean=False):
+		if not pit and not bat:
+			self.log('Getting no ids')
 			return
-		self.log('{} not found'.format(self.pitcher_csv))
-		self.log('Populating pitcher ID#s from fangraphs')
-		ids = dict()
-		url = 'http://www.fangraphs.com/leaders.aspx'
-		opts = {'pos': 'all', 'stats': 'pit', 'lg': 'all', 'qual': 0, 'type': 8,
+		if pit and self.pitcher_csv in os.listdir() and not clean:
+			self.log('Pitcher ID#s already found in: {}'.format(self.pitcher_csv))
+			self.get_ids_csv(True, False)
+			return
+		if bat and self.batter_csv in os.listdir() and not clean:
+			self.log('Batter ID#s already found in: {}'.format(self.batter_csv))
+			self.get_ids_csv(False, True)
+			return
+		opts = {'pos': 'all', 'lg': 'all', 'qual': 0, 'type': 8,
 			   'season': 2016, 'month': 0, 'season1': 1871, 'ind': 0, 'team': 0, 
 			   'rost': 0, 'age': 0, 'filter': '', 'players': 0, 'page':'1_30'}
-		res = requests.get(url, params=opts)
-		if res.url.find('error') > 0:
-			self.log('Problem getting leaderboards')
-			self.log(res.url, ex=True)
-		soup = BeautifulSoup(res.content, 'lxml')
-		self.log('Successful query, finding number of pages in leaderboard')
-		num_pages = 1
-		for link in soup('a'):
-			if link.get('title') == 'Last Page':
-				href = link.get('href')
-				p = href.find('page')
-				equals = href.find('=', href.find('page'))
-				uscore = href.find('_', equals)
-				num_pages = href[equals+1:uscore]
-				if num_pages.isnumeric():
-					num_pages = int(num_pages)
-				else:
-					self.log('Problem finding the number of pages', ex=True)
-				break
-		self.log('Num pages: {}'.format(num_pages))
-		for page in range(1, num_pages+1):
-			c_page = '{}_30'.format(page)
-			opts['page'] = c_page
+		if not (bat and pit):
+			opts['stats'] = 'pit' if pit else 'bat'
+			self.log('Populating {} ID#s'.format('pitcher' if pit else 'batter'))
+			url = 'http://fangraphs.com/leaders.aspx'
 			res = requests.get(url, params=opts)
-			if res.url.find('error') > 0:
-				self.log('Problem getting page: {} from pitching leaderboards'.format(page), ex=True)
+			if res.url.find('error') != -1:
+				self.log('Problem getting {} leaderboards'.format('pitching' if pit else 'batting'))
+				self.log(res.url, ex=True)
 			soup = BeautifulSoup(res.content, 'lxml')
-			self.log('Parsing page {} of {}'.format(page, num_pages))
-			for elem in soup('tbody'):
-				for row in elem('tr'):
+			self.log('Successful query, finding number of pages in {} leaderboard'.format('pitching' if pit else 'batting'))
+			num_pages = 1 
+			for link in soup('a'):
+				if link.get('title') == 'Last Page':
+					href = link.get('href')
+					equals = href.find('=', href.find('page'))
+					uscore = href.find('_', equals)
+					num_pages = href[equals+1:uscore]
+					if num_pages.isnumeric():
+						num_pages = int(num_pages)
+					else:
+						self.log('Problem finding number of pages')
+						self.log('Value found: {}'.format(num_pages), ex=True)
+					break
+			self.log('Num pages in {} leaderboard: {} '.format('pitching' if pit else 'batting', num_pages))
+			ids = dict()
+			for page in range(1, num_pages + 1):
+				c_page = '{}_30'.format(page)
+				opts['page'] = c_page
+				res = requests.get(url, params=opts)
+				if res.url.find('error') != -1:
+					self.log('Problem getting page {} from {} leaderboards'.format(
+						page, 'pitching' if pit else 'batting'))
+				tbody = SoupStrainer('tbody')
+				soup = BeautifulSoup(res.content, 'lxml', parse_only=tbody)
+				self.log('Parsing page {} of {} ({} leaderboard)'.format(
+					page, num_pages, 'Pitchers' if pit else 'Batters'))
+				for row in soup('tr'):
 					for cell in row('td'):
 						for child in cell.children:
 							if str(child).find('playerid=') > 0:
 								child = str(child)
-								equals = child.find('=', child.find('playerid'))
+								equals = child.find('=', 
+									child.find('playerid'))
 								ampers = child.find('&', equals)
 								p_id = child[equals+1:ampers]
 								close_a = child.find('>')
 								open_a = child.find('</', close_a)
 								p_name = child[close_a+1:open_a]
-								ids[p_name] = int(p_id)
-		self.pitcher_ids = ids
-		self.log('Done parsing, writing values to: {}'.format(self.pitcher_csv))
-		with open(self.pitcher_csv, 'w', newline='\n') as pitcher_csv:
-			pitcher_writer = csv.writer(pitcher_csv, delimiter=',')
-			pitcher_writer.writerow(['Name', 'ID#'])
-			for name, i in self.pitcher_ids.items():
-				pitcher_writer.writerow([name, i])
-		self.log('Pitcher ID#s populated')
+								ids[p_name] = p_id
+		
+			p_csv = self.pitcher_csv if pit else self.batter_csv	
+			self.log('Done parsing, writing values to: {}'.format(p_csv))
+			with open(p_csv, 'w', newline='\n') as csv_file:
+				player_writer = csv.writer(csv_file, delimiter=',')
+				player_writer.writerow(['Name', 'ID#'])
+				for name, i in ids.items():
+					player_writer.writerow([name, i])
+			if pit:
+				self.pitcher_ids = ids 
+			if bat: 
+				self.batter_ids = ids
+			self.log('{} ID#s populated'.format('Pitcher' if pit else 'Batter'))
+		if bat and pit:
+			self.get_ids_web(True, False, clean)
+			self.get_ids_web(False, True, clean)
 
-	def get_batter_ids_from_csv(self, file_name):
-		self.log('Populating batter ID#s from: {}'.format(file_name))
-		ids = dict()
-		with open(file_name, 'rt') as fg_file:
-			for row in fg_file:
-				fields = row.replace('"', '').split(',')
-				player = fields[0]
-				i = fields[-1].replace('\n', '')
-				if i.isnumeric():
-					ids[player] = int(i)
-		return ids
-
-
-	def get_batter_ids(self, clean=False):
-		if self.batter_csv in os.listdir() and not clean:
-			self.log('Batter ID#s already found in: {}'.format(self.batter_csv))
-			self.batter_ids = self.get_batter_ids_from_csv(self.batter_csv)
-			return
-
-	def get_pitcher_game_logs(self, player):
-		if type(player) == str:
-			p_id = self.pitcher_ids[player]
-			p_name = player
-		elif type(player) == int:
-			p_id = player 
-			for p in self.pitcher_ids:
-				if self.pitcher_ids[p] == player:
-					p_name = p
-
-		csv_name = '{}_GameLogsAll.csv'.format(p_name)
+	def get_game_logs(self, player, clean=False):
+		p_tup = self.get_id_name_tup(player)
+		
+		csv_name = '{}_GameLogs_All.csv'.format(p_tup[1].replace(' ', ''))
 		# Make sure that the file does not exist
-		if csv_name in os.listdir():
-		 	print('File already generated')
-		 	return
-		base_url = 'http://fangraphs.com/'
-		options = 'statsd.aspx?playerid={}&position=P&type=0&gds=&gde=&season=all'.format(p_id)
-		url = '{}{}'.format(base_url, options)
-		res = requests.get(url)
+		if csv_name in os.listdir() and not clean:
+		 	self.log('File already generated: {}'.format(csv_name))
+		 	return csv_name
+		url = 'http://fangraphs.com/statsd.aspx'
+		opts = {'playerid': p_tup[0], 'season':'all'}
+		res = requests.get(url, params=opts)
 		if res.url.find('error') != -1:
-			print('Problem getting game log, may not exist')
-			return 
-		fg_soup = BeautifulSoup(res.content, 'lxml')
+			self.log('Problem getting game logs for: {}, may not exist'.format(p_tup[1]))
+			return csv_name
+		self.log('Getting game logs for: {}'.format(p_tup[1]))
+		soup = BeautifulSoup(res.content, 'lxml')
 		headers = []
 		game_stats = []
-		num = 0
-		for row in fg_soup('tr'):
+		for row in soup('tr'):
 			for head in row('th', class_='rgHeader'):
 				headers.append(head.text)
 			cRow = []
@@ -156,29 +191,148 @@ class FG_Parse(object):
 							cRow.append(cell.text)
 			if cRow:
 				game_stats.append(cRow)
-		
+		self.log('Game logs found, writing to csv')
 		with open(csv_name, 'w', newline='\n') as player_csv:
 			player_writer = csv.writer(player_csv, delimiter=',')
 			player_writer.writerow(headers)
 			for game in game_stats:
 				player_writer.writerow(game)
+		self.log('Game logs for {} written to: {}'.format(p_tup[1], csv_name))
+		return csv_name
 
-	def get_batter_game_logs(self, player):
-		if type(player) == str:
-			p_id = self.batter_ids[player]
-			p_name = player 
-		elif type(player) == int:
-			p_id = player 
-			for p in self.batter_ids:
-				if self.batter_ids[p] == player:
-					p_name = p
+	def get_play_logs(self, player, clean=False):
+		p_tup = self.get_id_name_tup(player)
+		csv_name = '{}_PlayLogsAll.csv'.format(p_tup[1].replace(' ', ''))
+		# Make sure that the file does not exist
+		if csv_name in os.listdir() and not clean:
+		 	self.log('File already generated: {}'.format(csv_name))
+		 	return csv_name
+		url = 'http://fangraphs.com/statsp.aspx'
+		opts = {'playerid': p_tup[0]}
+		res = requests.get(url, params=opts)
+		if res.url.find('error') != -1:
+			self.log('Problem getting play logs for: {}, may not exist'.format(p_tup[1]))
+			return csv_name
+		self.log('Getting play logs for: {}'.format(p_tup[1]))
+		soup = BeautifulSoup(res.content, 'lxml')
+		years = []
+		headers = []
+		for div in soup('div', id='PlayStats1_tsLog', class_='RadTabStrip'):
+			for span in div('span', class_='rtsTxt'):
+				if span.text.isnumeric():
+					years.append(int(span.text))
+		for head in soup('thead'):
+			for col in head('th', class_='rgHeader'):
+				headers.append(col.get_text())
+
+		with open(csv_name, 'w', newline='\n') as file:
+			player_writer = csv.writer(file, delimiter=',')
+			player_writer.writerow(headers)
+
+		for year in years:
+			opts['season'] = year
+			res = requests.get(url, params=opts)
+			if res.url.find('error') != -1:
+				self.log('Problem getting play logs for: {}, year: {}'.format(p_tup[1], year))
+				return csv_name
+			tbody = SoupStrainer('tbody')
+			soup = BeautifulSoup(res.content, 'lxml', parse_only=tbody)
+			plays = []	
+			for row in soup('tr'):
+				c_play = []
+				for cell in row('td'):
+					if cell.get('class'):
+						for cl in cell.get('class'):
+							if cl.find('grid_line_') != -1:
+								c_play.append(cell.text)
+				d = ('{}/{}'.format(c_play[0], year)).split('/')
+				c_play[0] = datetime.date(int(d[2]), int(d[0]), int(d[1]))
+				plays.append(c_play)
+			with open(csv_name, 'a', newline='\n') as file:
+				player_writer = csv.writer(file, delimiter=',')
+				dates = []
+				for play in plays:
+					player_writer.writerow(play)
+		self.log('Play logs for {} written to: {}'.format(p_tup[1], csv_name))
+		return csv_name
+
+	def wOBA_game(self, player, year=None):
+		p_tup = self.get_id_name_tup(player)
+		if p_tup[1] not in self.batter_ids:
+			self.log('{} is not a batter'.format(p_tup[1]))
+			return
+		csv_name = self.get_game_logs(p_tup[0])
+		dates = []
+		wOBAs = []
+		with open(csv_name, 'rt') as game_logs:
+			for row in game_logs:
+				fields = row.replace('"', '').split(',')
+				if row.startswith('Date'):
+					woba_ind = fields.index('wOBA')
+					continue
+				if row.startswith('Total'):
+					continue
+				d = fields[0].split('-')
+				if year and int(d[0]) == year:
+					dates.insert(0, datetime.date(int(d[0]), int(d[1]), int(d[2])))
+					wOBAs.insert(0, fields[woba_ind])
+				elif not year:
+					dates.insert(0, datetime.date(int(d[0]), int(d[1]), int(d[2])))
+					wOBAs.insert(0, fields[woba_ind])
+		
+		plt.close()
+		plt.plot(dates, wOBAs, 'r.')
+		plt.title('{} per game wOBA'.format(p_tup[1]))
+		plt.grid()
+		plt.savefig('{}PerGamewOBA.png'.format(p_tup[1].replace(' ', '')), bbox_inches='tight')
+
+	def cum_avg_wOBA(self, player):
+		p_tup = self.get_id_name_tup(player)
+		if p_tup[1] not in self.batter_ids:
+			self.log('{} is not a batter'.format(p_tup[1]))
+			return 
+		csv_name = self.get_game_logs(p_tup[0])
+		dates = []
+		wOBAs = []
+		with open(csv_name, 'rt') as game_logs:
+			for row in game_logs:
+				fields = row.replace('"', '').split(',')
+				if row.startswith('Date'):
+					woba_ind = fields.index('wOBA')
+					continue
+				if row.startswith('Total'):
+					continue
+				d = fields[0].split('-')
+				dates.insert(0, datetime.date(int(d[0]), int(d[1]), int(d[2])))
+				wOBAs.insert(0, float(fields[woba_ind]))
+		cma = []
+		for n, woba in enumerate(wOBAs):
+			if n == 0:
+				cma.insert(0, woba)
+				continue
+			cma_n1 = cma[n-1] + (woba - cma[n-1]) / n
+			cma.append(cma_n1)
+
+		plt.close()
+		plt.plot(dates, cma, 'r.')
+		plt.title('{} cumulative average wOBA'.format(p_tup[1]))
+		plt.grid()
+		plt.savefig('{}CumulativeAveragewOBA.png'.format(p_tup[1].replace(' ', '')), bbox_inches='tight')
+
+
 
 
 def main():
-	file_name = 'Pitchers_All_1871_2016_MinIP_0.csv'
-	parse = FG_Parse(file_name)
-	parse.get_pitcher_ids(True)
-	for p, i in parse.pitcher_ids.items():
-		print(p, i)
+	parse = FG_Parse()
+	parse.get_ids_web(pit=True, bat=True, clean=False)
+	parse.get_ids_csv(True, True)
+
+	parse.get_game_logs('Yasiel Puig')
+	parse.get_play_logs('Yasiel Puig')
+	parse.wOBA_game('Albert Pujols')
+	parse.cum_avg_wOBA('Albert Pujols')
+
+	parse.get_game_logs('Clayton Kershaw')
+	parse.get_play_logs('Clayton Kershaw')
 if __name__=='__main__':
 	main()

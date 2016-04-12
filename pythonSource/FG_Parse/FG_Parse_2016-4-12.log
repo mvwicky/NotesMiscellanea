@@ -1,0 +1,1346 @@
+10:56:54 -> Populating pitcher ID#s
+10:56:56 -> Successful query, finding number of pages in pitching leaderboard
+10:56:56 -> Num pages in pitching leaderboard: 305 
+10:56:58 -> Parsing page 1 of 305 (Pitchers leaderboard)
+10:56:59 -> Parsing page 2 of 305 (Pitchers leaderboard)
+10:57:01 -> Parsing page 3 of 305 (Pitchers leaderboard)
+10:57:02 -> Parsing page 4 of 305 (Pitchers leaderboard)
+10:57:03 -> Parsing page 5 of 305 (Pitchers leaderboard)
+10:57:05 -> Parsing page 6 of 305 (Pitchers leaderboard)
+10:57:06 -> Parsing page 7 of 305 (Pitchers leaderboard)
+10:57:08 -> Parsing page 8 of 305 (Pitchers leaderboard)
+10:57:09 -> Parsing page 9 of 305 (Pitchers leaderboard)
+10:57:11 -> Parsing page 10 of 305 (Pitchers leaderboard)
+10:57:13 -> Parsing page 11 of 305 (Pitchers leaderboard)
+10:57:15 -> Parsing page 12 of 305 (Pitchers leaderboard)
+10:57:16 -> Parsing page 13 of 305 (Pitchers leaderboard)
+10:57:17 -> Parsing page 14 of 305 (Pitchers leaderboard)
+10:57:19 -> Parsing page 15 of 305 (Pitchers leaderboard)
+10:57:20 -> Parsing page 16 of 305 (Pitchers leaderboard)
+10:57:22 -> Parsing page 17 of 305 (Pitchers leaderboard)
+10:57:24 -> Parsing page 18 of 305 (Pitchers leaderboard)
+10:57:25 -> Parsing page 19 of 305 (Pitchers leaderboard)
+10:57:26 -> Parsing page 20 of 305 (Pitchers leaderboard)
+10:57:28 -> Parsing page 21 of 305 (Pitchers leaderboard)
+10:57:29 -> Parsing page 22 of 305 (Pitchers leaderboard)
+10:57:31 -> Parsing page 23 of 305 (Pitchers leaderboard)
+10:57:32 -> Parsing page 24 of 305 (Pitchers leaderboard)
+10:57:33 -> Parsing page 25 of 305 (Pitchers leaderboard)
+10:57:35 -> Parsing page 26 of 305 (Pitchers leaderboard)
+10:57:36 -> Parsing page 27 of 305 (Pitchers leaderboard)
+10:57:37 -> Parsing page 28 of 305 (Pitchers leaderboard)
+10:57:39 -> Parsing page 29 of 305 (Pitchers leaderboard)
+10:57:40 -> Parsing page 30 of 305 (Pitchers leaderboard)
+10:57:42 -> Parsing page 31 of 305 (Pitchers leaderboard)
+10:57:43 -> Parsing page 32 of 305 (Pitchers leaderboard)
+10:57:44 -> Parsing page 33 of 305 (Pitchers leaderboard)
+10:57:46 -> Parsing page 34 of 305 (Pitchers leaderboard)
+10:57:47 -> Parsing page 35 of 305 (Pitchers leaderboard)
+10:57:49 -> Parsing page 36 of 305 (Pitchers leaderboard)
+10:57:50 -> Parsing page 37 of 305 (Pitchers leaderboard)
+10:57:52 -> Parsing page 38 of 305 (Pitchers leaderboard)
+10:57:53 -> Parsing page 39 of 305 (Pitchers leaderboard)
+10:57:55 -> Parsing page 40 of 305 (Pitchers leaderboard)
+10:57:57 -> Parsing page 41 of 305 (Pitchers leaderboard)
+10:57:58 -> Parsing page 42 of 305 (Pitchers leaderboard)
+10:58:00 -> Parsing page 43 of 305 (Pitchers leaderboard)
+10:58:01 -> Parsing page 44 of 305 (Pitchers leaderboard)
+10:58:03 -> Parsing page 45 of 305 (Pitchers leaderboard)
+10:58:04 -> Parsing page 46 of 305 (Pitchers leaderboard)
+10:58:05 -> Parsing page 47 of 305 (Pitchers leaderboard)
+10:58:07 -> Parsing page 48 of 305 (Pitchers leaderboard)
+10:58:08 -> Parsing page 49 of 305 (Pitchers leaderboard)
+10:58:10 -> Parsing page 50 of 305 (Pitchers leaderboard)
+10:58:11 -> Parsing page 51 of 305 (Pitchers leaderboard)
+10:58:13 -> Parsing page 52 of 305 (Pitchers leaderboard)
+10:58:15 -> Parsing page 53 of 305 (Pitchers leaderboard)
+10:58:16 -> Parsing page 54 of 305 (Pitchers leaderboard)
+10:58:18 -> Parsing page 55 of 305 (Pitchers leaderboard)
+10:58:19 -> Parsing page 56 of 305 (Pitchers leaderboard)
+10:58:21 -> Parsing page 57 of 305 (Pitchers leaderboard)
+10:58:23 -> Parsing page 58 of 305 (Pitchers leaderboard)
+10:58:24 -> Parsing page 59 of 305 (Pitchers leaderboard)
+10:58:26 -> Parsing page 60 of 305 (Pitchers leaderboard)
+10:58:27 -> Parsing page 61 of 305 (Pitchers leaderboard)
+10:58:29 -> Parsing page 62 of 305 (Pitchers leaderboard)
+10:58:30 -> Parsing page 63 of 305 (Pitchers leaderboard)
+10:58:32 -> Parsing page 64 of 305 (Pitchers leaderboard)
+10:58:33 -> Parsing page 65 of 305 (Pitchers leaderboard)
+10:58:35 -> Parsing page 66 of 305 (Pitchers leaderboard)
+10:58:36 -> Parsing page 67 of 305 (Pitchers leaderboard)
+10:58:38 -> Parsing page 68 of 305 (Pitchers leaderboard)
+10:58:40 -> Parsing page 69 of 305 (Pitchers leaderboard)
+10:58:42 -> Parsing page 70 of 305 (Pitchers leaderboard)
+10:58:43 -> Parsing page 71 of 305 (Pitchers leaderboard)
+10:58:45 -> Parsing page 72 of 305 (Pitchers leaderboard)
+10:58:46 -> Parsing page 73 of 305 (Pitchers leaderboard)
+10:58:48 -> Parsing page 74 of 305 (Pitchers leaderboard)
+10:58:49 -> Parsing page 75 of 305 (Pitchers leaderboard)
+10:58:51 -> Parsing page 76 of 305 (Pitchers leaderboard)
+10:58:52 -> Parsing page 77 of 305 (Pitchers leaderboard)
+10:58:54 -> Parsing page 78 of 305 (Pitchers leaderboard)
+10:58:55 -> Parsing page 79 of 305 (Pitchers leaderboard)
+10:58:57 -> Parsing page 80 of 305 (Pitchers leaderboard)
+10:58:58 -> Parsing page 81 of 305 (Pitchers leaderboard)
+10:59:00 -> Parsing page 82 of 305 (Pitchers leaderboard)
+10:59:06 -> Parsing page 83 of 305 (Pitchers leaderboard)
+10:59:09 -> Parsing page 84 of 305 (Pitchers leaderboard)
+10:59:11 -> Parsing page 85 of 305 (Pitchers leaderboard)
+10:59:12 -> Parsing page 86 of 305 (Pitchers leaderboard)
+10:59:14 -> Parsing page 87 of 305 (Pitchers leaderboard)
+10:59:15 -> Parsing page 88 of 305 (Pitchers leaderboard)
+10:59:17 -> Parsing page 89 of 305 (Pitchers leaderboard)
+10:59:18 -> Parsing page 90 of 305 (Pitchers leaderboard)
+10:59:20 -> Parsing page 91 of 305 (Pitchers leaderboard)
+10:59:21 -> Parsing page 92 of 305 (Pitchers leaderboard)
+10:59:22 -> Parsing page 93 of 305 (Pitchers leaderboard)
+10:59:24 -> Parsing page 94 of 305 (Pitchers leaderboard)
+10:59:25 -> Parsing page 95 of 305 (Pitchers leaderboard)
+10:59:27 -> Parsing page 96 of 305 (Pitchers leaderboard)
+10:59:28 -> Parsing page 97 of 305 (Pitchers leaderboard)
+10:59:30 -> Parsing page 98 of 305 (Pitchers leaderboard)
+10:59:31 -> Parsing page 99 of 305 (Pitchers leaderboard)
+10:59:33 -> Parsing page 100 of 305 (Pitchers leaderboard)
+10:59:34 -> Parsing page 101 of 305 (Pitchers leaderboard)
+10:59:36 -> Parsing page 102 of 305 (Pitchers leaderboard)
+10:59:37 -> Parsing page 103 of 305 (Pitchers leaderboard)
+10:59:38 -> Parsing page 104 of 305 (Pitchers leaderboard)
+10:59:40 -> Parsing page 105 of 305 (Pitchers leaderboard)
+10:59:41 -> Parsing page 106 of 305 (Pitchers leaderboard)
+10:59:42 -> Parsing page 107 of 305 (Pitchers leaderboard)
+10:59:44 -> Parsing page 108 of 305 (Pitchers leaderboard)
+10:59:45 -> Parsing page 109 of 305 (Pitchers leaderboard)
+10:59:47 -> Parsing page 110 of 305 (Pitchers leaderboard)
+10:59:48 -> Parsing page 111 of 305 (Pitchers leaderboard)
+10:59:50 -> Parsing page 112 of 305 (Pitchers leaderboard)
+10:59:51 -> Parsing page 113 of 305 (Pitchers leaderboard)
+10:59:52 -> Parsing page 114 of 305 (Pitchers leaderboard)
+10:59:54 -> Parsing page 115 of 305 (Pitchers leaderboard)
+10:59:55 -> Parsing page 116 of 305 (Pitchers leaderboard)
+10:59:57 -> Parsing page 117 of 305 (Pitchers leaderboard)
+10:59:58 -> Parsing page 118 of 305 (Pitchers leaderboard)
+11:00:00 -> Parsing page 119 of 305 (Pitchers leaderboard)
+11:00:01 -> Parsing page 120 of 305 (Pitchers leaderboard)
+11:00:03 -> Parsing page 121 of 305 (Pitchers leaderboard)
+11:00:04 -> Parsing page 122 of 305 (Pitchers leaderboard)
+11:00:06 -> Parsing page 123 of 305 (Pitchers leaderboard)
+11:00:08 -> Parsing page 124 of 305 (Pitchers leaderboard)
+11:00:09 -> Parsing page 125 of 305 (Pitchers leaderboard)
+11:00:11 -> Parsing page 126 of 305 (Pitchers leaderboard)
+11:00:13 -> Parsing page 127 of 305 (Pitchers leaderboard)
+11:00:15 -> Parsing page 128 of 305 (Pitchers leaderboard)
+11:00:18 -> Parsing page 129 of 305 (Pitchers leaderboard)
+11:00:20 -> Parsing page 130 of 305 (Pitchers leaderboard)
+11:00:22 -> Parsing page 131 of 305 (Pitchers leaderboard)
+11:00:23 -> Parsing page 132 of 305 (Pitchers leaderboard)
+11:00:25 -> Parsing page 133 of 305 (Pitchers leaderboard)
+11:00:26 -> Parsing page 134 of 305 (Pitchers leaderboard)
+11:00:28 -> Parsing page 135 of 305 (Pitchers leaderboard)
+11:00:29 -> Parsing page 136 of 305 (Pitchers leaderboard)
+11:00:31 -> Parsing page 137 of 305 (Pitchers leaderboard)
+11:00:32 -> Parsing page 138 of 305 (Pitchers leaderboard)
+11:00:34 -> Parsing page 139 of 305 (Pitchers leaderboard)
+11:00:36 -> Parsing page 140 of 305 (Pitchers leaderboard)
+11:00:38 -> Parsing page 141 of 305 (Pitchers leaderboard)
+11:00:39 -> Parsing page 142 of 305 (Pitchers leaderboard)
+11:00:41 -> Parsing page 143 of 305 (Pitchers leaderboard)
+11:00:42 -> Parsing page 144 of 305 (Pitchers leaderboard)
+11:00:44 -> Parsing page 145 of 305 (Pitchers leaderboard)
+11:00:45 -> Parsing page 146 of 305 (Pitchers leaderboard)
+11:00:47 -> Parsing page 147 of 305 (Pitchers leaderboard)
+11:00:48 -> Parsing page 148 of 305 (Pitchers leaderboard)
+11:00:50 -> Parsing page 149 of 305 (Pitchers leaderboard)
+11:00:51 -> Parsing page 150 of 305 (Pitchers leaderboard)
+11:00:53 -> Parsing page 151 of 305 (Pitchers leaderboard)
+11:00:54 -> Parsing page 152 of 305 (Pitchers leaderboard)
+11:00:56 -> Parsing page 153 of 305 (Pitchers leaderboard)
+11:00:57 -> Parsing page 154 of 305 (Pitchers leaderboard)
+11:00:58 -> Parsing page 155 of 305 (Pitchers leaderboard)
+11:01:00 -> Parsing page 156 of 305 (Pitchers leaderboard)
+11:01:01 -> Parsing page 157 of 305 (Pitchers leaderboard)
+11:01:03 -> Parsing page 158 of 305 (Pitchers leaderboard)
+11:01:04 -> Parsing page 159 of 305 (Pitchers leaderboard)
+11:01:06 -> Parsing page 160 of 305 (Pitchers leaderboard)
+11:01:07 -> Parsing page 161 of 305 (Pitchers leaderboard)
+11:01:09 -> Parsing page 162 of 305 (Pitchers leaderboard)
+11:01:11 -> Parsing page 163 of 305 (Pitchers leaderboard)
+11:01:12 -> Parsing page 164 of 305 (Pitchers leaderboard)
+11:01:15 -> Parsing page 165 of 305 (Pitchers leaderboard)
+11:01:17 -> Parsing page 166 of 305 (Pitchers leaderboard)
+11:01:18 -> Parsing page 167 of 305 (Pitchers leaderboard)
+11:01:20 -> Parsing page 168 of 305 (Pitchers leaderboard)
+11:01:22 -> Parsing page 169 of 305 (Pitchers leaderboard)
+11:01:25 -> Parsing page 170 of 305 (Pitchers leaderboard)
+11:01:26 -> Parsing page 171 of 305 (Pitchers leaderboard)
+11:01:28 -> Parsing page 172 of 305 (Pitchers leaderboard)
+11:01:29 -> Parsing page 173 of 305 (Pitchers leaderboard)
+11:01:31 -> Parsing page 174 of 305 (Pitchers leaderboard)
+11:01:33 -> Parsing page 175 of 305 (Pitchers leaderboard)
+11:01:34 -> Parsing page 176 of 305 (Pitchers leaderboard)
+11:01:36 -> Parsing page 177 of 305 (Pitchers leaderboard)
+11:01:38 -> Parsing page 178 of 305 (Pitchers leaderboard)
+11:01:40 -> Parsing page 179 of 305 (Pitchers leaderboard)
+11:01:41 -> Parsing page 180 of 305 (Pitchers leaderboard)
+11:01:43 -> Parsing page 181 of 305 (Pitchers leaderboard)
+11:01:44 -> Parsing page 182 of 305 (Pitchers leaderboard)
+11:01:46 -> Parsing page 183 of 305 (Pitchers leaderboard)
+11:01:48 -> Parsing page 184 of 305 (Pitchers leaderboard)
+11:01:49 -> Parsing page 185 of 305 (Pitchers leaderboard)
+11:01:51 -> Parsing page 186 of 305 (Pitchers leaderboard)
+11:01:52 -> Parsing page 187 of 305 (Pitchers leaderboard)
+11:01:54 -> Parsing page 188 of 305 (Pitchers leaderboard)
+11:01:56 -> Parsing page 189 of 305 (Pitchers leaderboard)
+11:01:58 -> Parsing page 190 of 305 (Pitchers leaderboard)
+11:01:59 -> Parsing page 191 of 305 (Pitchers leaderboard)
+11:02:01 -> Parsing page 192 of 305 (Pitchers leaderboard)
+11:02:03 -> Parsing page 193 of 305 (Pitchers leaderboard)
+11:02:04 -> Parsing page 194 of 305 (Pitchers leaderboard)
+11:02:06 -> Parsing page 195 of 305 (Pitchers leaderboard)
+11:02:08 -> Parsing page 196 of 305 (Pitchers leaderboard)
+11:02:09 -> Parsing page 197 of 305 (Pitchers leaderboard)
+11:02:11 -> Parsing page 198 of 305 (Pitchers leaderboard)
+11:02:12 -> Parsing page 199 of 305 (Pitchers leaderboard)
+11:02:14 -> Parsing page 200 of 305 (Pitchers leaderboard)
+11:02:15 -> Parsing page 201 of 305 (Pitchers leaderboard)
+11:02:17 -> Parsing page 202 of 305 (Pitchers leaderboard)
+11:02:18 -> Parsing page 203 of 305 (Pitchers leaderboard)
+11:02:20 -> Parsing page 204 of 305 (Pitchers leaderboard)
+11:02:22 -> Parsing page 205 of 305 (Pitchers leaderboard)
+11:02:24 -> Parsing page 206 of 305 (Pitchers leaderboard)
+11:02:26 -> Parsing page 207 of 305 (Pitchers leaderboard)
+11:02:28 -> Parsing page 208 of 305 (Pitchers leaderboard)
+11:02:30 -> Parsing page 209 of 305 (Pitchers leaderboard)
+11:02:32 -> Parsing page 210 of 305 (Pitchers leaderboard)
+11:02:34 -> Parsing page 211 of 305 (Pitchers leaderboard)
+11:02:35 -> Parsing page 212 of 305 (Pitchers leaderboard)
+11:02:37 -> Parsing page 213 of 305 (Pitchers leaderboard)
+11:02:38 -> Parsing page 214 of 305 (Pitchers leaderboard)
+11:02:40 -> Parsing page 215 of 305 (Pitchers leaderboard)
+11:02:42 -> Parsing page 216 of 305 (Pitchers leaderboard)
+11:02:43 -> Parsing page 217 of 305 (Pitchers leaderboard)
+11:02:45 -> Parsing page 218 of 305 (Pitchers leaderboard)
+11:02:46 -> Parsing page 219 of 305 (Pitchers leaderboard)
+11:02:47 -> Parsing page 220 of 305 (Pitchers leaderboard)
+11:02:49 -> Parsing page 221 of 305 (Pitchers leaderboard)
+11:02:51 -> Parsing page 222 of 305 (Pitchers leaderboard)
+11:02:52 -> Parsing page 223 of 305 (Pitchers leaderboard)
+11:02:54 -> Parsing page 224 of 305 (Pitchers leaderboard)
+11:02:55 -> Parsing page 225 of 305 (Pitchers leaderboard)
+11:02:57 -> Parsing page 226 of 305 (Pitchers leaderboard)
+11:02:58 -> Parsing page 227 of 305 (Pitchers leaderboard)
+11:03:00 -> Parsing page 228 of 305 (Pitchers leaderboard)
+11:03:01 -> Parsing page 229 of 305 (Pitchers leaderboard)
+11:03:03 -> Parsing page 230 of 305 (Pitchers leaderboard)
+11:03:04 -> Parsing page 231 of 305 (Pitchers leaderboard)
+11:03:06 -> Parsing page 232 of 305 (Pitchers leaderboard)
+11:03:08 -> Parsing page 233 of 305 (Pitchers leaderboard)
+11:03:09 -> Parsing page 234 of 305 (Pitchers leaderboard)
+11:03:12 -> Parsing page 235 of 305 (Pitchers leaderboard)
+11:03:13 -> Parsing page 236 of 305 (Pitchers leaderboard)
+11:03:15 -> Parsing page 237 of 305 (Pitchers leaderboard)
+11:03:17 -> Parsing page 238 of 305 (Pitchers leaderboard)
+11:03:19 -> Parsing page 239 of 305 (Pitchers leaderboard)
+11:03:20 -> Parsing page 240 of 305 (Pitchers leaderboard)
+11:03:22 -> Parsing page 241 of 305 (Pitchers leaderboard)
+11:03:24 -> Parsing page 242 of 305 (Pitchers leaderboard)
+11:03:25 -> Parsing page 243 of 305 (Pitchers leaderboard)
+11:03:27 -> Parsing page 244 of 305 (Pitchers leaderboard)
+11:03:28 -> Parsing page 245 of 305 (Pitchers leaderboard)
+11:03:30 -> Parsing page 246 of 305 (Pitchers leaderboard)
+11:03:32 -> Parsing page 247 of 305 (Pitchers leaderboard)
+11:03:34 -> Parsing page 248 of 305 (Pitchers leaderboard)
+11:03:36 -> Parsing page 249 of 305 (Pitchers leaderboard)
+11:03:38 -> Parsing page 250 of 305 (Pitchers leaderboard)
+11:03:39 -> Parsing page 251 of 305 (Pitchers leaderboard)
+11:03:40 -> Parsing page 252 of 305 (Pitchers leaderboard)
+11:03:43 -> Parsing page 253 of 305 (Pitchers leaderboard)
+11:03:45 -> Parsing page 254 of 305 (Pitchers leaderboard)
+11:03:47 -> Parsing page 255 of 305 (Pitchers leaderboard)
+11:03:49 -> Parsing page 256 of 305 (Pitchers leaderboard)
+11:03:51 -> Parsing page 257 of 305 (Pitchers leaderboard)
+11:03:52 -> Parsing page 258 of 305 (Pitchers leaderboard)
+11:03:54 -> Parsing page 259 of 305 (Pitchers leaderboard)
+11:03:56 -> Parsing page 260 of 305 (Pitchers leaderboard)
+11:03:57 -> Parsing page 261 of 305 (Pitchers leaderboard)
+11:03:59 -> Parsing page 262 of 305 (Pitchers leaderboard)
+11:04:01 -> Parsing page 263 of 305 (Pitchers leaderboard)
+11:04:02 -> Parsing page 264 of 305 (Pitchers leaderboard)
+11:04:04 -> Parsing page 265 of 305 (Pitchers leaderboard)
+11:04:05 -> Parsing page 266 of 305 (Pitchers leaderboard)
+11:04:08 -> Parsing page 267 of 305 (Pitchers leaderboard)
+11:04:10 -> Parsing page 268 of 305 (Pitchers leaderboard)
+11:04:11 -> Parsing page 269 of 305 (Pitchers leaderboard)
+11:04:13 -> Parsing page 270 of 305 (Pitchers leaderboard)
+11:04:14 -> Parsing page 271 of 305 (Pitchers leaderboard)
+11:04:16 -> Parsing page 272 of 305 (Pitchers leaderboard)
+11:04:17 -> Parsing page 273 of 305 (Pitchers leaderboard)
+11:04:18 -> Parsing page 274 of 305 (Pitchers leaderboard)
+11:04:20 -> Parsing page 275 of 305 (Pitchers leaderboard)
+11:04:21 -> Parsing page 276 of 305 (Pitchers leaderboard)
+11:04:23 -> Parsing page 277 of 305 (Pitchers leaderboard)
+11:04:25 -> Parsing page 278 of 305 (Pitchers leaderboard)
+11:04:26 -> Parsing page 279 of 305 (Pitchers leaderboard)
+11:04:28 -> Parsing page 280 of 305 (Pitchers leaderboard)
+11:04:29 -> Parsing page 281 of 305 (Pitchers leaderboard)
+11:04:31 -> Parsing page 282 of 305 (Pitchers leaderboard)
+11:04:32 -> Parsing page 283 of 305 (Pitchers leaderboard)
+11:04:33 -> Parsing page 284 of 305 (Pitchers leaderboard)
+11:04:35 -> Parsing page 285 of 305 (Pitchers leaderboard)
+11:04:36 -> Parsing page 286 of 305 (Pitchers leaderboard)
+11:04:38 -> Parsing page 287 of 305 (Pitchers leaderboard)
+11:04:39 -> Parsing page 288 of 305 (Pitchers leaderboard)
+11:04:41 -> Parsing page 289 of 305 (Pitchers leaderboard)
+11:04:42 -> Parsing page 290 of 305 (Pitchers leaderboard)
+11:04:44 -> Parsing page 291 of 305 (Pitchers leaderboard)
+11:04:45 -> Parsing page 292 of 305 (Pitchers leaderboard)
+11:04:47 -> Parsing page 293 of 305 (Pitchers leaderboard)
+11:04:48 -> Parsing page 294 of 305 (Pitchers leaderboard)
+11:04:50 -> Parsing page 295 of 305 (Pitchers leaderboard)
+11:04:51 -> Parsing page 296 of 305 (Pitchers leaderboard)
+11:04:54 -> Parsing page 297 of 305 (Pitchers leaderboard)
+11:04:55 -> Parsing page 298 of 305 (Pitchers leaderboard)
+11:04:57 -> Parsing page 299 of 305 (Pitchers leaderboard)
+11:04:58 -> Parsing page 300 of 305 (Pitchers leaderboard)
+11:05:00 -> Parsing page 301 of 305 (Pitchers leaderboard)
+11:05:02 -> Parsing page 302 of 305 (Pitchers leaderboard)
+11:05:03 -> Parsing page 303 of 305 (Pitchers leaderboard)
+11:05:05 -> Parsing page 304 of 305 (Pitchers leaderboard)
+11:05:06 -> Parsing page 305 of 305 (Pitchers leaderboard)
+11:05:06 -> Done parsing, writing values to: Pitcher_IDs.csv
+11:05:06 -> Pitcher ID#s populated
+11:05:06 -> Populating batter ID#s
+11:05:09 -> Successful query, finding number of pages in batting leaderboard
+11:05:09 -> Num pages in batting leaderboard: 584 
+11:05:12 -> Parsing page 1 of 584 (Batters leaderboard)
+11:05:14 -> Parsing page 2 of 584 (Batters leaderboard)
+11:05:16 -> Parsing page 3 of 584 (Batters leaderboard)
+11:05:19 -> Parsing page 4 of 584 (Batters leaderboard)
+11:05:21 -> Parsing page 5 of 584 (Batters leaderboard)
+11:05:24 -> Parsing page 6 of 584 (Batters leaderboard)
+11:05:26 -> Parsing page 7 of 584 (Batters leaderboard)
+11:05:28 -> Parsing page 8 of 584 (Batters leaderboard)
+11:05:31 -> Parsing page 9 of 584 (Batters leaderboard)
+11:05:34 -> Parsing page 10 of 584 (Batters leaderboard)
+11:05:36 -> Parsing page 11 of 584 (Batters leaderboard)
+11:05:38 -> Parsing page 12 of 584 (Batters leaderboard)
+11:05:40 -> Parsing page 13 of 584 (Batters leaderboard)
+11:05:43 -> Parsing page 14 of 584 (Batters leaderboard)
+11:05:45 -> Parsing page 15 of 584 (Batters leaderboard)
+11:05:48 -> Parsing page 16 of 584 (Batters leaderboard)
+11:05:50 -> Parsing page 17 of 584 (Batters leaderboard)
+11:05:52 -> Parsing page 18 of 584 (Batters leaderboard)
+11:05:55 -> Parsing page 19 of 584 (Batters leaderboard)
+11:05:57 -> Parsing page 20 of 584 (Batters leaderboard)
+11:05:59 -> Parsing page 21 of 584 (Batters leaderboard)
+11:06:02 -> Parsing page 22 of 584 (Batters leaderboard)
+11:06:04 -> Parsing page 23 of 584 (Batters leaderboard)
+11:06:07 -> Parsing page 24 of 584 (Batters leaderboard)
+11:06:09 -> Parsing page 25 of 584 (Batters leaderboard)
+11:06:12 -> Parsing page 26 of 584 (Batters leaderboard)
+11:06:15 -> Parsing page 27 of 584 (Batters leaderboard)
+11:06:17 -> Parsing page 28 of 584 (Batters leaderboard)
+11:06:19 -> Parsing page 29 of 584 (Batters leaderboard)
+11:06:22 -> Parsing page 30 of 584 (Batters leaderboard)
+11:06:24 -> Parsing page 31 of 584 (Batters leaderboard)
+11:06:26 -> Parsing page 32 of 584 (Batters leaderboard)
+11:06:29 -> Parsing page 33 of 584 (Batters leaderboard)
+11:06:31 -> Parsing page 34 of 584 (Batters leaderboard)
+11:06:34 -> Parsing page 35 of 584 (Batters leaderboard)
+11:06:36 -> Parsing page 36 of 584 (Batters leaderboard)
+11:06:39 -> Parsing page 37 of 584 (Batters leaderboard)
+11:06:41 -> Parsing page 38 of 584 (Batters leaderboard)
+11:06:43 -> Parsing page 39 of 584 (Batters leaderboard)
+11:06:46 -> Parsing page 40 of 584 (Batters leaderboard)
+11:06:49 -> Parsing page 41 of 584 (Batters leaderboard)
+11:06:52 -> Parsing page 42 of 584 (Batters leaderboard)
+11:06:56 -> Parsing page 43 of 584 (Batters leaderboard)
+11:06:58 -> Parsing page 44 of 584 (Batters leaderboard)
+11:07:00 -> Parsing page 45 of 584 (Batters leaderboard)
+11:07:04 -> Parsing page 46 of 584 (Batters leaderboard)
+11:07:06 -> Parsing page 47 of 584 (Batters leaderboard)
+11:07:09 -> Parsing page 48 of 584 (Batters leaderboard)
+11:07:11 -> Parsing page 49 of 584 (Batters leaderboard)
+11:07:13 -> Parsing page 50 of 584 (Batters leaderboard)
+11:07:16 -> Parsing page 51 of 584 (Batters leaderboard)
+11:07:18 -> Parsing page 52 of 584 (Batters leaderboard)
+11:07:21 -> Parsing page 53 of 584 (Batters leaderboard)
+11:07:24 -> Parsing page 54 of 584 (Batters leaderboard)
+11:07:26 -> Parsing page 55 of 584 (Batters leaderboard)
+11:07:28 -> Parsing page 56 of 584 (Batters leaderboard)
+11:07:31 -> Parsing page 57 of 584 (Batters leaderboard)
+11:07:33 -> Parsing page 58 of 584 (Batters leaderboard)
+11:07:36 -> Parsing page 59 of 584 (Batters leaderboard)
+11:07:38 -> Parsing page 60 of 584 (Batters leaderboard)
+11:07:41 -> Parsing page 61 of 584 (Batters leaderboard)
+11:07:43 -> Parsing page 62 of 584 (Batters leaderboard)
+11:07:45 -> Parsing page 63 of 584 (Batters leaderboard)
+11:07:48 -> Parsing page 64 of 584 (Batters leaderboard)
+11:07:50 -> Parsing page 65 of 584 (Batters leaderboard)
+11:07:53 -> Parsing page 66 of 584 (Batters leaderboard)
+11:07:55 -> Parsing page 67 of 584 (Batters leaderboard)
+11:07:58 -> Parsing page 68 of 584 (Batters leaderboard)
+11:08:00 -> Parsing page 69 of 584 (Batters leaderboard)
+11:08:02 -> Parsing page 70 of 584 (Batters leaderboard)
+11:08:05 -> Parsing page 71 of 584 (Batters leaderboard)
+11:08:07 -> Parsing page 72 of 584 (Batters leaderboard)
+11:08:10 -> Parsing page 73 of 584 (Batters leaderboard)
+11:08:12 -> Parsing page 74 of 584 (Batters leaderboard)
+11:08:15 -> Parsing page 75 of 584 (Batters leaderboard)
+11:08:17 -> Parsing page 76 of 584 (Batters leaderboard)
+11:08:19 -> Parsing page 77 of 584 (Batters leaderboard)
+11:08:21 -> Parsing page 78 of 584 (Batters leaderboard)
+11:08:24 -> Parsing page 79 of 584 (Batters leaderboard)
+11:08:26 -> Parsing page 80 of 584 (Batters leaderboard)
+11:08:29 -> Parsing page 81 of 584 (Batters leaderboard)
+11:08:31 -> Parsing page 82 of 584 (Batters leaderboard)
+11:08:33 -> Parsing page 83 of 584 (Batters leaderboard)
+11:08:35 -> Parsing page 84 of 584 (Batters leaderboard)
+11:08:38 -> Parsing page 85 of 584 (Batters leaderboard)
+11:08:40 -> Parsing page 86 of 584 (Batters leaderboard)
+11:08:42 -> Parsing page 87 of 584 (Batters leaderboard)
+11:08:45 -> Parsing page 88 of 584 (Batters leaderboard)
+11:08:47 -> Parsing page 89 of 584 (Batters leaderboard)
+11:08:50 -> Parsing page 90 of 584 (Batters leaderboard)
+11:08:52 -> Parsing page 91 of 584 (Batters leaderboard)
+11:08:54 -> Parsing page 92 of 584 (Batters leaderboard)
+11:08:57 -> Parsing page 93 of 584 (Batters leaderboard)
+11:08:59 -> Parsing page 94 of 584 (Batters leaderboard)
+11:09:02 -> Parsing page 95 of 584 (Batters leaderboard)
+11:09:04 -> Parsing page 96 of 584 (Batters leaderboard)
+11:09:06 -> Parsing page 97 of 584 (Batters leaderboard)
+11:09:08 -> Parsing page 98 of 584 (Batters leaderboard)
+11:09:11 -> Parsing page 99 of 584 (Batters leaderboard)
+11:09:13 -> Parsing page 100 of 584 (Batters leaderboard)
+11:09:16 -> Parsing page 101 of 584 (Batters leaderboard)
+11:09:18 -> Parsing page 102 of 584 (Batters leaderboard)
+11:09:20 -> Parsing page 103 of 584 (Batters leaderboard)
+11:09:23 -> Parsing page 104 of 584 (Batters leaderboard)
+11:09:26 -> Parsing page 105 of 584 (Batters leaderboard)
+11:09:30 -> Parsing page 106 of 584 (Batters leaderboard)
+11:09:33 -> Parsing page 107 of 584 (Batters leaderboard)
+11:09:35 -> Parsing page 108 of 584 (Batters leaderboard)
+11:09:37 -> Parsing page 109 of 584 (Batters leaderboard)
+11:09:40 -> Parsing page 110 of 584 (Batters leaderboard)
+11:09:42 -> Parsing page 111 of 584 (Batters leaderboard)
+11:09:44 -> Parsing page 112 of 584 (Batters leaderboard)
+11:09:46 -> Parsing page 113 of 584 (Batters leaderboard)
+11:09:49 -> Parsing page 114 of 584 (Batters leaderboard)
+11:09:51 -> Parsing page 115 of 584 (Batters leaderboard)
+11:09:53 -> Parsing page 116 of 584 (Batters leaderboard)
+11:09:56 -> Parsing page 117 of 584 (Batters leaderboard)
+11:09:58 -> Parsing page 118 of 584 (Batters leaderboard)
+11:10:00 -> Parsing page 119 of 584 (Batters leaderboard)
+11:10:03 -> Parsing page 120 of 584 (Batters leaderboard)
+11:10:05 -> Parsing page 121 of 584 (Batters leaderboard)
+11:10:08 -> Parsing page 122 of 584 (Batters leaderboard)
+11:10:10 -> Parsing page 123 of 584 (Batters leaderboard)
+11:10:12 -> Parsing page 124 of 584 (Batters leaderboard)
+11:10:14 -> Parsing page 125 of 584 (Batters leaderboard)
+11:10:17 -> Parsing page 126 of 584 (Batters leaderboard)
+11:10:19 -> Parsing page 127 of 584 (Batters leaderboard)
+11:10:21 -> Parsing page 128 of 584 (Batters leaderboard)
+11:10:23 -> Parsing page 129 of 584 (Batters leaderboard)
+11:10:26 -> Parsing page 130 of 584 (Batters leaderboard)
+11:10:28 -> Parsing page 131 of 584 (Batters leaderboard)
+11:10:30 -> Parsing page 132 of 584 (Batters leaderboard)
+11:10:33 -> Parsing page 133 of 584 (Batters leaderboard)
+11:10:35 -> Parsing page 134 of 584 (Batters leaderboard)
+11:10:37 -> Parsing page 135 of 584 (Batters leaderboard)
+11:10:40 -> Parsing page 136 of 584 (Batters leaderboard)
+11:10:42 -> Parsing page 137 of 584 (Batters leaderboard)
+11:10:44 -> Parsing page 138 of 584 (Batters leaderboard)
+11:10:47 -> Parsing page 139 of 584 (Batters leaderboard)
+11:10:49 -> Parsing page 140 of 584 (Batters leaderboard)
+11:10:52 -> Parsing page 141 of 584 (Batters leaderboard)
+11:10:54 -> Parsing page 142 of 584 (Batters leaderboard)
+11:10:56 -> Parsing page 143 of 584 (Batters leaderboard)
+11:10:58 -> Parsing page 144 of 584 (Batters leaderboard)
+11:11:01 -> Parsing page 145 of 584 (Batters leaderboard)
+11:11:03 -> Parsing page 146 of 584 (Batters leaderboard)
+11:11:05 -> Parsing page 147 of 584 (Batters leaderboard)
+11:11:07 -> Parsing page 148 of 584 (Batters leaderboard)
+11:11:10 -> Parsing page 149 of 584 (Batters leaderboard)
+11:11:15 -> Parsing page 150 of 584 (Batters leaderboard)
+11:11:17 -> Parsing page 151 of 584 (Batters leaderboard)
+11:11:19 -> Parsing page 152 of 584 (Batters leaderboard)
+11:11:22 -> Parsing page 153 of 584 (Batters leaderboard)
+11:11:24 -> Parsing page 154 of 584 (Batters leaderboard)
+11:11:26 -> Parsing page 155 of 584 (Batters leaderboard)
+11:11:29 -> Parsing page 156 of 584 (Batters leaderboard)
+11:11:31 -> Parsing page 157 of 584 (Batters leaderboard)
+11:11:34 -> Parsing page 158 of 584 (Batters leaderboard)
+11:11:36 -> Parsing page 159 of 584 (Batters leaderboard)
+11:11:38 -> Parsing page 160 of 584 (Batters leaderboard)
+11:11:41 -> Parsing page 161 of 584 (Batters leaderboard)
+11:11:43 -> Parsing page 162 of 584 (Batters leaderboard)
+11:11:47 -> Parsing page 163 of 584 (Batters leaderboard)
+11:11:50 -> Parsing page 164 of 584 (Batters leaderboard)
+11:11:54 -> Parsing page 165 of 584 (Batters leaderboard)
+11:11:56 -> Parsing page 166 of 584 (Batters leaderboard)
+11:11:59 -> Parsing page 167 of 584 (Batters leaderboard)
+11:12:01 -> Parsing page 168 of 584 (Batters leaderboard)
+11:12:03 -> Parsing page 169 of 584 (Batters leaderboard)
+11:12:06 -> Parsing page 170 of 584 (Batters leaderboard)
+11:12:08 -> Parsing page 171 of 584 (Batters leaderboard)
+11:12:11 -> Parsing page 172 of 584 (Batters leaderboard)
+11:12:13 -> Parsing page 173 of 584 (Batters leaderboard)
+11:12:16 -> Parsing page 174 of 584 (Batters leaderboard)
+11:12:18 -> Parsing page 175 of 584 (Batters leaderboard)
+11:12:20 -> Parsing page 176 of 584 (Batters leaderboard)
+11:12:22 -> Parsing page 177 of 584 (Batters leaderboard)
+11:12:25 -> Parsing page 178 of 584 (Batters leaderboard)
+11:12:28 -> Parsing page 179 of 584 (Batters leaderboard)
+11:12:30 -> Parsing page 180 of 584 (Batters leaderboard)
+11:12:32 -> Parsing page 181 of 584 (Batters leaderboard)
+11:12:35 -> Parsing page 182 of 584 (Batters leaderboard)
+11:12:37 -> Parsing page 183 of 584 (Batters leaderboard)
+11:12:40 -> Parsing page 184 of 584 (Batters leaderboard)
+11:12:42 -> Parsing page 185 of 584 (Batters leaderboard)
+11:12:44 -> Parsing page 186 of 584 (Batters leaderboard)
+11:12:47 -> Parsing page 187 of 584 (Batters leaderboard)
+11:12:49 -> Parsing page 188 of 584 (Batters leaderboard)
+11:12:52 -> Parsing page 189 of 584 (Batters leaderboard)
+11:12:54 -> Parsing page 190 of 584 (Batters leaderboard)
+11:12:56 -> Parsing page 191 of 584 (Batters leaderboard)
+11:12:59 -> Parsing page 192 of 584 (Batters leaderboard)
+11:13:02 -> Parsing page 193 of 584 (Batters leaderboard)
+11:13:04 -> Parsing page 194 of 584 (Batters leaderboard)
+11:13:06 -> Parsing page 195 of 584 (Batters leaderboard)
+11:13:08 -> Parsing page 196 of 584 (Batters leaderboard)
+11:13:11 -> Parsing page 197 of 584 (Batters leaderboard)
+11:13:13 -> Parsing page 198 of 584 (Batters leaderboard)
+11:13:16 -> Parsing page 199 of 584 (Batters leaderboard)
+11:13:18 -> Parsing page 200 of 584 (Batters leaderboard)
+11:13:21 -> Parsing page 201 of 584 (Batters leaderboard)
+11:13:23 -> Parsing page 202 of 584 (Batters leaderboard)
+11:13:25 -> Parsing page 203 of 584 (Batters leaderboard)
+11:13:27 -> Parsing page 204 of 584 (Batters leaderboard)
+11:13:30 -> Parsing page 205 of 584 (Batters leaderboard)
+11:13:32 -> Parsing page 206 of 584 (Batters leaderboard)
+11:13:35 -> Parsing page 207 of 584 (Batters leaderboard)
+11:13:37 -> Parsing page 208 of 584 (Batters leaderboard)
+11:13:39 -> Parsing page 209 of 584 (Batters leaderboard)
+11:13:42 -> Parsing page 210 of 584 (Batters leaderboard)
+11:13:44 -> Parsing page 211 of 584 (Batters leaderboard)
+11:13:47 -> Parsing page 212 of 584 (Batters leaderboard)
+11:13:49 -> Parsing page 213 of 584 (Batters leaderboard)
+11:13:52 -> Parsing page 214 of 584 (Batters leaderboard)
+11:13:54 -> Parsing page 215 of 584 (Batters leaderboard)
+11:13:56 -> Parsing page 216 of 584 (Batters leaderboard)
+11:13:59 -> Parsing page 217 of 584 (Batters leaderboard)
+11:14:01 -> Parsing page 218 of 584 (Batters leaderboard)
+11:14:03 -> Parsing page 219 of 584 (Batters leaderboard)
+11:14:06 -> Parsing page 220 of 584 (Batters leaderboard)
+11:14:08 -> Parsing page 221 of 584 (Batters leaderboard)
+11:14:11 -> Parsing page 222 of 584 (Batters leaderboard)
+11:14:13 -> Parsing page 223 of 584 (Batters leaderboard)
+11:14:16 -> Parsing page 224 of 584 (Batters leaderboard)
+11:14:18 -> Parsing page 225 of 584 (Batters leaderboard)
+11:14:23 -> Parsing page 226 of 584 (Batters leaderboard)
+11:14:26 -> Parsing page 227 of 584 (Batters leaderboard)
+11:14:28 -> Parsing page 228 of 584 (Batters leaderboard)
+11:14:30 -> Parsing page 229 of 584 (Batters leaderboard)
+11:14:33 -> Parsing page 230 of 584 (Batters leaderboard)
+11:14:35 -> Parsing page 231 of 584 (Batters leaderboard)
+11:14:37 -> Parsing page 232 of 584 (Batters leaderboard)
+11:14:40 -> Parsing page 233 of 584 (Batters leaderboard)
+11:14:42 -> Parsing page 234 of 584 (Batters leaderboard)
+11:14:45 -> Parsing page 235 of 584 (Batters leaderboard)
+11:14:47 -> Parsing page 236 of 584 (Batters leaderboard)
+11:14:49 -> Parsing page 237 of 584 (Batters leaderboard)
+11:14:52 -> Parsing page 238 of 584 (Batters leaderboard)
+11:14:54 -> Parsing page 239 of 584 (Batters leaderboard)
+11:14:57 -> Parsing page 240 of 584 (Batters leaderboard)
+11:14:59 -> Parsing page 241 of 584 (Batters leaderboard)
+11:15:02 -> Parsing page 242 of 584 (Batters leaderboard)
+11:15:04 -> Parsing page 243 of 584 (Batters leaderboard)
+11:15:06 -> Parsing page 244 of 584 (Batters leaderboard)
+11:15:09 -> Parsing page 245 of 584 (Batters leaderboard)
+11:15:11 -> Parsing page 246 of 584 (Batters leaderboard)
+11:15:14 -> Parsing page 247 of 584 (Batters leaderboard)
+11:15:16 -> Parsing page 248 of 584 (Batters leaderboard)
+11:15:24 -> Parsing page 249 of 584 (Batters leaderboard)
+11:15:29 -> Parsing page 250 of 584 (Batters leaderboard)
+11:15:31 -> Parsing page 251 of 584 (Batters leaderboard)
+11:15:34 -> Parsing page 252 of 584 (Batters leaderboard)
+11:15:36 -> Parsing page 253 of 584 (Batters leaderboard)
+11:15:38 -> Parsing page 254 of 584 (Batters leaderboard)
+11:15:41 -> Parsing page 255 of 584 (Batters leaderboard)
+11:15:43 -> Parsing page 256 of 584 (Batters leaderboard)
+11:15:46 -> Parsing page 257 of 584 (Batters leaderboard)
+11:15:48 -> Parsing page 258 of 584 (Batters leaderboard)
+11:15:51 -> Parsing page 259 of 584 (Batters leaderboard)
+11:15:53 -> Parsing page 260 of 584 (Batters leaderboard)
+11:15:55 -> Parsing page 261 of 584 (Batters leaderboard)
+11:15:58 -> Parsing page 262 of 584 (Batters leaderboard)
+11:16:00 -> Parsing page 263 of 584 (Batters leaderboard)
+11:16:03 -> Parsing page 264 of 584 (Batters leaderboard)
+11:16:06 -> Parsing page 265 of 584 (Batters leaderboard)
+11:16:08 -> Parsing page 266 of 584 (Batters leaderboard)
+11:16:10 -> Parsing page 267 of 584 (Batters leaderboard)
+11:16:12 -> Parsing page 268 of 584 (Batters leaderboard)
+11:16:15 -> Parsing page 269 of 584 (Batters leaderboard)
+11:16:17 -> Parsing page 270 of 584 (Batters leaderboard)
+11:16:20 -> Parsing page 271 of 584 (Batters leaderboard)
+11:16:22 -> Parsing page 272 of 584 (Batters leaderboard)
+11:16:25 -> Parsing page 273 of 584 (Batters leaderboard)
+11:16:27 -> Parsing page 274 of 584 (Batters leaderboard)
+11:16:29 -> Parsing page 275 of 584 (Batters leaderboard)
+11:16:32 -> Parsing page 276 of 584 (Batters leaderboard)
+11:16:34 -> Parsing page 277 of 584 (Batters leaderboard)
+11:16:37 -> Parsing page 278 of 584 (Batters leaderboard)
+11:16:39 -> Parsing page 279 of 584 (Batters leaderboard)
+11:16:41 -> Parsing page 280 of 584 (Batters leaderboard)
+11:16:43 -> Parsing page 281 of 584 (Batters leaderboard)
+11:16:45 -> Parsing page 282 of 584 (Batters leaderboard)
+11:16:48 -> Parsing page 283 of 584 (Batters leaderboard)
+11:16:50 -> Parsing page 284 of 584 (Batters leaderboard)
+11:16:53 -> Parsing page 285 of 584 (Batters leaderboard)
+11:16:55 -> Parsing page 286 of 584 (Batters leaderboard)
+11:16:58 -> Parsing page 287 of 584 (Batters leaderboard)
+11:17:00 -> Parsing page 288 of 584 (Batters leaderboard)
+11:17:03 -> Parsing page 289 of 584 (Batters leaderboard)
+11:17:05 -> Parsing page 290 of 584 (Batters leaderboard)
+11:17:08 -> Parsing page 291 of 584 (Batters leaderboard)
+11:17:10 -> Parsing page 292 of 584 (Batters leaderboard)
+11:17:15 -> Parsing page 293 of 584 (Batters leaderboard)
+11:17:17 -> Parsing page 294 of 584 (Batters leaderboard)
+11:17:20 -> Parsing page 295 of 584 (Batters leaderboard)
+11:17:22 -> Parsing page 296 of 584 (Batters leaderboard)
+11:17:25 -> Parsing page 297 of 584 (Batters leaderboard)
+11:17:27 -> Parsing page 298 of 584 (Batters leaderboard)
+11:17:29 -> Parsing page 299 of 584 (Batters leaderboard)
+11:17:32 -> Parsing page 300 of 584 (Batters leaderboard)
+11:17:35 -> Parsing page 301 of 584 (Batters leaderboard)
+11:17:38 -> Parsing page 302 of 584 (Batters leaderboard)
+11:17:40 -> Parsing page 303 of 584 (Batters leaderboard)
+11:17:42 -> Parsing page 304 of 584 (Batters leaderboard)
+11:17:44 -> Parsing page 305 of 584 (Batters leaderboard)
+11:17:47 -> Parsing page 306 of 584 (Batters leaderboard)
+11:17:50 -> Parsing page 307 of 584 (Batters leaderboard)
+11:17:52 -> Parsing page 308 of 584 (Batters leaderboard)
+11:17:55 -> Parsing page 309 of 584 (Batters leaderboard)
+11:17:57 -> Parsing page 310 of 584 (Batters leaderboard)
+11:17:59 -> Parsing page 311 of 584 (Batters leaderboard)
+11:18:01 -> Parsing page 312 of 584 (Batters leaderboard)
+11:18:04 -> Parsing page 313 of 584 (Batters leaderboard)
+11:18:06 -> Parsing page 314 of 584 (Batters leaderboard)
+11:18:09 -> Parsing page 315 of 584 (Batters leaderboard)
+11:18:12 -> Parsing page 316 of 584 (Batters leaderboard)
+11:18:14 -> Parsing page 317 of 584 (Batters leaderboard)
+11:18:16 -> Parsing page 318 of 584 (Batters leaderboard)
+11:18:18 -> Parsing page 319 of 584 (Batters leaderboard)
+11:18:21 -> Parsing page 320 of 584 (Batters leaderboard)
+11:18:23 -> Parsing page 321 of 584 (Batters leaderboard)
+11:18:26 -> Parsing page 322 of 584 (Batters leaderboard)
+11:18:28 -> Parsing page 323 of 584 (Batters leaderboard)
+11:18:30 -> Parsing page 324 of 584 (Batters leaderboard)
+11:18:32 -> Parsing page 325 of 584 (Batters leaderboard)
+11:18:35 -> Parsing page 326 of 584 (Batters leaderboard)
+11:18:37 -> Parsing page 327 of 584 (Batters leaderboard)
+11:18:40 -> Parsing page 328 of 584 (Batters leaderboard)
+11:18:42 -> Parsing page 329 of 584 (Batters leaderboard)
+11:18:44 -> Parsing page 330 of 584 (Batters leaderboard)
+11:18:47 -> Parsing page 331 of 584 (Batters leaderboard)
+11:18:49 -> Parsing page 332 of 584 (Batters leaderboard)
+11:18:51 -> Parsing page 333 of 584 (Batters leaderboard)
+11:18:54 -> Parsing page 334 of 584 (Batters leaderboard)
+11:18:56 -> Parsing page 335 of 584 (Batters leaderboard)
+11:18:59 -> Parsing page 336 of 584 (Batters leaderboard)
+11:19:01 -> Parsing page 337 of 584 (Batters leaderboard)
+11:19:03 -> Parsing page 338 of 584 (Batters leaderboard)
+11:19:05 -> Parsing page 339 of 584 (Batters leaderboard)
+11:19:08 -> Parsing page 340 of 584 (Batters leaderboard)
+11:19:11 -> Parsing page 341 of 584 (Batters leaderboard)
+11:19:13 -> Parsing page 342 of 584 (Batters leaderboard)
+11:19:16 -> Parsing page 343 of 584 (Batters leaderboard)
+11:19:18 -> Parsing page 344 of 584 (Batters leaderboard)
+11:19:20 -> Parsing page 345 of 584 (Batters leaderboard)
+11:19:23 -> Parsing page 346 of 584 (Batters leaderboard)
+11:19:25 -> Parsing page 347 of 584 (Batters leaderboard)
+11:19:27 -> Parsing page 348 of 584 (Batters leaderboard)
+11:19:30 -> Parsing page 349 of 584 (Batters leaderboard)
+11:19:32 -> Parsing page 350 of 584 (Batters leaderboard)
+11:19:35 -> Parsing page 351 of 584 (Batters leaderboard)
+11:19:37 -> Parsing page 352 of 584 (Batters leaderboard)
+11:19:39 -> Parsing page 353 of 584 (Batters leaderboard)
+11:19:42 -> Parsing page 354 of 584 (Batters leaderboard)
+11:19:44 -> Parsing page 355 of 584 (Batters leaderboard)
+11:19:46 -> Parsing page 356 of 584 (Batters leaderboard)
+11:19:49 -> Parsing page 357 of 584 (Batters leaderboard)
+11:19:51 -> Parsing page 358 of 584 (Batters leaderboard)
+11:19:53 -> Parsing page 359 of 584 (Batters leaderboard)
+11:19:56 -> Parsing page 360 of 584 (Batters leaderboard)
+11:19:59 -> Parsing page 361 of 584 (Batters leaderboard)
+11:20:04 -> Parsing page 362 of 584 (Batters leaderboard)
+11:20:06 -> Parsing page 363 of 584 (Batters leaderboard)
+11:20:09 -> Parsing page 364 of 584 (Batters leaderboard)
+11:20:11 -> Parsing page 365 of 584 (Batters leaderboard)
+11:20:14 -> Parsing page 366 of 584 (Batters leaderboard)
+11:20:16 -> Parsing page 367 of 584 (Batters leaderboard)
+11:20:19 -> Parsing page 368 of 584 (Batters leaderboard)
+11:20:21 -> Parsing page 369 of 584 (Batters leaderboard)
+11:20:23 -> Parsing page 370 of 584 (Batters leaderboard)
+11:20:26 -> Parsing page 371 of 584 (Batters leaderboard)
+11:20:28 -> Parsing page 372 of 584 (Batters leaderboard)
+11:20:30 -> Parsing page 373 of 584 (Batters leaderboard)
+11:20:33 -> Parsing page 374 of 584 (Batters leaderboard)
+11:20:35 -> Parsing page 375 of 584 (Batters leaderboard)
+11:20:37 -> Parsing page 376 of 584 (Batters leaderboard)
+11:20:40 -> Parsing page 377 of 584 (Batters leaderboard)
+11:20:42 -> Parsing page 378 of 584 (Batters leaderboard)
+11:20:44 -> Parsing page 379 of 584 (Batters leaderboard)
+11:20:47 -> Parsing page 380 of 584 (Batters leaderboard)
+11:20:49 -> Parsing page 381 of 584 (Batters leaderboard)
+11:20:52 -> Parsing page 382 of 584 (Batters leaderboard)
+11:20:54 -> Parsing page 383 of 584 (Batters leaderboard)
+11:20:57 -> Parsing page 384 of 584 (Batters leaderboard)
+11:20:59 -> Parsing page 385 of 584 (Batters leaderboard)
+11:21:02 -> Parsing page 386 of 584 (Batters leaderboard)
+11:21:05 -> Parsing page 387 of 584 (Batters leaderboard)
+11:21:07 -> Parsing page 388 of 584 (Batters leaderboard)
+11:21:09 -> Parsing page 389 of 584 (Batters leaderboard)
+11:21:12 -> Parsing page 390 of 584 (Batters leaderboard)
+11:21:14 -> Parsing page 391 of 584 (Batters leaderboard)
+11:21:16 -> Parsing page 392 of 584 (Batters leaderboard)
+11:21:19 -> Parsing page 393 of 584 (Batters leaderboard)
+11:21:21 -> Parsing page 394 of 584 (Batters leaderboard)
+11:21:23 -> Parsing page 395 of 584 (Batters leaderboard)
+11:21:26 -> Parsing page 396 of 584 (Batters leaderboard)
+11:21:28 -> Parsing page 397 of 584 (Batters leaderboard)
+11:21:38 -> Parsing page 398 of 584 (Batters leaderboard)
+11:21:42 -> Parsing page 399 of 584 (Batters leaderboard)
+11:21:45 -> Parsing page 400 of 584 (Batters leaderboard)
+11:21:47 -> Parsing page 401 of 584 (Batters leaderboard)
+11:21:50 -> Parsing page 402 of 584 (Batters leaderboard)
+11:21:53 -> Parsing page 403 of 584 (Batters leaderboard)
+11:21:55 -> Parsing page 404 of 584 (Batters leaderboard)
+11:21:58 -> Parsing page 405 of 584 (Batters leaderboard)
+11:22:00 -> Parsing page 406 of 584 (Batters leaderboard)
+11:22:02 -> Parsing page 407 of 584 (Batters leaderboard)
+11:22:05 -> Parsing page 408 of 584 (Batters leaderboard)
+11:22:07 -> Parsing page 409 of 584 (Batters leaderboard)
+11:22:10 -> Parsing page 410 of 584 (Batters leaderboard)
+11:22:12 -> Parsing page 411 of 584 (Batters leaderboard)
+11:22:15 -> Parsing page 412 of 584 (Batters leaderboard)
+11:22:17 -> Parsing page 413 of 584 (Batters leaderboard)
+11:22:20 -> Parsing page 414 of 584 (Batters leaderboard)
+11:22:23 -> Parsing page 415 of 584 (Batters leaderboard)
+11:22:26 -> Parsing page 416 of 584 (Batters leaderboard)
+11:22:28 -> Parsing page 417 of 584 (Batters leaderboard)
+11:22:30 -> Parsing page 418 of 584 (Batters leaderboard)
+11:22:33 -> Parsing page 419 of 584 (Batters leaderboard)
+11:22:35 -> Parsing page 420 of 584 (Batters leaderboard)
+11:22:38 -> Parsing page 421 of 584 (Batters leaderboard)
+11:22:40 -> Parsing page 422 of 584 (Batters leaderboard)
+11:22:43 -> Parsing page 423 of 584 (Batters leaderboard)
+11:22:45 -> Parsing page 424 of 584 (Batters leaderboard)
+11:22:48 -> Parsing page 425 of 584 (Batters leaderboard)
+11:22:50 -> Parsing page 426 of 584 (Batters leaderboard)
+11:22:52 -> Parsing page 427 of 584 (Batters leaderboard)
+11:22:55 -> Parsing page 428 of 584 (Batters leaderboard)
+11:22:58 -> Parsing page 429 of 584 (Batters leaderboard)
+11:23:00 -> Parsing page 430 of 584 (Batters leaderboard)
+11:23:02 -> Parsing page 431 of 584 (Batters leaderboard)
+11:23:05 -> Parsing page 432 of 584 (Batters leaderboard)
+11:23:07 -> Parsing page 433 of 584 (Batters leaderboard)
+11:23:09 -> Parsing page 434 of 584 (Batters leaderboard)
+11:23:11 -> Parsing page 435 of 584 (Batters leaderboard)
+11:23:14 -> Parsing page 436 of 584 (Batters leaderboard)
+11:23:17 -> Parsing page 437 of 584 (Batters leaderboard)
+11:23:19 -> Parsing page 438 of 584 (Batters leaderboard)
+11:23:22 -> Parsing page 439 of 584 (Batters leaderboard)
+11:23:24 -> Parsing page 440 of 584 (Batters leaderboard)
+11:23:26 -> Parsing page 441 of 584 (Batters leaderboard)
+11:23:29 -> Parsing page 442 of 584 (Batters leaderboard)
+11:23:31 -> Parsing page 443 of 584 (Batters leaderboard)
+11:23:33 -> Parsing page 444 of 584 (Batters leaderboard)
+11:23:36 -> Parsing page 445 of 584 (Batters leaderboard)
+11:23:39 -> Parsing page 446 of 584 (Batters leaderboard)
+11:23:41 -> Parsing page 447 of 584 (Batters leaderboard)
+11:23:44 -> Parsing page 448 of 584 (Batters leaderboard)
+11:23:46 -> Parsing page 449 of 584 (Batters leaderboard)
+11:23:50 -> Parsing page 450 of 584 (Batters leaderboard)
+11:23:52 -> Parsing page 451 of 584 (Batters leaderboard)
+11:23:54 -> Parsing page 452 of 584 (Batters leaderboard)
+11:23:57 -> Parsing page 453 of 584 (Batters leaderboard)
+11:23:59 -> Parsing page 454 of 584 (Batters leaderboard)
+11:24:02 -> Parsing page 455 of 584 (Batters leaderboard)
+11:24:04 -> Parsing page 456 of 584 (Batters leaderboard)
+11:24:07 -> Parsing page 457 of 584 (Batters leaderboard)
+11:24:09 -> Parsing page 458 of 584 (Batters leaderboard)
+11:24:11 -> Parsing page 459 of 584 (Batters leaderboard)
+11:24:13 -> Parsing page 460 of 584 (Batters leaderboard)
+11:24:16 -> Parsing page 461 of 584 (Batters leaderboard)
+11:24:18 -> Parsing page 462 of 584 (Batters leaderboard)
+11:24:20 -> Parsing page 463 of 584 (Batters leaderboard)
+11:24:23 -> Parsing page 464 of 584 (Batters leaderboard)
+11:24:25 -> Parsing page 465 of 584 (Batters leaderboard)
+11:24:28 -> Parsing page 466 of 584 (Batters leaderboard)
+11:24:30 -> Parsing page 467 of 584 (Batters leaderboard)
+11:24:33 -> Parsing page 468 of 584 (Batters leaderboard)
+11:24:35 -> Parsing page 469 of 584 (Batters leaderboard)
+11:24:37 -> Parsing page 470 of 584 (Batters leaderboard)
+11:24:40 -> Parsing page 471 of 584 (Batters leaderboard)
+11:24:42 -> Parsing page 472 of 584 (Batters leaderboard)
+11:24:44 -> Parsing page 473 of 584 (Batters leaderboard)
+11:24:47 -> Parsing page 474 of 584 (Batters leaderboard)
+11:24:49 -> Parsing page 475 of 584 (Batters leaderboard)
+11:24:52 -> Parsing page 476 of 584 (Batters leaderboard)
+11:24:54 -> Parsing page 477 of 584 (Batters leaderboard)
+11:24:57 -> Parsing page 478 of 584 (Batters leaderboard)
+11:24:59 -> Parsing page 479 of 584 (Batters leaderboard)
+11:25:02 -> Parsing page 480 of 584 (Batters leaderboard)
+11:25:04 -> Parsing page 481 of 584 (Batters leaderboard)
+11:25:06 -> Parsing page 482 of 584 (Batters leaderboard)
+11:25:09 -> Parsing page 483 of 584 (Batters leaderboard)
+11:25:12 -> Parsing page 484 of 584 (Batters leaderboard)
+11:25:15 -> Parsing page 485 of 584 (Batters leaderboard)
+11:25:18 -> Parsing page 486 of 584 (Batters leaderboard)
+11:25:20 -> Parsing page 487 of 584 (Batters leaderboard)
+11:25:23 -> Parsing page 488 of 584 (Batters leaderboard)
+11:25:25 -> Parsing page 489 of 584 (Batters leaderboard)
+11:25:28 -> Parsing page 490 of 584 (Batters leaderboard)
+11:25:30 -> Parsing page 491 of 584 (Batters leaderboard)
+11:25:32 -> Parsing page 492 of 584 (Batters leaderboard)
+11:25:34 -> Parsing page 493 of 584 (Batters leaderboard)
+11:25:37 -> Parsing page 494 of 584 (Batters leaderboard)
+11:25:39 -> Parsing page 495 of 584 (Batters leaderboard)
+11:25:42 -> Parsing page 496 of 584 (Batters leaderboard)
+11:25:44 -> Parsing page 497 of 584 (Batters leaderboard)
+11:25:47 -> Parsing page 498 of 584 (Batters leaderboard)
+11:25:50 -> Parsing page 499 of 584 (Batters leaderboard)
+11:25:52 -> Parsing page 500 of 584 (Batters leaderboard)
+11:25:55 -> Parsing page 501 of 584 (Batters leaderboard)
+11:25:57 -> Parsing page 502 of 584 (Batters leaderboard)
+11:25:59 -> Parsing page 503 of 584 (Batters leaderboard)
+11:26:02 -> Parsing page 504 of 584 (Batters leaderboard)
+11:26:04 -> Parsing page 505 of 584 (Batters leaderboard)
+11:26:07 -> Parsing page 506 of 584 (Batters leaderboard)
+11:26:09 -> Parsing page 507 of 584 (Batters leaderboard)
+11:26:13 -> Parsing page 508 of 584 (Batters leaderboard)
+11:26:15 -> Parsing page 509 of 584 (Batters leaderboard)
+11:26:17 -> Parsing page 510 of 584 (Batters leaderboard)
+11:26:20 -> Parsing page 511 of 584 (Batters leaderboard)
+11:26:22 -> Parsing page 512 of 584 (Batters leaderboard)
+11:26:25 -> Parsing page 513 of 584 (Batters leaderboard)
+11:26:27 -> Parsing page 514 of 584 (Batters leaderboard)
+11:26:29 -> Parsing page 515 of 584 (Batters leaderboard)
+11:26:32 -> Parsing page 516 of 584 (Batters leaderboard)
+11:26:34 -> Parsing page 517 of 584 (Batters leaderboard)
+11:26:37 -> Parsing page 518 of 584 (Batters leaderboard)
+11:26:39 -> Parsing page 519 of 584 (Batters leaderboard)
+11:26:42 -> Parsing page 520 of 584 (Batters leaderboard)
+11:26:44 -> Parsing page 521 of 584 (Batters leaderboard)
+11:26:46 -> Parsing page 522 of 584 (Batters leaderboard)
+11:26:49 -> Parsing page 523 of 584 (Batters leaderboard)
+11:26:51 -> Parsing page 524 of 584 (Batters leaderboard)
+11:26:54 -> Parsing page 525 of 584 (Batters leaderboard)
+11:26:56 -> Parsing page 526 of 584 (Batters leaderboard)
+11:26:59 -> Parsing page 527 of 584 (Batters leaderboard)
+11:27:01 -> Parsing page 528 of 584 (Batters leaderboard)
+11:27:03 -> Parsing page 529 of 584 (Batters leaderboard)
+11:27:06 -> Parsing page 530 of 584 (Batters leaderboard)
+11:27:09 -> Parsing page 531 of 584 (Batters leaderboard)
+11:27:11 -> Parsing page 532 of 584 (Batters leaderboard)
+11:27:14 -> Parsing page 533 of 584 (Batters leaderboard)
+11:27:16 -> Parsing page 534 of 584 (Batters leaderboard)
+11:27:18 -> Parsing page 535 of 584 (Batters leaderboard)
+11:27:21 -> Parsing page 536 of 584 (Batters leaderboard)
+11:27:23 -> Parsing page 537 of 584 (Batters leaderboard)
+11:27:26 -> Parsing page 538 of 584 (Batters leaderboard)
+11:27:28 -> Parsing page 539 of 584 (Batters leaderboard)
+11:27:31 -> Parsing page 540 of 584 (Batters leaderboard)
+11:27:33 -> Parsing page 541 of 584 (Batters leaderboard)
+11:27:35 -> Parsing page 542 of 584 (Batters leaderboard)
+11:27:38 -> Parsing page 543 of 584 (Batters leaderboard)
+11:27:40 -> Parsing page 544 of 584 (Batters leaderboard)
+11:27:42 -> Parsing page 545 of 584 (Batters leaderboard)
+11:27:45 -> Parsing page 546 of 584 (Batters leaderboard)
+11:27:47 -> Parsing page 547 of 584 (Batters leaderboard)
+11:27:49 -> Parsing page 548 of 584 (Batters leaderboard)
+11:27:52 -> Parsing page 549 of 584 (Batters leaderboard)
+11:27:54 -> Parsing page 550 of 584 (Batters leaderboard)
+11:27:56 -> Parsing page 551 of 584 (Batters leaderboard)
+11:27:59 -> Parsing page 552 of 584 (Batters leaderboard)
+11:28:02 -> Parsing page 553 of 584 (Batters leaderboard)
+11:28:04 -> Parsing page 554 of 584 (Batters leaderboard)
+11:28:08 -> Parsing page 555 of 584 (Batters leaderboard)
+11:28:11 -> Parsing page 556 of 584 (Batters leaderboard)
+11:28:13 -> Parsing page 557 of 584 (Batters leaderboard)
+11:28:16 -> Parsing page 558 of 584 (Batters leaderboard)
+11:28:18 -> Parsing page 559 of 584 (Batters leaderboard)
+11:28:21 -> Parsing page 560 of 584 (Batters leaderboard)
+11:28:23 -> Parsing page 561 of 584 (Batters leaderboard)
+11:28:25 -> Parsing page 562 of 584 (Batters leaderboard)
+11:28:28 -> Parsing page 563 of 584 (Batters leaderboard)
+11:28:30 -> Parsing page 564 of 584 (Batters leaderboard)
+11:28:33 -> Parsing page 565 of 584 (Batters leaderboard)
+11:28:35 -> Parsing page 566 of 584 (Batters leaderboard)
+11:28:37 -> Parsing page 567 of 584 (Batters leaderboard)
+11:28:40 -> Parsing page 568 of 584 (Batters leaderboard)
+11:28:42 -> Parsing page 569 of 584 (Batters leaderboard)
+11:28:44 -> Parsing page 570 of 584 (Batters leaderboard)
+11:28:47 -> Parsing page 571 of 584 (Batters leaderboard)
+11:28:49 -> Parsing page 572 of 584 (Batters leaderboard)
+11:28:51 -> Parsing page 573 of 584 (Batters leaderboard)
+11:28:54 -> Parsing page 574 of 584 (Batters leaderboard)
+11:28:56 -> Parsing page 575 of 584 (Batters leaderboard)
+11:28:58 -> Parsing page 576 of 584 (Batters leaderboard)
+11:29:01 -> Parsing page 577 of 584 (Batters leaderboard)
+11:29:03 -> Parsing page 578 of 584 (Batters leaderboard)
+11:29:05 -> Parsing page 579 of 584 (Batters leaderboard)
+11:29:08 -> Parsing page 580 of 584 (Batters leaderboard)
+11:29:10 -> Parsing page 581 of 584 (Batters leaderboard)
+11:29:12 -> Parsing page 582 of 584 (Batters leaderboard)
+11:29:15 -> Parsing page 583 of 584 (Batters leaderboard)
+11:29:17 -> Parsing page 584 of 584 (Batters leaderboard)
+11:29:17 -> Done parsing, writing values to: Batter_IDs.csv
+11:29:17 -> Batter ID#s populated
+11:29:17 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:29:17 -> Populating batter ID#s from: Batter_IDs.csv
+11:29:18 -> Getting game logs for: Yasiel Puig
+11:29:19 -> Game logs found, writing to csv
+11:29:19 -> Game logs for Yasiel Puig written to: Yasiel Puig_GameLogs_All.csv
+11:29:19 -> Getting play logs for: Yasiel Puig
+11:29:24 -> Play logs for Yasiel Puig written to: YasielPuig_PlayLogsAll.csv
+11:29:40 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:29:40 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:29:40 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:29:40 -> Populating batter ID#s from: Batter_IDs.csv
+11:29:41 -> Getting game logs for: Yasiel Puig
+11:29:42 -> Game logs found, writing to csv
+11:29:42 -> Game logs for Yasiel Puig written to: YasielPuig_GameLogs_All.csv
+11:29:43 -> Getting play logs for: Yasiel Puig
+11:29:47 -> Play logs for Yasiel Puig written to: YasielPuig_PlayLogsAll.csv
+11:29:47 -> File already generated: YasielPuig_GameLogs_All.csv
+11:30:30 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:30:30 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:30:30 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:30:30 -> Populating batter ID#s from: Batter_IDs.csv
+11:30:31 -> Getting game logs for: Yasiel Puig
+11:30:32 -> Game logs found, writing to csv
+11:30:32 -> Game logs for Yasiel Puig written to: YasielPuig_GameLogs_All.csv
+11:30:32 -> Getting play logs for: Yasiel Puig
+11:30:37 -> Play logs for Yasiel Puig written to: YasielPuig_PlayLogsAll.csv
+11:30:37 -> File already generated: YasielPuig_GameLogs_All.csv
+11:30:38 -> Getting game logs for: Clayton Kershaw
+11:30:38 -> Game logs found, writing to csv
+11:30:38 -> Game logs for Clayton Kershaw written to: ClaytonKershaw_GameLogs_All.csv
+11:30:39 -> Getting play logs for: Clayton Kershaw
+11:30:53 -> Play logs for Clayton Kershaw written to: ClaytonKershaw_PlayLogsAll.csv
+11:33:27 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:33:27 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:33:27 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:33:27 -> Populating batter ID#s from: Batter_IDs.csv
+11:33:29 -> Getting game logs for: Yasiel Puig
+11:33:30 -> Game logs found, writing to csv
+11:33:30 -> Game logs for Yasiel Puig written to: YasielPuig_GameLogs_All.csv
+11:33:31 -> Getting play logs for: Yasiel Puig
+11:33:35 -> Play logs for Yasiel Puig written to: YasielPuig_PlayLogsAll.csv
+11:33:35 -> File already generated: YasielPuig_GameLogs_All.csv
+11:33:36 -> Getting game logs for: Clayton Kershaw
+11:33:36 -> Game logs found, writing to csv
+11:33:36 -> Game logs for Clayton Kershaw written to: ClaytonKershaw_GameLogs_All.csv
+11:33:37 -> Getting play logs for: Clayton Kershaw
+11:33:52 -> Play logs for Clayton Kershaw written to: ClaytonKershaw_PlayLogsAll.csv
+11:35:43 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:35:43 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:35:43 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:35:43 -> Populating batter ID#s from: Batter_IDs.csv
+11:35:43 -> File already generated: YasielPuig_GameLogs_All.csv
+11:35:43 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:35:43 -> File already generated: YasielPuig_GameLogs_All.csv
+11:35:57 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:35:57 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:35:57 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:35:57 -> Populating batter ID#s from: Batter_IDs.csv
+11:35:57 -> File already generated: YasielPuig_GameLogs_All.csv
+11:35:57 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:35:57 -> File already generated: YasielPuig_GameLogs_All.csv
+11:36:21 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:36:21 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:36:21 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:36:21 -> Populating batter ID#s from: Batter_IDs.csv
+11:36:21 -> File already generated: YasielPuig_GameLogs_All.csv
+11:36:21 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:36:21 -> File already generated: YasielPuig_GameLogs_All.csv
+11:36:37 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:36:37 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:36:37 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:36:37 -> Populating batter ID#s from: Batter_IDs.csv
+11:36:37 -> File already generated: YasielPuig_GameLogs_All.csv
+11:36:37 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:36:37 -> File already generated: YasielPuig_GameLogs_All.csv
+11:36:37 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:36:37 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:37:01 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:37:01 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:37:01 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:37:01 -> Populating batter ID#s from: Batter_IDs.csv
+11:37:01 -> File already generated: YasielPuig_GameLogs_All.csv
+11:37:01 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:37:01 -> File already generated: YasielPuig_GameLogs_All.csv
+11:37:01 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:37:01 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:37:19 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:37:19 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:37:19 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:37:19 -> Populating batter ID#s from: Batter_IDs.csv
+11:37:19 -> File already generated: YasielPuig_GameLogs_All.csv
+11:37:19 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:37:19 -> File already generated: YasielPuig_GameLogs_All.csv
+11:38:38 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:38:38 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:38:38 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:38:38 -> Populating batter ID#s from: Batter_IDs.csv
+11:38:38 -> File already generated: YasielPuig_GameLogs_All.csv
+11:38:38 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:38:38 -> File already generated: YasielPuig_GameLogs_All.csv
+11:38:38 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:38:38 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:38:52 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:38:52 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:38:52 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:38:52 -> Populating batter ID#s from: Batter_IDs.csv
+11:38:53 -> File already generated: YasielPuig_GameLogs_All.csv
+11:38:53 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:38:53 -> File already generated: YasielPuig_GameLogs_All.csv
+11:38:53 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:38:53 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:45:03 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:45:03 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:45:03 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:45:03 -> Populating batter ID#s from: Batter_IDs.csv
+11:45:03 -> File already generated: YasielPuig_GameLogs_All.csv
+11:45:03 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:45:10 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:45:10 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:45:10 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:45:10 -> Populating batter ID#s from: Batter_IDs.csv
+11:45:10 -> File already generated: YasielPuig_GameLogs_All.csv
+11:45:10 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:45:10 -> File already generated: YasielPuig_GameLogs_All.csv
+11:47:05 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:47:05 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:47:05 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:47:05 -> Populating batter ID#s from: Batter_IDs.csv
+11:47:05 -> File already generated: YasielPuig_GameLogs_All.csv
+11:47:05 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:47:05 -> File already generated: YasielPuig_GameLogs_All.csv
+11:47:40 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:47:40 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:47:40 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:47:40 -> Populating batter ID#s from: Batter_IDs.csv
+11:47:40 -> File already generated: YasielPuig_GameLogs_All.csv
+11:47:40 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:47:40 -> File already generated: YasielPuig_GameLogs_All.csv
+11:47:49 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:47:49 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:47:53 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:47:53 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:47:53 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:47:53 -> Populating batter ID#s from: Batter_IDs.csv
+11:47:53 -> File already generated: YasielPuig_GameLogs_All.csv
+11:47:53 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:47:53 -> File already generated: YasielPuig_GameLogs_All.csv
+11:47:59 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:47:59 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:49:11 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:49:11 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:49:11 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:49:11 -> Populating batter ID#s from: Batter_IDs.csv
+11:49:11 -> File already generated: YasielPuig_GameLogs_All.csv
+11:49:11 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:49:11 -> File already generated: YasielPuig_GameLogs_All.csv
+11:49:23 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:49:23 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:49:28 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:49:28 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:49:28 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:49:28 -> Populating batter ID#s from: Batter_IDs.csv
+11:49:28 -> File already generated: YasielPuig_GameLogs_All.csv
+11:49:28 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:49:28 -> File already generated: YasielPuig_GameLogs_All.csv
+11:49:31 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:49:31 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:49:34 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:49:34 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:49:34 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:49:34 -> Populating batter ID#s from: Batter_IDs.csv
+11:49:35 -> File already generated: YasielPuig_GameLogs_All.csv
+11:49:35 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:49:35 -> File already generated: YasielPuig_GameLogs_All.csv
+11:50:04 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:50:04 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:50:32 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:50:32 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:50:32 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:50:32 -> Populating batter ID#s from: Batter_IDs.csv
+11:50:32 -> File already generated: YasielPuig_GameLogs_All.csv
+11:50:32 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:50:32 -> File already generated: YasielPuig_GameLogs_All.csv
+11:50:40 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:50:40 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:51:21 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:51:21 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:51:21 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:51:21 -> Populating batter ID#s from: Batter_IDs.csv
+11:51:21 -> File already generated: YasielPuig_GameLogs_All.csv
+11:51:21 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:51:21 -> File already generated: YasielPuig_GameLogs_All.csv
+11:51:23 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:51:23 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:52:13 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:52:13 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:52:13 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:52:13 -> Populating batter ID#s from: Batter_IDs.csv
+11:52:13 -> File already generated: YasielPuig_GameLogs_All.csv
+11:52:13 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:52:13 -> File already generated: YasielPuig_GameLogs_All.csv
+11:52:15 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:52:15 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:53:17 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:53:17 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:53:17 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:53:17 -> Populating batter ID#s from: Batter_IDs.csv
+11:53:17 -> File already generated: YasielPuig_GameLogs_All.csv
+11:53:17 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:53:17 -> File already generated: YasielPuig_GameLogs_All.csv
+11:53:26 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:53:26 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:53:51 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:53:51 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:53:52 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:53:52 -> Populating batter ID#s from: Batter_IDs.csv
+11:53:52 -> File already generated: YasielPuig_GameLogs_All.csv
+11:53:52 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:53:52 -> File already generated: YasielPuig_GameLogs_All.csv
+11:53:54 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:53:54 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:54:06 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:54:06 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:54:07 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:54:07 -> Populating batter ID#s from: Batter_IDs.csv
+11:54:07 -> File already generated: YasielPuig_GameLogs_All.csv
+11:54:07 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:54:10 -> Getting game logs for: Albert Pujols
+11:54:14 -> Game logs found, writing to csv
+11:54:14 -> Game logs for Albert Pujols written to: AlbertPujols_GameLogs_All.csv
+11:54:20 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:54:20 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+11:55:05 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+11:55:05 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:55:05 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+11:55:05 -> Populating batter ID#s from: Batter_IDs.csv
+11:55:05 -> File already generated: YasielPuig_GameLogs_All.csv
+11:55:05 -> File already generated: YasielPuig_PlayLogsAll.csv
+11:55:05 -> File already generated: AlbertPujols_GameLogs_All.csv
+11:55:16 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+11:55:16 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:05:08 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:05:08 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:05:08 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:05:08 -> Populating batter ID#s from: Batter_IDs.csv
+12:05:09 -> File already generated: YasielPuig_GameLogs_All.csv
+12:05:09 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:05:09 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:05:12 -> File already generated: YasielPuig_GameLogs_All.csv
+12:05:29 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:05:29 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:05:29 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:05:29 -> Populating batter ID#s from: Batter_IDs.csv
+12:05:29 -> File already generated: YasielPuig_GameLogs_All.csv
+12:05:29 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:05:29 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:05:31 -> File already generated: YasielPuig_GameLogs_All.csv
+12:05:31 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:05:31 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:06:08 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:06:08 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:06:08 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:06:08 -> Populating batter ID#s from: Batter_IDs.csv
+12:06:08 -> File already generated: YasielPuig_GameLogs_All.csv
+12:06:08 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:06:08 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:06:09 -> File already generated: YasielPuig_GameLogs_All.csv
+12:06:25 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:06:25 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:06:46 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:06:46 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:06:46 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:06:46 -> Populating batter ID#s from: Batter_IDs.csv
+12:06:46 -> File already generated: YasielPuig_GameLogs_All.csv
+12:06:46 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:06:46 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:06:48 -> File already generated: YasielPuig_GameLogs_All.csv
+12:06:52 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:06:52 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:07:52 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:07:52 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:07:52 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:07:52 -> Populating batter ID#s from: Batter_IDs.csv
+12:07:52 -> File already generated: YasielPuig_GameLogs_All.csv
+12:07:52 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:07:52 -> File already generated: YasielPuig_GameLogs_All.csv
+12:07:55 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:07:55 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:08:15 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:08:15 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:08:15 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:08:15 -> Populating batter ID#s from: Batter_IDs.csv
+12:08:15 -> File already generated: YasielPuig_GameLogs_All.csv
+12:08:15 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:08:15 -> File already generated: YasielPuig_GameLogs_All.csv
+12:08:24 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:08:24 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:09:09 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:09:09 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:09:09 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:09:09 -> Populating batter ID#s from: Batter_IDs.csv
+12:09:09 -> File already generated: YasielPuig_GameLogs_All.csv
+12:09:09 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:09:09 -> File already generated: YasielPuig_GameLogs_All.csv
+12:09:20 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:09:20 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:09:55 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:09:55 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:09:55 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:09:55 -> Populating batter ID#s from: Batter_IDs.csv
+12:09:55 -> File already generated: YasielPuig_GameLogs_All.csv
+12:09:55 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:09:55 -> File already generated: YasielPuig_GameLogs_All.csv
+12:10:00 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:10:00 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:10:00 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:10:00 -> Populating batter ID#s from: Batter_IDs.csv
+12:10:00 -> File already generated: YasielPuig_GameLogs_All.csv
+12:10:00 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:10:00 -> File already generated: YasielPuig_GameLogs_All.csv
+12:10:25 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:10:25 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:10:42 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:10:42 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:10:42 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:10:42 -> Populating batter ID#s from: Batter_IDs.csv
+12:10:42 -> File already generated: YasielPuig_GameLogs_All.csv
+12:10:42 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:10:42 -> File already generated: YasielPuig_GameLogs_All.csv
+12:10:49 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:10:49 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:10:59 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:10:59 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:10:59 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:10:59 -> Populating batter ID#s from: Batter_IDs.csv
+12:10:59 -> File already generated: YasielPuig_GameLogs_All.csv
+12:10:59 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:10:59 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:11:11 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:11:11 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:11:20 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:11:20 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:11:20 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:11:20 -> Populating batter ID#s from: Batter_IDs.csv
+12:11:20 -> File already generated: YasielPuig_GameLogs_All.csv
+12:11:20 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:11:20 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:11:22 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:11:22 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:14:45 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:14:45 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:14:45 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:14:45 -> Populating batter ID#s from: Batter_IDs.csv
+12:14:45 -> File already generated: YasielPuig_GameLogs_All.csv
+12:14:45 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:14:45 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:14:46 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:14:46 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:15:02 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:15:02 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:15:02 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:15:02 -> Populating batter ID#s from: Batter_IDs.csv
+12:15:02 -> File already generated: YasielPuig_GameLogs_All.csv
+12:15:02 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:15:02 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:15:02 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:15:02 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:15:02 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:15:33 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:15:33 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:15:33 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:15:33 -> Populating batter ID#s from: Batter_IDs.csv
+12:15:33 -> File already generated: YasielPuig_GameLogs_All.csv
+12:15:33 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:15:33 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:15:33 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:15:33 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:15:33 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:15:48 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:15:48 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:15:48 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:15:48 -> Populating batter ID#s from: Batter_IDs.csv
+12:15:48 -> File already generated: YasielPuig_GameLogs_All.csv
+12:15:48 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:15:48 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:15:48 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:15:48 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:15:48 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:16:57 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:16:57 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:16:57 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:16:57 -> Populating batter ID#s from: Batter_IDs.csv
+12:16:57 -> File already generated: YasielPuig_GameLogs_All.csv
+12:16:57 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:16:57 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:16:57 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:16:57 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:16:57 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:17:47 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:17:47 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:17:47 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:17:47 -> Populating batter ID#s from: Batter_IDs.csv
+12:17:47 -> File already generated: YasielPuig_GameLogs_All.csv
+12:17:47 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:17:47 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:17:47 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:17:47 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:17:47 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:17:59 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:17:59 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:17:59 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:17:59 -> Populating batter ID#s from: Batter_IDs.csv
+12:17:59 -> File already generated: YasielPuig_GameLogs_All.csv
+12:17:59 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:17:59 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:17:59 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:17:59 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:17:59 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:18:09 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:18:09 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:18:09 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:18:09 -> Populating batter ID#s from: Batter_IDs.csv
+12:18:09 -> File already generated: YasielPuig_GameLogs_All.csv
+12:18:09 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:18:09 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:18:10 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:18:10 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:18:59 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:18:59 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:19:00 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:19:00 -> Populating batter ID#s from: Batter_IDs.csv
+12:19:00 -> File already generated: YasielPuig_GameLogs_All.csv
+12:19:00 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:19:00 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:19:00 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:19:00 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:19:00 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
+12:19:10 -> Pitcher ID#s already found in: Pitcher_IDs.csv
+12:19:10 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:19:10 -> Populating pitcher ID#s from: Pitcher_IDs.csv
+12:19:10 -> Populating batter ID#s from: Batter_IDs.csv
+12:19:10 -> File already generated: YasielPuig_GameLogs_All.csv
+12:19:10 -> File already generated: YasielPuig_PlayLogsAll.csv
+12:19:10 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:19:10 -> File already generated: AlbertPujols_GameLogs_All.csv
+12:19:10 -> File already generated: ClaytonKershaw_GameLogs_All.csv
+12:19:10 -> File already generated: ClaytonKershaw_PlayLogsAll.csv
