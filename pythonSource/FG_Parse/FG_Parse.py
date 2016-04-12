@@ -1,12 +1,21 @@
 import os 
 import sys
 import csv
+import shutil
 import urllib
 
 import requests
 from bs4 import BeautifulSoup
 
+from PyQt4.QtCore import *
+from PyQt4.QtGui import *
+
 from logger import Logger
+
+try:
+    test = QString('Test')
+except NameError:
+    QString = str
 
 class FG_Parse(object):
 	def __init__(self, file_name):
@@ -17,10 +26,10 @@ class FG_Parse(object):
 		self.pitcher_csv = 'Pitcher_IDs.csv'
 		self.batter_csv = 'Batter_IDs.csv'
 
-	def get_pitcher_ids_from_csv(self):
-		self.log('Populating player ids from: {}'.format(self.file_name))
+	def get_pitcher_ids_from_csv(self, file_name):
+		self.log('Populating pitcher ID#s from: {}'.format(file_name))
 		ids = dict()
-		with open(self.file_name, 'rt') as fg_file:
+		with open(file_name, 'rt') as fg_file:
 			for row in fg_file:
 				fields = row.replace('"', '').split(',')
 				player = fields[0]
@@ -29,9 +38,10 @@ class FG_Parse(object):
 					ids[player] = int(i)
 		return ids
 
-	def get_pitcher_ids(self):
-		if self.pitcher_csv in os.listdir():
+	def get_pitcher_ids(self, clean=False):
+		if self.pitcher_csv in os.listdir() and not clean:
 			self.log('Pitcher ID#s already found in: {}'.format(self.pitcher_csv))
+			self.pitcher_ids = self.get_pitcher_ids_from_csv(self.pitcher_csv)
 			return
 		self.log('{} not found'.format(self.pitcher_csv))
 		self.log('Populating pitcher ID#s from fangraphs')
@@ -60,7 +70,6 @@ class FG_Parse(object):
 					self.log('Problem finding the number of pages', ex=True)
 				break
 		self.log('Num pages: {}'.format(num_pages))
-		num_pages = 1
 		for page in range(1, num_pages+1):
 			c_page = '{}_30'.format(page)
 			opts['page'] = c_page
@@ -91,10 +100,23 @@ class FG_Parse(object):
 				pitcher_writer.writerow([name, i])
 		self.log('Pitcher ID#s populated')
 
+	def get_batter_ids_from_csv(self, file_name):
+		self.log('Populating batter ID#s from: {}'.format(file_name))
+		ids = dict()
+		with open(file_name, 'rt') as fg_file:
+			for row in fg_file:
+				fields = row.replace('"', '').split(',')
+				player = fields[0]
+				i = fields[-1].replace('\n', '')
+				if i.isnumeric():
+					ids[player] = int(i)
+		return ids
 
-	def get_batter_ids(self):
-		if self.batter_csv in os.listdir():
+
+	def get_batter_ids(self, clean=False):
+		if self.batter_csv in os.listdir() and not clean:
 			self.log('Batter ID#s already found in: {}'.format(self.batter_csv))
+			self.batter_ids = self.get_batter_ids_from_csv(self.batter_csv)
 			return
 
 	def get_pitcher_game_logs(self, player):
@@ -141,10 +163,22 @@ class FG_Parse(object):
 			for game in game_stats:
 				player_writer.writerow(game)
 
+	def get_batter_game_logs(self, player):
+		if type(player) == str:
+			p_id = self.batter_ids[player]
+			p_name = player 
+		elif type(player) == int:
+			p_id = player 
+			for p in self.batter_ids:
+				if self.batter_ids[p] == player:
+					p_name = p
+
 
 def main():
 	file_name = 'Pitchers_All_1871_2016_MinIP_0.csv'
 	parse = FG_Parse(file_name)
-	parse.get_pitcher_ids()
+	parse.get_pitcher_ids(True)
+	for p, i in parse.pitcher_ids.items():
+		print(p, i)
 if __name__=='__main__':
 	main()
