@@ -19,3 +19,6 @@
 [submodule "styleguide"]
 	path = styleguide
 	url = https://github.com/google/styleguide.git
+[submodule "libpng"]
+	path = libpng
+	url = https://github.com/glennrp/libpng.git
