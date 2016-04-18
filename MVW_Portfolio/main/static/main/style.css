@@ -1,0 +1,54 @@
+a {
+	color: #000000;
+	text-decoration: underline;
+}
+
+#contact {
+    margin-left: 20px;
+}
+
+#residence {
+    margin-left: 20px;
+}
+
+#email {
+    text-decoration: underline;
+}
+
+#cell {
+    text-decoration: underline;
+}
+
+#git {
+    text-decoration: underline;
+}
+
+header {
+	font-size: large;
+	padding: 0.3em;
+	background: #bcce98;
+	border-radius: 3px;
+}
+
+header span {
+	display: inline-block;
+	font-weight: bold; 
+}
+
+header #name {
+	width: 15em;
+	border: 1px solid #000;
+	text-align: center;
+}
+
+header .elem {
+	margin-left: 20px;
+	width: 8em;
+}
+
+#content {
+	padding: 0.3em;
+	margin-top: 20px;
+	margin-left: 20px;
+	border: 1px solid #bcce98;
+}

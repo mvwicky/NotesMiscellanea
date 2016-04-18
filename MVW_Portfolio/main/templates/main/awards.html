@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+	{{ block.super }} | Awards
+{% endblock %}
+
+{% block content %}
+	{% if award_list %}
+		<ul>
+		{% for award in award_list %}
+			<li><a href="{% url 'main:award_detail' award.id %}">{{ award.name }}</a></li>
+		{% endfor %}
+		</ul>
+	{% else %}
+		<p>No awards listed</p>
+	{% endif %}
+{% endblock content %}

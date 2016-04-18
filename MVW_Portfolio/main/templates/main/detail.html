@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+	{{ block.super }} | 
+	{% if job %}
+		Job
+	{% endif %}
+	{% if award %}
+		Award
+	{% endif %}
+	 Detail 
+{% endblock %}
+
+{% block content %}
+	{% if job %}
+		<h2>{{ job }}</h2>
+		<p> Start Date: {{ job.start_date }}</p>
+		<p> End Date: {{ job.end_date }}</p>
+	{% endif %}
+
+	{% if award %}
+		<h2>{{ award }}</h2>
+		<p> Date Awarded: {{ award.date_awarded }}</p>
+		<p> Reason for Award: {{ award.reason }}
+	{% endif %}
+{% endblock content %}

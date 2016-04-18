@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% load staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}" />
+		<title>{% block title %}Michael Portfolio{% endblock %}</title>
+	</head>
+
+	<body>
+	<header>
+		<span id="name"> <h3><a href="{% url 'main:index' %}">Michael Van Wickle</a></h3></span>
+		<span class="elem"><a href="{% url 'main:jobs' %}">Jobs</a> </span>
+		<span class="elem"> Academics </span>
+		<span class="elem"> Activities </span>
+		<span class="elem"><a href="{% url 'main:awards' %}">Awards</a> </span>
+		<span class="elem"> Volunteer Work </span>
+	</header>
+	<div id="content">
+	{% block content %}{% endblock content %}
+	</div>
+	</body>
+</html>

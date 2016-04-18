@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} | Index {% endblock %}
+
+{% block content %}
+	<p> Student at Northeastern University</p>
+    <div id="contact"><ul>
+            <li> Email: <span id="email"> <a href="mailto:vanwickle.m@husky.neu.edu">vanwickle.m@husky.neu.edu</a> </span><br />
+            <li> Phone Number: <span id="cell"> (805) 452-3937 </span> <br />
+            <li> GitHub: <span id="git"> <a href="https://github.com/mvwicky">github.com/mvwicky</a></span>
+    </ul></div>
+    <p id="residence">
+        School Address: <span id="sch_addr"> 50 Townsend St. #2, Boston, MA 02119 </span><br />
+        Permanent Address: <span id="perm_addr"> 1111 Del Mar Ave., Santa Barbara, CA 93109 </span> 
+    </p>
+    <br /><br />
+	<p> Fourth year Computer Engineering major </p>
+
+    <h4> Technical Skills and Interests </h4>
+    <ul>
+        <li> Programming
+        <ul>
+            <li> C++ (strong)
+            <li> Python (strong)
+            <li> C (proficient)
+            <li> MatLAB (proficient)
+            <li> PHP (proficient)
+            <li> Processing (proficient)
+            <li> Vim (proficient)
+            <li> Arduino (basic)
+            <li> Lua (basic)
+            <li> Java (basic)
+            <li> Javascript (basc)
+        </ul>
+    </ul>
+
+{% endblock content %}

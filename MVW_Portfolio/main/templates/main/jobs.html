@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+	{{ block.super }} | Jobs
+{% endblock %}
+
+{% block content %}
+	{% if job_list %}
+		<ul>
+		{% for job in job_list %}
+			<li><a href="{% url 'main:job_detail' job.id %}">{{ job.job_title }} at {{ job.company_name }} </a></li>
+		{% endfor %}
+		</ul>
+	{% else %}
+		<p>No jobs listed</p>
+	{% endif %}
+{% endblock content %}
