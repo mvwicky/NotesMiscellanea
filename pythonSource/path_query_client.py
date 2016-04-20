@@ -4,14 +4,14 @@ import socket
 import argparse
 
 
-class path_query(object):
+class query_client(object):
     def __init__(self, host, port, path, size=1024):
         assert isinstance(host, str)
         assert isinstance(port, int)
         self.host = host
         self.port = port
-        self.size = size
         self.path = path
+        self.size = size
         self.path_contents = []
 
     def get_path_contents(self):
@@ -19,7 +19,11 @@ class path_query(object):
         sock.connect((self.host, self.port))
 
         sock.send('PATH_REQ'.encode())
-        init_ack = sock.recv(self.size)
+        init_ack = sock.recv(self.size).decode()
+        if 'NAK' in init_ack:
+            print('NAK received: Path does not exist...')
+            sock.close()
+            return -1
 
         sock.send(self.path.encode())
 
@@ -42,6 +46,40 @@ class path_query(object):
             sock.close()
             return -1
         return 0
+
+    def get_file(self, file_name):
+        assert isinstance(file_name, str)
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.connect((self.host, self.port))
+
+        sock.send('FILE_REQ'.encode())
+        req_ack = sock.recv(self.size).decode()
+        if 'NAK' in req_ack:
+            print('NAK received: Path not populated')
+            sock.close()
+            return -1
+
+        sock.send(file_name.encode())
+
+        rts_msg = sock.recv(self.size).decode()
+        if 'RTS' in rts_msg:
+            sock.send('ACK'.encode())
+
+            len_msg = sock.recv(self.size)
+            sock.send('LEN_ACK'.encode())
+            with open(file_name, 'wb') as file:
+                f_cts = sock.recv(self.size)
+                while f_cts:
+                    file.write(f_cts)
+                    f_cts = sock.recv(self.size)
+
+            sock.send('ACK'.encode())
+            sock.close()
+            return 0
+        elif 'NAK' in rts_msg:
+            print('Not a valid file path')
+            sock.close()
+            return -1
 
     def close_server(self):
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -92,12 +130,11 @@ def main():
     print('({host}, {port})'.format(host=host, port=port))
     print(' ')
 
-    pq = path_query(host, port, args.path)
-    pq.get_path_contents()
-    for elem in pq.path_contents:
+    query = query_client(host, port, args.path)
+    query.get_path_contents()
+    for elem in query.path_contents:
         print(elem)
-    pq.close_server()
-
+    query.get_file('winnfsd.cpp')
 
 if __name__ == '__main__':
     main()
