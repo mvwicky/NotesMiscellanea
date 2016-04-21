@@ -4,7 +4,6 @@ A repo of interesting (to me) documents
 ## Contents:
 ### Folders:
 - **BlendFiles**: contains blender files
-- **Coop Reflections**: contains markdown for coop reflection notes 
 - **cppSource**: contains `C++` source files
 - **cSource**: contains `C` source files
 - [**devd**](https://github.com/cortesi/devd): a local webserver for developers 
@@ -70,11 +69,8 @@ A repo of interesting (to me) documents
   - UnderstandingBasicMusicTheory
 
 ### Files In Root
-- AmicusBrief_iPhone: a brief of amici curae in the case of the San Bernadino iPhone 
-- AmicusBrief_Twitter_v_Lynch
 - GreekAlphabet
-- PastPracticeRichardMittenthal
-- Screenwriting101_FilmCritHulk
+
 
  
 
