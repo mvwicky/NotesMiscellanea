@@ -13,7 +13,11 @@ def main():
         return -1
     master_logger_path = os.path.abspath(logger_file_name)
     print(master_logger_path)
-    for elem in filter(os.path.isdir, os.listdir('.')):
+    dirs = list(filter(os.path.isdir, os.listdir('.')))
+    while dirs:
+        elem = dirs.pop()
+        c_dir = os.path.abspath(elem)
+        dirs.extend(list(filter(os.path.isdir, os.listdir(c_dir))))
         if 'logger.py' in os.listdir(elem):
             elem_path = os.path.abspath(elem)
             child_logger_path = os.path.join(elem_path, logger_file_name)
