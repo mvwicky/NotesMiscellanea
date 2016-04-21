@@ -13,7 +13,7 @@ class Logger(object):
            save_dir: folder name to save in
            ovrw: whether or not to overwrite and existing file
         """
-        [name, save_dir] = map(str, [name, save_dir])
+        name = str(name)
 
         today = '-'.join(map(str, [datetime.today().year,
                                    datetime.today().month,
@@ -26,6 +26,7 @@ class Logger(object):
         log_name = ''.join([log_name, '.log'])
 
         if save_dir:
+            save_dir = str(save_dir)
             self.log_path = os.path.abspath(save_dir)
             if not os.path.exists(self.log_path):
                 try:

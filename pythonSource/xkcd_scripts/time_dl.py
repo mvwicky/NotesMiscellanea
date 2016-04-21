@@ -24,7 +24,7 @@ def main():
     file_name = 'time.csv'
     save_folder = 'time_frames'
     if not os.path.exists(os.path.abspath(file_name)):
-        print('Time csv not found in directory')
+        print('time.csv not found in directory')
         return -1
     if not os.path.exists(os.path.abspath(save_folder)):
         try:
@@ -38,7 +38,7 @@ def main():
     total_size = 0
     with open(file_name, 'rt', newline='\n') as time:
         for row in time:
-            row = row.replace('\r', '').replace('\n', '')
+            row = row.replace(os.linesep, '')
             fields = row.split(',')
             frame_name = 'time_{}.png'.format(fields[0])
             url = fields[6] if fields[6] else fields[5]
