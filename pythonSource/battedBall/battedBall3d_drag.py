@@ -5,45 +5,8 @@ from mpl_toolkits.mplot3d import Axes3D
 import numpy as np
 import matplotlib.pyplot as plt
 
-from util import *
+from util import mph_to_mps, deg_to_rad
 
-# theta: angle from horizonal
-# phi: angle from straight away center
-#   phi(CF) = pi / 4
-#   1st base line: 0
-#   3rd base line: pi / 2
-# if phi < 0 or phi > (pi / 2) -> foul ball
-
-# TODO
-#
-# find out how to stop drawing of line at 'ground'
-# add drag due to air
-#   need to add attributes to battedBall class
-#       m -> mass: 0.145 kg
-#       A -> frontal area: pi*r^2
-#           r = 73 mm (73 * 10^-3 m)
-#       C_D -> coefficient of drag: 0.3 (dimensionless)
-#           ref for number: www.grc.nasa.gov/www/k-12/airplane/balldrag.html
-#       rho -> dependent on:
-#           p_o -> sea level std. atmospheric pressure: 101.325 * 10^3 Pa
-#           L -> temperature lapse rate: 0.0065 K/m
-#           T_o -> sea level std. temperature: 288.15 K
-#           R -> ideal gas constant: 8.31447 J/mol*K
-#           M -> molar mass of air: 0.0289644 kg/mol
-#           g -> acceleration due to gravity: 9.80665 m/s^2
-#           h -> altitude in meters (input)
-#           p -> absolute pressure in pascals: p_o(1 - Lh/T_o)^(gM/RL)
-#           T -> absolute temperature: T_o - Lh
-#           rho = pM/RT
-#       k -> drag factor:
-#           k = 0.5 * rho * A * C_D
-#       v_x -> horizontal velocity
-#           v_x0 -> initial velocity in the x direction:
-#                   v_tot*cos(phi)*sin(90-theta)
-#           v_x(t) = 1 / ((1 / v_x0) + (kt/m)) = (v_x0^-1 + (kt/m))^-2
-#           v_x and v_y will be equal, but with different exit angles
-#               v_y0 -> initial velo in y: v_tot*sin(phi)*cos(90-theta)
-#       s_x, s_y -> horizontal distance traveld
 #       vertical velocity and distance
 #           has two parts
 #           upward:
