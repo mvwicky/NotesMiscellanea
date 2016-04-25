@@ -5,6 +5,7 @@ from argparse import ArgumentParser
 
 import requests
 
+from PIL import Image
 from bs4 import BeautifulSoup, SoupStrainer
 from logger import Logger
 
@@ -108,6 +109,63 @@ class xkcd_dl(object):
                         comic.write(data)
                     ts_msg = self.size_msg(total_size)
                     self.log('Total Data Downloaded: {}'.format(ts_msg))
+
+    def download_comic(self, comic):
+        self.log('Getting comic: {}'.format(comic))
+        url = ''.join([self.base_url, str(comic), '/'])
+        res = requests.get(url)
+        if res.status_code != 404:
+            soup = BeautifulSoup(res.content, 'lxml',
+                                 parse_only=SoupStrainer('div', id='comic'))
+            for elem in soup('img'):
+                img_url = ''.join(['http:', elem.get('src')])
+                file_name = 'xkcd_{}.png'.format(num)
+                file_path = os.path.join(self.save_path, file_name)
+                self.log('{}, {}'.format(img_url, file_path))
+        else:
+            self.log('Could not find comic {}'.format(comic), ex=True)
+        msg_tup = (img_url.replace('http://', ''), file_name)
+        msg = ' -> '.join(msg_tup)
+        self.log(msg)
+        with open(file_path, 'wb') as file:
+                res = requests.get(img_url, stream=True)
+                if not res.headers.get('content-length'):
+                    file.write(res.content)
+                else:
+                    total_size += float(res.headers.get('content-length'))
+                    for data in res.iter_content():
+                        file.write(data)
+                    ts_msg = self.size_msg(total_size)
+                    self.log('Total Data Downloaded: {}'.format(ts_msg))
+
+    def get_title_text(self, comic):
+        url = ''.join([self.base_url, str(comic), '/'])
+        res = requests.get(url)
+        if res.status_code != 404:
+            soup = BeautifulSoup(res.content, 'lxml',
+                                 parse_only=SoupStrainer('div', id='comic'))
+            for elem in soup('img'):
+                title_text = elem.get('title')
+            return self.fmt_name(title_text)
+        else:
+            self.log('Could not find comic {}'.format(comic), ex=True)
+
+    def get_title(self, comic):
+        url = ''.join([self.base_url, str(comic), '/'])
+        res = requests.get(url)
+        if res.status_code != 404:
+            soup = BeautifulSoup(res.content, 'lxml',
+                                 parse_only=SoupStrainer('div', id='comic'))
+            for elem in soup('img'):
+                title = elem.get('alt')
+            return self.fmt_name(title)
+        else:
+            self.log('Could not find comic {}'.format(comic), ex=True)
+
+    def make_image(self, comic):
+        file_path = 'xkcd_{}.png'.format(comic)
+        if not os.path.exists(file_path):
+            self.download_comic(comic)
 
 
 def main():

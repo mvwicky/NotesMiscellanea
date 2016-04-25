@@ -22,3 +22,6 @@
 [submodule "libpng"]
 	path = libpng
 	url = https://github.com/glennrp/libpng.git
+[submodule "anim_encoder"]
+	path = anim_encoder
+	url = https://github.com/sublimehq/anim_encoder.git
