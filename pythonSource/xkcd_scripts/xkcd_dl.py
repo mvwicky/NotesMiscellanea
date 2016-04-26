@@ -1,6 +1,8 @@
 import os
 import sys
 
+import multiprocessing as mp
+
 from argparse import ArgumentParser
 
 import requests
@@ -27,6 +29,8 @@ class xkcd_dl(object):
         self.save_folder = 'xkcd'
         self.save_path = os.path.abspath(self.save_folder)
 
+        self.queue = mp.Queue()
+
         if not os.path.exists(self.save_path):
             try:
                 os.makedirs(os.path.abspath(self.save_path))
@@ -37,7 +41,8 @@ class xkcd_dl(object):
                 self.log('Folder Created: {}'
                          .format(os.path.abspath(self.save_path)))
 
-    def fmt_name(self, inp):
+    @staticmethod
+    def fmt_name(inp):
         not_allowed_chars = '<>:"/\\|?*'  # Explicity not allowed characters
         for char in not_allowed_chars:
             inp = inp.replace(char, '')
@@ -45,7 +50,8 @@ class xkcd_dl(object):
             inp = inp.replace(char, '')
         return inp
 
-    def size_msg(self, size_bytes):
+    @staticmethod
+    def size_msg(size_bytes):
         int_bytes = int(size_bytes)
         if int_bytes in range(0, 1000):
             return '{} bytes'.format(size_bytes)
@@ -110,6 +116,57 @@ class xkcd_dl(object):
                     ts_msg = self.size_msg(total_size)
                     self.log('Total Data Downloaded: {}'.format(ts_msg))
 
+    def mp_parse_and_download(self, nprocs=2):
+        self.mp_parse()
+        [self.queue.put(None) for _ in range(nprocs)]
+
+        self.log('Done parsing, starting downloads')
+
+        procs = [mp.Process(target=self.mp_download) for _ in range(nprocs)]
+
+        for proc in procs:
+            proc.start()
+
+        [proc.join() for proc in procs]
+        return 0
+
+    def mp_parse(self):
+        num = 1
+        while True:
+            url = ''.join([self.base_url, str(num), '/'])
+            res = requests.get(url)
+            if res.status_code == 404 and num != 404:
+                self.log('Status Code: 404, breaking loop')
+                break
+            soup = BeautifulSoup(res.content, 'lxml',
+                                 parse_only=SoupStrainer('div', id='comic'))
+            for elem in soup('img'):
+                if 'comics' in elem.get('src'):
+                    comic_url = ''.join(['http:', elem.get('src')])
+                    file_name = 'xkcd_{}.png'.format(num)
+                    file_path = os.path.join(self.save_path, file_name)
+                    pair = (comic_url, file_path)
+                    self.queue.put(pair)
+                    self.log('{} put into queue'.format(pair))
+            num += 1
+        self.queue.put(None)
+
+    def mp_download(self):
+        while True:
+            arg = self.queue.get()
+            if arg is None:
+                break
+            self.log('Getting {}'.format(arg[0]))
+            with open(arg[1], 'wb') as comic:
+                res = requests.get(arg[0], stream=True)
+                if res.headers.get('content-length') is None:
+                    comic.write(res.content)
+                else:
+                    for data in res.iter_content():
+                        comic.write(data)
+            self.log('{} written'.format(arg[1]))
+        self.log('Downloads Complete')
+
     def download_comic(self, comic):
         self.log('Getting comic: {}'.format(comic))
         url = ''.join([self.base_url, str(comic), '/'])
@@ -167,11 +224,13 @@ class xkcd_dl(object):
         if not os.path.exists(file_path):
             self.download_comic(comic)
 
+    def clean(self):
+        pass
+
 
 def main():
     dl = xkcd_dl()
-    dl.parse()
-    dl.download()
+    dl.mp_parse_and_download(4)
 
 
 if __name__ == '__main__':

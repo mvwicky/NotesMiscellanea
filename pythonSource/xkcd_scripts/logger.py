@@ -27,19 +27,21 @@ class Logger(object):
 
         if save_dir:
             save_dir = str(save_dir)
-            self.log_path = os.path.abspath(save_dir)
-            if not os.path.exists(self.log_path):
+            log_path = os.path.abspath(save_dir)
+            if not os.path.exists(log_path):
                 try:
-                    os.makedirs(self.log_path)
+                    os.makedirs(log_path)
                 except:
-                    self.log_path = os.getcwd()
+                    print('Could not make log in {}, making it in cwd'
+                          .format(log_path))
+                    log_path = os.getcwd()
         else:
-            self.log_path = os.getcwd()
-        self.log_path = os.path.join(self.log_path, log_name)
+            log_path = os.getcwd()
+        self.log_path = os.path.join(log_path, log_name)
 
         if ovrw:
-            log = open(self.log_path, 'w')
-            log.close()
+            os.unlink(self.log_path)
+            self.__call__('Log Overwritten')
 
     def __call__(self, msg, ex=False, exitCode=-1):
         """ writes to log file and stdout

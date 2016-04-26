@@ -1,0 +1,10 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=6116BCE3
+eax=80010664 ebx=00000003 ecx=80010664 edx=00000030 esi=6132F748 edi=611E7F32
+ebp=0028CC58 esp=0028CC00 program=C:\Users\michael.vanwickle\Documents\GitHub\NotesMiscellanea\cSource\logger.exe, pid 7148, thread main
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+0028CC58  6116BCE3 (00403060, 00403065, 0028CD28, 61006DC0)
+0028CC88  004012FF (00000001, 0028CCAC, 80010100, 61007D35)
+0028CD28  61007D9A (00000000, 0028CD84, 61006DC0, 00000000)
+End of stack trace
