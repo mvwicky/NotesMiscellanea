@@ -3,8 +3,6 @@ import sys
 
 import multiprocessing as mp
 
-from argparse import ArgumentParser
-
 import requests
 
 from PIL import Image
@@ -15,21 +13,13 @@ from logger import Logger
 class xkcd_dl(object):
     def __init__(self):
         self.log = Logger('xkcd_dl')
-        parser = ArgumentParser()
-        parser.add_argument('-n', '--number',
-                            help='Comic number to get',
-                            type=int)
-        args = parser.parse_args()
-        if args.number:
-            self.num = args.number
-        else:
-            self.num = None
-        self.pairs = []
+
         self.base_url = 'http://xkcd.com/'
-        self.save_folder = 'xkcd'
+        self.save_folder = 'xkcd_images'
         self.save_path = os.path.abspath(self.save_folder)
 
-        self.queue = mp.Queue()
+        self.parse_queue = mp.Queue()
+        self.download_queue = mp.Queue()
 
         if not os.path.exists(self.save_path):
             try:
@@ -67,72 +57,53 @@ class xkcd_dl(object):
         else:
             return '{} bytes'.format(size_bytes)
 
-    def parse(self):
-        if self.num:
-            self.log('Getting comic {}'.format(self.num))
-        else:
-            self.log('Getting all comics')
-        self.pairs = []
-        img = SoupStrainer('div', id='comic')
-        num = self.num if self.num else 1
-        url = ''.join([self.base_url, str(num), '/'])
+    @staticmethod
+    def current_comic():
+        url = 'http://xkcd.com'
         res = requests.get(url)
-        while res.status_code != 404:
-            soup = BeautifulSoup(res.content, 'lxml',
-                                 parse_only=SoupStrainer('div', id='comic'))
-            for elem in soup('img'):
-                if 'comics' in elem.get('src'):
-                    img_url = ''.join(['http:', elem.get('src')])
-                    comic_name = self.fmt_name(elem.get('alt'))
-                    file_name = 'xkcd_{}_{}.png'.format(num, comic_name)
-                    file_path = os.path.join(self.save_path, file_name)
-                    self.pairs.append((img_url, file_path))
-                    self.log('{}, {}'.format(img_url, file_path))
-            if self.num:
-                break
-            num += 1
-            url = ''.join([self.base_url, str(num), '/'])
-            res = requests.get(url)
-
-    def download(self):
-        assert self.pairs
-        if self.num:
-            print('Getting comic {}'.format(self.num))
-        else:
-            print('Getting {} comics'.format((len(pairs))))
-        total_size = 0
-        for pair in self.pairs:
-            msg_tup = (pair[0].replace('http:', ''), os.path.split(pair[1])[1])
-            msg = ' -> '.join(msg_tup)
-            self.log(msg)
-            with open(pair[1], 'wb') as comic:
-                res = requests.get(pair[0], stream=True)
-                if not res.headers.get('content-length'):
-                    comic.write(res.content)
-                else:
-                    total_size += float(res.headers.get('content-length'))
-                    for data in res.iter_content():
-                        comic.write(data)
-                    ts_msg = self.size_msg(total_size)
-                    self.log('Total Data Downloaded: {}'.format(ts_msg))
+        if res.status_code == 404:
+            return -404
+        soup = BeautifulSoup(res.content, 'lxml',
+                             parse_only=SoupStrainer('li'))
+        for a in soup('a'):
+            if a.get('rel'):
+                if 'prev' in a.get('rel'):
+                    prev = a.get('href').replace('/', '')
+                    if prev.isnumeric():
+                        return int(prev) + 1
 
     def mp_parse_and_download(self, nprocs=2):
-        self.mp_parse()
-        [self.queue.put(None) for _ in range(nprocs)]
+        cc = self.current_comic()
+        if cc == -404:
+            self.log('Error: Home page gave 404', ex=True)
 
-        self.log('Done parsing, starting downloads')
+        [self.parse_queue.put(i) for i in range(1, cc+1)]
+        [self.parse_queue.put(None) for _ in range(nprocs)]
+        parse_procs = [mp.Process(target=self.mp_parse) for _ in range(nprocs)]
 
-        procs = [mp.Process(target=self.mp_download) for _ in range(nprocs)]
-
-        for proc in procs:
+        self.log('Starting parsing in {} threads'.format(nprocs))
+        for proc in parse_procs:
             proc.start()
 
-        [proc.join() for proc in procs]
+        [proc.join() for proc in parse_procs]
+
+        [self.download_queue.put(None) for _ in range(nprocs)]
+        dl_procs = [mp.Process(target=self.mp_download) for _ in range(nprocs)]
+
+        self.log('Done parsing, starting downloads in {} threads'
+                 .format(nprocs))
+
+        for proc in dl_procs:
+            proc.start()
+
+        [proc.join() for proc in dl_procs]
         return 0
 
     def mp_parse(self):
-        num = 1
         while True:
+            num = self.parse_queue.get()
+            if num is None:
+                break
             url = ''.join([self.base_url, str(num), '/'])
             res = requests.get(url)
             if res.status_code == 404 and num != 404:
@@ -146,14 +117,12 @@ class xkcd_dl(object):
                     file_name = 'xkcd_{}.png'.format(num)
                     file_path = os.path.join(self.save_path, file_name)
                     pair = (comic_url, file_path)
-                    self.queue.put(pair)
+                    self.download_queue.put(pair)
                     self.log('{} put into queue'.format(pair))
-            num += 1
-        self.queue.put(None)
 
     def mp_download(self):
         while True:
-            arg = self.queue.get()
+            arg = self.download_queue.get()
             if arg is None:
                 break
             self.log('Getting {}'.format(arg[0]))
@@ -220,7 +189,8 @@ class xkcd_dl(object):
             self.log('Could not find comic {}'.format(comic), ex=True)
 
     def make_image(self, comic):
-        file_path = 'xkcd_{}.png'.format(comic)
+        file_name = 'xkcd_{}.png'.format(comic)
+        file_path = os.path.join(self.save_path, file_name)
         if not os.path.exists(file_path):
             self.download_comic(comic)
 
