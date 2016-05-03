@@ -1,0 +1,188 @@
+$def-font-size: 12px;
+/* Height and Width */
+
+$col-height: $def-font-size + 8px;
+$row-height: $def-font-size + 10px;
+$head-height: 70px;
+$space-height: $def-font-size;
+$def-width: 120px;
+$tiny-width: 75px;
+$med-width: 200px;
+$wide-width: 360px;
+$pg-width: 900px;
+
+/* Colors */
+
+$blue-col: #00b1ed;
+$body-col: #fafafa;
+$even-col: #ffffff;
+$odd-col: #d3dfee;
+$border-col: #4f81bd;
+
+/* Cell Parameters*/
+
+$pad: 0px;
+$cell-border: 1px solid $border-col;
+
+/* Margins and Borders */
+
+$cont-border: 1px solid #cccccc;
+$h1-margin: 30px 0px 16px 0px;
+
+/* Fonts */
+
+$def-font: normal $def-font-size Calibri, arial, sans-serif;
+$h1-font: bold 1.55em Calibri, arial, sans-serif;
+$save-font-size: 1.01em;
+$save-font: bold $save-font-size Calibri, arial, sans-serif;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: $body-col;
+  color: #333;
+  font: $def-font;
+  height: 95%;
+  margin: 0px;
+  text-align: center;
+}
+
+#header {
+  background: #fff;
+  display: block;
+  height: $head-height;
+  margin-left: auto;
+  margin-right: auto;
+  width: $pg-width;
+  h1 { font-size: 4em; }
+}
+
+#container {
+  border: $cont-border;
+  border-top: 0px;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: left;
+  width: $pg-width;
+}
+
+#main_div {
+  font-size: $def-font-size;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+h1 {
+  color: $blue-col;
+  font: $h1-font;
+  margin: $h1-margin;
+  text-decoration: none;
+}
+
+input {
+  border: 1px solid #00f;
+  background: #fff;
+  color: #000;
+  display: inline;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+.table {
+  font: $def-font;
+  .trow {
+    background: transparent;
+    display: table-row;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+  .tcell {
+    background: transparent;
+    border: $cell-border;
+    @include border-radius(4px);
+    display: table-cell;
+    font-size: 1.10em;
+    height: $col-height;
+    line-height: $col-height;
+    margin: 0px;
+    padding: $pad;
+    text-align: center;
+    vertical-align: center;
+  }
+  .tspace {
+    @extend .tcell;
+    background: transparent;
+    border: none;
+    height: $space-height;
+  }
+  .tiny {
+    width: $tiny-width;
+  }
+  .wide {
+    width: $wide-width;
+  }
+  .med {
+    width: $med-width;
+  }
+  .even {
+    background: $even-col;
+  }
+  .odd,
+  .odd:hover {
+    background: $odd-col;
+  }
+  .tlabel {
+    @extend .tcell;
+    width: $def-width;
+  }
+  .thead {
+    @extend .tcell;
+    background: $even-col;
+    @include border-radius(1px);
+    font-size: 1.15em;
+    font-weight: bold;
+  }
+  .tnum {
+    @extend .tlabel;
+    font-family: "Courier New", monospace;
+  }
+  input[type="text"] {
+    @extend .tcell;
+    border: none;
+    display: inline;
+    &:hover { background: transparent }
+  }
+}
+
+.save {
+  color: $blue-col;
+  font: $save-font;
+  margin-bottom: 16px;
+  margin-top: 30px;
+  text-decoration: none;
+  text-align: right;
+  input[type="password"] {
+    font-size: $save-font-size;
+  }
+  a {
+    color: $blue-col;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+}
