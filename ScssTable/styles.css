@@ -1,11 +1,12 @@
+/* Parallax Modifications: codepen.io/keithclark/JtcFw */
 /* Height and Width */
 /* Colors */
 /* Cell Parameters*/
 /* Margins and Borders */
 /* Fonts */
-html { height: 100%; }
+html { height: 100%; overflow: hidden; }
 
-body { background: #fafafa; color: #333; font: normal 12px Calibri, arial, sans-serif; height: 95%; margin: 0px; text-align: center; }
+body { background: #fafafa; color: #333; font: normal 12px Calibri, arial, sans-serif; height: 100%; margin: 0px; overflow-x: hidden; overflow-y: scroll; perspective: 1px; text-align: center; transform-style: preserve-3d; }
 
 #header { background: #fff; display: block; height: 70px; margin-left: auto; margin-right: auto; width: 900px; }
 #header h1 { font-size: 4em; }

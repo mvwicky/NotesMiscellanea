@@ -1,3 +1,5 @@
+/* Parallax Modifications: codepen.io/keithclark/JtcFw */ 
+
 $def-font-size: 12px;
 /* Height and Width */
 
@@ -45,16 +47,23 @@ $save-font: bold $save-font-size Calibri, arial, sans-serif;
 
 html {
   height: 100%;
+  overflow: hidden;
 }
 
 body {
   background: $body-col;
   color: #333;
   font: $def-font;
-  height: 95%;
+  height: 100%;
   margin: 0px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 1px;
   text-align: center;
+  transform-style: preserve-3d;
 }
+
+
 
 #header {
   background: #fff;

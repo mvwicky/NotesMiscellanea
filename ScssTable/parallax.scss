@@ -1,0 +1,54 @@
+/* From (with modifications): http://codepen.io/keithclark/pen/JycFw */ 
+
+html {
+}
+
+.slide {
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+  padding: 25vh 10%;
+  position: relative;
+  transform-style: inherit;
+  width: 100vw;
+  &:before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  &:nth-child(2n) .title {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  &:nth-child(2n+1) .title {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+img {
+  background: rgba(240, 320, 220, 0.7);
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  height: 240px;
+  left: 35%;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateZ(0.25px) scale(0.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  width: 320px;
+  &:last-of-type {
+    transform: translateZ(0.4px) scale(0.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+  }
+}
+
+.title {
+  background: rgba(240, 230, 220, 0.7);
+  @include border-radius(5px);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  padding: 5%;
+  width: 50%;
+}
