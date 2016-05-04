@@ -1,6 +1,27 @@
 /* From (with modifications): http://codepen.io/keithclark/pen/JycFw */ 
 
 html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: Calibri, arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+
+h1 { font-size: 250%; }
+
+p {
+  color: #333;
+  font-size: 140%;
+  line-height: 150%;
 }
 
 .slide {
@@ -45,10 +66,39 @@ img {
   }
 }
 
-.title {
-  background: rgba(240, 230, 220, 0.7);
-  @include border-radius(5px);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
-  padding: 5%;
-  width: 50%;
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-attachment: fixed;
+  background-image: url('http://lorempixel.com/640/480/abstract/6/');
+}
+
+#slide1 {
+  &:before {
+    background-image: url('http://lorempixel/640/480/abstract/4/');
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+  }
+}
+
+#slide2 {
+  background-attachment: fixed;
+  background-image: url('http://lorempixel/640/480/abstract/3/');
+}
+
+#slide3 {
+  &:before {
+    background-image: url('http://lorempixel/640/480/abstract/5/');
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+  }
+}
+
+#slide4 {
+  background: #222;
 }
