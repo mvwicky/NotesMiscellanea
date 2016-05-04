@@ -264,3 +264,7 @@ TSWLatexianTemp*
 
 # KBibTeX
 *~[0-9]*
+
+# Sass Section
+.sass-cache/
+*.css.map
