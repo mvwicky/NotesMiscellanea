@@ -34,10 +34,10 @@ class TableWriter(object):
         self.current_table['headers'] = headers
         with open(self.file_name, 'a') as out_file:
             out_file.write('\n')
-            out_file.write('<div class=\"table\">\n')
-            out_file.write('<div class=\"trow\">\n')
+            out_file.write('<div class="table">\n')
+            out_file.write('<div class="trow">\n')
             for elem in headers:
-                out_file.write('\t<span class=\"thead\">{}</span>\n'
+                out_file.write('\t<span class="thead">{}</span>\n'
                                .format(elem))
             out_file.write('</div>\n')
 
@@ -50,13 +50,13 @@ class TableWriter(object):
             return -1
         with open(self.file_name, 'a') as out_file:
             out_file.write('\n')
-            out_file.write('<div class=\"trow\">\n')
+            out_file.write('<div class="trow">\n')
             for elem in row:
                 if elem.replace('.', '').isnumeric():
-                    out_file.write('<span class=\"tnum\">{}</span>'
+                    out_file.write('<span class="tnum">{}</span>'
                                    .format(elem))
                 else:
-                    out_file.write('<span class=\"tlabel\">{}</span>'
+                    out_file.write('<span class="tlabel">{}</span>'
                                    .format(elem))
             out_file.write('</div>')
 

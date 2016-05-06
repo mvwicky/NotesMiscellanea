@@ -31,3 +31,6 @@
 [submodule "pythonSource/FG_App"]
 	path = pythonSource/FG_App
 	url = https://github.com/mvwicky/FG_App.git
+[submodule "hack-example-site"]
+	path = hack-example-site
+	url = https://github.com/hhvm/hack-example-site.git
