@@ -1,0 +1,8 @@
+{
+	"format_on_save": false,
+	"indent_with_space": 4,
+	"php_bin": "C:/xampp/php/php.exe",
+	"psr2": true,
+	"version": 1,
+	"enable_auto_align": true,
+}

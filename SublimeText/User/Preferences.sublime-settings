@@ -33,7 +33,6 @@
 		"*.psd",
 		"*.db",
 		"*.sublime-workspace",
-		"*.pdf"
 	],
 	"font_size": 9,
 	"ignored_packages":
