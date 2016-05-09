@@ -34,3 +34,6 @@
 [submodule "hack-example-site"]
 	path = hack-example-site
 	url = https://github.com/hhvm/hack-example-site.git
+[submodule "generatedata"]
+	path = generatedata
+	url = https://github.com/benkeen/generatedata.git
