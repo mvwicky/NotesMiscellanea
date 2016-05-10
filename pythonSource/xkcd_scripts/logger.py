@@ -1,5 +1,5 @@
-import sys
 import os
+import sys
 
 from datetime import datetime
 
@@ -15,9 +15,15 @@ class Logger(object):
         """
         name = str(name)
 
-        today = '-'.join(map(str, [datetime.today().year,
-                                   datetime.today().month,
-                                   datetime.today().day]))
+        year, month, day = map(str, [datetime.today().year,
+                                     datetime.today().month,
+                                     datetime.today().day])
+        if len(month) == 1:
+            month = '0{}'.format(month)
+        if len(day) == 1:
+            day = '0{}'.format(day)
+
+        today = '-'.join([year, month, day])
 
         if attr:
             log_name = '_'.join([name, str(attr), today])
@@ -43,11 +49,11 @@ class Logger(object):
             os.unlink(self.log_path)
             self.__call__('Log Overwritten')
 
-    def __call__(self, msg, ex=False, exitCode=-1):
+    def __call__(self, msg, ex=False, exit_code=-1):
         """ writes to log file and stdout
             msg: message to log
             ex: whether or not to exit
-            exitCode: the exit code to emit, unused if not exiting
+            exit_code: the exit code to emit, unused if not exiting
         """
         msg = ''.join([str(msg), '\n'])
         sys.stdout.write(msg)
@@ -57,13 +63,13 @@ class Logger(object):
             log.write(' -> '.join([now, msg]))
             log.flush()
         if ex:
-            exitMessage = 'Exiting with code: {}\n'.format(exitCode)
-            sys.stdout.write(exitMessage)
+            exit_message = 'Exiting with code: {}\n'.format(exit_code)
+            sys.stdout.write(exit_message)
             sys.stdout.flush()
             with open(self.log_path, 'a') as log:
-                log.write(' -> '.join([now, exitMessage]))
+                log.write(' -> '.join([now, exit_message]))
                 log.flush()
-            sys.exit(exitCode)
+            sys.exit(exit_code)
 
 
 def main():
