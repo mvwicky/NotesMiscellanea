@@ -37,3 +37,6 @@
 [submodule "generatedata"]
 	path = generatedata
 	url = https://github.com/benkeen/generatedata.git
+[submodule "gameday-api-docs"]
+	path = gameday-api-docs
+	url = https://github.com/brianmpalma/gameday-api-docs.git

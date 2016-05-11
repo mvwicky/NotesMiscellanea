@@ -8,12 +8,14 @@ from bs4 import BeautifulSoup, SoupStrainer
 
 from logger import Logger
 
+
 def download_func(func, q_in, q_out):
     while True:
         i, x = q_in.get()
         if i is None:
             break
         q_out.put((i, func(x)))
+
 
 def download(arg):
     with open(arg[1], 'wb') as file:
@@ -24,7 +26,6 @@ def download(arg):
             for data in res.iter_content():
                 file.write(data)
     return 0
-
 
 
 class Downloader(object):
@@ -72,11 +73,13 @@ class Downloader(object):
             self.log('{} written'.format(arg[1]))
         self.log('Downloads Complete')
 
+
 class RetroSheet(object):
     def __init__(self, out_file):
         self.log = Logger('RetroSheet')
         self.out_file = out_file
         self.out_path = os.path.abspath(out_file)
+
     def get_play_by_play(self):
         self.log('File Name: {}'.format(self.out_file))
         url = 'http://www.retrosheet.org/game.htm'
@@ -95,7 +98,6 @@ class RetroSheet(object):
                             out.write(link)
                             out.write('\n')
                             self.log('Link: {}'.format(link))
-
 
 
 def main():
