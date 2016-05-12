@@ -5,6 +5,8 @@ import datetime
 from typing import Union
 
 import requests
+import records
+import tablib
 from bs4 import BeautifulSoup, SoupStrainer
 
 from logger import Logger
