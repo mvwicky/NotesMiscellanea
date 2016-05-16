@@ -1,0 +1,6 @@
+[package]
+name = "gameday_parse"
+version = "0.1.0"
+authors = ["Michael Van Wickle <mvanwickle@gmail.com>"]
+
+[dependencies]
