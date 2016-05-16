@@ -40,3 +40,6 @@
 [submodule "gameday-api-docs"]
 	path = gameday-api-docs
 	url = https://github.com/brianmpalma/gameday-api-docs.git
+[submodule "winnfsd"]
+	path = winnfsd
+	url = https://github.com/winnfsd/winnfsd.git
