@@ -40,3 +40,18 @@
 [submodule "gameday-api-docs"]
 	path = gameday-api-docs
 	url = https://github.com/brianmpalma/gameday-api-docs.git
+[submodule "latexindent.pl"]
+	path = latexindent.pl
+	url = https://github.com/cmhughes/latexindent.pl
+[submodule "html-minifier"]
+	path = html-minifier
+	url = https://github.com/kangax/html-minifier.git
+[submodule "cssnano"]
+	path = cssnano
+	url = https://github.com/ben-eb/cssnano.git
+[submodule "csso"]
+	path = csso
+	url = https://github.com/css/csso.git
+[submodule "mycss"]
+	path = mycss
+	url = https://github.com/lexborisov/mycss
