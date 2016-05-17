@@ -55,3 +55,6 @@
 [submodule "mycss"]
 	path = mycss
 	url = https://github.com/lexborisov/mycss
+[submodule "winnfsd"]
+	path = winnfsd
+	url = https://github.com/winnfsd/winnfsd.git
