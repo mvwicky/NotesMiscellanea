@@ -33,7 +33,7 @@ class Logger(object):
 
         if save_dir:
             save_dir = str(save_dir)
-            log_path = os.path.abspath(save_dir)
+            log_path = os.path.realpath(save_dir)
             if not os.path.exists(log_path):
                 try:
                     os.makedirs(log_path)

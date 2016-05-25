@@ -6,30 +6,29 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"BeautifyRust",
 		"BracketHighlighter",
 		"Color Highlighter",
 		"ColorPicker",
 		"CSS3",
 		"Cython+",
+		"Dotfiles Syntax Highlighting",
 		"Emmet",
 		"HTML-CSS-JS Prettify",
 		"LaTeX-cwl",
 		"LaTeXTools",
 		"Markdown Preview",
-		"MarkdownEditing",
 		"Package Control",
 		"PackageResourceViewer",
 		"php-grammar",
 		"phpfmt",
+		"PowerShell",
 		"Python 3",
 		"Rust",
 		"SCSS",
 		"SideBarEnhancements",
 		"SublimeCodeIntel",
 		"SublimeLinter",
-		"SublimeLinter-cpplint",
 		"SublimeLinter-pep8",
-		"Theme - Otto",
-		"Theme - Soda"
 	]
 }

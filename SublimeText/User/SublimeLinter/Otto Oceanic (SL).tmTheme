@@ -35,19 +35,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>AceJump</string>
-			<key>scope</key>
-			<string>ace.jump</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#846fec</string>
-				<key>foreground</key>
-				<string>#ffffff</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Comments</string>
 			<key>scope</key>
 			<string>comment, punctuation.definition.comment</string>
@@ -61,7 +48,7 @@
 			<key>name</key>
 			<string>Variable</string>
 			<key>scope</key>
-			<string>variable</string>
+			<string>variable, punctuation.definition.list_item.markdown</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -98,7 +85,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#eb606b</string>
+				<string>#f07178</string>
 			</dict>
 		</dict>
 		<dict>
@@ -120,7 +107,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#f2777a</string>
+				<string>#f07178</string>
 			</dict>
 		</dict>
 		<dict>
@@ -166,7 +153,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ec5F67</string>
+				<string>#ec5f67</string>
 			</dict>
 		</dict>
 		<dict>
@@ -179,7 +166,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#ec5F67</string>
+				<string>#ec5f67</string>
 			</dict>
 		</dict>
 		<dict>
@@ -212,7 +199,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#bb80b3</string>
+				<string>#c594c5</string>
 			</dict>
 		</dict>
 		<dict>
@@ -234,7 +221,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ec5F67</string>
+				<string>#ec5f67</string>
 			</dict>
 		</dict>
 		<dict>
@@ -245,7 +232,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#bb80b3</string>
+				<string>#c594c5</string>
 			</dict>
 		</dict>
 		<dict>
@@ -326,7 +313,20 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#ec5F67</string>
+				<string>#ec5f67</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>AceJump</string>
+			<key>scope</key>
+			<string>ace.jump</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#bb80b3</string>
+				<key>foreground</key>
+				<string>#ffffff</string>
 			</dict>
 		</dict>
 	<dict>

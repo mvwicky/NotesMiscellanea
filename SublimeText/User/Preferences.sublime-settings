@@ -1,4 +1,5 @@
 {
+	"always_show_minimap_viewport": true,
 	"auto_complete_triggers":
 	[
 		{
@@ -10,7 +11,13 @@
 			"selector": "text.tex.latex"
 		}
 	],
-	"color_scheme": "Packages/User/SublimeLinter/Otto Oceanic (SL).tmTheme",
+	"bold_folder_labels": true,
+	"caret_extra_bottom": 1,
+	"caret_extra_top": 1,
+	"caret_extra_width": 1,
+	"caret_style": "blink",
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Ocean.tmTheme",
+	"fade_fold_buttons": false,
 	"file_exclude_patterns":
 	[
 		"*.pyc",
@@ -32,7 +39,7 @@
 		"*.class",
 		"*.psd",
 		"*.db",
-		"*.sublime-workspace",
+		"*.sublime-workspace"
 	],
 	"font_size": 9,
 	"ignored_packages":
@@ -41,5 +48,25 @@
 		"PHP",
 		"Vintage"
 	],
-	"theme": "Otto Oceanic.sublime-theme"
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+	"overlay_scroll_bars": "enabled",
+	"show_encoding": true,
+	"show_line_endings": true,
+	"theme": "Boxy Ocean.sublime-theme",
+	"theme_accent_green": true,
+	"theme_bar": true,
+	"theme_find_panel_close_hidden": true,
+	"theme_sidebar_size_sm": true,
+	"theme_size_lg": true,
+	"theme_statusbar_size_md": true,
+	"theme_tab_line_size_lg": true,
+	"theme_tab_selected_transparent": true,
+	"theme_tab_selected_underlined": true,
+	"theme_tab_separator": true
 }
