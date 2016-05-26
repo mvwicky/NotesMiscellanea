@@ -46,7 +46,8 @@
 	[
 		"CSS",
 		"PHP",
-		"Vintage"
+		"Vintage",
+		"Python"
 	],
 	"indent_guide_options":
 	[
@@ -68,5 +69,6 @@
 	"theme_tab_line_size_lg": true,
 	"theme_tab_selected_transparent": true,
 	"theme_tab_selected_underlined": true,
-	"theme_tab_separator": true
+	"theme_tab_separator": true,
+	"theme_sidebar_folder_arrow": false
 }
