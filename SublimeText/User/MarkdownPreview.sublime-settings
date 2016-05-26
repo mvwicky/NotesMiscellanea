@@ -1,5 +1,8 @@
 {
-	"parser":"github",
+	"parser":"multimarkdown",
 	"enable_highlight": true,
-	"enable_mathjax": true
+	"enable_mathjax": true,
+	"markdown_binary_map": {
+		"multimarkdown": ["C:/Program Files/MultiMarkdown 5.2.0/bin/multimarkdown.exe"]
+	}
 }
