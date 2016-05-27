@@ -30,5 +30,6 @@
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-pep8",
+		"TOML"
 	]
 }
