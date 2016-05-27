@@ -1,4 +1,5 @@
 extern crate xml;
+extern crate regex;
 
 use std::fs::File;
 use std::io::BufReader;

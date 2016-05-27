@@ -5,3 +5,5 @@ authors = ["Michael Van Wickle <mvanwickle@gmail.com>"]
 
 [dependencies]
 xml-rs = "0.3"
+csv = "0.14.4"
+regex = "0.1"
