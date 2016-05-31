@@ -1,0 +1,9 @@
+[package]
+name = "retrosheet_parse"
+version = "0.1.0"
+authors = ["Michael Van Wickle <mvanwickle@gmail.com>"]
+
+[dependencies]
+csv = "0.14.4"
+regex = "0.1"
+postgres = "0.11.8"

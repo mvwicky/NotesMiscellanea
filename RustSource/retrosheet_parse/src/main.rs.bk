@@ -1,0 +1,56 @@
+extern crate csv;
+extern crate regex;
+
+use std::fs;
+use std::path::{Path,PathBuf};
+// use std::error::Error;
+// use std::io::BufReader;
+// use std::io::prelude::*;
+
+fn indent(size: usize) -> String {
+    const INDENT: &'static str = "    ";
+    (0..size)
+        .map(|_| INDENT)
+        .fold(String::with_capacity(size * INDENT.len()), |r, s| r + s)
+}
+
+fn main() {
+	let retro_path = Path::new("E:\\retrosheet\\Events");
+    let display = retro_path.display();
+
+    println!("Retrosheet Path: {}", display);
+
+    let mut folders: Vec<PathBuf> = vec![];
+    match fs::read_dir(retro_path) {
+    	Err(why)  => println!("! {:?}", why.kind()),
+    	Ok(paths) => for p in paths {
+    		let p = p.unwrap().path();
+    		folders.push(p);
+    	}
+    }
+
+    for folder in folders {
+    	println!("{:?}", folder);
+    	match fs::read_dir(folder) {
+    		Err(why)  => println!(" {:?}", why.kind()),
+    		Ok(files) => for f in files {
+    			let f = f.unwrap().path();
+    			println!("{}{:?}", indent(1), f);    			
+    		}
+    	}
+    }
+
+   /* let rdr = match csv::Reader::from_file(path){
+    	Err(_) => panic!("Couldn't open {}", display),
+    	Ok(file) => file,
+    };
+
+    let mut rdr = rdr.has_headers(false).delimiter(b',').flexible(true);
+    let mut num_rows = 0;
+    for row in rdr.records() {
+    	let row = row.unwrap();
+    	// println!("{:?}", row);
+    	num_rows += 1;
+    }
+    println!("Num Rows: {}", num_rows);*/
+}
