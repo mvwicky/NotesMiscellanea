@@ -1,0 +1,7 @@
+[package]
+name = "neural_network"
+version = "0.1.0"
+authors = ["Michael Van Wickle <mvanwickle@gmail.com>"]
+
+[dependencies]
+rand = "0.3.14"
