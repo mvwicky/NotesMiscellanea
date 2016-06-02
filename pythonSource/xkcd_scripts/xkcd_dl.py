@@ -15,8 +15,8 @@ class xkcd_dl(object):
         self.log = Logger('xkcd_dl')
 
         self.base_url = 'http://xkcd.com/'
-        self.save_folder = 'xkcd_images'
-        self.save_path = os.path.abspath(self.save_folder)
+        self.save_folder = 'E:\\xkcd'
+        self.save_path = os.path.realpath(self.save_folder)
 
         self.parse_queue = mp.Queue()
         self.download_queue = mp.Queue()

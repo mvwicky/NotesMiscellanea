@@ -1,0 +1,155 @@
+# Fetching Statcast Data
+
+## mlb.com statcast leaderboards
+- base url: `http://m.mlb.com/lookup/json/<query>`
+    - `json` can be replaced with `xml` to get an xml output
+- `<query>`
+    - longest homers: `named.psc_leader_hit_hr_dst.bam?season=<year>&`
+    - hardest hit balls: `named.psc_leader_hit_hardest.bam?season=<year>&`
+    - average exit velo: `named.psc_leader_hit_avg.bam?season=<year>&`
+    - fastest pitches: `named.psc_leader_pit_spd.bam?season=<year>&`
+        - filter pitcher: `named.psc_leader_pit_spd.bam?excl_pitcher_id=<id>&season=<year>&`
+        - e.g. chapman: `named.psc_leader_pit_spd.bam?excl_pitcher_id=547973&season=<year>&`
+    - avg. pitch velo: `named.psc_leader_pit_avg.bam?season=<year>&`
+    - `<year>` is either 2016 or 2015
+
+## mlb.com leaders (returns json)
+- base url: `http://m.mlb.com/pubajax/wf/flow/stats.splayer?<query>`
+- `<query>`
+    - `season`: `<year>`
+    - `sort_order`: `'<asc|desc>'` -> note the quote marks (`%27`)
+    - `sort_column` 
+    - `stat_type`: `<hitting|pitching|fielding>`
+    - `page_type`: `SortablePlayer`
+    - `game_type`: `'<type>'` -> note the quote marks (`%27`)
+        - regular season: `R`
+        - all-star game: `A`
+        - wild card: `F`
+        - division series: `D`
+        - lcs: `L`
+        - world series: `W`
+        - postseason combined: `game_type` is a parameter four times
+    - `player_pool`: `<ALL|QUALIFIER>`
+    - `season_type`: `<ANY|SINGLE|ALL>`
+    - `league_code`: `'<AL|NL>'` -> note the quore marks (`%27`)
+    - `sport_code`: `'mlb'` -> note the quote marks (`%27`)
+    - `results`: `<num>` -> max results to get (set to 1000)
+    - `position`: `<1-9>`
+    - `recSP` -> page to fetch
+    - `recPP` -> records per page (if omitted returns all)
+
+
+## From baseball savant
+- base url: `https://baseballsavant.mlb.com/statcast_search/csv?<query>`
+- `<query>` example to get all pitches for all players (not actually useful)
+    - `all`: `true`
+    - `hfGT`: `R%7C` (or `R|`)
+    - `season`: `<year>`
+    - `player_type`: `batter`
+    - `min_pitches`: `0`
+    - `min_results`: `0`
+    - `sort_col`: `pitches`
+    - `sort_order`: `desc`
+    - `min_abs`: `0`
+- `<query>` example for individual player (all pitches)
+    - `hfGT`: `R%7C` (or `R|`)
+    - `season`: `<year>`
+    - `player_type`: `batter`
+    - `min_pitches`: `0` (can be omitted)
+    - `min_results`: `0` (can be omitted)
+    - `group_by`: `name`
+    - `sort_col`: `pitches`
+    - `sort_order`: `desc`
+    - `min_abs`: `0` (can be omitted)
+    - `type`: `details`
+    - `player_id`: `<id>`
+- `<query>` fields for csv fetch:
+    - `hfPT`: `<type> | [<type2> | ... ] ` -> pitch type
+    - `hfZ`:
+    - `hfGT`: 
+    - `hfPR`: `<res> | [<res2> | ... ]` -> pitch result
+    - `hfAB`: 
+    - `stadium`:
+    - `hfBBT`:
+    - `hfBBL`:
+    - `player_lookup[]`: `<player_id>` 
+        - this is repeated in the query for all players wanted
+    - `hfC`: `` -> the count
+    - `season`: `<year>` 
+    - `player_type`: `<batter|pitcher>`
+    - `hfOuts`: 
+    - `pitcher_throws`: `<L|R>`
+    - `batter_stands`: `<L|R>`
+    - `start_speed_gt`: -> start speed greater than
+    - `start_speed_lt`: -> start speed less than
+    - `perceived_speed_gt`: -> perceived speed greater than
+    - `perceived_speed_lt`: -> perceived speed less than
+    - `spin_rate_gt`: -> spin rate greater than
+    - `spin_rate_lt`: -> spin rate less than
+    - `exit_velocity_gt`: `<1-120>` -> exit velo greater than
+    - `exit_velocity_lt`: `<1-120>` -> exit velo less than
+    - `launch_angle_gt`: `<-79-89>` -> launch angle greater than
+    - `launch_angle_lt`: `<-79-89>` -> launch angle less than
+    - `distance_gt`: `<1-500>` -> distance greater than
+    - `distance_lt`: `<1-500>` -> distance less than
+    - `batted_ball_angle_gt`: `<-49-50>` -> batted ball angle (direction) greater than
+    - `batted_ball_angle_lt`: `<-49-50>` -> batted ball angle (direction) less than
+    - `game_date_gt`: `<YYYY-MM-DD>` -> game date greater than (after)
+    - `game_date_lt`: `<YYYY-MM-DD>` -> game date less than (before)
+    - `team`: `<team>`
+    - `position`: `<pos>`
+    - `hfRO`: -> base state 
+    - `home_road`: `<Home|Road>`
+    - `hfInn`: `<inn> | [<inn2> | ... ]` -> inning (max of 10)
+    - `min_pitches`: `<num>`
+    - `min_results`: `<num>`
+    - `group_by`: 
+    - `sort_col`: 
+    - `sort_order`: `<desc|asc>` 
+    - `min_abs`: `<num>` -> minimum at bats
+    - `xba_gt`:
+    - `xba_lt`:
+    - `px1`:
+    - `px2`:
+    - `px3`:
+    - `px4`:
+- `<year>` goes back to 2008, can be set to `all`
+- pitch types:
+    - `FF`: four seamer
+    - `FT`: two seamer
+    - `FC`: cutter
+    - `FS`: split finger
+    - `SI`: sinker
+    - `SL`: slider
+    - `CH`: changeup
+    - `CU`: curveball
+    - `KC`: knuckle curve
+    - `KN`: knuckle ball
+    - `FO`: forkball
+    - `EP`: eephus
+    - `SC`: screwball
+    - `IN`: intentional ball
+    - `PO`: pitchout
+    - `AB`: automatic ball
+    - `UN`: unknown
+- pitch results:
+    - `1` : automatic ball
+    - `2` : automatic strike
+    - `3` : ball
+    - `4` : ball in dirt
+    - `5` : called strike
+    - `6` : foul
+    - `7` : foul (runner going)
+    - `8` : foul bunt
+    - `9` : foul tip
+    - `10`: hit by pitch
+    - `11`: in play, no out
+    - `12`: in play, out(s)
+    - `13`: in play, run(s)
+    - `14`: intentional ball
+    - `15`: missed bunt
+    - `16`: pitchout
+    - `18`: swinging pitchout
+    - `19`: swinging strike 
+    - `20`: swinging strike (blocked)
+    - note: no `17`
